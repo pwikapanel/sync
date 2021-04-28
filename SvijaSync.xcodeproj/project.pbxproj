@@ -600,7 +600,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/svijasvg/Rsync-Dependency.git";
 			requirement = {
-				branch = master;
+				branch = dev;
 				kind = branch;
 			};
 		};

@@ -5,8 +5,8 @@
         "package": "Rsync",
         "repositoryURL": "https://github.com/svijasvg/Rsync-Dependency.git",
         "state": {
-          "branch": "master",
-          "revision": "66819110d594fa3d9f30c659a56aafd159deead2",
+          "branch": "dev",
+          "revision": "d5c1334ec703102b65880962c8622d3ed229335f",
           "version": null
         }
       }

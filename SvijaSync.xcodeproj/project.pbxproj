@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BC506682608DCEF00C5D452 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4BC506672608DCEF00C5D452 /* Rsync */; };
+		4B523016263979200000C946 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4B523015263979200000C946 /* Rsync */; };
 		D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		D60EFBB225D4F042003931BB /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
 		D60EFBB925D4F1CB003931BB /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BC506682608DCEF00C5D452 /* Rsync in Frameworks */,
+				4B523016263979200000C946 /* Rsync in Frameworks */,
 				D63A4C6725DBB8E400C3B9BF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +269,7 @@
 			);
 			name = "Svija Sync";
 			packageProductDependencies = (
-				4BC506672608DCEF00C5D452 /* Rsync */,
+				4B523015263979200000C946 /* Rsync */,
 			);
 			productName = SvijaSync;
 			productReference = D6F2085425C94475005DAC78 /* Svija Sync.app */;
@@ -300,7 +300,7 @@
 			);
 			mainGroup = D6F2084B25C94475005DAC78;
 			packageReferences = (
-				4BC506662608DCEF00C5D452 /* XCRemoteSwiftPackageReference "rsync-macos-utility" */,
+				4B523014263979200000C946 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */,
 			);
 			productRefGroup = D6F2085525C94475005DAC78 /* Products */;
 			projectDirPath = "";
@@ -596,20 +596,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4BC506662608DCEF00C5D452 /* XCRemoteSwiftPackageReference "rsync-macos-utility" */ = {
+		4B523014263979200000C946 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/svijasvg/rsync-macos-utility.git";
+			repositoryURL = "https://github.com/svijasvg/Rsync-Dependency.git";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.5;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4BC506672608DCEF00C5D452 /* Rsync */ = {
+		4B523015263979200000C946 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4BC506662608DCEF00C5D452 /* XCRemoteSwiftPackageReference "rsync-macos-utility" */;
+			package = 4B523014263979200000C946 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */;
 			productName = Rsync;
 		};
 /* End XCSwiftPackageProductDependency section */

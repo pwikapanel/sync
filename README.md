@@ -2,8 +2,8 @@
 
 ![Svija: SVG-based websites built in Adobe Illustrator](http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator")
 
-**Svija Synch 1.0**
---------------------------
+**Svija Sync 1.0**
+------------------
 
 210428: created new repo to investigate rsync issues.
 

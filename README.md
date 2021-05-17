@@ -5,9 +5,9 @@
 **Svija Sync 1.0**
 ------------------
 
-210428: created new repo to investigate rsync issues.
+210517: new branch **debug** to investigate rsync failure.
 
-Now working on the dev branch.
+-----
 
 The current master commit is the same as Raj's last build.
 
@@ -16,8 +16,3 @@ The current master commit is the same as Raj's last build.
 Current tasks:
 
 - understand why it is failing silently
-
-Future tasks:
-
-- main screen remembers last site, no default button (or main screen sets default)
-- buttons for site · admin · clear cache · open local folder

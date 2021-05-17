@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BF35271263AA4C200BFD9B8 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4BF35270263AA4C200BFD9B8 /* Rsync */; };
+		4B2A400E26528B6600182B26 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4B2A400D26528B6600182B26 /* Rsync */; };
 		D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		D60EFBB225D4F042003931BB /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
 		D60EFBB925D4F1CB003931BB /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF35271263AA4C200BFD9B8 /* Rsync in Frameworks */,
+				4B2A400E26528B6600182B26 /* Rsync in Frameworks */,
 				D63A4C6725DBB8E400C3B9BF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +271,7 @@
 			);
 			name = "Svija Sync";
 			packageProductDependencies = (
-				4BF35270263AA4C200BFD9B8 /* Rsync */,
+				4B2A400D26528B6600182B26 /* Rsync */,
 			);
 			productName = SvijaSync;
 			productReference = D6F2085425C94475005DAC78 /* Svija Sync.app */;
@@ -302,7 +302,7 @@
 			);
 			mainGroup = D6F2084B25C94475005DAC78;
 			packageReferences = (
-				4BF3526F263AA4C200BFD9B8 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */,
+				4B2A400C26528B6600182B26 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */,
 			);
 			productRefGroup = D6F2085525C94475005DAC78 /* Products */;
 			projectDirPath = "";
@@ -461,7 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -517,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -598,20 +598,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4BF3526F263AA4C200BFD9B8 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */ = {
+		4B2A400C26528B6600182B26 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/svijasvg/Rsync-Dependency.git";
 			requirement = {
-				branch = dev;
+				branch = debug;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4BF35270263AA4C200BFD9B8 /* Rsync */ = {
+		4B2A400D26528B6600182B26 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4BF3526F263AA4C200BFD9B8 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */;
+			package = 4B2A400C26528B6600182B26 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */;
 			productName = Rsync;
 		};
 /* End XCSwiftPackageProductDependency section */

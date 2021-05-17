@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B523016263979200000C946 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4B523015263979200000C946 /* Rsync */; };
+		4BF35271263AA4C200BFD9B8 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4BF35270263AA4C200BFD9B8 /* Rsync */; };
 		D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		D60EFBB225D4F042003931BB /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
 		D60EFBB925D4F1CB003931BB /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
@@ -47,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BF35272263AA6A500BFD9B8 /* Rsync-Dependency */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Rsync-Dependency"; path = "../Rsync-Dependency"; sourceTree = "<group>"; };
 		D60EFBAA25D4EED7003931BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D60EFBAD25D4EF36003931BB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D60EFBB125D4F042003931BB /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
@@ -94,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B523016263979200000C946 /* Rsync in Frameworks */,
+				4BF35271263AA4C200BFD9B8 /* Rsync in Frameworks */,
 				D63A4C6725DBB8E400C3B9BF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +157,7 @@
 		D66B288F25D694B500A2ACF8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BF35272263AA6A500BFD9B8 /* Rsync-Dependency */,
 				D63A4C6625DBB8E400C3B9BF /* WebKit.framework */,
 			);
 			name = Frameworks;
@@ -269,7 +271,7 @@
 			);
 			name = "Svija Sync";
 			packageProductDependencies = (
-				4B523015263979200000C946 /* Rsync */,
+				4BF35270263AA4C200BFD9B8 /* Rsync */,
 			);
 			productName = SvijaSync;
 			productReference = D6F2085425C94475005DAC78 /* Svija Sync.app */;
@@ -300,7 +302,7 @@
 			);
 			mainGroup = D6F2084B25C94475005DAC78;
 			packageReferences = (
-				4B523014263979200000C946 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */,
+				4BF3526F263AA4C200BFD9B8 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */,
 			);
 			productRefGroup = D6F2085525C94475005DAC78 /* Products */;
 			projectDirPath = "";
@@ -554,7 +556,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SvijaSync/SvijaSync.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 12;
@@ -596,7 +598,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4B523014263979200000C946 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */ = {
+		4BF3526F263AA4C200BFD9B8 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/svijasvg/Rsync-Dependency.git";
 			requirement = {
@@ -607,9 +609,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4B523015263979200000C946 /* Rsync */ = {
+		4BF35270263AA4C200BFD9B8 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4B523014263979200000C946 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */;
+			package = 4BF3526F263AA4C200BFD9B8 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */;
 			productName = Rsync;
 		};
 /* End XCSwiftPackageProductDependency section */

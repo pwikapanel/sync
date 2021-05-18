@@ -153,28 +153,32 @@ class HomeViewModel: HomeViewModelInterface  {
     }
 
     func uploadCheck(_ connection: SiteConnection) -> UploadFolderCheck {
+        
         let url = FolderAccess.promptDirectoryPermissionIfRequired(bookmarkKey: connection.uuid)
+        
         defer {
             url?.stopAccessingSecurityScopedResource()
         }
+        
         guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else { return .localPathExpired }
+        
         guard localUrl.path == connection.localPath else { return .localPathExpired }
         
         guard FileManager.default.fileExists(atPath: connection.localSyncPath) else { return .syncFolderNotFound }
-
+        
         let subFolders = (try? FileManager.default.contentsOfDirectory(
                             at: localUrl.appendingPathComponent("sync"),
                             includingPropertiesForKeys: nil,
                             options: []).filter { $0.hasDirectoryPath } ) ?? []
-
+        
         if subFolders.isEmpty { return .syncFolderEmpty }
-
+        
         if subFolders.count < Constant.syncSubFolderCount { return .subfoldersMissing }
-
+        
         guard let name = Utility.shared.nickName else { return .nickNameMissing }
-
+        
         if !connection.lastOwner.isEmpty, connection.lastOwner != name { return .serverNameMismatch }
-
+        debugPrint("HomeViewModel 181 returns .success")
         return .success
     }
 

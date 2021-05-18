@@ -14,50 +14,76 @@ extension HomeViewController {
     func uploadAction(_ connection: SiteConnection) {
         activity.invalidate()
         if uploadButton.state == .on {
+            
             prepareUploadAction(connection)
+            
         } else {
             pauseUpload()
         }
     }
 
     func scheduleUploadAction(_ connection: SiteConnection) {
+        debugPrint("HomeUploadHandler.swift 26")
         activity.schedule{ [weak self] handler in
-            guard let self = self else { return }
+            guard let self = self else {
+                
+                return }
             guard !self.isUploadInProgress else {
+                
                 handler(.finished)
+                
                 return
             }
+            debugPrint("HomeUploadHandler.swift 36 NOT EXCUTED WHEN STALLS")
             self.startUpload(connection) {
                 handler(.finished)
             }
+            
         }
     }
 
     func prepareUploadAction(_ connection: SiteConnection) {
+        
         render(.upload)
+        
         viewModel.fetchLastOwner(connection: connection) { [weak self] status in
             guard let self = self else { return }
             switch status {
             case .fail:
+                
                 self.render(.noActivity)
+                
                 self.showStatusLabel(Text.Home.StatusLabel.unableToConnect)
+                
                 self.uploadButton.setNextState()
+                
                 return
             case .projectFolderMissing:
+                
                 self.render(.noActivity)
+                
                 self.uploadButton.setNextState()
+                
                 self.showAlert(message: Text.Alert.Title.projectFolderMissing, info: Text.Alert.Message.projectFolderMissing)
+                
                 return
-            case .success: break
+            case .success:
+                debugPrint("HomeUploadHandler.swift 70")
+                break
             }
             self.statusHandler.handleUploadCheck(self.viewModel.uploadCheck(connection) , connection) { [weak self] status in
                 guard let self = self else { return }
                 guard status else {
+                    
                     self.render(.noActivity)
+                    
                     self.uploadButton.setNextState()
+                    
                     return
                 }
+                
                 self.scheduleUploadAction(connection)
+                debugPrint("HomeUploadHnadler.swift 86 LAST DEBUG LINE WHEN STALLS")
             }
         }
     }

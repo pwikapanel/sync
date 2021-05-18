@@ -69,6 +69,7 @@ extension HomeViewController {
     }
 
     func startUpload(_ connection: SiteConnection, finish: (() -> ())?) {
+        debugPrint("———————————————————————————————————— HomeUploadHnadler.swift begin func startUpload()")
         debugPrint(Date())
         isUploadInProgress = true
         viewModel.upload(connection: connection) { [weak self] status in
@@ -79,6 +80,7 @@ extension HomeViewController {
             self.isUploadInProgress = false
             finish?()
             debugPrint(Date())
+            debugPrint("———————————————————————————————————— HomeUploadHnadler.swift end func startUpload()")
         }
     }
 

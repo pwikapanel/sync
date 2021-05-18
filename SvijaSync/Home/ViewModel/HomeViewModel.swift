@@ -96,18 +96,27 @@ class HomeViewModel: HomeViewModelInterface  {
     }
 
     func upload(connection: SiteConnection, completion: @escaping (Bool) -> ()) {
+        debugPrint("HomeViewModel 99")
+
         let localUrl = FolderAccess.promptDirectoryPermissionIfRequired(bookmarkKey: connection.uuid)
+        debugPrint("HomeViewModel 102")
         guard localUrl?.startAccessingSecurityScopedResource() ?? false else {
             completion(false)
             return
         }
+        debugPrint("HomeViewModel 107")
         let lastNamePath = connection.localSyncPath + ".last"
+        debugPrint("HomeViewModel 109")
+
         do {
+            debugPrint("HomeViewModel 112")
             guard let name = Utility.shared.nickName else {
+                debugPrint("HomeViewModel 114")
                 completion(false)
                 return
             }
             try name.write(toFile: lastNamePath, atomically: true, encoding: .utf8)
+            debugPrint("HomeViewModel 119")
             RsyncManager.shared.execute(.upload, connection: connection) {  result in
                 switch result {
                 case let .success(status): completion(status)
@@ -115,10 +124,13 @@ class HomeViewModel: HomeViewModelInterface  {
                     localUrl?.stopAccessingSecurityScopedResource()
                 }
             }
-
+            debugPrint("HomeViewModel 127")
         } catch {
+            debugPrint("HomeViewModel 129")
             completion(false)
+            debugPrint("HomeViewModel 131")
         }
+        debugPrint("HomeViewModel 133")
     }
 
     func downloadCheck(_ connection: SiteConnection) -> DownloadFolderCheck {

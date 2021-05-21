@@ -23,18 +23,18 @@ extension HomeViewController {
     }
 
     func scheduleUploadAction(_ connection: SiteConnection) {
-        debugPrint("HomeUploadHandler.swift 26")
+        debugPrint("HomeUploadHandler.scheduleUploadAction 26")
         activity.schedule{ [weak self] handler in
             guard let self = self else {
-                
+                debugPrint("HomeUploadHandler.scheduleUploadAction 29 NOT PRINTED WHEN UPLOAD FAILS")
                 return }
             guard !self.isUploadInProgress else {
-                
+                debugPrint("HomeUploadHandler.scheduleUploadAction 32 NOT PRINTED WHEN UPLOAD FAILS")
                 handler(.finished)
-                
+                debugPrint("HomeUploadHandler.scheduleUploadAction 34 NOT PRINTED WHEN UPLOAD FAILS")
                 return
             }
-            debugPrint("HomeUploadHandler.swift 36 NOT EXCUTED WHEN STALLS")
+            debugPrint("HomeUploadHandler.scheduleUploadAction 36 NOT PRINTED WHEN UPLOAD FAILS")
             self.startUpload(connection) {
                 handler(.finished)
             }
@@ -68,7 +68,7 @@ extension HomeViewController {
                 
                 return
             case .success:
-                debugPrint("HomeUploadHandler.swift 70")
+                debugPrint("HomeUploadHandler.prepareUploadAction 70")
                 break
             }
             self.statusHandler.handleUploadCheck(self.viewModel.uploadCheck(connection) , connection) { [weak self] status in
@@ -83,7 +83,7 @@ extension HomeViewController {
                 }
                 
                 self.scheduleUploadAction(connection)
-                debugPrint("HomeUploadHnadler.swift 86 LAST DEBUG LINE WHEN STALLS")
+                debugPrint("HomeUploadHandler.prepareUploadAction 86 LAST DEBUG LINE WHEN STALLS")
             }
         }
     }

@@ -12,12 +12,11 @@ import Rsync
 extension HomeViewController {
 
     func uploadAction(_ connection: SiteConnection) {
-        activity.invalidate()
         if uploadButton.state == .on {
-            debugPrint("Upload action")
+            debugPrint("👤 Start Upload action")
             prepareUploadAction(connection)
         } else {
-            debugPrint("Pause action")
+            debugPrint("👤 Pause Upload action")
             pauseUpload()
         }
     }
@@ -26,6 +25,7 @@ extension HomeViewController {
         uploadStatus = .ready
         render(.upload)
         uploadStatus = .lastOwnerCheck
+        startBackgroundActivityActivity()
         viewModel.fetchLastOwner(connection: connection) { [weak self] status in
             guard let self = self, self.checkAndProcessLastOwnerStatus(status)  else { return }
             self.statusHandler.handleUploadCheck(self.viewModel.uploadCheck(connection) , connection) { [weak self] status in
@@ -33,6 +33,7 @@ extension HomeViewController {
                 guard status else {
                     self.render(.noActivity)
                     self.uploadButton.setNextState()
+                    self.stopBackgroundActivityActivity()
                     return
                 }
                 self.scheduleUploadAction(connection)
@@ -61,23 +62,45 @@ extension HomeViewController {
 
     private func pauseUpload() {
         uploadStatus = .terminate
-        activity.invalidate()
+        uploadOperationQueue?.cancelAllOperations()
+        uploadOperationQueue = nil
+        stopBackgroundActivityActivity()
         showStatusLabel(Text.Home.StatusLabel.uploadingPaused)
         stopSync()
     }
 
-    private func scheduleUploadAction(_ connection: SiteConnection) {
-        activity.schedule{ [weak self] handler in
-            debugPrint("Scheduler starting...")
-            guard let self = self else { return }
-            guard self.uploadStatus == .completed || self.uploadStatus == .lastOwnerCheck else {
-                handler(.finished)
-                return
-            }
-            self.startUpload(connection) {
-                handler(.finished)
+    func uploadOperation(_ connection: SiteConnection) -> Operation {
+        let operation = AsyncOperation()
+        var date: Date?
+        operation.executeBlock = { [weak self] callback in
+            date = Date()
+            self?.startUpload(connection) {
+                callback()
             }
         }
+        operation.completionBlock = { [weak self] in
+            debugPrint("🚀 Current upload iteration completed")
+            guard let self = self else { return }
+            if self.uploadStatus == .completed {
+                let diff = TimeInterval(date?.secondsDifferenceNow ?? 0)
+                let delay = diff > Constant.uploadSyncTimeInterval ? 0 : Constant.uploadSyncTimeInterval - diff
+                debugPrint("🚀 Starting next upload iteration with delay \(delay)")
+                DispatchQueue.global().asyncAfter(deadline: .now() + delay) { [weak self] in
+                    guard let self = self else { return }
+                    self.uploadOperationQueue?.addOperation(self.uploadOperation(connection))
+                }
+            } else {
+                debugPrint("🚀 Ending full upload operation queue")
+                self.stopBackgroundActivityActivity()
+            }
+        }
+        return operation
+    }
+
+    private func scheduleUploadAction(_ connection: SiteConnection) {
+        debugPrint("🚀 Starting upload operation queue")
+        uploadOperationQueue = OperationQueue()
+        uploadOperationQueue?.addOperation(uploadOperation(connection))
     }
 
     private func startUpload(_ connection: SiteConnection, finish: (() -> ())?) {

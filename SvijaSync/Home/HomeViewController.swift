@@ -29,14 +29,13 @@ class HomeViewController: NSViewController {
     let viewModel: HomeViewModelInterface = HomeViewModel()
     var connections: [SiteConnection] = []
     var selectedConnection: SiteConnection?
-    var uploadStatus: UploadStatus = .ready {
-        didSet {
-            debugPrint("Upload status: ", uploadStatus.rawValue)
-        }
-    }
+    var uploadStatus: UploadStatus = .ready
     var currentState: HomeViewState = .noActivity
     let statusHandler = HomeSyncStatusHandler()
-    let activity = ActivityScheduler()
+    var uploadOperationQueue: OperationQueue?
+    let myBackgroundActivity = ProcessInfo.processInfo
+    var backgroundActivityToken: NSObjectProtocol?
+
 
     var uploadProgressIndex = 0
 
@@ -168,6 +167,15 @@ extension HomeViewController {
         viewModel.stop { [weak self] in
             self?.render(.noActivity)
         }
+    }
+
+    func stopBackgroundActivityActivity() {
+        guard let token = self.backgroundActivityToken else { return }
+        ProcessInfo.processInfo.endActivity(token)
+    }
+
+    func startBackgroundActivityActivity() {
+        backgroundActivityToken = myBackgroundActivity.beginActivity(options: .background, reason: "important network tasks")
     }
 
 }

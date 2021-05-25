@@ -22,6 +22,7 @@
 		D64FB0B225F1F3450026473F /* CharacterSetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FB0B125F1F3450026473F /* CharacterSetExtensions.swift */; };
 		D64FB0B525F1F3760026473F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FB0B425F1F3760026473F /* Validation.swift */; };
 		D65FBCA1265C9D0000CC0610 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = D65FBCA0265C9D0000CC0610 /* Rsync */; };
+		D65FBD2B265D181300CC0610 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
 		D66C0CD825DA887500818063 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0CD725DA887500818063 /* NewsView.swift */; };
 		D66C0CDB25DA891000818063 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0CDA25DA891000818063 /* NewsViewModel.swift */; };
 		D67B060425CE83520021C8C9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B060325CE83520021C8C9 /* Utility.swift */; };
@@ -44,7 +45,6 @@
 		D6F2085825C94475005DAC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F2085725C94475005DAC78 /* AppDelegate.swift */; };
 		D6F2085C25C9447A005DAC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
 		D6F2085F25C9447A005DAC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
-		D6F340DC25E13F7200DA85D7 /* ActivityScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F340DB25E13F7200DA85D7 /* ActivityScheduler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +63,7 @@
 		D64A1C8325D41270009B8BB2 /* CodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtension.swift; sourceTree = "<group>"; };
 		D64FB0B125F1F3450026473F /* CharacterSetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetExtensions.swift; sourceTree = "<group>"; };
 		D64FB0B425F1F3760026473F /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		D65FBD2A265D181300CC0610 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		D66C0CD725DA887500818063 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		D66C0CDA25DA891000818063 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		D67B060325CE83520021C8C9 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		D6F2085E25C9447A005DAC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6F2086025C9447A005DAC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6F2086125C9447A005DAC78 /* SvijaSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SvijaSync.entitlements; sourceTree = "<group>"; };
-		D6F340DB25E13F7200DA85D7 /* ActivityScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityScheduler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,7 +211,7 @@
 				D64A1C7D25D40E96009B8BB2 /* Constants.swift */,
 				D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */,
 				D67B060325CE83520021C8C9 /* Utility.swift */,
-				D6F340DB25E13F7200DA85D7 /* ActivityScheduler.swift */,
+				D65FBD2A265D181300CC0610 /* AsyncOperation.swift */,
 				D6EBE34B25CE497000498A04 /* Storage.swift */,
 				D6E3076225CE99D000806F0C /* FolderAccess.swift */,
 				D60EFBC225D54965003931BB /* SiteConnectionOperation.swift */,
@@ -354,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6A0F99325DDFDF800DBD5B0 /* ImageView.swift in Sources */,
+				D65FBD2B265D181300CC0610 /* AsyncOperation.swift in Sources */,
 				D6E641E525DA9FAB00262B13 /* FileManagerExtensions.swift in Sources */,
 				D6DF3B6225CEBFFF00D24D9C /* PreferenceViewController.swift in Sources */,
 				D67B060425CE83520021C8C9 /* Utility.swift in Sources */,
@@ -378,7 +379,6 @@
 				D6AE0E15265A652D0038DFAE /* UploadStatus.swift in Sources */,
 				D60EFBC325D54965003931BB /* SiteConnectionOperation.swift in Sources */,
 				D64A1C7E25D40E96009B8BB2 /* Constants.swift in Sources */,
-				D6F340DC25E13F7200DA85D7 /* ActivityScheduler.swift in Sources */,
 				D69C997825CED49300642A55 /* PreferenceViewModel.swift in Sources */,
 				D6E641DC25DA9C1C00262B13 /* PreferenceHelpView.swift in Sources */,
 				D63FDA4525E1443F000929C0 /* HomeUploadHandler.swift in Sources */,

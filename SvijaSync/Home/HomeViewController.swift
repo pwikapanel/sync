@@ -29,7 +29,11 @@ class HomeViewController: NSViewController {
     let viewModel: HomeViewModelInterface = HomeViewModel()
     var connections: [SiteConnection] = []
     var selectedConnection: SiteConnection?
-    var isUploadInProgress = false
+    var uploadStatus: UploadStatus = .ready {
+        didSet {
+            debugPrint("Upload status: ", uploadStatus.rawValue)
+        }
+    }
     var currentState: HomeViewState = .noActivity
     let statusHandler = HomeSyncStatusHandler()
     let activity = ActivityScheduler()

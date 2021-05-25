@@ -14,42 +14,20 @@ extension HomeViewController {
     func uploadAction(_ connection: SiteConnection) {
         activity.invalidate()
         if uploadButton.state == .on {
+            debugPrint("Upload action")
             prepareUploadAction(connection)
         } else {
+            debugPrint("Pause action")
             pauseUpload()
         }
     }
 
-    func scheduleUploadAction(_ connection: SiteConnection) {
-        activity.schedule{ [weak self] handler in
-            guard let self = self else { return }
-            guard !self.isUploadInProgress else {
-                handler(.finished)
-                return
-            }
-            self.startUpload(connection) {
-                handler(.finished)
-            }
-        }
-    }
-
-    func prepareUploadAction(_ connection: SiteConnection) {
+    private func prepareUploadAction(_ connection: SiteConnection) {
+        uploadStatus = .ready
         render(.upload)
+        uploadStatus = .lastOwnerCheck
         viewModel.fetchLastOwner(connection: connection) { [weak self] status in
-            guard let self = self else { return }
-            switch status {
-            case .fail:
-                self.render(.noActivity)
-                self.showStatusLabel(Text.Home.StatusLabel.unableToConnect)
-                self.uploadButton.setNextState()
-                return
-            case .projectFolderMissing:
-                self.render(.noActivity)
-                self.uploadButton.setNextState()
-                self.showAlert(message: Text.Alert.Title.projectFolderMissing, info: Text.Alert.Message.projectFolderMissing)
-                return
-            case .success: break
-            }
+            guard let self = self, self.checkAndProcessLastOwnerStatus(status)  else { return }
             self.statusHandler.handleUploadCheck(self.viewModel.uploadCheck(connection) , connection) { [weak self] status in
                 guard let self = self else { return }
                 guard status else {
@@ -62,23 +40,55 @@ extension HomeViewController {
         }
     }
 
-    func pauseUpload() {
+    private func checkAndProcessLastOwnerStatus(_ status: LastOwnerFetchCheck) -> Bool {
+        switch status {
+        case .fail:
+            render(.noActivity)
+            showStatusLabel(Text.Home.StatusLabel.unableToConnect)
+            uploadButton.setNextState()
+            uploadStatus = .terminate
+            return false
+        case .projectFolderMissing:
+            render(.noActivity)
+            uploadButton.setNextState()
+            showAlert(message: Text.Alert.Title.projectFolderMissing, info: Text.Alert.Message.projectFolderMissing)
+            uploadStatus = .terminate
+            return false
+        case .success:
+            return true
+        }
+    }
+
+    private func pauseUpload() {
+        uploadStatus = .terminate
         activity.invalidate()
         showStatusLabel(Text.Home.StatusLabel.uploadingPaused)
         stopSync()
     }
 
-    func startUpload(_ connection: SiteConnection, finish: (() -> ())?) {
-        debugPrint(Date())
-        isUploadInProgress = true
+    private func scheduleUploadAction(_ connection: SiteConnection) {
+        activity.schedule{ [weak self] handler in
+            debugPrint("Scheduler starting...")
+            guard let self = self else { return }
+            guard self.uploadStatus == .completed || self.uploadStatus == .lastOwnerCheck else {
+                handler(.finished)
+                return
+            }
+            self.startUpload(connection) {
+                handler(.finished)
+            }
+        }
+    }
+
+    private func startUpload(_ connection: SiteConnection, finish: (() -> ())?) {
+        uploadStatus = .uploading
         viewModel.upload(connection: connection) { [weak self] status in
             guard let self = self else { return }
             DispatchQueue.main.async { [weak self] in
                 self?.uploadProgressNext(error: !status)
             }
-            self.isUploadInProgress = false
+            self.uploadStatus = .completed
             finish?()
-            debugPrint(Date())
         }
     }
 

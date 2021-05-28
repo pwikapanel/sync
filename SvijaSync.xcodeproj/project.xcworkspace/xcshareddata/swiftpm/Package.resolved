@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Rsync",
-        "repositoryURL": "https://github.com/rajeshbeats/rsync-macos-utility",
+        "repositoryURL": "https://github.com/svijasvg/Rsync-Utility.git",
         "state": {
           "branch": null,
-          "revision": "ad055b9f43d46dabc3c684dc843d49d41f6946e4",
-          "version": "1.0.5"
+          "revision": "e1cfbe4577661a738525b4f006152c1d2d1a973a",
+          "version": "1.0.6"
         }
       }
     ]

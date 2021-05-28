@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B52D2D72660E3AF00441348 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4B52D2D62660E3AF00441348 /* Rsync */; };
 		D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		D60EFBB225D4F042003931BB /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
 		D60EFBB925D4F1CB003931BB /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
@@ -21,7 +22,6 @@
 		D64A1C8425D41270009B8BB2 /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A1C8325D41270009B8BB2 /* CodableExtension.swift */; };
 		D64FB0B225F1F3450026473F /* CharacterSetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FB0B125F1F3450026473F /* CharacterSetExtensions.swift */; };
 		D64FB0B525F1F3760026473F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FB0B425F1F3760026473F /* Validation.swift */; };
-		D65FBCA1265C9D0000CC0610 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = D65FBCA0265C9D0000CC0610 /* Rsync */; };
 		D65FBD2B265D181300CC0610 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
 		D66C0CD825DA887500818063 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0CD725DA887500818063 /* NewsView.swift */; };
 		D66C0CDB25DA891000818063 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0CDA25DA891000818063 /* NewsViewModel.swift */; };
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D65FBCA1265C9D0000CC0610 /* Rsync in Frameworks */,
+				4B52D2D72660E3AF00441348 /* Rsync in Frameworks */,
 				D63A4C6725DBB8E400C3B9BF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +272,7 @@
 			);
 			name = "Svija Sync";
 			packageProductDependencies = (
-				D65FBCA0265C9D0000CC0610 /* Rsync */,
+				4B52D2D62660E3AF00441348 /* Rsync */,
 			);
 			productName = SvijaSync;
 			productReference = D6F2085425C94475005DAC78 /* Svija Sync.app */;
@@ -303,7 +303,7 @@
 			);
 			mainGroup = D6F2084B25C94475005DAC78;
 			packageReferences = (
-				D65FBC9F265C9D0000CC0610 /* XCRemoteSwiftPackageReference "rsync-macos-utility" */,
+				4B52D2D52660E3AF00441348 /* XCRemoteSwiftPackageReference "Rsync-Utility" */,
 			);
 			productRefGroup = D6F2085525C94475005DAC78 /* Products */;
 			projectDirPath = "";
@@ -600,20 +600,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D65FBC9F265C9D0000CC0610 /* XCRemoteSwiftPackageReference "rsync-macos-utility" */ = {
+		4B52D2D52660E3AF00441348 /* XCRemoteSwiftPackageReference "Rsync-Utility" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rajeshbeats/rsync-macos-utility";
+			repositoryURL = "https://github.com/svijasvg/Rsync-Utility.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.5;
+				kind = exactVersion;
+				version = 1.0.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D65FBCA0265C9D0000CC0610 /* Rsync */ = {
+		4B52D2D62660E3AF00441348 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D65FBC9F265C9D0000CC0610 /* XCRemoteSwiftPackageReference "rsync-macos-utility" */;
+			package = 4B52D2D52660E3AF00441348 /* XCRemoteSwiftPackageReference "Rsync-Utility" */;
 			productName = Rsync;
 		};
 /* End XCSwiftPackageProductDependency section */

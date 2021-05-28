@@ -29,6 +29,7 @@ extension HomeViewController {
     }
 
     private func cancelDownload() {
+        stopBackgroundActivityActivity()
         statusLabel.isHidden = false
         statusLabel.stringValue = Text.Home.StatusLabel.downloadingCancelled
         showAlert(message: Text.Alert.Title.downloadCanceled, info: Text.Alert.Message.downloadCanceled)
@@ -37,9 +38,11 @@ extension HomeViewController {
 
     private func startDownload(_ connection: SiteConnection) {
         render(.download)
+        startBackgroundActivityActivity()
         let currentDate = Date()
         viewModel.download(connection: connection) { [weak self] status in
             self?.handleDownloadResponse(status, since: currentDate)
+            self?.stopBackgroundActivityActivity()
         }
     }
 

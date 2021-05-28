@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BF35271263AA4C200BFD9B8 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4BF35270263AA4C200BFD9B8 /* Rsync */; };
+		4B52D2D72660E3AF00441348 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4B52D2D62660E3AF00441348 /* Rsync */; };
 		D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		D60EFBB225D4F042003931BB /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
 		D60EFBB925D4F1CB003931BB /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
@@ -22,6 +22,7 @@
 		D64A1C8425D41270009B8BB2 /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A1C8325D41270009B8BB2 /* CodableExtension.swift */; };
 		D64FB0B225F1F3450026473F /* CharacterSetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FB0B125F1F3450026473F /* CharacterSetExtensions.swift */; };
 		D64FB0B525F1F3760026473F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FB0B425F1F3760026473F /* Validation.swift */; };
+		D65FBD2B265D181300CC0610 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
 		D66C0CD825DA887500818063 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0CD725DA887500818063 /* NewsView.swift */; };
 		D66C0CDB25DA891000818063 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0CDA25DA891000818063 /* NewsViewModel.swift */; };
 		D67B060425CE83520021C8C9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B060325CE83520021C8C9 /* Utility.swift */; };
@@ -31,6 +32,7 @@
 		D69C997B25CED7D900642A55 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69C997A25CED7D900642A55 /* HomeViewModel.swift */; };
 		D6A0F99325DDFDF800DBD5B0 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */; };
 		D6A0F99725DEADDA00DBD5B0 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99625DEADDA00DBD5B0 /* DateExtensions.swift */; };
+		D6AE0E15265A652D0038DFAE /* UploadStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AE0E14265A652D0038DFAE /* UploadStatus.swift */; };
 		D6B5EBE525E4B61900717561 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
 		D6DF3B6225CEBFFF00D24D9C /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF3B6025CEBFFF00D24D9C /* PreferenceViewController.swift */; };
 		D6DF3B6D25CECF2300D24D9C /* FormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF3B6C25CECF2300D24D9C /* FormFieldView.swift */; };
@@ -43,7 +45,6 @@
 		D6F2085825C94475005DAC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F2085725C94475005DAC78 /* AppDelegate.swift */; };
 		D6F2085C25C9447A005DAC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
 		D6F2085F25C9447A005DAC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
-		D6F340DC25E13F7200DA85D7 /* ActivityScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F340DB25E13F7200DA85D7 /* ActivityScheduler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		D64A1C8325D41270009B8BB2 /* CodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtension.swift; sourceTree = "<group>"; };
 		D64FB0B125F1F3450026473F /* CharacterSetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetExtensions.swift; sourceTree = "<group>"; };
 		D64FB0B425F1F3760026473F /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		D65FBD2A265D181300CC0610 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		D66C0CD725DA887500818063 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		D66C0CDA25DA891000818063 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		D67B060325CE83520021C8C9 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		D69C997A25CED7D900642A55 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		D6A0F99625DEADDA00DBD5B0 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		D6AE0E14265A652D0038DFAE /* UploadStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadStatus.swift; sourceTree = "<group>"; };
 		D6B5EBE425E4B61900717561 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		D6DF3B6025CEBFFF00D24D9C /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		D6DF3B6C25CECF2300D24D9C /* FormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldView.swift; sourceTree = "<group>"; };
@@ -87,7 +90,6 @@
 		D6F2085E25C9447A005DAC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6F2086025C9447A005DAC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6F2086125C9447A005DAC78 /* SvijaSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SvijaSync.entitlements; sourceTree = "<group>"; };
-		D6F340DB25E13F7200DA85D7 /* ActivityScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityScheduler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF35271263AA4C200BFD9B8 /* Rsync in Frameworks */,
+				4B52D2D72660E3AF00441348 /* Rsync in Frameworks */,
 				D63A4C6725DBB8E400C3B9BF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +152,7 @@
 				D63FDA4425E1443F000929C0 /* HomeUploadHandler.swift */,
 				D63FDA4725E1444E000929C0 /* HomeDownloadHandler.swift */,
 				D63A4C7225DC093600C3B9BF /* HomeSyncStatusHandler.swift */,
+				D6AE0E14265A652D0038DFAE /* UploadStatus.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -210,7 +213,7 @@
 				D64A1C7D25D40E96009B8BB2 /* Constants.swift */,
 				D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */,
 				D67B060325CE83520021C8C9 /* Utility.swift */,
-				D6F340DB25E13F7200DA85D7 /* ActivityScheduler.swift */,
+				D65FBD2A265D181300CC0610 /* AsyncOperation.swift */,
 				D6EBE34B25CE497000498A04 /* Storage.swift */,
 				D6E3076225CE99D000806F0C /* FolderAccess.swift */,
 				D60EFBC225D54965003931BB /* SiteConnectionOperation.swift */,
@@ -271,7 +274,7 @@
 			);
 			name = "Svija Sync";
 			packageProductDependencies = (
-				4BF35270263AA4C200BFD9B8 /* Rsync */,
+				4B52D2D62660E3AF00441348 /* Rsync */,
 			);
 			productName = SvijaSync;
 			productReference = D6F2085425C94475005DAC78 /* Svija Sync.app */;
@@ -302,7 +305,7 @@
 			);
 			mainGroup = D6F2084B25C94475005DAC78;
 			packageReferences = (
-				4BF3526F263AA4C200BFD9B8 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */,
+				4B52D2D52660E3AF00441348 /* XCRemoteSwiftPackageReference "Rsync-Utility" */,
 			);
 			productRefGroup = D6F2085525C94475005DAC78 /* Products */;
 			projectDirPath = "";
@@ -353,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6A0F99325DDFDF800DBD5B0 /* ImageView.swift in Sources */,
+				D65FBD2B265D181300CC0610 /* AsyncOperation.swift in Sources */,
 				D6E641E525DA9FAB00262B13 /* FileManagerExtensions.swift in Sources */,
 				D6DF3B6225CEBFFF00D24D9C /* PreferenceViewController.swift in Sources */,
 				D67B060425CE83520021C8C9 /* Utility.swift in Sources */,
@@ -374,9 +378,9 @@
 				D66C0CD825DA887500818063 /* NewsView.swift in Sources */,
 				D6EBE34C25CE497000498A04 /* Storage.swift in Sources */,
 				D67DC75825D644E600FE3DDB /* NSViewExtensions.swift in Sources */,
+				D6AE0E15265A652D0038DFAE /* UploadStatus.swift in Sources */,
 				D60EFBC325D54965003931BB /* SiteConnectionOperation.swift in Sources */,
 				D64A1C7E25D40E96009B8BB2 /* Constants.swift in Sources */,
-				D6F340DC25E13F7200DA85D7 /* ActivityScheduler.swift in Sources */,
 				D69C997825CED49300642A55 /* PreferenceViewModel.swift in Sources */,
 				D6E641DC25DA9C1C00262B13 /* PreferenceHelpView.swift in Sources */,
 				D63FDA4525E1443F000929C0 /* HomeUploadHandler.swift in Sources */,
@@ -461,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -517,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -598,20 +602,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4BF3526F263AA4C200BFD9B8 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */ = {
+		4B52D2D52660E3AF00441348 /* XCRemoteSwiftPackageReference "Rsync-Utility" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/svijasvg/Rsync-Dependency.git";
+			repositoryURL = "https://github.com/svijasvg/Rsync-Utility.git";
 			requirement = {
-				branch = dev;
-				kind = branch;
+				kind = exactVersion;
+				version = 1.0.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4BF35270263AA4C200BFD9B8 /* Rsync */ = {
+		4B52D2D62660E3AF00441348 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4BF3526F263AA4C200BFD9B8 /* XCRemoteSwiftPackageReference "Rsync-Dependency" */;
+			package = 4B52D2D52660E3AF00441348 /* XCRemoteSwiftPackageReference "Rsync-Utility" */;
 			productName = Rsync;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -5,4 +5,4 @@
 **Svija Synch 1.0.1**
 ---------------------
 
-Fixed bug where uploading would stall for no reason.
+Now working on new interface ideas.

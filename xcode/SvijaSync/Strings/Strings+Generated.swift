@@ -148,7 +148,7 @@ internal enum L10n {
 
   internal enum Preference {
     internal enum Button {
-      /// Add
+      /// Local Folder
       internal static let add = L10n.tr("Localizable", "Preference.Button.add")
       /// Done
       internal static let done = L10n.tr("Localizable", "Preference.Button.done")
@@ -198,7 +198,7 @@ internal enum L10n {
       internal static let url = L10n.tr("Localizable", "Preference.TextPlaceholder.url")
     }
     internal enum Tooltip {
-      /// Save this configuration and select a project folder
+      /// Select a project folder and save this configuration
       internal static let add = L10n.tr("Localizable", "Preference.Tooltip.add")
       /// The connect ID from the email you received
       internal static let connectID = L10n.tr("Localizable", "Preference.Tooltip.connectID")

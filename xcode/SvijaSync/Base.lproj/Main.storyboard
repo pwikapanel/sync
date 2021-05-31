@@ -495,7 +495,7 @@ YWJsZSAgwrfCoMK3IHVwZGF0ZWQgdmVyc2lvbiBvZiBHU0FQIMK3wqBTdmlqYSBTeW5jIFYxLjAuMA
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" id="rgx-tq-eKF">
-                                        <rect key="frame" x="238" y="10" width="89" height="32"/>
+                                        <rect key="frame" x="223" y="10" width="104" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Update" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ndj-xR-6p0">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -510,7 +510,7 @@ YWJsZSAgwrfCoMK3IHVwZGF0ZWQgdmVyc2lvbiBvZiBHU0FQIMK3wqBTdmlqYSBTeW5jIFYxLjAuMA
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     </box>
                                     <secureTextField verticalHuggingPriority="750" id="5Xv-cT-j5M">
-                                        <rect key="frame" x="89" y="17" width="145" height="21"/>
+                                        <rect key="frame" x="89" y="17" width="130" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="••••••••" drawsBackground="YES" usesSingleLineMode="YES" id="p0V-7d-buu">
                                             <font key="font" metaFont="system"/>

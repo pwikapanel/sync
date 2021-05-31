@@ -3,7 +3,7 @@
   SvijaSync
 
   Created by Rajesh Ramachandrakurup on 11/2/21.
-
+  
 */
 
 // Home
@@ -96,7 +96,7 @@
 "Preference.Button.undo" = "Undo";
 "Preference.Button.modify" = "Modify";
 "Preference.Button.remove" = "Remove";
-"Preference.Button.add" = "Add";
+"Preference.Button.add" = "Local Folder";
 "Preference.Button.makeDefault" = "Make Default";
 "Preference.Button.done" = "Done";
 "Preference.Button.update" = "Update";
@@ -114,7 +114,7 @@
 "Preference.ListHeader.localFolder" = "Project Folder";
 
 // Preference tooltips
-"Preference.Tooltip.add" = "Save this configuration and select a project folder";
+"Preference.Tooltip.add" = "Select a project folder and save this configuration";
 "Preference.Tooltip.update" = "Update this configuration and select a project folder";
 "Preference.Tooltip.undo" = "Undo all changes";
 "Preference.Tooltip.remove" = "Delete the selected configuration";

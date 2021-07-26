@@ -170,7 +170,7 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Button.update")
     }
     internal enum Help {
-      /// Visit <a href="https://docs.svija.love">docs.svija.love</a> for help and information.
+      /// Visit <a href="https://tech.svija.love">tech.svija.love</a> for help and information.
       internal static let html = L10n.tr("Localizable", "Preference.Help.html")
     }
     internal enum Label {

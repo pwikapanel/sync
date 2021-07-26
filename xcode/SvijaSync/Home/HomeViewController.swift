@@ -79,6 +79,26 @@ class HomeViewController: NSViewController {
         NSWorkspace.shared.open(url)
     }
 
+    @IBAction func cacheButtonAction(_ sender: Any) {
+        guard let connection = selectedConnection, let url = connection.cacheUrl else { return }
+        NSWorkspace.shared.open(url)
+    }
+
+    @IBAction func siteButtonAction(_ sender: Any) {
+        guard let connection = selectedConnection, let url = connection.siteUrl else { return }
+        NSWorkspace.shared.open(url)
+    }
+    
+    @IBAction func folderButtonAction(_ sender: Any ) {
+        guard let connection = selectedConnection else { return }
+        let myAlert = NSAlert.init()
+        myAlert.messageText = "Project Folder"
+        myAlert.informativeText = "This functionality has not yet been programmed. Don't forget to check if the folder still exists!"
+        myAlert.informativeText  = connection.localPath
+        myAlert.addButton(withTitle: "Je comprends.")
+        myAlert.runModal()
+    }
+    
     @IBAction func popupButtonSelectionChange(_ sender: Any) {
         resetStatus()
         connectionDidChange()

@@ -5,6 +5,6 @@
 **Svija Synch 1.0.1**
 ---------------------
 
-Now working on new interface ideas.
+Working on Folder button in Home/HomeViewController.swift, near line 96
 
 Changed repo url

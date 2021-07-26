@@ -404,6 +404,9 @@ Click the gear icon to get started.</string>
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="cacheButtonAction:" target="XfG-lQ-9wD" id="vpc-FK-ctu"/>
+                                        </connections>
                                     </button>
                                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VW3-kK-1Dc">
                                         <rect key="frame" x="112" y="28" width="28" height="28"/>
@@ -412,6 +415,9 @@ Click the gear icon to get started.</string>
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="siteButtonAction:" target="XfG-lQ-9wD" id="WP3-hZ-y8W"/>
+                                        </connections>
                                     </button>
                                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7tY-Ib-KY4">
                                         <rect key="frame" x="159" y="28" width="28" height="28"/>
@@ -420,6 +426,9 @@ Click the gear icon to get started.</string>
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="folderButtonAction:" target="XfG-lQ-9wD" id="9lF-oT-cvA"/>
+                                        </connections>
                                     </button>
                                     <button id="k5v-mb-ueS">
                                         <rect key="frame" x="206" y="28" width="28" height="28"/>

@@ -22,7 +22,10 @@ class HomeViewController: NSViewController {
     @IBOutlet weak var popupButton: NSPopUpButton!
     @IBOutlet weak var preferenceButton: NSButton!
     @IBOutlet weak var adminButton: NSButton!
-    
+    @IBOutlet weak var cacheButton: NSButton!
+    @IBOutlet weak var siteButton: NSButton!
+    @IBOutlet weak var folderButton: NSButton!
+
     @IBOutlet weak var statusLabel: NSTextField!
     @IBOutlet weak var statusImageView: ImageView!
 
@@ -54,6 +57,7 @@ class HomeViewController: NSViewController {
         render(.refreshList)
         preferenceButton.toolTip = Text.Home.Tooltip.preferenceButton
         adminButton.toolTip = Text.Home.Tooltip.adminButton
+        
         downloadButton.toolTip = Text.Home.Tooltip.downloadButton
         uploadButton.toolTip = Text.Home.Tooltip.uploadButton
     }

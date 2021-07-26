@@ -28,6 +28,7 @@
 "Home.Tooltip.downloadButton" = "Update computer files to match the website";
 "Home.Tooltip.uploadButton" = "Update the website to match computer files";
 "Home.Tooltip.adminButton" = "Click to connect to Svija Admin for the selected site";
+"Home.Tooltip.cacheButton" = "Click to clear the website cache";
 
 // News
 

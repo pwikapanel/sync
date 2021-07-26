@@ -122,6 +122,8 @@ internal enum L10n {
     internal enum Tooltip {
       /// Click to connect to Svija Admin for the selected site
       internal static let adminButton = L10n.tr("Localizable", "Home.Tooltip.adminButton")
+      /// Click to clear the website cache
+      internal static let cacheButton = L10n.tr("Localizable", "Home.Tooltip.cacheButton")
       /// Update computer files to match the website
       internal static let downloadButton = L10n.tr("Localizable", "Home.Tooltip.downloadButton")
       /// Configure website profiles

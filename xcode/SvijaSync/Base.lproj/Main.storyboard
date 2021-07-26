@@ -387,7 +387,7 @@ Click the gear icon to get started.</string>
                                         </textFieldCell>
                                     </textField>
                                     <button id="JUz-3z-bcn">
-                                        <rect key="frame" x="65" y="28" width="28" height="28"/>
+                                        <rect key="frame" x="18" y="28" width="28" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="admin off" imagePosition="only" alignment="center" alternateImage="admin on" imageScaling="proportionallyUpOrDown" inset="2" id="ZtG-nB-ZBm">
                                             <behavior key="behavior" lightByContents="YES"/>
@@ -396,6 +396,30 @@ Click the gear icon to get started.</string>
                                         <connections>
                                             <action selector="adminButtonAction:" target="XfG-lQ-9wD" id="FBj-Nv-tnC"/>
                                         </connections>
+                                    </button>
+                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Zx-C2-Xhe">
+                                        <rect key="frame" x="65" y="28" width="28" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cache off" imagePosition="only" alignment="center" alternateImage="cache on" imageScaling="proportionallyUpOrDown" inset="2" id="DIR-JH-xVr">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VW3-kK-1Dc">
+                                        <rect key="frame" x="112" y="28" width="28" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="site off" imagePosition="only" alignment="center" alternateImage="site on" imageScaling="proportionallyUpOrDown" inset="2" id="Z98-Ke-pEm">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7tY-Ib-KY4">
+                                        <rect key="frame" x="159" y="28" width="28" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="folder off" imagePosition="only" alignment="center" alternateImage="folder on" imageScaling="proportionallyUpOrDown" inset="2" id="1NG-zm-imN">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
                                     </button>
                                     <button id="k5v-mb-ueS">
                                         <rect key="frame" x="206" y="28" width="28" height="28"/>
@@ -408,54 +432,47 @@ Click the gear icon to get started.</string>
                                             <action selector="preferenceButtonAction:" target="XfG-lQ-9wD" id="dU1-B6-R7d"/>
                                         </connections>
                                     </button>
-                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VW3-kK-1Dc">
-                                        <rect key="frame" x="159" y="28" width="28" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="site off" imagePosition="only" alignment="center" alternateImage="site on" imageScaling="proportionallyUpOrDown" inset="2" id="Z98-Ke-pEm">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                    </button>
-                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Zx-C2-Xhe">
-                                        <rect key="frame" x="112" y="28" width="28" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cache off" imagePosition="only" alignment="center" alternateImage="cache on" imageScaling="proportionallyUpOrDown" inset="2" id="DIR-JH-xVr">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                    </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QGT-0S-IBR">
-                                        <rect key="frame" x="61" y="9" width="37" height="14"/>
+                                        <rect key="frame" x="11" y="9" width="37" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Admin" id="6td-P0-E0w">
-                                            <font key="font" metaFont="system" size="11"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Admin" id="6td-P0-E0w">
+                                            <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nuB-ys-4jg">
-                                        <rect key="frame" x="107" y="9" width="38" height="14"/>
+                                        <rect key="frame" x="58" y="9" width="38" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Cache" id="Ida-h9-XDa">
-                                            <font key="font" metaFont="system" size="11"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Cache" id="Ida-h9-XDa">
+                                            <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Url-OZ-hvT">
-                                        <rect key="frame" x="161" y="9" width="25" height="14"/>
+                                        <rect key="frame" x="112" y="9" width="25" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Site" id="IbB-Nr-QJe">
-                                            <font key="font" metaFont="system" size="11"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Site" id="IbB-Nr-QJe">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNm-EP-pMs">
+                                        <rect key="frame" x="152" y="9" width="38" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Folder" id="ccg-vU-MuY">
+                                            <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TBD-9f-TJu">
-                                        <rect key="frame" x="200" y="9" width="40" height="14"/>
+                                        <rect key="frame" x="198" y="9" width="40" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Set Up" id="607-Fj-O9e">
-                                            <font key="font" metaFont="system" size="11"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Set Up" id="607-Fj-O9e">
+                                            <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -470,9 +487,12 @@ Click the gear icon to get started.</string>
                     </view>
                     <connections>
                         <outlet property="adminButton" destination="JUz-3z-bcn" id="k0z-fx-aad"/>
+                        <outlet property="cacheButton" destination="1Zx-C2-Xhe" id="amR-tG-IEh"/>
                         <outlet property="downloadButton" destination="iBg-Ol-B9f" id="Frh-Hd-p9Z"/>
+                        <outlet property="folderButton" destination="7tY-Ib-KY4" id="43e-43-3Ld"/>
                         <outlet property="popupButton" destination="HxC-lg-efN" id="zG6-bM-ENx"/>
                         <outlet property="preferenceButton" destination="k5v-mb-ueS" id="7NO-7D-rdv"/>
+                        <outlet property="siteButton" destination="VW3-kK-1Dc" id="ewq-Br-Z5l"/>
                         <outlet property="statusImageView" destination="xn9-ik-5Xq" id="y2l-5y-wGV"/>
                         <outlet property="statusLabel" destination="sYY-rn-r74" id="BrR-qq-Gmv"/>
                         <outlet property="uploadButton" destination="apZ-fp-42K" id="5FK-hk-PSd"/>
@@ -608,7 +628,7 @@ Click the gear icon to get started.</string>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
                                                                 <tableCellView identifier="URLCell" id="CBN-ve-xik">
-                                                                    <rect key="frame" x="14" y="0.0" width="182" height="28"/>
+                                                                    <rect key="frame" x="4" y="0.0" width="182" height="28"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="EbK-VF-9Wk">
@@ -640,7 +660,7 @@ Click the gear icon to get started.</string>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
                                                                 <tableCellView id="jpj-yE-iyB">
-                                                                    <rect key="frame" x="204" y="0.0" width="302" height="28"/>
+                                                                    <rect key="frame" x="194" y="0.0" width="302" height="28"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="bD3-Pb-b82">
@@ -792,6 +812,8 @@ Click the gear icon to get started.</string>
         <image name="admin on" width="28" height="28"/>
         <image name="cache off" width="28" height="28"/>
         <image name="cache on" width="28" height="28"/>
+        <image name="folder off" width="28" height="28"/>
+        <image name="folder on" width="28" height="28"/>
         <image name="settings off" width="28" height="28"/>
         <image name="settings on" width="28" height="28"/>
         <image name="site off" width="28" height="28"/>

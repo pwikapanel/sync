@@ -27,8 +27,11 @@
 "Home.Tooltip.preferenceButton" = "Configure website profiles";
 "Home.Tooltip.downloadButton" = "Update computer files to match the website";
 "Home.Tooltip.uploadButton" = "Update the website to match computer files";
-"Home.Tooltip.adminButton" = "Click to connect to Svija Admin for the selected site";
-"Home.Tooltip.cacheButton" = "Click to clear the website cache";
+"Home.Tooltip.adminButton" = "Connect to Svija Admin";
+"Home.Tooltip.cacheButton" = "Clear the website cache";
+"Home.Tooltip.siteButton" = "Visit the website";
+"Home.Tooltip.folderButton" = "Open the project folder in the Finder";
+
 
 // News
 

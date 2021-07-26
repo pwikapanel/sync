@@ -120,14 +120,18 @@ internal enum L10n {
       internal static let uploadingPaused = L10n.tr("Localizable", "Home.StatusLabel.uploadingPaused")
     }
     internal enum Tooltip {
-      /// Click to connect to Svija Admin for the selected site
+      /// Connect to Svija Admin
       internal static let adminButton = L10n.tr("Localizable", "Home.Tooltip.adminButton")
-      /// Click to clear the website cache
+      /// Clear the website cache
       internal static let cacheButton = L10n.tr("Localizable", "Home.Tooltip.cacheButton")
       /// Update computer files to match the website
       internal static let downloadButton = L10n.tr("Localizable", "Home.Tooltip.downloadButton")
+      /// Open the project folder in the Finder
+      internal static let folderButton = L10n.tr("Localizable", "Home.Tooltip.folderButton")
       /// Configure website profiles
       internal static let preferenceButton = L10n.tr("Localizable", "Home.Tooltip.preferenceButton")
+      /// Visit the website
+      internal static let siteButton = L10n.tr("Localizable", "Home.Tooltip.siteButton")
       /// Select a different website
       internal static let sitePopupWithList = L10n.tr("Localizable", "Home.Tooltip.sitePopupWithList")
       /// Click on the gear icon to configure your website

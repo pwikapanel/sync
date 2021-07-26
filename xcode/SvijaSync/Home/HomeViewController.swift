@@ -57,7 +57,10 @@ class HomeViewController: NSViewController {
         render(.refreshList)
         preferenceButton.toolTip = Text.Home.Tooltip.preferenceButton
         adminButton.toolTip = Text.Home.Tooltip.adminButton
-        
+        cacheButton.toolTip = Text.Home.Tooltip.cacheButton
+        siteButton.toolTip = Text.Home.Tooltip.siteButton
+        folderButton.toolTip = Text.Home.Tooltip.folderButton
+
         downloadButton.toolTip = Text.Home.Tooltip.downloadButton
         uploadButton.toolTip = Text.Home.Tooltip.uploadButton
     }

@@ -82,8 +82,22 @@ class HomeViewController: NSViewController {
     @IBAction func cacheButtonAction(_ sender: Any) {
         guard let connection = selectedConnection, let url = connection.cacheUrl else { return }
         NSWorkspace.shared.open(url)
+        //viewModel.clearSiteCache { [weak self] succ in
+        //    DispatchQueue.main.async {
+        //        debugPrint("returned: " + succ)
+        //    }
+        //}
     }
 
+    //private func cacheClearedAlert(succ) {
+    //    let myAlert = NSAlert.init()
+    //    myAlert.messageText = "Cache Cleared"
+    //    myAlert.informativeText = "To access, please update the site in the configuration screen"
+    //    myAlert.addButton(withTitle: "OK")
+    //    myAlert.runModal()
+    //}
+
+    
     @IBAction func siteButtonAction(_ sender: Any) {
         guard let connection = selectedConnection, let url = connection.siteUrl else { return }
         NSWorkspace.shared.open(url)

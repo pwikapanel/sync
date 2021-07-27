@@ -96,11 +96,19 @@ class HomeViewController: NSViewController {
         defer {
             url?.stopAccessingSecurityScopedResource()
         }
-        guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else { return }
+        guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else {
+            debugPrint ("⚠️ 100")
+            return }
 
-        guard localUrl.path == connection.localPath else { return  }
+        guard localUrl.path == connection.localPath else {
+            let myAlert = NSAlert.init()
+            myAlert.messageText = "Permission Needed"
+            myAlert.informativeText = "To access " + connection.localPath + ", please update the site in the configuration screen"
+            myAlert.addButton(withTitle: "OK")
+            myAlert.runModal()
+            return  }
 
-        guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else { return }
+        guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else {  debugPrint("⚠️105"); return }
 
         let configuration: NSWorkspace.OpenConfiguration = NSWorkspace.OpenConfiguration()
         configuration.promptsUserIfNeeded = true

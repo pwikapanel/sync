@@ -91,12 +91,23 @@ class HomeViewController: NSViewController {
     
     @IBAction func folderButtonAction(_ sender: Any ) {
         guard let connection = selectedConnection else { return }
-        let myAlert = NSAlert.init()
-        myAlert.messageText = "Project Folder"
-        myAlert.informativeText = "This functionality has not yet been programmed. Don't forget to check if the folder still exists!"
-        myAlert.informativeText  = connection.localPath
-        myAlert.addButton(withTitle: "Je comprends.")
-        myAlert.runModal()
+
+        let url = FolderAccess.promptDirectoryPermissionIfRequired(bookmarkKey: connection.uuid)
+        defer {
+            url?.stopAccessingSecurityScopedResource()
+        }
+        guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else { return }
+
+        guard localUrl.path == connection.localPath else { return  }
+
+        guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else { return }
+
+        let configuration: NSWorkspace.OpenConfiguration = NSWorkspace.OpenConfiguration()
+        configuration.promptsUserIfNeeded = true
+
+        let finder = NSWorkspace.shared.urlForApplication(withBundleIdentifier: "com.apple.finder")
+        
+        NSWorkspace.shared.open([localUrl], withApplicationAt: finder!, configuration: configuration)
     }
     
     @IBAction func popupButtonSelectionChange(_ sender: Any) {

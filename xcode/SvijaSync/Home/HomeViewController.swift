@@ -79,24 +79,105 @@ class HomeViewController: NSViewController {
         NSWorkspace.shared.open(url)
     }
 
-    @IBAction func cacheButtonAction(_ sender: Any) {
-        guard let connection = selectedConnection, let url = connection.cacheUrl else { return }
-        NSWorkspace.shared.open(url)
-        //viewModel.clearSiteCache { [weak self] succ in
-        //    DispatchQueue.main.async {
-        //        debugPrint("returned: " + succ)
-        //    }
-        //}
+    private func handleClientError(_ error: Error){
+      debugPrint("⚠️⚠️⚠️⚠️ 83: \(error) connection failed")
+    }
+    
+    private func handleServerError(_ res: URLResponse?) {
+        debugPrint("⚠️⚠️⚠️⚠️ 87: \(res!) wrong server response")
     }
 
-    //private func cacheClearedAlert(succ) {
-    //    let myAlert = NSAlert.init()
-    //    myAlert.messageText = "Cache Cleared"
-    //    myAlert.informativeText = "To access, please update the site in the configuration screen"
-    //    myAlert.addButton(withTitle: "OK")
-    //    myAlert.runModal()
-    //}
-
+    private func setupViews(){
+        let myAlert = NSAlert.init()
+        myAlert.messageText = "cache cleared"
+        myAlert.informativeText = "To acceease update the site in the configuration screen"
+        myAlert.addButton(withTitle: "OK")
+        myAlert.runModal()
+    }
+    
+    @IBAction func cacheButtonAction(_ sender: Any) {
+        guard let connection = selectedConnection, let url = connection.cacheUrl else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            if let error = error {
+                self.handleClientError(error)
+                return
+            }
+            guard let httpResponse = response as? HTTPURLResponse,
+                (200...299).contains(httpResponse.statusCode) else {
+                self.handleServerError(response)
+                return
+            }
+            debugPrint("⚠️⚠️⚠️⚠️  103 \(url) " + String(data: data!, encoding: .utf8)!)
+            DispatchQueue.main.async {
+                        self.setupViews()
+                    }
+        }
+        task.resume()
+        
+        //NSWorkspace.shared.open(url)
+    }
+    
+    
+    /*
+     
+     func startLoad() {
+         let url = URL(string: "https://www.example.com/")!
+         let task = URLSession.shared.dataTask(with: url) { data, response, error in
+             if let error = error {
+                 self.handleClientError(error)
+                 return
+             }
+             guard let httpResponse = response as? HTTPURLResponse,
+                 (200...299).contains(httpResponse.statusCode) else {
+                 self.handleServerError(response)
+                 return
+             }
+             if let mimeType = httpResponse.mimeType, mimeType == "text/html",
+                 let data = data,
+                 let string = String(data: data, encoding: .utf8) {
+                 DispatchQueue.main.async {
+                     self.webView.loadHTMLString(string, baseURL: url)
+                 }
+             }
+         }
+         task.resume()
+     }
+     */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     @IBAction func siteButtonAction(_ sender: Any) {
         guard let connection = selectedConnection, let url = connection.siteUrl else { return }
@@ -120,7 +201,8 @@ class HomeViewController: NSViewController {
             myAlert.informativeText = "To access " + connection.localPath + ", please update the site in the configuration screen"
             myAlert.addButton(withTitle: "OK")
             myAlert.runModal()
-            return  }
+            return
+        }
 
         guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else {  debugPrint("⚠️105"); return }
 

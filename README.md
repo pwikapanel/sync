@@ -5,6 +5,10 @@
 **Svija Synch 1.0.1**
 ---------------------
 
-Working on Folder button in Home/HomeViewController.swift, near line 96
+The caching is done.
 
-Changed repo url
+The folder access is still borked:
+- svija.dev gives can't access (the folder doesn't exist)
+- svija.love gives generic alert that needs to be fixed (folder does exist)
+
+next steps: auto-set default from main panel, alphabetical site list

@@ -297,6 +297,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="650" height="114"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyp-qP-1c2" userLabel="lower bar background">
+                                <rect key="frame" x="0.0" y="0.0" width="650" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="bottom" imageScaling="proportionallyDown" image="main-lower-bar" id="zPV-0F-1Ng"/>
+                            </imageView>
                             <customView autoresizesSubviews="NO" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHL-Oi-mxd">
                                 <rect key="frame" x="0.0" y="0.0" width="650" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -375,10 +380,10 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="17e-1U-D5S">
-                                        <rect key="frame" x="252" y="3" width="394" height="36"/>
+                                        <rect key="frame" x="252" y="2" width="394" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" selectable="YES" id="gm9-8q-IOt">
-                                            <font key="font" metaFont="smallSystem"/>
+                                            <font key="font" metaFont="system" size="11"/>
                                             <string key="title">Svija Sync synchronizes your computer with your website.
 Click the gear icon to get started.</string>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -386,7 +391,7 @@ Click the gear icon to get started.</string>
                                         </textFieldCell>
                                     </textField>
                                     <button id="JUz-3z-bcn">
-                                        <rect key="frame" x="18" y="28" width="28" height="28"/>
+                                        <rect key="frame" x="60" y="18" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="admin off" imagePosition="only" alignment="center" alternateImage="admin on" imageScaling="proportionallyUpOrDown" inset="2" id="ZtG-nB-ZBm">
                                             <behavior key="behavior" lightByContents="YES"/>
@@ -396,19 +401,8 @@ Click the gear icon to get started.</string>
                                             <action selector="adminButtonAction:" target="XfG-lQ-9wD" id="FBj-Nv-tnC"/>
                                         </connections>
                                     </button>
-                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Zx-C2-Xhe">
-                                        <rect key="frame" x="65" y="28" width="28" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cache off" imagePosition="only" alignment="center" alternateImage="cache on" imageScaling="proportionallyUpOrDown" inset="2" id="DIR-JH-xVr">
-                                            <behavior key="behavior" lightByContents="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="cacheButtonAction:" target="XfG-lQ-9wD" id="vpc-FK-ctu"/>
-                                        </connections>
-                                    </button>
                                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VW3-kK-1Dc">
-                                        <rect key="frame" x="112" y="28" width="28" height="28"/>
+                                        <rect key="frame" x="13" y="18" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="site off" imagePosition="only" alignment="center" alternateImage="site on" imageScaling="proportionallyUpOrDown" inset="2" id="Z98-Ke-pEm">
                                             <behavior key="behavior" lightByContents="YES"/>
@@ -419,7 +413,7 @@ Click the gear icon to get started.</string>
                                         </connections>
                                     </button>
                                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7tY-Ib-KY4">
-                                        <rect key="frame" x="159" y="28" width="28" height="28"/>
+                                        <rect key="frame" x="156" y="18" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="folder off" imagePosition="only" alignment="center" alternateImage="folder on" imageScaling="proportionallyUpOrDown" inset="2" id="1NG-zm-imN">
                                             <behavior key="behavior" lightByContents="YES"/>
@@ -430,7 +424,7 @@ Click the gear icon to get started.</string>
                                         </connections>
                                     </button>
                                     <button id="k5v-mb-ueS">
-                                        <rect key="frame" x="206" y="28" width="28" height="28"/>
+                                        <rect key="frame" x="201" y="18" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="settings off" imagePosition="only" alignment="center" alternateImage="settings on" imageScaling="proportionallyUpOrDown" inset="2" id="RjT-CB-Ywp">
                                             <behavior key="behavior" lightByContents="YES"/>
@@ -441,7 +435,7 @@ Click the gear icon to get started.</string>
                                         </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QGT-0S-IBR">
-                                        <rect key="frame" x="11" y="9" width="37" height="14"/>
+                                        <rect key="frame" x="58" y="10" width="37" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Admin" id="6td-P0-E0w">
                                             <font key="font" metaFont="smallSystem"/>
@@ -449,17 +443,8 @@ Click the gear icon to get started.</string>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nuB-ys-4jg">
-                                        <rect key="frame" x="58" y="9" width="38" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Cache" id="Ida-h9-XDa">
-                                            <font key="font" metaFont="smallSystem"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Url-OZ-hvT">
-                                        <rect key="frame" x="112" y="9" width="25" height="14"/>
+                                        <rect key="frame" x="18" y="10" width="25" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Site" id="IbB-Nr-QJe">
                                             <font key="font" metaFont="smallSystem"/>
@@ -468,7 +453,7 @@ Click the gear icon to get started.</string>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNm-EP-pMs">
-                                        <rect key="frame" x="152" y="9" width="38" height="14"/>
+                                        <rect key="frame" x="152" y="10" width="38" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Folder" id="ccg-vU-MuY">
                                             <font key="font" metaFont="smallSystem"/>
@@ -477,9 +462,29 @@ Click the gear icon to get started.</string>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TBD-9f-TJu">
-                                        <rect key="frame" x="198" y="9" width="40" height="14"/>
+                                        <rect key="frame" x="198" y="10" width="40" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Set Up" id="607-Fj-O9e">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Zx-C2-Xhe">
+                                        <rect key="frame" x="107" y="18" width="38" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cache off" imagePosition="only" alignment="center" alternateImage="cache on" imageScaling="proportionallyUpOrDown" inset="2" id="DIR-JH-xVr">
+                                            <behavior key="behavior" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="cacheButtonAction:" target="XfG-lQ-9wD" id="vpc-FK-ctu"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nuB-ys-4jg">
+                                        <rect key="frame" x="106" y="10" width="38" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Cache" id="Ida-h9-XDa">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -816,15 +821,16 @@ Click the gear icon to get started.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="admin off" width="28" height="28"/>
-        <image name="admin on" width="28" height="28"/>
-        <image name="cache off" width="28" height="28"/>
-        <image name="cache on" width="28" height="28"/>
-        <image name="folder off" width="28" height="28"/>
-        <image name="folder on" width="28" height="28"/>
-        <image name="settings off" width="28" height="28"/>
-        <image name="settings on" width="28" height="28"/>
-        <image name="site off" width="28" height="28"/>
-        <image name="site on" width="28" height="28"/>
+        <image name="admin off" width="38" height="38"/>
+        <image name="admin on" width="38" height="38"/>
+        <image name="cache off" width="38" height="38"/>
+        <image name="cache on" width="38" height="38"/>
+        <image name="folder off" width="38" height="38"/>
+        <image name="folder on" width="38" height="38"/>
+        <image name="main-lower-bar" width="650" height="45"/>
+        <image name="settings off" width="38" height="38"/>
+        <image name="settings on" width="38" height="38"/>
+        <image name="site off" width="38" height="38"/>
+        <image name="site on" width="38" height="38"/>
     </resources>
 </document>

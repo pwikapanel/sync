@@ -79,18 +79,25 @@ class HomeViewController: NSViewController {
         NSWorkspace.shared.open(url)
     }
 
-    private func handleClientError(_ error: Error){
-      debugPrint("⚠️⚠️⚠️⚠️ 83: \(error) connection failed")
-    }
-    
-    private func handleServerError(_ res: URLResponse?) {
-        debugPrint("⚠️⚠️⚠️⚠️ 87: \(res!) wrong server response")
-    }
+    private func cacheResponseAlert(code: Int){
+        let title: String
+        let mesg : String
 
-    private func setupViews(){
+        switch code{
+            case 2 : title = "No Internet Connection"
+            case 3 : title = "Connection Problem"
+            default: title = "Cache Cleared"
+        }
+
+        switch code{
+            case 2 : mesg = "Try visiting a website in your browser to check your connection."
+            case 3 : mesg = "To clear the cache manually, visit [your website]/c in your browser."
+            default: mesg = "All visitors will now see the most recent version of your pages."
+        }
+
         let myAlert = NSAlert.init()
-        myAlert.messageText = "cache cleared"
-        myAlert.informativeText = "To acceease update the site in the configuration screen"
+        myAlert.messageText = title
+        myAlert.informativeText = mesg
         myAlert.addButton(withTitle: "OK")
         myAlert.runModal()
     }
@@ -99,19 +106,17 @@ class HomeViewController: NSViewController {
         guard let connection = selectedConnection, let url = connection.cacheUrl else { return }
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-            if let error = error {
-                self.handleClientError(error)
+            if error != nil {
+                DispatchQueue.main.async { self.cacheResponseAlert(code: 2) }
                 return
             }
             guard let httpResponse = response as? HTTPURLResponse,
                 (200...299).contains(httpResponse.statusCode) else {
-                self.handleServerError(response)
+                DispatchQueue.main.async { self.cacheResponseAlert(code: 3) }
                 return
             }
             debugPrint("⚠️⚠️⚠️⚠️  103 \(url) " + String(data: data!, encoding: .utf8)!)
-            DispatchQueue.main.async {
-                        self.setupViews()
-                    }
+            DispatchQueue.main.async { self.cacheResponseAlert(code: 1) }
         }
         task.resume()
         

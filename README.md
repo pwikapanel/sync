@@ -11,4 +11,11 @@ The folder access is still borked:
 - svija.dev gives can't access (the folder doesn't exist)
 - svija.love gives generic alert that needs to be fixed (folder does exist)
 
-next steps: auto-set default from main panel, alphabetical site list
+next steps:
+
+- auto-set default from main panel
+- alphabetical site list
+- 3-color progress bar
+- space to start & stop uploading
+- view menu for hide others
+- sync folder selected when folder is opened

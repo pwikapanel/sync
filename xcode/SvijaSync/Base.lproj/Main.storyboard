@@ -383,7 +383,7 @@
                                         <rect key="frame" x="252" y="2" width="394" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" selectable="YES" id="gm9-8q-IOt">
-                                            <font key="font" metaFont="system" size="11"/>
+                                            <font key="font" metaFont="smallSystem"/>
                                             <string key="title">Svija Sync synchronizes your computer with your website.
 Click the gear icon to get started.</string>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>

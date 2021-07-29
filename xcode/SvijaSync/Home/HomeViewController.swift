@@ -123,84 +123,46 @@ class HomeViewController: NSViewController {
         //NSWorkspace.shared.open(url)
     }
     
-    
-    /*
-     
-     func startLoad() {
-         let url = URL(string: "https://www.example.com/")!
-         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-             if let error = error {
-                 self.handleClientError(error)
-                 return
-             }
-             guard let httpResponse = response as? HTTPURLResponse,
-                 (200...299).contains(httpResponse.statusCode) else {
-                 self.handleServerError(response)
-                 return
-             }
-             if let mimeType = httpResponse.mimeType, mimeType == "text/html",
-                 let data = data,
-                 let string = String(data: data, encoding: .utf8) {
-                 DispatchQueue.main.async {
-                     self.webView.loadHTMLString(string, baseURL: url)
-                 }
-             }
-         }
-         task.resume()
-     }
-     */
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     @IBAction func siteButtonAction(_ sender: Any) {
         guard let connection = selectedConnection, let url = connection.siteUrl else { return }
         NSWorkspace.shared.open(url)
     }
-    
+    /*
+     func downloadCheck(_ connection: SiteConnection) -> DownloadFolderCheck {
+         let url = FolderAccess.promptDirectoryPermissionIfRequired(bookmarkKey: connection.uuid)
+         defer {
+             url?.stopAccessingSecurityScopedResource()
+         }
+         guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else { return .localPathExpired }
+
+         guard localUrl.path == connection.localPath else { return .localPathExpired }
+
+         guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else { return .localPathExpired }
+
+         let subFolders = (try? FileManager.default.contentsOfDirectory(
+                             at: localUrl.appendingPathComponent("sync"),
+                             includingPropertiesForKeys: nil,
+                             options: []).filter { $0.hasDirectoryPath } ) ?? []
+         if subFolders.count >= Constant.syncSubFolderCount { return .subfoldersExists }
+         return .success
+     }
+
+     */
     @IBAction func folderButtonAction(_ sender: Any ) {
-        guard let connection = selectedConnection else { return }
+        guard let connection = selectedConnection else {
+            debugPrint ("✳️ 133")
+            return
+        }
 
         let url = FolderAccess.promptDirectoryPermissionIfRequired(bookmarkKey: connection.uuid)
         defer {
             url?.stopAccessingSecurityScopedResource()
         }
-        guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else {
-            debugPrint ("⚠️ 100")
-            return }
-
+        
+        guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else { return }
+        
         guard localUrl.path == connection.localPath else {
+            debugPrint ("✳️ 151")
             let myAlert = NSAlert.init()
             myAlert.messageText = "Permission Needed"
             myAlert.informativeText = "To access " + connection.localPath + ", please update the site in the configuration screen"
@@ -208,15 +170,15 @@ class HomeViewController: NSViewController {
             myAlert.runModal()
             return
         }
-
-        guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else {  debugPrint("⚠️105"); return }
-
+        
         let configuration: NSWorkspace.OpenConfiguration = NSWorkspace.OpenConfiguration()
+        
         configuration.promptsUserIfNeeded = true
-
+        
         let finder = NSWorkspace.shared.urlForApplication(withBundleIdentifier: "com.apple.finder")
         
-        NSWorkspace.shared.open([localUrl], withApplicationAt: finder!, configuration: configuration)
+        //NSWorkspace.shared.open([localUrl], withApplicationAt: finder!, configuration: configuration)
+        NSWorkspace.shared.activateFileViewerSelecting([localUrl])
     }
     
     @IBAction func popupButtonSelectionChange(_ sender: Any) {

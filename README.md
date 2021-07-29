@@ -6,10 +6,7 @@
 ---------------------
 
 The caching is done.
-
-The folder access is still borked:
-- svija.dev gives can't access (the folder doesn't exist)
-- svija.love gives generic alert that needs to be fixed (folder does exist)
+The folder opening is done, I just need to test it.
 
 next steps:
 
@@ -19,3 +16,4 @@ next steps:
 - space to start & stop uploading
 - view menu for hide others
 - sync folder selected when folder is opened
+

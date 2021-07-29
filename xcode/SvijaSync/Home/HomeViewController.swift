@@ -92,7 +92,7 @@ class HomeViewController: NSViewController {
         switch code{
             case 2 : mesg = "Try visiting a website in your browser to check your connection."
             case 3 : mesg = "To clear the cache manually, visit [your website]/c in your browser."
-            default: mesg = "All visitors will now see the most recent version of your pages."
+            default: mesg = "Visitors will now see the most recent version of your pages."
         }
 
         let myAlert = NSAlert.init()
@@ -150,7 +150,11 @@ class HomeViewController: NSViewController {
      */
     @IBAction func folderButtonAction(_ sender: Any ) {
         guard let connection = selectedConnection else {
-            debugPrint ("✳️ 133")
+            let myAlert = NSAlert.init()
+            myAlert.messageText = "Line 154"
+            myAlert.informativeText = "To access, please update the site in the configuration screen"
+            myAlert.addButton(withTitle: "OK")
+            myAlert.runModal()
             return
         }
 
@@ -159,13 +163,18 @@ class HomeViewController: NSViewController {
             url?.stopAccessingSecurityScopedResource()
         }
         
-        guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else { return }
+        guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else {
+            let myAlert = NSAlert.init()
+            myAlert.messageText = "Line 168"
+            myAlert.informativeText = "To access, please update the site in the configuration screen"
+            myAlert.addButton(withTitle: "OK")
+            myAlert.runModal()
+            return }
         
         guard localUrl.path == connection.localPath else {
-            debugPrint ("✳️ 151")
             let myAlert = NSAlert.init()
-            myAlert.messageText = "Permission Needed"
-            myAlert.informativeText = "To access " + connection.localPath + ", please update the site in the configuration screen"
+            myAlert.messageText = "Folder Missing"
+            myAlert.informativeText = "Impossible to access " + connection.localPath + ". please update the site in the configuration screen"
             myAlert.addButton(withTitle: "OK")
             myAlert.runModal()
             return
@@ -174,11 +183,9 @@ class HomeViewController: NSViewController {
         let configuration: NSWorkspace.OpenConfiguration = NSWorkspace.OpenConfiguration()
         
         configuration.promptsUserIfNeeded = true
-        
-        let finder = NSWorkspace.shared.urlForApplication(withBundleIdentifier: "com.apple.finder")
-        
-        //NSWorkspace.shared.open([localUrl], withApplicationAt: finder!, configuration: configuration)
-        NSWorkspace.shared.activateFileViewerSelecting([localUrl])
+        let myUrlString = localUrl.path + "/sync"
+        let myUrl = URL(fileURLWithPath: myUrlString)
+        NSWorkspace.shared.activateFileViewerSelecting([myUrl])
     }
     
     @IBAction func popupButtonSelectionChange(_ sender: Any) {

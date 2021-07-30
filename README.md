@@ -15,7 +15,6 @@ next steps:
 - alphabetical site list
 - 3-color progress bar
 - space to start & stop uploading
-- view menu for hide others
 - sync folder selected when folder is opened
 
 at end:

@@ -28,6 +28,24 @@
                                                 <action selector="preferenceButtonAction:" target="Ady-hI-5gd" id="xME-ao-IBF"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="PpQ-fV-2a7"/>
+                                        <menuItem title="Hide Application" keyEquivalent="h" id="Sld-nz-qJ8">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="yjb-9C-RYi"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="hkH-4s-L9i">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="FPB-RF-m37"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Qe1-Nn-EkK">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="SLc-MY-Sag"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Quit SvijaSync" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>

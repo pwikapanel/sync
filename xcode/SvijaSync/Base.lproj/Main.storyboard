@@ -359,6 +359,9 @@
                                         <buttonCell key="cell" type="push" title="Upload" alternateTitle="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ktc-bW-hHV">
                                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+IA
+</string>
                                         </buttonCell>
                                         <connections>
                                             <action selector="uploadButtonAction:" target="XfG-lQ-9wD" id="NwL-uX-xp8"/>
@@ -414,6 +417,7 @@ Click the gear icon to get started.</string>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="admin off" imagePosition="only" alignment="center" alternateImage="admin on" imageScaling="proportionallyUpOrDown" inset="2" id="ZtG-nB-ZBm">
                                             <behavior key="behavior" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">a</string>
                                         </buttonCell>
                                         <connections>
                                             <action selector="adminButtonAction:" target="XfG-lQ-9wD" id="FBj-Nv-tnC"/>
@@ -425,6 +429,7 @@ Click the gear icon to get started.</string>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="site off" imagePosition="only" alignment="center" alternateImage="site on" imageScaling="proportionallyUpOrDown" inset="2" id="Z98-Ke-pEm">
                                             <behavior key="behavior" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">s</string>
                                         </buttonCell>
                                         <connections>
                                             <action selector="siteButtonAction:" target="XfG-lQ-9wD" id="WP3-hZ-y8W"/>
@@ -436,6 +441,7 @@ Click the gear icon to get started.</string>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="folder off" imagePosition="only" alignment="center" alternateImage="folder on" imageScaling="proportionallyUpOrDown" inset="2" id="1NG-zm-imN">
                                             <behavior key="behavior" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">f</string>
                                         </buttonCell>
                                         <connections>
                                             <action selector="folderButtonAction:" target="XfG-lQ-9wD" id="9lF-oT-cvA"/>
@@ -494,6 +500,7 @@ Click the gear icon to get started.</string>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cache off" imagePosition="only" alignment="center" alternateImage="cache on" imageScaling="proportionallyUpOrDown" inset="2" id="DIR-JH-xVr">
                                             <behavior key="behavior" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">c</string>
                                         </buttonCell>
                                         <connections>
                                             <action selector="cacheButtonAction:" target="XfG-lQ-9wD" id="vpc-FK-ctu"/>

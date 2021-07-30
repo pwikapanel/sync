@@ -256,6 +256,18 @@ extension HomeViewController {
         }
         let index = popupButton.index(of: selectedItem)
         selectedConnection = connections[index]
+
+        //—————————————————————————————————————————————————— added, to automatically set default
+        
+        var allConnections: [SiteConnection] {
+            guard let data: Data = Storage.value(key: Key.siteConnection), let connections = [SiteConnection].decode(data) else { return [] }
+            return connections
+        }
+
+        var connections = allConnections
+        if let index = connections.firstIndex(where: { $0.isDefault == true }) { connections[index].isDefault = false }
+        if let index = connections.firstIndex (where: { $0.uuid == selectedConnection!.uuid }) { connections[index].isDefault = true }
+        Storage.save(connections.encoded, key: Key.siteConnection)
     }
 
     func refreshConnections() {

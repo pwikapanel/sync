@@ -290,7 +290,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Svija Sync" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Svija Sync" separatorStyle="none" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -315,11 +315,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="650" height="114"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyp-qP-1c2" userLabel="lower bar background">
-                                <rect key="frame" x="0.0" y="0.0" width="650" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="bottom" imageScaling="proportionallyDown" image="main-lower-bar" id="zPV-0F-1Ng"/>
-                            </imageView>
                             <customView autoresizesSubviews="NO" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHL-Oi-mxd">
                                 <rect key="frame" x="0.0" y="0.0" width="650" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -382,7 +377,7 @@ IA
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="X9e-48-RLW"/>
                                     </imageView>
                                     <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="bYx-J6-AtU">
-                                        <rect key="frame" x="0.0" y="41" width="650" height="5"/>
+                                        <rect key="frame" x="20" y="41" width="610" height="5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     </box>
                                 </subviews>
@@ -391,6 +386,10 @@ IA
                                 <rect key="frame" x="0.0" y="44" width="650" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
+                                    <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="oaQ-4l-cqD">
+                                        <rect key="frame" x="20" y="67" width="610" height="5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </box>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="e09-Ua-bcl">
                                         <rect key="frame" x="252" y="43" width="394" height="16"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -855,7 +854,6 @@ Gw
         <image name="cache on" width="38" height="38"/>
         <image name="folder off" width="38" height="38"/>
         <image name="folder on" width="38" height="38"/>
-        <image name="main-lower-bar" width="650" height="45"/>
         <image name="settings off" width="38" height="38"/>
         <image name="settings on" width="38" height="38"/>
         <image name="site off" width="38" height="38"/>

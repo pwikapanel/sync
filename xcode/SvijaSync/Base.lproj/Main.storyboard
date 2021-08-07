@@ -670,7 +670,7 @@ Click the gear icon to get started.</string>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="EbK-VF-9Wk">
-                                                                            <rect key="frame" x="0.0" y="8" width="220" height="20"/>
+                                                                            <rect key="frame" x="0.0" y="8" width="220" height="17"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="PpV-6G-XOn">
                                                                                 <font key="font" usesAppearanceFont="YES"/>
@@ -702,7 +702,7 @@ Click the gear icon to get started.</string>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="bD3-Pb-b82">
-                                                                            <rect key="frame" x="0.0" y="8" width="235" height="20"/>
+                                                                            <rect key="frame" x="0.0" y="8" width="235" height="17"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="LEM-f0-zkV">
                                                                                 <font key="font" usesAppearanceFont="YES"/>

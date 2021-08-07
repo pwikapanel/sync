@@ -53,7 +53,8 @@ extension ConnectionListView: NSTableViewDelegate, NSTableViewDataSource {
         var text = ""
         var identifier = ""
         if tableColumn == tableView.tableColumns[0] {
-            text = (site.isDefault && items.count > 1)  ? "›" + site.server : site.server
+//        text = (site.isDefault && items.count > 1)  ? "›" + site.server : site.server
+          text = site.server
             identifier = CellIdentifiers.URLCell
             tableColumn?.headerCell.title = Text.Preference.ListHeader.url
         } else if tableColumn == tableView.tableColumns[1] {

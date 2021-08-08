@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "main-lower_any.svg",
+      "filename" : "logo any.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "main-lower_dark-title.svg",
+      "filename" : "logo dark.svg",
       "idiom" : "universal"
     }
   ],

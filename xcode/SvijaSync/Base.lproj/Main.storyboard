@@ -376,6 +376,11 @@ IA
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="X9e-48-RLW"/>
                                     </imageView>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ta3-Zt-13b" userLabel="Logo Image View">
+                                        <rect key="frame" x="489" y="8" width="136" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="main logo" id="7wG-8U-jhT"/>
+                                    </imageView>
                                     <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="bYx-J6-AtU">
                                         <rect key="frame" x="20" y="41" width="610" height="5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -527,6 +532,7 @@ Click the gear icon to get started.</string>
                         <outlet property="cacheButton" destination="1Zx-C2-Xhe" id="amR-tG-IEh"/>
                         <outlet property="downloadButton" destination="iBg-Ol-B9f" id="Frh-Hd-p9Z"/>
                         <outlet property="folderButton" destination="7tY-Ib-KY4" id="43e-43-3Ld"/>
+                        <outlet property="logoImageView" destination="Ta3-Zt-13b" id="GcW-SB-oIJ"/>
                         <outlet property="popupButton" destination="HxC-lg-efN" id="zG6-bM-ENx"/>
                         <outlet property="preferenceButton" destination="k5v-mb-ueS" id="7NO-7D-rdv"/>
                         <outlet property="siteButton" destination="VW3-kK-1Dc" id="ewq-Br-Z5l"/>
@@ -854,6 +860,7 @@ Gw
         <image name="cache on" width="38" height="38"/>
         <image name="folder off" width="38" height="38"/>
         <image name="folder on" width="38" height="38"/>
+        <image name="main logo" width="136" height="27"/>
         <image name="settings off" width="38" height="38"/>
         <image name="settings on" width="38" height="38"/>
         <image name="site off" width="38" height="38"/>

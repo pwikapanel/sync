@@ -8,9 +8,8 @@
 
 // Home
 
-"Home.Title" = "Svija Sync";
-"Home.WindowUploadTitle" = "Svija Sync · Uploading…";
-"Home.WindowDownloadTitle" = "Svija Sync · Downloading…";
+"Home.WindowUploadTitle" = "uploading…";
+"Home.WindowDownloadTitle" = "downloading…";
 "Home.Button.download" = "Download";
 "Home.Button.upload" = "Upload";
 "Home.Button.pause" = "Pause";
@@ -100,10 +99,10 @@
 "Preference.Button.undo" = "Undo";
 "Preference.Button.modify" = "Modify";
 "Preference.Button.remove" = "Remove";
-"Preference.Button.add" = "Local Folder";
+"Preference.Button.add" = "Set Folder";
 "Preference.Button.makeDefault" = "Make Default";
 "Preference.Button.done" = "Done";
-"Preference.Button.update" = "Update";
+"Preference.Button.update" = "Set Folder";
 
 "Preference.Label.nickname" = "Nickname";
 "Preference.Label.url" = "URL";

@@ -91,11 +91,9 @@ internal enum L10n {
   }
 
   internal enum Home {
-    /// Svija Sync
-    internal static let title = L10n.tr("Localizable", "Home.Title")
-    /// Svija Sync · Downloading…
+    /// downloading…
     internal static let windowDownloadTitle = L10n.tr("Localizable", "Home.WindowDownloadTitle")
-    /// Svija Sync · Uploading…
+    /// uploading…
     internal static let windowUploadTitle = L10n.tr("Localizable", "Home.WindowUploadTitle")
     internal enum Button {
       /// Cancel
@@ -154,7 +152,7 @@ internal enum L10n {
 
   internal enum Preference {
     internal enum Button {
-      /// Local Folder
+      /// Set Folder
       internal static let add = L10n.tr("Localizable", "Preference.Button.add")
       /// Done
       internal static let done = L10n.tr("Localizable", "Preference.Button.done")
@@ -166,7 +164,7 @@ internal enum L10n {
       internal static let remove = L10n.tr("Localizable", "Preference.Button.remove")
       /// Undo
       internal static let undo = L10n.tr("Localizable", "Preference.Button.undo")
-      /// Update
+      /// Set Folder
       internal static let update = L10n.tr("Localizable", "Preference.Button.update")
     }
     internal enum Help {

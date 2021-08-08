@@ -15,7 +15,7 @@ enum Key {
 enum Constant {
     static let newsUrl = "http://msg.svija.love"
 
-    static let uploadSyncTimeInterval: TimeInterval = 5.0
+    static let uploadSyncTimeInterval: TimeInterval = 4.0
     static let downloadProgressTimeInterval: TimeInterval = 1.0
     static let maxConnections = 50
     static let syncSubFolderCount = 6

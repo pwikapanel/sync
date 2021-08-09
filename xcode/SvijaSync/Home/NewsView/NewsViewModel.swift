@@ -38,13 +38,15 @@ class NewsViewModel {
                 return
             }
             let contents = string.components(separatedBy: .newlines)
-            guard contents.count > 2 else {
+            /*guard contents.count > 2 else {
                 completion(self.placeholder)
                 return
             }
             let text = contents[0]
-            let message = contents[1] + "\n" + contents[2]
-            completion(NewsData(text: text, message: message))
+            let message = contents[1] + "\n" + contents[2]*/
+          let text = string
+          let message = ""
+          completion(NewsData(text: text, message: message))
         }
     }
 }

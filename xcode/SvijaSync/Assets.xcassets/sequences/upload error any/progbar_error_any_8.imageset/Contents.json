@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "progbar_error_any_08.svg",
+      "filename" : "progress_bar_error_any_08.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "progbar_error_dark_08.svg",
+      "filename" : "progress_bar_error_dark_08.svg",
       "idiom" : "universal"
     }
   ],

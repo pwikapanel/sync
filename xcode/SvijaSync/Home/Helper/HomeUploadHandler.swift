@@ -75,9 +75,9 @@ extension HomeViewController {
     statusImageView.image = NSImage(named: image)
 
     let operation = AsyncOperation()
-    var date: Date?
+    // var date: Date?
     operation.executeBlock = { [weak self] callback in
-      date = Date()
+      // date = Date()
       self?.startUpload(connection) {
         callback()
       }
@@ -86,8 +86,8 @@ extension HomeViewController {
       debugPrint("🚀 Current upload iteration completed")
       guard let self = self else { return }
       if self.uploadStatus == .completed {
-        let diff = TimeInterval(date?.secondsDifferenceNow ?? 0)
-        //let delay = diff > Constant.uploadSyncTimeInterval ? 0 : Constant.uploadSyncTimeInterval - diff
+        // let diff = TimeInterval(date?.secondsDifferenceNow ?? 0)
+        // let delay = diff > Constant.uploadSyncTimeInterval ? 0 : Constant.uploadSyncTimeInterval - diff
         let delay = Constant.uploadSyncTimeInterval
         debugPrint("🚀 Starting next upload iteration with delay \(delay)")
         //DispatchQueue.global().asyncAfter(deadline: .now() + delay) { [weak self] in

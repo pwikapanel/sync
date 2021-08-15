@@ -238,6 +238,7 @@ extension HomeViewController {
       uploadProgressIndex = 0
       Utility.shared.isProcessRunning = false
       if (statusLabel.isHidden == true){
+        statusImageView.isHidden = true
         logoImageView.isHidden = false
       }
       popupButton.isEnabled = true

@@ -87,7 +87,8 @@ extension HomeViewController {
       guard let self = self else { return }
       if self.uploadStatus == .completed {
         let diff = TimeInterval(date?.secondsDifferenceNow ?? 0)
-        let delay = diff > Constant.uploadSyncTimeInterval ? 0 : Constant.uploadSyncTimeInterval - diff
+        //let delay = diff > Constant.uploadSyncTimeInterval ? 0 : Constant.uploadSyncTimeInterval - diff
+        let delay = Constant.uploadSyncTimeInterval
         debugPrint("🚀 Starting next upload iteration with delay \(delay)")
         //DispatchQueue.global().asyncAfter(deadline: .now() + delay) { [weak self] in
           DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in

@@ -396,7 +396,7 @@ IA
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     </box>
                                     <wkWebView wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPx-ZJ-UJx">
-                                        <rect key="frame" x="254" y="5" width="390" height="55"/>
+                                        <rect key="frame" x="274" y="5" width="370" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO">
                                             <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -424,7 +424,7 @@ Click the gear icon to get started.</string>
                                         </textFieldCell>
                                     </textField>
                                     <button id="JUz-3z-bcn">
-                                        <rect key="frame" x="60" y="18" width="38" height="38"/>
+                                        <rect key="frame" x="70" y="18" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="admin off" imagePosition="only" alignment="center" alternateImage="admin on" imageScaling="proportionallyUpOrDown" inset="2" id="ZtG-nB-ZBm">
                                             <behavior key="behavior" lightByContents="YES"/>
@@ -436,7 +436,7 @@ Click the gear icon to get started.</string>
                                         </connections>
                                     </button>
                                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VW3-kK-1Dc">
-                                        <rect key="frame" x="13" y="18" width="38" height="38"/>
+                                        <rect key="frame" x="23" y="18" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="site off" imagePosition="only" alignment="center" alternateImage="site on" imageScaling="proportionallyUpOrDown" inset="2" id="Z98-Ke-pEm">
                                             <behavior key="behavior" lightByContents="YES"/>
@@ -448,7 +448,7 @@ Click the gear icon to get started.</string>
                                         </connections>
                                     </button>
                                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7tY-Ib-KY4">
-                                        <rect key="frame" x="156" y="18" width="38" height="38"/>
+                                        <rect key="frame" x="166" y="18" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="folder off" imagePosition="only" alignment="center" alternateImage="folder on" imageScaling="proportionallyUpOrDown" inset="2" id="1NG-zm-imN">
                                             <behavior key="behavior" lightByContents="YES"/>
@@ -460,7 +460,7 @@ Click the gear icon to get started.</string>
                                         </connections>
                                     </button>
                                     <button id="k5v-mb-ueS">
-                                        <rect key="frame" x="201" y="18" width="38" height="38"/>
+                                        <rect key="frame" x="211" y="18" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="settings off" imagePosition="only" alignment="center" alternateImage="settings on" imageScaling="proportionallyUpOrDown" inset="2" id="RjT-CB-Ywp">
                                             <behavior key="behavior" lightByContents="YES"/>
@@ -471,7 +471,7 @@ Click the gear icon to get started.</string>
                                         </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QGT-0S-IBR">
-                                        <rect key="frame" x="58" y="10" width="37" height="14"/>
+                                        <rect key="frame" x="68" y="10" width="37" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Admin" id="6td-P0-E0w">
                                             <font key="font" metaFont="smallSystem"/>
@@ -480,7 +480,7 @@ Click the gear icon to get started.</string>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Url-OZ-hvT">
-                                        <rect key="frame" x="18" y="10" width="25" height="14"/>
+                                        <rect key="frame" x="28" y="10" width="25" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Site" id="IbB-Nr-QJe">
                                             <font key="font" metaFont="smallSystem"/>
@@ -489,7 +489,7 @@ Click the gear icon to get started.</string>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNm-EP-pMs">
-                                        <rect key="frame" x="152" y="10" width="38" height="14"/>
+                                        <rect key="frame" x="162" y="10" width="38" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Folder" id="ccg-vU-MuY">
                                             <font key="font" metaFont="smallSystem"/>
@@ -498,7 +498,7 @@ Click the gear icon to get started.</string>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TBD-9f-TJu">
-                                        <rect key="frame" x="198" y="10" width="40" height="14"/>
+                                        <rect key="frame" x="208" y="10" width="40" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Set Up" id="607-Fj-O9e">
                                             <font key="font" metaFont="smallSystem"/>
@@ -507,7 +507,7 @@ Click the gear icon to get started.</string>
                                         </textFieldCell>
                                     </textField>
                                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Zx-C2-Xhe">
-                                        <rect key="frame" x="107" y="18" width="38" height="38"/>
+                                        <rect key="frame" x="117" y="18" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cache off" imagePosition="only" alignment="center" alternateImage="cache on" imageScaling="proportionallyUpOrDown" inset="2" id="DIR-JH-xVr">
                                             <behavior key="behavior" lightByContents="YES"/>
@@ -519,7 +519,7 @@ Click the gear icon to get started.</string>
                                         </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nuB-ys-4jg">
-                                        <rect key="frame" x="106" y="10" width="38" height="14"/>
+                                        <rect key="frame" x="116" y="10" width="38" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Cache" id="Ida-h9-XDa">
                                             <font key="font" metaFont="smallSystem"/>
@@ -656,7 +656,7 @@ Click the gear icon to get started.</string>
                                     <scrollView autoresizesSubviews="NO" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="d8w-dC-3TK">
                                         <rect key="frame" x="0.0" y="0.0" width="469" height="137"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <clipView key="contentView" id="jqv-SW-mG3">
+                                        <clipView key="contentView" drawsBackground="NO" id="jqv-SW-mG3">
                                             <rect key="frame" x="1" y="1" width="467" height="135"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
@@ -739,6 +739,7 @@ Click the gear icon to get started.</string>
                                                     </connections>
                                                 </tableView>
                                             </subviews>
+                                            <nil key="backgroundColor"/>
                                             <edgeInsets key="contentInsets" left="0.0" right="0.0" top="33" bottom="0.0"/>
                                         </clipView>
                                         <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="4kq-ES-qnf">

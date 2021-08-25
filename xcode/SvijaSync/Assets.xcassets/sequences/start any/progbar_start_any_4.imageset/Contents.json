@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "progress_bar_start_any_04.svg",
+      "filename" : "prog_start_04_any.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "progress_bar_start_dark_04.svg",
+      "filename" : "prog_start_04_dark.svg",
       "idiom" : "universal"
     }
   ],

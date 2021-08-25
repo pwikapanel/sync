@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "icons_main_site off.svg",
+      "filename" : "icons_site off any.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "icons_main_site off dark.svg",
+      "filename" : "icons_site off dark.svg",
       "idiom" : "universal"
     }
   ],

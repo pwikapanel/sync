@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "icons_main_cache on.svg",
+      "filename" : "icons_cache on any.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "icons_main_cache on dark.svg",
+      "filename" : "icons_cache on dark.svg",
       "idiom" : "universal"
     }
   ],

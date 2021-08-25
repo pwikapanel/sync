@@ -30,6 +30,7 @@
 "Home.Tooltip.cacheButton" = "Clear the website cache";
 "Home.Tooltip.siteButton" = "Visit the website";
 "Home.Tooltip.folderButton" = "Open the project folder in the Finder";
+"Home.Tooltip.newsView" = "News and product updates";
 
 
 // News

@@ -24,7 +24,7 @@ class NewsView: NSView {
     
     newsWebView.loadHTMLString("", baseURL: nil)
     newsWebView.setValue(false, forKey: "drawsBackground")
-    toolTip = Text.Preference.Tooltip.visitLink
+    toolTip = Text.Home.Tooltip.newsView
     
     loadContent()
   }

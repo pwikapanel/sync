@@ -126,6 +126,8 @@ internal enum L10n {
       internal static let downloadButton = L10n.tr("Localizable", "Home.Tooltip.downloadButton")
       /// Open the project folder in the Finder
       internal static let folderButton = L10n.tr("Localizable", "Home.Tooltip.folderButton")
+      /// Shoo Op.
+      internal static let newsView = L10n.tr("Localizable", "Home.Tooltip.newsView")
       /// Configure website profiles
       internal static let preferenceButton = L10n.tr("Localizable", "Home.Tooltip.preferenceButton")
       /// Visit the website

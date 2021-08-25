@@ -118,25 +118,25 @@ internal enum L10n {
       internal static let uploadingPaused = L10n.tr("Localizable", "Home.StatusLabel.uploadingPaused")
     }
     internal enum Tooltip {
-      /// Connect to Svija Admin
+      /// A · connect to Svija Admin
       internal static let adminButton = L10n.tr("Localizable", "Home.Tooltip.adminButton")
-      /// Clear the website cache
+      /// C · clear the website cache
       internal static let cacheButton = L10n.tr("Localizable", "Home.Tooltip.cacheButton")
       /// Update computer files to match the website
       internal static let downloadButton = L10n.tr("Localizable", "Home.Tooltip.downloadButton")
-      /// Open the project folder in the Finder
+      /// F · open the project folder in the Finder
       internal static let folderButton = L10n.tr("Localizable", "Home.Tooltip.folderButton")
       /// News and product updates
       internal static let newsView = L10n.tr("Localizable", "Home.Tooltip.newsView")
       /// Configure website profiles
       internal static let preferenceButton = L10n.tr("Localizable", "Home.Tooltip.preferenceButton")
-      /// Visit the website
+      /// S · visit the website
       internal static let siteButton = L10n.tr("Localizable", "Home.Tooltip.siteButton")
       /// Select a different website
       internal static let sitePopupWithList = L10n.tr("Localizable", "Home.Tooltip.sitePopupWithList")
       /// Click on the gear icon to configure your website
       internal static let sitePopupWithoutList = L10n.tr("Localizable", "Home.Tooltip.sitePopupWithoutList")
-      /// Update the website to match computer files
+      /// spacebar · update the website to match computer files
       internal static let uploadButton = L10n.tr("Localizable", "Home.Tooltip.uploadButton")
     }
   }
@@ -208,7 +208,7 @@ internal enum L10n {
       internal static let add = L10n.tr("Localizable", "Preference.Tooltip.add")
       /// The connect ID from the email you received
       internal static let connectID = L10n.tr("Localizable", "Preference.Tooltip.connectID")
-      /// Close this window and go back to the home screen
+      /// Esc · close this window and go back to the home screen
       internal static let done = L10n.tr("Localizable", "Preference.Tooltip.done")
       /// Choose which website is selected at launch
       internal static let makeDefault = L10n.tr("Localizable", "Preference.Tooltip.makeDefault")

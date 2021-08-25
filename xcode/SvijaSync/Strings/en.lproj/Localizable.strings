@@ -25,11 +25,11 @@
 "Home.Tooltip.sitePopupWithoutList" = "Click on the gear icon to configure your website";
 "Home.Tooltip.preferenceButton" = "Configure website profiles";
 "Home.Tooltip.downloadButton" = "Update computer files to match the website";
-"Home.Tooltip.uploadButton" = "Update the website to match computer files";
-"Home.Tooltip.adminButton" = "Connect to Svija Admin";
-"Home.Tooltip.cacheButton" = "Clear the website cache";
-"Home.Tooltip.siteButton" = "Visit the website";
-"Home.Tooltip.folderButton" = "Open the project folder in the Finder";
+"Home.Tooltip.uploadButton" = "spacebar · update the website to match computer files";
+"Home.Tooltip.adminButton" = "A · connect to Svija Admin";
+"Home.Tooltip.cacheButton" = "C · clear the website cache";
+"Home.Tooltip.siteButton" = "S · visit the website";
+"Home.Tooltip.folderButton" = "F · open the project folder in the Finder";
 "Home.Tooltip.newsView" = "News and product updates";
 
 
@@ -124,7 +124,7 @@
 "Preference.Tooltip.remove" = "Delete the selected configuration";
 "Preference.Tooltip.modify" = "Modify the selected configuration or change the project folder";
 "Preference.Tooltip.makeDefault" = "Choose which website is selected at launch";
-"Preference.Tooltip.done" = "Close this window and go back to the home screen";
+"Preference.Tooltip.done" = "Esc · close this window and go back to the home screen";
 
 "Preference.Tooltip.nickname" = "Any name, to show who last worked on the website";
 "Preference.Tooltip.url" = "The address of the website without http or /";

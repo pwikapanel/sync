@@ -175,8 +175,8 @@ class HomeViewController: NSViewController {
     
     guard localUrl.path == connection.localPath else {
       let myAlert = NSAlert.init()
-      myAlert.messageText = "Folder Missing"
-      myAlert.informativeText = "Impossible to access " + connection.localPath + ". please update the site in the configuration screen"
+      myAlert.messageText = "Project Folder Inaccessible"
+      myAlert.informativeText = "Cannot open " + connection.localPath + "\n\nClick \"Set Up\" to modify this website and select a project folder."
       myAlert.addButton(withTitle: "OK")
       myAlert.runModal()
       return

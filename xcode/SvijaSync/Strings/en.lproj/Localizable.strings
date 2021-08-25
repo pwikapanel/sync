@@ -1,10 +1,10 @@
-/* 
-  Localizable.strings
-  SvijaSync
-
-  Created by Rajesh Ramachandrakurup on 11/2/21.
-  
-*/
+/*
+ Localizable.strings
+ SvijaSync
+ 
+ Created by Rajesh Ramachandrakurup on 11/2/21.
+ 
+ */
 
 // Home
 
@@ -36,7 +36,7 @@
 // News
 
 "News.language" = "en";
-"News.Placeholder.text" = "<h1>Svija Sync 1.0.2</h1><p>  site · A admin · C clear cache · F folder · spacebar upload/pause<br> Don't forget — you have to be logged into Svija Admin to see changes!";
+"News.Placeholder.text" = "<h1>Svija Sync 1.0.2</h1><p>To get started, click on <b>Set Up</b> and add your website credentials.<br>Connect to <b>Svija Admin</b> for modifications to be visible immediately.";
 "News.Placeholder.message" = "";
 
 // Alert

@@ -51,7 +51,7 @@ internal enum L10n {
       internal static let nothingToUpload = L10n.tr("Localizable", "Alert.Message.nothingToUpload")
       /// Re-download to continue or contact support.
       internal static let projectFolderDamaged = L10n.tr("Localizable", "Alert.Message.projectFolderDamaged")
-      /// Click the gear icon to reconfigure this website
+      /// Click "Set Up" to modify this website and select a project folder.
       internal static let projectFolderMissing = L10n.tr("Localizable", "Alert.Message.projectFolderMissing")
       /// Please select a project folder that is not named "sync".
       internal static let selectProjectFolderWithoutSync = L10n.tr("Localizable", "Alert.Message.selectProjectFolderWithoutSync")
@@ -147,7 +147,7 @@ internal enum L10n {
     internal enum Placeholder {
       /// 
       internal static let message = L10n.tr("Localizable", "News.Placeholder.message")
-      /// <h1>Svija Sync 1.0.2</h1><p>  site · A admin · C clear cache · F folder · spacebar upload/pause<br> Don't forget — you have to be logged into Svija Admin to see changes!
+      /// <h1>Svija Sync 1.0.2</h1><p>To get started, click on <b>Set Up</b> and add your website credentials.<br>Connect to <b>Svija Admin</b> for modifications to be visible immediately.
       internal static let text = L10n.tr("Localizable", "News.Placeholder.text")
     }
   }

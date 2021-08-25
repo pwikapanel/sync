@@ -22,7 +22,8 @@ class NewsView: NSView {
     textLabel.isHidden = true
     messageLabel.isHidden = true
     
-    newsWebView.loadHTMLString("", baseURL: nil)
+    newsWebView.loadHTMLString(html + Text.News.Placeholder.message + "</body></html>", baseURL: nil)
+    //newsWebView.loadHTMLString(html + "" + "</body></html>", baseURL: nil)
     newsWebView.setValue(false, forKey: "drawsBackground")
     toolTip = Text.Home.Tooltip.newsView
     

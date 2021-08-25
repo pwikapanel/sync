@@ -20,3 +20,9 @@ at end:
 - update alerts for folder-opening problems
 - remove default button
 - localize strings that are hardecoded
+
+---
+
+### Version Updates
+
+update the version in the newsView placeholder string

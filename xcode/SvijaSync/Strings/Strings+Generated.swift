@@ -147,7 +147,7 @@ internal enum L10n {
     internal enum Placeholder {
       /// 
       internal static let message = L10n.tr("Localizable", "News.Placeholder.message")
-      /// <html><head><style type='text/css'>  html, body  { margin: 0; height: 100%; overflow: hidden; }  h1, p{ font-family: '-apple-system','HelveticaNeue';             margin: 0;            padding: 0;              color: #535353; }  h1{ margin-bottom:3px; }  h1{ font-size:13; line-height:13pt; } p { font-size:11; line-height:11.5pt; }  a:link, a:visited{ text-decoration:none; color:#3273DC; } a:hover, a:active{ text-decoration:none; color:#FF00AA; }  @media (prefers-color-scheme: dark) { h1, p{ color: white; }  </style></head><body style='margin: 0;padding: 0'>  <h1>New — Keyboard Shortcuts!</h1><p>  site · A admin · C clear cache · F folder · spacebar upload/pause<br> Don't forget — you have to be logged into Svija Admin to see changes!  </body></html><!-- set colorcolumn=72 -->
+      /// <h1>Svija Sync 1.0.2</h1><p>  site · A admin · C clear cache · F folder · spacebar upload/pause<br> Don't forget — you have to be logged into Svija Admin to see changes!
       internal static let text = L10n.tr("Localizable", "News.Placeholder.text")
     }
   }

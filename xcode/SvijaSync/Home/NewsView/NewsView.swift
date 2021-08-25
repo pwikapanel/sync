@@ -24,6 +24,7 @@ class NewsView: NSView {
     
     newsWebView.loadHTMLString("", baseURL: nil)
     newsWebView.setValue(false, forKey: "drawsBackground")
+    toolTip = Text.Preference.Tooltip.visitLink
     
     loadContent()
   }
@@ -37,10 +38,12 @@ class NewsView: NSView {
   }
   
   private func update(_ data: NewsData) {
-    newsWebView.loadHTMLString(data.text, baseURL: nil)
+    //newsWebView.loadHTMLString(data.text, baseURL: nil)
+    newsWebView.loadHTMLString(html + data.text + "</body></html>", baseURL: nil)
   }
   
 }
+
 
 extension NewsView: WKNavigationDelegate {
   
@@ -57,4 +60,32 @@ extension NewsView: WKNavigationDelegate {
     }
   }
   
+}
+
+private extension NewsView {
+  
+  var html: String {
+    """
+        <html><head><style type="text/css">
+        
+        html, body  { margin: 0; height: 100%; overflow: hidden; cursor:default;}
+        
+        h1, p{ font-family: '-apple-system','HelveticaNeue';
+            margin: 0;
+           padding: 0;
+             color: #535353; }
+        
+        h1{ margin-bottom:3px; }
+        
+        h1{ font-size:13; line-height:13pt; }
+        p { font-size:11; line-height:11.5pt; }
+        
+        a:link, a:visited{ text-decoration:none; color:#3273DC; }
+        a:hover, a:active{ text-decoration:none; color:#FF00AA; }
+        
+        @media (prefers-color-scheme: dark) { h1, p{ color:#9b9b9b; }
+        
+        </style></head><body style="margin: 0;padding: 0">
+        """
+  }
 }

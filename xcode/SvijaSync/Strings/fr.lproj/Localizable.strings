@@ -51,7 +51,7 @@
 "Alert.Confirmation.Message.quitAppWhenDownload" = "Quitting will leave incomplete files on your computer. However, you can download again when you are ready.";
 
 "Alert.Title.projectFolderMissing" = "Project Folder is Missing";
-"Alert.Message.projectFolderMissing" = "Click the gear icon to reconfigure this website";
+"Alert.Message.projectFolderMissing" = "Click \"Set Up\" to modify this website and select a project folder.";
 
 "Alert.Title.projectFolderDamaged" = "Project Folder is Damaged";
 "Alert.Message.projectFolderDamaged" = "Re-download to continue or contact support.";

@@ -14,7 +14,7 @@
 "Home.Button.upload" = "Upload";
 "Home.Button.pause" = "Pause";
 "Home.Button.cancel" = "Cancel";
-"Home.Button.popupPlaceholder" = "Click gear to set up ▶";
+"Home.Button.popupPlaceholder" = "Click gear to set up ↗";
 "Home.StatusLabel.unableToConnect" = "Unable to Connect";
 "Home.StatusLabel.uploadingPaused" = "Uploading Paused";
 "Home.StatusLabel.downloadingCancelled" = "Download Canceled";

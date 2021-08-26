@@ -102,7 +102,7 @@ internal enum L10n {
       internal static let download = L10n.tr("Localizable", "Home.Button.download")
       /// Pause
       internal static let pause = L10n.tr("Localizable", "Home.Button.pause")
-      /// Click gear to set up ▶
+      /// Click gear to set up ↗
       internal static let popupPlaceholder = L10n.tr("Localizable", "Home.Button.popupPlaceholder")
       /// Upload
       internal static let upload = L10n.tr("Localizable", "Home.Button.upload")

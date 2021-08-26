@@ -153,8 +153,8 @@ class HomeViewController: NSViewController {
   @IBAction func folderButtonAction(_ sender: Any ) {
     guard let connection = selectedConnection else {
       let myAlert = NSAlert.init()
-      myAlert.messageText = "Line 154"
-      myAlert.informativeText = "To access, please update the site in the configuration screen"
+      myAlert.messageText = "No Site Selected"
+      myAlert.informativeText = "Click \"Set Up\" to configure a website and select a project folder."
       myAlert.addButton(withTitle: "OK")
       myAlert.runModal()
       return
@@ -167,8 +167,8 @@ class HomeViewController: NSViewController {
     
     guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else {
       let myAlert = NSAlert.init()
-      myAlert.messageText = "Line 168"
-      myAlert.informativeText = "To access, please update the site in the configuration screen"
+      myAlert.messageText = "Project Folder Inaccessible"
+      myAlert.informativeText = "Cannot open " + connection.localPath + "\n\nClick \"Set Up\" to modify this website and select a project folder."
       myAlert.addButton(withTitle: "OK")
       myAlert.runModal()
       return }

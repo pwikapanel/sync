@@ -74,7 +74,7 @@ private extension NewsView {
         h1, p{ font-family: '-apple-system','HelveticaNeue';
             margin: 0;
            padding: 0;
-             color: #666; }
+             color: #555; }
         
         h1{ margin-bottom:3px; }
         

@@ -231,8 +231,7 @@ extension HomeViewController {
     currentState = state
     switch state {
     case .noActivity: // only when activity canceled, not at startup
-      //[siteButton, adminButton, cacheButton, folderButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
-      [downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
+      [siteButton, adminButton, cacheButton, folderButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
       preferenceButton.isEnabled = true
       view.window?.title = selectedConnection!.server
       uploadProgressIndex = 0
@@ -290,6 +289,7 @@ extension HomeViewController {
   func refreshConnections() {
     connections = viewModel.allConnections
     refreshPopupList()
+    
   }
   
   func refreshPopupList() {
@@ -306,6 +306,7 @@ extension HomeViewController {
     }
     connectionDidChange()
     popupButton.isEnabled = true
+    [siteButton, adminButton, cacheButton, folderButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
   }
   
   func stopSync(completion: (() -> ())? = nil) {

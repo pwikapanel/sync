@@ -73,7 +73,7 @@ extension HomeViewController {
     // added 210812
     let image = "progbar_start_any_\(uploadProgressIndex)"
     statusImageView.image = NSImage(named: image)
-
+    
     let operation = AsyncOperation()
     // var date: Date?
     operation.executeBlock = { [weak self] callback in
@@ -91,7 +91,7 @@ extension HomeViewController {
         let delay = Constant.uploadSyncTimeInterval
         debugPrint("🚀 Starting next upload iteration with delay \(delay)")
         //DispatchQueue.global().asyncAfter(deadline: .now() + delay) { [weak self] in
-          DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
           guard let self = self else { return }
           self.uploadOperationQueue?.addOperation(self.uploadOperation(connection))
         }

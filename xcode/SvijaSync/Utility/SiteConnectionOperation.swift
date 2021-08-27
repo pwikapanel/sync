@@ -32,9 +32,10 @@ class SiteConnectionOperation {
     func makeDefault(site: SiteConnection) {
         var connections = allConnections
         if let index = connections.firstIndex(where: { $0.isDefault == true }) {
-            var current = connections[index]
-            current.isDefault = false
-            connections[index] = current
+            // var current = connections[index]
+            // current.isDefault = false
+            // connections[index] = current
+            connections[index].isDefault = false
         }
 
         if let index = connections.firstIndex (where: { $0.uuid == site.uuid }) {

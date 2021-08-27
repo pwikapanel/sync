@@ -1,21 +1,20 @@
-/* 
-  Localizable.strings
-  SvijaSync
-
-  Created by Rajesh Ramachandrakurup on 11/2/21.
-  
-*/
+/*
+ Localizable.strings
+ SvijaSync
+ 
+ Created by Rajesh Ramachandrakurup on 11/2/21.
+ 
+ */
 
 // Home
 
-"Home.Title" = "Svija Sync";
-"Home.WindowUploadTitle" = "Svija Sync · Uploading…";
-"Home.WindowDownloadTitle" = "Svija Sync · Downloading…";
+"Home.WindowUploadTitle" = "uploading…";
+"Home.WindowDownloadTitle" = "downloading…";
 "Home.Button.download" = "Download";
 "Home.Button.upload" = "Upload";
 "Home.Button.pause" = "Pause";
 "Home.Button.cancel" = "Cancel";
-"Home.Button.popupPlaceholder" = "Click gear to set up ▶";
+"Home.Button.popupPlaceholder" = "Click gear to set up ↗";
 "Home.StatusLabel.unableToConnect" = "Unable to Connect";
 "Home.StatusLabel.uploadingPaused" = "Uploading Paused";
 "Home.StatusLabel.downloadingCancelled" = "Download Canceled";
@@ -26,14 +25,19 @@
 "Home.Tooltip.sitePopupWithoutList" = "Click on the gear icon to configure your website";
 "Home.Tooltip.preferenceButton" = "Configure website profiles";
 "Home.Tooltip.downloadButton" = "Update computer files to match the website";
-"Home.Tooltip.uploadButton" = "Update the website to match computer files";
-"Home.Tooltip.adminButton" = "Click to connect to Svija Admin for the selected site";
+"Home.Tooltip.uploadButton" = "spacebar · update the website to match computer files";
+"Home.Tooltip.adminButton" = "A · connect to Svija Admin";
+"Home.Tooltip.cacheButton" = "C · clear the website cache";
+"Home.Tooltip.siteButton" = "S · visit the website";
+"Home.Tooltip.folderButton" = "F · open the project folder in the Finder";
+"Home.Tooltip.newsView" = "News and product updates";
+
 
 // News
 
 "News.language" = "en";
-"News.Placeholder.text" = "Sign in to Svija Admin to see your changes";
-"News.Placeholder.message" = "Updates to your website are visible in real-time while you are signed in as an admin.\nChanges will become visible to all visitors in 24 hours. Click on the logo to connect now.";
+"News.Placeholder.text" = "<h1>Svija Sync 1.0.2</h1><p>To get started, click on <b>Set Up</b> and add your website credentials.<br>Connect to <b>Svija Admin</b> for modifications to be visible immediately.";
+"News.Placeholder.message" = "";
 
 // Alert
 
@@ -42,18 +46,18 @@
 "Alert.Ok" = "Ok";
 "Alert.Confirmation.Title.areYouSure" = "Are you sure?";
 
-"Alert.Confirmation.Message.lastOwnerChanged" = " has modified the site. Do you want to continue?";
-"Alert.Confirmation.Message.localFileErase" = "Files on your computer will be replaced. Do you want to continue?";
-"Alert.Confirmation.Message.quitAppWhenDownload" = "Quitting will leave incomplete files on your computer. However, you can download again when you are ready.";
+"Alert.Confirmation.Message.lastOwnerChanged" = " has modified the site.\nDo you want to continue?";
+"Alert.Confirmation.Message.localFileErase" = "Files on your computer will be replaced.\nDo you want to continue?";
+"Alert.Confirmation.Message.quitAppWhenDownload" = "Quitting now will leave incomplete files on your computer.\n\nDownload next time to finish synching.";
 
 "Alert.Title.projectFolderMissing" = "Project Folder is Missing";
-"Alert.Message.projectFolderMissing" = "Click the gear icon to reconfigure this website";
+"Alert.Message.projectFolderMissing" = "Click \"Set Up\" to modify this website and select a project folder.";
 
 "Alert.Title.projectFolderDamaged" = "Project Folder is Damaged";
 "Alert.Message.projectFolderDamaged" = "Re-download to continue or contact support.";
 
 "Alert.Title.downloadCanceled" = "Downloading Canceled";
-"Alert.Message.downloadCanceled" = "Download incomplete – please check your files.";
+"Alert.Message.downloadCanceled" = "Downloaded website is incomplete. Download next time to finish synching.";
 
 "Alert.Title.selectProjectFolderWithoutSync" = "Select a Different Folder";
 "Alert.Message.selectProjectFolderWithoutSync" = "Please select a project folder that is not named \"sync\".";
@@ -91,15 +95,15 @@
 "Preference.OpenPanel.message" = "Please choose a Project Folder";
 "Preference.OpenPanel.prompt" = "Choose";
 
-"Preference.Help.html" = "Visit <a href=\"https://docs.svija.love\">docs.svija.love</a> for help and information.";
+"Preference.Help.html" = "Visit <a href=\"https://tech.svija.love\">tech.svija.love</a> for help and information.";
 
 "Preference.Button.undo" = "Undo";
 "Preference.Button.modify" = "Modify";
 "Preference.Button.remove" = "Remove";
-"Preference.Button.add" = "Add";
+"Preference.Button.add" = "Set Folder";
 "Preference.Button.makeDefault" = "Make Default";
 "Preference.Button.done" = "Done";
-"Preference.Button.update" = "Update";
+"Preference.Button.update" = "Set Folder";
 
 "Preference.Label.nickname" = "Nickname";
 "Preference.Label.url" = "URL";
@@ -114,13 +118,13 @@
 "Preference.ListHeader.localFolder" = "Project Folder";
 
 // Preference tooltips
-"Preference.Tooltip.add" = "Save this configuration and select a project folder";
+"Preference.Tooltip.add" = "Select a project folder and save this configuration";
 "Preference.Tooltip.update" = "Update this configuration and select a project folder";
 "Preference.Tooltip.undo" = "Undo all changes";
 "Preference.Tooltip.remove" = "Delete the selected configuration";
 "Preference.Tooltip.modify" = "Modify the selected configuration or change the project folder";
 "Preference.Tooltip.makeDefault" = "Choose which website is selected at launch";
-"Preference.Tooltip.done" = "Close this window and go back to the home screen";
+"Preference.Tooltip.done" = "Esc · close this window and go back to the home screen";
 
 "Preference.Tooltip.nickname" = "Any name, to show who last worked on the website";
 "Preference.Tooltip.url" = "The address of the website without http or /";

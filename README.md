@@ -1,8 +1,15 @@
-*Updated 28 May, 2021 · Toulouse*
+[logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
 
-![Svija: SVG-based websites built in Adobe Illustrator](http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator")
+*Updated 27 August, 2021*
 
-**Svija Synch 1.0.1**
----------------------
+![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
-Fixed bug where uploading would stall for no reason.
+# Svija Synch 1.0.2
+
+Ready for submission to App Store!
+
+---
+
+### Version Updates
+
+update the version in the newsView placeholder string

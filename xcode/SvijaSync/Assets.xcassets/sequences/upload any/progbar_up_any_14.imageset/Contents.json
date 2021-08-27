@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "progbar_up_any_14.svg",
+      "filename" : "prog_up_14_any.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "progbar_up_dark_14.svg",
+      "filename" : "prog_up_14_dark.svg",
       "idiom" : "universal"
     }
   ],

@@ -49,8 +49,8 @@ private extension PreferenceHelpView {
         <html>
         <head>
         <style type=\"text/css\">
-            body{font-family: '-apple-system','HelveticaNeue'; font-size:13;}
-            a:link{text-decoration:none;color:#3273DC}a:visited{text-decoration:none;color:#3273DC}a:hover{text-decoration:none;color:#3273DC}a:active{text-decoration:none;color:#3273DC}
+            body{font-family: '-apple-system','HelveticaNeue'; font-size:13; cursor:default;}
+            a:link{cursor:pointer;text-decoration:none;color:#3273DC}a:visited{text-decoration:none;color:#3273DC}a:hover{text-decoration:none;color:#3273DC}a:active{text-decoration:none;color:#3273DC}
             @media (prefers-color-scheme: dark) {
             body{color: white;}
             }

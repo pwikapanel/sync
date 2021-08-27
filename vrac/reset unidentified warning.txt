@@ -1,0 +1,12 @@
+https://superuser.com/questions/897360/hide-reset-what-a-macintosh-knows-about-a-downloaded-file/897380#897380
+
+$ xattr /Path/To/File
+
+You'll get a key named
+
+    com.apple.metadata:kMDItemWhereFroms
+
+To delete this key in the Terminal, run:
+
+$ xattr -d com.apple.metadata:kMDItemWhereFroms /Path/To/File
+

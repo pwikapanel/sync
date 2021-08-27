@@ -21,6 +21,8 @@ extension SiteConnection {
     }
 
     var adminUrl: URL? { URL(string: "https://" + server + "/a") }
+    var cacheUrl: URL? { URL(string: "https://" + server + "/csync") }
+    var siteUrl:  URL? { URL(string: "https://" + server) }
 
     func copy(from con: SiteConnection) -> SiteConnection {
         return SiteConnection(uuid: uuid, server: con.server, username: con.username, password: con.password, localPath: con.localPath, timestamp: con.timestamp, isDefault: con.isDefault)

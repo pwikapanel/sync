@@ -30,6 +30,9 @@ class PreferenceViewController: NSViewController {
         super.viewDidLoad()
         preferredContentSize = view.frame.size
 
+      // hide default button because no longer used
+      makeDefaultButton.isHidden = true
+      
         nameField.stringValue = Utility.shared.nickName ?? ""
         nameField.placeholderString = Text.Preference.TextPlaceholder.nickname
         nameFieldLabel.stringValue = Text.Preference.Label.nickname

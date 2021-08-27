@@ -1,8 +1,10 @@
 [logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
 
-*Updated 22 June, 2021*
+*Updated 27 August, 2021*
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
+
+*Disposable branch to find problem with Catalina*
 
 # Svija Synch 1.0.1**
 ---------------------

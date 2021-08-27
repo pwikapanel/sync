@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Rsync",
+        "repositoryURL": "https://github.com/svijasvg/Rsync-Utility.git",
+        "state": {
+          "branch": null,
+          "revision": "e1cfbe4577661a738525b4f006152c1d2d1a973a",
+          "version": "1.0.6"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

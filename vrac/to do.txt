@@ -1,0 +1,6 @@
+next step menu bar status, not in app
+
+integrate safari into svija sync:
+https://www.youtube.com/playlist?list=PLxuTmTi5aT43MEu5Lxh_SGQgEpuE8Xvqu
+
+add last modified date & time to .last

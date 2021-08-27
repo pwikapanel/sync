@@ -4,7 +4,7 @@
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
-# Svija Synch 1.0.*
+# Svija Synch 1.0.2
 
 Ready for submission to App Store!
 

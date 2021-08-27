@@ -46,9 +46,9 @@
 "Alert.Ok" = "Ok";
 "Alert.Confirmation.Title.areYouSure" = "Are you sure?";
 
-"Alert.Confirmation.Message.lastOwnerChanged" = " has modified the site. Do you want to continue?";
-"Alert.Confirmation.Message.localFileErase" = "Files on your computer will be replaced. Do you want to continue?";
-"Alert.Confirmation.Message.quitAppWhenDownload" = "Quitting will leave incomplete files on your computer. However, you can download again when you are ready.";
+"Alert.Confirmation.Message.lastOwnerChanged" = " has modified the site.\nDo you want to continue?";
+"Alert.Confirmation.Message.localFileErase" = "Files on your computer will be replaced.\nDo you want to continue?";
+"Alert.Confirmation.Message.quitAppWhenDownload" = "Quitting now will leave incomplete files on your computer.\n\nDownload next time to finish synching.";
 
 "Alert.Title.projectFolderMissing" = "Project Folder is Missing";
 "Alert.Message.projectFolderMissing" = "Click \"Set Up\" to modify this website and select a project folder.";
@@ -57,7 +57,7 @@
 "Alert.Message.projectFolderDamaged" = "Re-download to continue or contact support.";
 
 "Alert.Title.downloadCanceled" = "Downloading Canceled";
-"Alert.Message.downloadCanceled" = "Download incomplete – please check your files.";
+"Alert.Message.downloadCanceled" = "Downloaded website is incomplete. Download next time to finish synching.";
 
 "Alert.Title.selectProjectFolderWithoutSync" = "Select a Different Folder";
 "Alert.Message.selectProjectFolderWithoutSync" = "Please select a project folder that is not named \"sync\".";

@@ -20,11 +20,11 @@ internal enum L10n {
     internal static let ok = L10n.tr("Localizable", "Alert.Ok")
     internal enum Confirmation {
       internal enum Message {
-        ///  has modified the site. Do you want to continue?
+        ///  has modified the site.\nDo you want to continue?
         internal static let lastOwnerChanged = L10n.tr("Localizable", "Alert.Confirmation.Message.lastOwnerChanged")
-        /// Files on your computer will be replaced. Do you want to continue?
+        /// Files on your computer will be replaced.\nDo you want to continue?
         internal static let localFileErase = L10n.tr("Localizable", "Alert.Confirmation.Message.localFileErase")
-        /// Quitting will leave incomplete files on your computer. However, you can download again when you are ready.
+        /// Quitting now will leave incomplete files on your computer.\n\nDownload next time to finish synching.
         internal static let quitAppWhenDownload = L10n.tr("Localizable", "Alert.Confirmation.Message.quitAppWhenDownload")
       }
       internal enum Title {
@@ -33,7 +33,7 @@ internal enum L10n {
       }
     }
     internal enum Message {
-      /// Download incomplete – please check your files.
+      /// Downloaded website is incomplete. Download next time to finish synching.
       internal static let downloadCanceled = L10n.tr("Localizable", "Alert.Message.downloadCanceled")
       /// Download interrupted – files on your computer may be incomplete.
       internal static let downloadInterrupted = L10n.tr("Localizable", "Alert.Message.downloadInterrupted")

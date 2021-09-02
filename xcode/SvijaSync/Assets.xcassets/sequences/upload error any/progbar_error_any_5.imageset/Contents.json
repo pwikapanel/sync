@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "progress_bar_error_any_05.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "progress_bar_error_dark_05.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

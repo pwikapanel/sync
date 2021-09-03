@@ -26,7 +26,7 @@ If you sign up at svija.love, we collect your:
 - company name (optional)
 - email address
 - country
-- relevant hardware and software versions
+- relevant hardware and software versions (optional)
 
 The purpose of collecting this information is to ensure that our product will function correctly for you. 
 
@@ -34,112 +34,38 @@ We do not sell or disclose this information to third parties.
 
 You may update your personal information with us at any time by emailing support@svija.love.
 
-We retain the personal information related to your purchase indefinitely to facilitate support interactions, unless you ask us to remove it. To request removal of your personal information related to a purchase, contact support@svija.love. If you do this, be sure to keep a copy of any purchased app serial numbers, as we will no longer be able to look them up once we have removed your identifying information from our system.
-
-If you use a Playdate device, asking us to remove your personal information also means that you'll lose access to certain features, such as automatic software updates and on-device game delivery. We may also be limited in our ability to provide support for any issues that may arise with your device. You'll still be able to play existing or manually-loaded games on your device.
+We retain the personal information related to your account indefinitely to facilitate support interactions, unless you ask us to remove it. To request removal of your personal information related to a purchase, contact support@svija.love.
 
 ### Support Interactions
 
 When handling support requests from you, we collect:
 
-- your email address (or Twitter handle, if you contact us via Twitter)
+- your email address (or username for other platforms)
 - any other metadata which may be contained in the email header
 - any information you provide voluntarily (such as crash logs or other diagnostics)
 
 This information is collected solely to help resolve your support inquiry. We retain support emails indefinitely in order to:
 
-have context from previous interactions which may help us answer your future questions more quickly and accurately
-identify broad trends in support requests, which may help us identify and solve problems with our products
+- have context from previous interactions which may help us answer your future questions more quickly and accurately
+- identify broad trends in support requests, which may help us identify and solve problems with our products
+
 If you would like to remove support emails you have sent, contact support@svija.love.
 
-### Usage Analytics
+### Update Notifications
 
-Some of our products may, by default, collect information about the way you use them. In the case of our software, this data is anonymized before it is sent to us, and cannot be used to personally identify you. Playdate devices may report their device ID, which can be used to identify the registered owner's account, if one exists.
+Similarly, some of our apps also check with a Svija-owned server when opened to see if there is news about the app to show you.
 
-You may opt out of usage analytics if you wish, at any time.
-
-We look only for broad patterns in the aggregated usage data, such as whether or not a particular feature is frequently used, or whether users in general prefer one setting over another. This helps us make informed decisions about the future development of our products.
-
-On Playdate devices, analytics data may include:
-
-your device ID
-remaining battery percentage
-how long wifi remains on, and how much data is sent and received
-how long the device spends in locked (clock) mode
-how much data is written to the internal storage
-how many times the display is updated
-why and when the device reboots
-how many times buttons are pressed
-errors or other messages logged by the operating system
-To be clear, we do not track individual user behavior in our products. We do not receive information from your device's displays, cameras, or microphones.
-
-We retain usage analytics data from our apps for 30 days. We retain usage analytics data from Playdate indefinitely, unless you ask us to remove yours.
-
-### Crash Logs
-
-By default, if one of our apps crashes while you're using it, anonymized data about the crash will be collected to help us identify the cause of the crash and hopefully fix it in a future update. These "crash logs" contain information such as the state of the app, operating system, and device at the time of the crash, but not your private data.
-
-Crash logs from Playdate devices include its device ID in addition to the above, which can be used to identify the registered owner's account, if one exists
-
-You may opt out of crash log reporting if you wish, at any time.
-
-In our direct-download Mac apps, you may have the option to provide your name, email address, and additional comments when submitting a crash report, but this information is not required. If you do not voluntarily provide your name or email address, nothing else in the crash log can be used to personally identify you. Whenever possible, the app will allow you to review the entire contents of the crash log before you decide whether or not to send it.
-
-Your crash log may be sent to a third-party vendor for collection and aggregation. Please refer to our list of third-party vendors.
-
-On macOS, iOS, and iPadOS devices, Apple may also collect their own app crash logs if the privacy settings of your device allow it.
-
-We retain crash logs from our apps for 30 days. We retain crash logs from Playdate indefinitely, unless you ask us to remove yours.
-
-### Update Checking
-
-By default, our Mac apps periodically check to see if a newer version of the app is available, so that you can be given the choice to update if you wish.
-
-For macOS, iOS, or iPadOS apps acquired from one of Apple's App Stores, update checking behavior is managed by the operating system, and the relevant information is processed by Apple, not Svija.
-
-For macOS apps acquired via direct-download from Svija's website, an update check request will be occasionally sent to a Svija-owned server. This request contains the name and current version of the app you are using, and a small amount of metadata about your device (such as which operating system version it is running, and your preferred language) which may be necessary to guide you to the correct update.
-
-You may turn off update checking from the app's preferences window.
-
-Similarly, some of our apps also check with a Svija-owned server when opened to see if there is news about the app to show you. We call this the "soapbox". We might use the soapbox infrequently to, for example, alert you to a significant app update or advise you on how to work around a serious bug. Soapbox requests send only similar metadata to an update check, and no private data is sent.
-
-On Playdate, an update check request will occasionally be automatically sent when the device is locked and displaying the clock screen. This request contains your device ID and current firmware version so we can determine the correct firmware version for your device, and if there are any new or updated games available for your device. The device ID can be used to identify the registered owner's account, if one exists
-
-We retain metadata from update checking and soapbox requests from our apps for one week. We retain metadata from update checking requests from Playdate indefinitely, unless you ask us to remove yours.
+We might use this feature infrequently to alert you to a significant app update or advise you on how to work around a serious bug. These requests send only similar metadata to an update check, and no private data is sent.
 
 ### Email List
 
-You may be given a one-time opportunity to sign up for our email newsletter the first time you open one of our apps. If you decline, no data will be sent. If you accept, the email address you provide will be added to the Svija mailing list.
+You will be added to our email newsletter when you create an account.
 
-You can find the button to subscribe to our Playdate mailing list and Playdate developer mailing list on the Playdate website.
-
-Our email lists are low volume (only a few messages per year is typical) and is generally limited to announcements of important product updates or significant new product releases.
+Our email newsletter is usually sent weekly and is generally limited to announcements of important product updates, significant new product releases, and helpful tips.
 
 We do not sell or otherwise disclose any portion of our email list to third-parties, with the exception of the vendor that provides our mailing list services as necessary to distribute the emails.
 
-If you join one of our email lists, we retain your email address until you ask to be removed. Instructions on how to unsubscribe are contained in all messages sent to the email list. You can also contact us directly at support@svija.love to unsubscribe for the Svija mailing list or help@play.date for the Playdate or Playdate developer mailing lists.
-
-### Activation
-
-Activation is the process by which our software applications verify that you are a legitimately licensed owner of the Svija product you're using.
-
-For macOS, iOS, or iPadOS apps acquired from one of Apple's App Stores, no activation request is sent to Svija-owned servers. Verification of your purchase may occur by processes and servers managed by Apple in this case.
-
-For apps acquired via direct-download from Svija's website, an activation request is performed when you enter a serial number to unlock the app, and may be repeated from time to time by previously activated products.
-
-The activation process consists of a single request sent to a Svija-owned server, containing encrypted information about the serial number you entered into the app. The server verifies whether the serial number is valid, and replies with a digitally signed confirmation if so. Otherwise, an error message is sent back for the app to display to you.
-
-We retain a log of activation requests from our apps for one week.
-
-Playdate devices must be registered to an account on the play.date website in order to receive certain features such as updates and on-device game delivery. We log requests to register a Playdate device with an account. We retain these logs for 30 days.
-
-### Location Services
-
-Upon connecting to an S3 server in Transmit 5, we use macOS Location Services to assist in choosing the nearest S3 endpoint. This location data stays on your Mac, and is not used for any purpose other than to assist S3 connections.
-
-See the Security & Privacy pane of System Preferences to prevent Transmit from accessing Location Services.
-
-When setting the time on a Playdate device, it will contact a third-party web service to guess which time zone you're in based on your IP address. This is solely for the purpose of trying to save you a manual step when setting the time on your device. Your time zone and the name of your region will only be stored locally on your device, and is not accessible to third-party developers. The Playdate operating system does not otherwise determine or identify your location. Playdate devices do not contain GPS hardware. Please refer to our list of third-party vendors to see who provides this service.
+If you join one of our email lists, we retain your email address until you ask to be removed. Instructions on how to unsubscribe are contained in all messages sent to the email list. You can also contact us directly at support@svija.love to unsubscribe.
 
 ### Logging
 
@@ -153,28 +79,19 @@ When you interact with our servers using a web browser, or indirectly by network
 
 We generally don't look at these logs unless a server is malfunctioning or appears to be getting accessed with malicious intent. We may look at the information in aggregate to see broad statistics such as how many times our apps have been downloaded, or from which source an unusually high amount of network traffic is arriving.
 
-We retain server logs for two weeks.
+We retain server logs indefinitely. If you wish for your server logs to be deleted, send a request to support@svija.love.
 
-### Third-Party Vendor Services Used
+### Access to Files
 
-To request removal of your personal information on any of the third-party services that we use, please reach out to those companies directly.
+Because we are in a period of experimentation and rapid development, we may need to access your website files.
 
-- Sales transactions from the Svija website are provided by Stripe.
-- Sales transactions from the Playdate website and Untitled Goose Game Shop are provided by Shopify.
-- PayPal is used for purchases from our websites when PayPal is selected as the payment method.
-- Shipping, handling, and fulfillment services are provided by Whiplash and Passport.
-- Collection and aggregation of usage analytics and crash reports is provided by Memfault, Hockey, and App Center.
-- Update checking in direct-download Mac apps is provided by the Sparkle framework.
-- IP geolocation services are provided by ipstack.
-- Email list service are provided by Sendy.
-- Web analytics services are provided by Plausible.
-- Payment processing, update checking, and license management of macOS, iOS, or iPadOS apps purchased from Apple's App Stores is managed by Apple.
-- Offsite backup services are provided by rsync.net and Dropbox.
-- Email and Twitter support requests are managed with Front.
-- Communication tools we use internally include Notion and Slack. Customer information may pass through these services as customer support processes occur.
-- We use JazzHR during our hiring process.
-- Activation services for direct-download Mac apps, and Playdate account registration are managed internally by Svija.
-- Physical prints of in-game photographs taken in "Firewatch" were processed by Canvaspop. (This feature has been discontinued.)
+If this becomes necessary, we will first ask your permission.
+
+There is an exception: occasionally important updates to our products and services require manual intervention to ensure continued service.
+
+In these cases we will update your website, which entails accessing your website content.
+
+**Please do not store private files in your Svija Account.**
 
 ### Data Not Collected
 

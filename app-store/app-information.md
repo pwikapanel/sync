@@ -37,4 +37,10 @@ Age Rating: **None** for all categories
 
 ### App Privacy
 
+Privacy Policy Url:
+```
+https://svija.love/en/privacy
+```
+
+
 

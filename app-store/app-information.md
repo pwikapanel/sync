@@ -41,6 +41,7 @@ Privacy Policy Url:
 ```
 https://svija.love/en/privacy
 ```
+We **do not** collect data.
 
 
 

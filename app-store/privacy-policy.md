@@ -4,8 +4,7 @@
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
-*Based on [this page](https://panic.com/privacy/).*  
-*To be published at [svija.love/en/privacy](https://svija.love/en/privacy).*  
+*Must be published at [svija.love/en/privacy](https://svija.love/en/privacy) · based on [this page](https://panic.com/privacy/).*  
 
 # Privacy Policy
 We strongly support your right to privacy when using our products.

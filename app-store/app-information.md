@@ -19,5 +19,7 @@ Category: Utilities, Graphics & Design
 Content Rights: No
 
 Age Rating: None
+- uncheck **Made for Kids**
+- uncheck **Restrict to 17+**
 
 

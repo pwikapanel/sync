@@ -28,4 +28,13 @@ Age Rating: **None** for all categories
 
 #### Pricing and Availability
 
-kkkk
+- Price EUR 0.0 (Free)
+- Uncheck **Offer a reduced…**
+
+**CLICK SAVE**
+
+---
+
+#### App Privacy
+
+

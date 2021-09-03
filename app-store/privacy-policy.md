@@ -1,5 +1,7 @@
 [logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
 
+### use the word resilience
+
 *Updated 3 September, 2021*
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]

@@ -6,15 +6,15 @@
 
 *Must be published at [svija.love/en/privacy](https://svija.love/en/privacy) · based on [Svija's page](https://panic.com/privacy/).*  
 
-### Overview
+### Privacy Policy
 
 We strongly support your right to privacy when using our products.
 
-Our privacy policy is simple: your data is none of our business. We make money by selling software and hardware products, not by mining your personal information.
+Your data is none of our business. Our product is software, not your personal information.
 
-To the extent that our products and websites can provide their functionality without doing so, we prefer to avoid collecting data from you.
+To the extent that our products and websites can function without doing so, we avoid collecting data from you.
 
-In the cases where we do collect data, we try to be clear about why we're collecting it, collect as little as we need, tell you how long we keep it, delete it when we no longer need it, and give you the ability to opt out of collection whenever possible.
+When we do collect data, we'll be clear about why, and we'll collect as little as possible. We'll tell you how long we keep it, delete it when we no longer need it, and let you opt out whenever possible.
 
 We use modern security measures to protect collected data, and limit access to only those employees who require access to perform their jobs. We may be legally required to disclose collected data to law enforcement or government agencies in some situations.
 

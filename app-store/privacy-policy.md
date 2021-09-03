@@ -14,7 +14,7 @@ Your data is none of our business. Our product is software, not your personal in
 
 To the extent that our products and websites can function without doing so, we avoid collecting data from you.
 
-When we do collect data, we'll be clear about why, and we'll collect as little as possible. We'll tell you how long we keep it, delete it when we no longer need it, and let you opt out whenever possible.
+When we do collect data, we'll tell you why, and we'll tell you how long we keep it, delete it when we no longer need it, and let you opt out whenever possible.
 
 We use modern security measures to protect collected data, and limit access to only those employees who require access to perform their jobs. We may be legally required to disclose collected data to law enforcement or government agencies in some situations.
 

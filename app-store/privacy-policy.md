@@ -4,7 +4,7 @@
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
-*Must be published at [svija.love/en/privacy](https://svija.love/en/privacy) · based on [Svija's page](https://panic.com/privacy/).*  
+*Must be published at [svija.love/en/privacy](https://svija.love/en/privacy) · based on [Svija's page](https://svija.love/privacy/).*  
 
 ### Privacy Policy
 
@@ -18,33 +18,23 @@ When we do collect data, we'll tell you why, and we'll tell you how long we keep
 
 We use modern security measures to protect collected data, and limit access to only those employees who require access to perform their jobs. We may be legally required to disclose collected data to law enforcement or government agencies in some situations.
 
-### Website Purchases
+### Website Sign-up
 
-If you purchase a product directly from panic.com or play.date, we collect your:
+If you sign up at svija.love, we collect your:
 
 - full name
-- billing and shipping address (if needed)
-- company name (optionally)
+- company name (optional)
 - email address
+- country
+- relevant hardware and software versions
 
-The purpose of collecting this information is to deliver your product and identify you in the future as the licensee or owner of the product. We may need to verify your identity if, for example:
+The purpose of collecting this information is to ensure that our product will function correctly for you. 
 
-- you contact us for support
-- you request a receipt or invoice
-- you request a refund
-- you request to change your shipping address
-- you request that we re-send your purchased app's serial number
-- you wish to receive discounted upgrade pricing on an app you've previously purchased
+We do not sell or disclose this information to third parties.
 
-Because addresses, both real-world and electronic, tend to change over time, having more than one piece of identifying information helps ensure we can find a record of your purchase should you need help later.
+You may update your personal information with us at any time by emailing support@svija.love.
 
-We do not sell or otherwise disclose this information to third-parties, except as required to complete your transaction and shipment. For example, we send it to our credit card processor once at the time of purchase in order to authorize the transaction, or to our shipping partners to be able to handle your shipment.
-
-We do not collect or store your credit card's number, expiration date, or CVV code. When you purchase from panic.com, your credit card details are routed directly from your web browser to our credit card processor, and are not stored on any Svija-owned server even temporarily. When you purchase from play.date or the Untitled Goose Game Shop, your credit card details are managed entirely by Shopify.
-
-You may update your personal information with us at any time by emailing support@panic.com.
-
-We retain the personal information related to your purchase indefinitely to facilitate support interactions, unless you ask us to remove it. To request removal of your personal information related to a purchase, contact support@panic.com. If you do this, be sure to keep a copy of any purchased app serial numbers, as we will no longer be able to look them up once we have removed your identifying information from our system.
+We retain the personal information related to your purchase indefinitely to facilitate support interactions, unless you ask us to remove it. To request removal of your personal information related to a purchase, contact support@svija.love. If you do this, be sure to keep a copy of any purchased app serial numbers, as we will no longer be able to look them up once we have removed your identifying information from our system.
 
 If you use a Playdate device, asking us to remove your personal information also means that you'll lose access to certain features, such as automatic software updates and on-device game delivery. We may also be limited in our ability to provide support for any issues that may arise with your device. You'll still be able to play existing or manually-loaded games on your device.
 
@@ -60,7 +50,7 @@ This information is collected solely to help resolve your support inquiry. We re
 
 have context from previous interactions which may help us answer your future questions more quickly and accurately
 identify broad trends in support requests, which may help us identify and solve problems with our products
-If you would like to remove support emails you have sent, contact support@panic.com.
+If you would like to remove support emails you have sent, contact support@svija.love.
 
 ### Usage Analytics
 
@@ -127,7 +117,7 @@ Our email lists are low volume (only a few messages per year is typical) and is 
 
 We do not sell or otherwise disclose any portion of our email list to third-parties, with the exception of the vendor that provides our mailing list services as necessary to distribute the emails.
 
-If you join one of our email lists, we retain your email address until you ask to be removed. Instructions on how to unsubscribe are contained in all messages sent to the email list. You can also contact us directly at support@panic.com to unsubscribe for the Svija mailing list or help@play.date for the Playdate or Playdate developer mailing lists.
+If you join one of our email lists, we retain your email address until you ask to be removed. Instructions on how to unsubscribe are contained in all messages sent to the email list. You can also contact us directly at support@svija.love to unsubscribe for the Svija mailing list or help@play.date for the Playdate or Playdate developer mailing lists.
 
 ### Activation
 
@@ -226,9 +216,9 @@ To opt out of certain types of data collection in one of our products:
 
 This will prevent these specific types of data from coming to us, but be aware that macOS, iOS, and iPadOS may still collect crash logs and other analytics and send them to Apple unless you have disabled that separately in the operating system's settings.
 
-Citizens of the EU may exercise their rights under the General Data Protection Regulation, such as the rights of access and erasure, by contacting us with their request. We recommend emailing the request to gdpr@panic.com.
+Citizens of the EU may exercise their rights under the General Data Protection Regulation, such as the rights of access and erasure, by contacting us with their request. We recommend emailing the request to gdpr@svija.love.
 
-Residents of California may exercise their rights under the California Consumer Privacy Act, such as the rights of access and erasure, by contacting us with their request. We recommend emailing the request to gdpr@panic.com.
+Residents of California may exercise their rights under the California Consumer Privacy Act, such as the rights of access and erasure, by contacting us with their request. We recommend emailing the request to gdpr@svija.love.
 
 If your region has recently enacted a right-to-privacy law not yet listed here, we will honor it.
 

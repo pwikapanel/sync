@@ -26,7 +26,7 @@ Age Rating: **None** for all categories
 
 ---
 
-#### Pricing and Availability
+### Pricing and Availability
 
 - Price EUR 0.0 (Free)
 - Uncheck **Offer a reduced…**
@@ -35,6 +35,6 @@ Age Rating: **None** for all categories
 
 ---
 
-#### App Privacy
+### App Privacy
 
 

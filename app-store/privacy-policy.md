@@ -91,7 +91,17 @@ There is an exception: occasionally important updates to our products and servic
 
 In these cases we will update your website, which entails accessing your website content.
 
-**Please do not store private files in your Svija Account.**
+**Please do not store private files in your Svija Account that you do not want us to see.**
+
+### Hacking and Data Leaks
+
+Given the current state of internet security, it is our expectation that Svija and our clients will eventually be hacked.
+
+Our approach to this eventuality to ensure that in the case of a hacking event, we can get ourselves and our clients back online as quickly as possible with minimal data loss.
+
+We take security seriously, but as we have seen in recent years, some of the biggest companies in the world have suffered from various kinds of digital attacks.
+
+Rather than pretend that this is not the case, we prefer to prepare for this eventuality with our eyes open.
 
 ### Data Not Collected
 
@@ -107,42 +117,18 @@ Except as described above, and as required to perform the product's core functio
 - SSH / Encryption keys
 - Contents of files you are working with
 
-Apps like Transmit, whose core purpose is to send and receive your documents over a network, will, of course, send and receive your documents at your request, but not to Svija or any other third-party. Documents in transit will be encrypted only if you use a protocol which supports encryption, such as SFTP, HTTPS, etc., in conjunction with a correctly configured server. It is your responsibility to be aware of the security implications of the file transfer protocols you choose to use. Plain FTP is not encrypted.
+Apps like Svija Sync, whose core purpose is to send and receive your documents over a network, will, of course, send and receive your documents at your request, but not to Svija or any other third-party.
 
-### Svija Sync
-
-Some of our apps provide an optional feature called Svija Sync, which replicates app configuration data across multiple devices you control. If you choose to use Svija Sync, we will collect and store the data necessary to provide the syncing feature. This data will be encrypted before transmission and stored in a way that is unreadable, even by Svija employees.
-
-Refer to the Svija Sync page for specific details on its implementation.
-
-To manage syncing devices, view activity history, or delete your Svija Sync account, visit the account management page.
-
-The only way to retrieve the encrypted data stored in your Svija Sync account is to log in from one of the Svija Sync client apps and allow it to sync.
+It is your responsibility to be aware of the security implications of the rsync file transfer protocol used by Svija, which is not encrypted.
 
 ### Backed-up Data
 
-As you might expect, we keep backups of company data so that a catastrophic data loss event doesn't put us out of business. Although collected personal data expires from our "active" data set according to the schedules mentioned above, it may persist in backups for up to 6 months. Backups are only accessible to specially privileged employees who perform system administration tasks. We consider the backups "cold storage" and we don't pull data from them unless a significant data loss event has occurred.
-
-Opting Out
-
-To opt out of certain types of data collection in one of our products:
-
-- On iOS or iPadOS: refer to the Privacy section in the app's Settings screen.
-- On macOS: open the app's General preferences panel and uncheck "Send Crash Reports and Statistics".
-- On Playdate: open the device's Settings and select Device Metrics to disable or enable sending crash reports and device analytics. You are also given the choice to opt-out during the initial device setup.
-
-This will prevent these specific types of data from coming to us, but be aware that macOS, iOS, and iPadOS may still collect crash logs and other analytics and send them to Apple unless you have disabled that separately in the operating system's settings.
-
-Citizens of the EU may exercise their rights under the General Data Protection Regulation, such as the rights of access and erasure, by contacting us with their request. We recommend emailing the request to gdpr@svija.love.
-
-Residents of California may exercise their rights under the California Consumer Privacy Act, such as the rights of access and erasure, by contacting us with their request. We recommend emailing the request to gdpr@svija.love.
-
-If your region has recently enacted a right-to-privacy law not yet listed here, we will honor it.
+We keep backups of all data so that a catastrophic data loss event doesn't destroy our company. Although collected personal data expires from our "active" data set according to the schedules mentioned above, it may persist in backups for up to 6 months. Backups are only accessible to specially privileged employees who perform system administration tasks. We consider the backups "cold storage" and we don't pull data from them unless a significant data loss event has occurred.
 
 ### Questions and Feedback
 
-Our privacy policies might change or be edited for clarity over time. Up-to-date information will always be available from this page.
+Our privacy policies may evolve over time. Up-to-date information will always be available from this page.
 
-Please contact us if you have any questions about our data collection or privacy policies. We'll be more than happy to discuss them with you.
+Please contact us if you have any questions about our data collection or privacy policies.
 
 © Svija SAS. Last updated: 3 September, 2021

@@ -6,15 +6,18 @@
 
 # App Information
 
-Name · 20 chars:
+Name · 20 chars
 ```
 Svija Sync
 ```
-Subtitle · 30 chars:
+Subtitle · 30 chars
 ```
 Publish Online Instantly
 ```
-Category: Utilities
-```
+Category: Utilities, Graphics & Design
+
+Content Rights: No
+
+Age Rating: None
 
 

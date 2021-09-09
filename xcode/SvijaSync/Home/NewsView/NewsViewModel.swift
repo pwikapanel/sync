@@ -24,13 +24,17 @@ class NewsViewModel {
   private var appVersion: String {
     return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
   }
+  private var bundleID: String {
+    return Bundle.main.object(forInfoDictionaryKey: "CFBundleIdentifier") as? String ?? ""
+  }
   
   func fetchContent(completion: @escaping (NewsData) -> ()) {
     
     DispatchQueue(label: "News-data-queue").async { [weak self] in
       guard let self = self else { return }
       let time = Int(TimeInterval.epochNow)
-      let urlString = Constant.newsUrl + "/\(self.appVersion)/\(Text.News.language).txt?\(time)"
+      let urlString = Constant.newsUrl + "/\(self.bundleID)-\(self.appVersion)/\(Text.News.language).txt?\(time)"
+      debugPrint("💥" + "\(self.bundleID)")
       let _url = URL(string: urlString)
       guard let url = _url,
             let string = try? String(contentsOf: url) else {

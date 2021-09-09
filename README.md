@@ -22,6 +22,9 @@ Following are the instructions for releasing a new version of Svija Tools.
 
 Check out the **destination branch** and merge ([list of commits](https://github.com/svijalove/Svija-Tools/commits/dev)):
 ```
+git status
+```
+```
 git checkout master
 git merge dev --no-ff
 ```

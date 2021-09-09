@@ -72,9 +72,7 @@ git push -u
 ### 6. Increment the Version Number
 
 Places to update the version number:
-```
-list to be announced
-```
+- both Xcode targets
 ---
 ### 7. Post to Social Media
 

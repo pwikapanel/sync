@@ -11,81 +11,16 @@ There will be two versions:
 - Svija Sync (App Store)
 - Svija Sync Direct (direct download)
 
-The message will be at an address that includes the app name.
-
-The app name will be changed *after* notarization (if possible), so there will be no difference to users.
-
-The only difference will be where the prefs are stored in the user's system (bundle ID).
-
----
-
-The problem is that the app name is still visible in the About pane and as the name of the app menu.
-
 ---
 
 ### Version Updates
 
-update the version in the newsView placeholder string
-
-[logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
-
-*Updated 29 July, 2021*
-
-![Svija: SVG-based websites built in Adobe Illustrator][logo]
-
-# DELETE THEME JSON FILES
+Following are the instructions for releasing a new version of Svija Tools.
 
 ---
----
+### 1. Merge to Master
 
-# Releasing a New Version of Svija
-
-**Simple version** — change to [detailed version](https://github.com/svijalove/Update-Svija-Admin/blob/master/detailed-version.md).
-
----
-
-### 1. Database Backups
-
-- **SSH** to all the servers to be updated
-- update/create **sitelist.txt** with project folders:
-```
-vi sitelist.txt
-```
-- clone the **git repository**:
-```
-git clone ssh://git@github.com/svijalove/Update-Svija-Admin.git
-chmod -R 777 Update-Svija-Admin
-```
-- run **backup-data.sh**:
-```
-Update-Svija-Admin/backup.sh
-```
----
-
-### 2. Linode Backups
-
-Make [cloud backups](https://cloud.linode.com/linodes) at Linode.
-
----
-
-### 3. Check for Migrations & Commit
-
-Back on the **dev server**, do any final migrations:
-```
-cd /home/svijabeta
-workon djangoEnv
-./manage.py makemigrations
-./manage.py migrate
-```
-In Svija Admin, check for unsaved changes and commit:
-```
-cd /opt/django-svija
-git status
-```
----
-### 4. Merge to Master
-
-Check out the **destination branch** and merge ([list of commits](https://github.com/svijalove/Svija-Admin/commits/dev)):
+Check out the **destination branch** and merge ([list of commits](https://github.com/svijalove/Svija-Tools/commits/dev)):
 ```
 git checkout master
 git merge dev --no-ff
@@ -95,37 +30,20 @@ Push the new version:
 git push origin master
 ```
 ---
-### 5. Update the Documentation
+### 2. Update the Documentation
 
 Copy info from/to:
 
-- [github.com/svijalove/django-svija/commits/master](https://github.com/svijalove/Svija-Admin/commits/master)
-- [tech.svija.love/manual/changelog-admin](https://tech.svija.love/manual/changelog-admin)
+- [github.com/svijalove/django-svija/commits/master](https://github.com/svijalove/Svija-Tools/commits/master)
+- [tech.svija.love/manual/changelog-tools](https://tech.svija.love/manual/changelog-tools)
 
 ---
-### 6. Create an Installable Version
+### 3. Create a Notarized Version
 
-Create an **installable version** so that will be available in case of future compatibility problems:
-
-Run the tarball creation script:
-```
-cd /opt/django-svija
-./save_tar.sh
-```
----
-### 7. Update the Svija Servers
-
-Run the **update script:**
-```
-Update-Svija-Admin/update.sh
-```
----
-### 8. Update the Sync Message
-
-If desired, SSH to the Svija Apache server to announce the changes:
+Create an **notarized version** so that will be available in case of future compatibility problems.
 
 ---
-### 9. Create A New Github Release
+### 4. Create A New Github Release
 
 On github, create a new release from the **master branch**.
 
@@ -134,7 +52,7 @@ On github, create a new release from the **master branch**.
 - use the changelog text for the description
 
 ---
-### 10. Check Out the Dev Branch
+### 5. Check Out the Dev Branch
 
 Commit any changes, then check out the dev branch:
 ```
@@ -148,23 +66,14 @@ git merge master --no-ff -m "starting new version"
 git push -u
 ```
 ---
-### Increment the Version Number
+### 6. Increment the Version Number
 
 Places to update the version number:
 ```
-cd /opt/django-svija
-vi -O README.md setup.py save_tar.sh svija/views/__init__.py svija/templates/admin/base_site.html
-```
-Also in the **Update-Svija-Admin** repository (same as this document):
-```
-vi -O backup.sh update.sh # backup is new version -1
-```
-Then commit the version number change:
-```
-git commit -m "updated version number" -a && git push -u
+list to be announced
 ```
 ---
-### Post to Social Media
+### 7. Post to Social Media
 
 Find a nice picture or make an ad to accompany the update, then
 
@@ -174,9 +83,13 @@ Find a nice picture or make an ad to accompany the update, then
 - [linkedin.com/company/svijalove](https://linkedin.com/company/svijalove) (add text before adding image)
 
 ---
-### Update tutorial content at tech.svija.com
+### 8. Update tutorial content at tech.svija.com
 
-Read through the [changelog](https://tech.svija.love/reference/changelogs/changelog-admin) and make a list of modfications for the new version.
+Read through the [changelog](https://tech.svija.love/reference/changelogs/changelog-tools) and make a list of modfications for the new version.
 
 Update the [documentation pages](https://tech.svija.com) if necessary.
 
+---
+### 9. Create a News Message
+
+Create a new news message at msg.svija.love for the new version.

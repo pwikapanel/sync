@@ -4,7 +4,7 @@
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
-# Svija Synch 1.0.2
+# Svija Synch 1.0.3
 
 There will be two versions:
 
@@ -73,6 +73,8 @@ git push -u
 
 Places to update the version number:
 - both Xcode targets
+- this README.md
+
 ---
 ### 7. Post to Social Media
 

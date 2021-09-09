@@ -74,6 +74,14 @@ git push -u
 Places to update the version number:
 - both Xcode targets
 - this README.md
+- msg.svija.love
+
+---
+### 8. Update tutorial content at tech.svija.com
+
+Read through the [changelog](https://tech.svija.love/reference/changelogs/changelog-tools) and make a list of modfications for the new version.
+
+Update the [documentation pages](https://tech.svija.com) if necessary.
 
 ---
 ### 7. Post to Social Media
@@ -85,14 +93,3 @@ Find a nice picture or make an ad to accompany the update, then
 - [instagram/svijalove](https://instagram/svijalove) (make it 3x wide · has to be posted from phone)
 - [linkedin.com/company/svijalove](https://linkedin.com/company/svijalove) (add text before adding image)
 
----
-### 8. Update tutorial content at tech.svija.com
-
-Read through the [changelog](https://tech.svija.love/reference/changelogs/changelog-tools) and make a list of modfications for the new version.
-
-Update the [documentation pages](https://tech.svija.com) if necessary.
-
----
-### 9. Create a News Message
-
-Create a new news message at msg.svija.love for the new version.

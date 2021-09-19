@@ -293,7 +293,7 @@ Click the gear icon to get started.</string>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="preferenceButtonAction:" target="XfG-lQ-9wD" id="dU1-B6-R7d"/>
+                                            <action selector="answersButtonAction:" target="XfG-lQ-9wD" id="YsP-iU-NSf"/>
                                         </connections>
                                     </button>
                                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Zx-C2-Xhe">
@@ -319,12 +319,12 @@ Click the gear icon to get started.</string>
                     </view>
                     <connections>
                         <outlet property="adminButton" destination="JUz-3z-bcn" id="k0z-fx-aad"/>
+                        <outlet property="answersButton" destination="k5v-mb-ueS" id="6Fb-g6-Pcu"/>
                         <outlet property="cacheButton" destination="1Zx-C2-Xhe" id="amR-tG-IEh"/>
                         <outlet property="downloadButton" destination="iBg-Ol-B9f" id="Frh-Hd-p9Z"/>
                         <outlet property="folderButton" destination="7tY-Ib-KY4" id="43e-43-3Ld"/>
                         <outlet property="logoImageView" destination="Ta3-Zt-13b" id="GcW-SB-oIJ"/>
                         <outlet property="popupButton" destination="HxC-lg-efN" id="zG6-bM-ENx"/>
-                        <outlet property="preferenceButton" destination="k5v-mb-ueS" id="7NO-7D-rdv"/>
                         <outlet property="siteButton" destination="VW3-kK-1Dc" id="ewq-Br-Z5l"/>
                         <outlet property="statusImageView" destination="xn9-ik-5Xq" id="y2l-5y-wGV"/>
                         <outlet property="statusLabel" destination="sYY-rn-r74" id="BrR-qq-Gmv"/>

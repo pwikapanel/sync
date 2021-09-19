@@ -26,6 +26,7 @@ class HomeViewController: NSViewController {
   @IBOutlet weak var cacheButton: NSButton!
   @IBOutlet weak var folderButton: NSButton!
   @IBOutlet weak var preferenceButton: NSButton!
+  @IBOutlet weak var answersButton: NSButton!
   
   @IBOutlet weak var statusLabel: NSTextField!
   @IBOutlet weak var statusImageView: ImageView!
@@ -59,11 +60,12 @@ class HomeViewController: NSViewController {
     render(.noActivity)
     render(.refreshList)
     
-    preferenceButton.toolTip = Text.Home.Tooltip.preferenceButton
+    siteButton.toolTip = Text.Home.Tooltip.siteButton
     adminButton.toolTip = Text.Home.Tooltip.adminButton
     cacheButton.toolTip = Text.Home.Tooltip.cacheButton
-    siteButton.toolTip = Text.Home.Tooltip.siteButton
     folderButton.toolTip = Text.Home.Tooltip.folderButton
+    answersButton.toolTip = Text.Home.Tooltip.preferenceButton
+    
     downloadButton.toolTip = Text.Home.Tooltip.downloadButton
     uploadButton.toolTip = Text.Home.Tooltip.uploadButton
   }
@@ -75,16 +77,6 @@ class HomeViewController: NSViewController {
     preferenceViewController.doneAction = { [weak self] in
       self?.refreshConnections()
     }
-  }
-  
-  @IBAction func preferenceButtonActionNew(_ sender: Any) {
-    guard let connection = selectedConnection, let url = connection.answersUrl else { return }
-    NSWorkspace.shared.open(url)
-  }
-
-  @IBAction func adminButtonAction(_ sender: Any) {
-    guard let connection = selectedConnection, let url = connection.adminUrl else { return }
-    NSWorkspace.shared.open(url)
   }
   
   private func cacheResponseAlert(code: Int){
@@ -110,6 +102,16 @@ class HomeViewController: NSViewController {
     myAlert.runModal()
   }
   
+  @IBAction func siteButtonAction(_ sender: Any) {
+    guard let connection = selectedConnection, let url = connection.siteUrl else { return }
+    NSWorkspace.shared.open(url)
+  }
+
+  @IBAction func adminButtonAction(_ sender: Any) {
+    guard let connection = selectedConnection, let url = connection.adminUrl else { return }
+    NSWorkspace.shared.open(url)
+  }
+  
   @IBAction func cacheButtonAction(_ sender: Any) {
     guard let connection = selectedConnection, let url = connection.cacheUrl else { return }
     
@@ -128,34 +130,8 @@ class HomeViewController: NSViewController {
     }
     task.resume()
     
-    //NSWorkspace.shared.open(url)
   }
   
-  @IBAction func siteButtonAction(_ sender: Any) {
-    guard let connection = selectedConnection, let url = connection.siteUrl else { return }
-    NSWorkspace.shared.open(url)
-  }
-  /*
-   func downloadCheck(_ connection: SiteConnection) -> DownloadFolderCheck {
-   let url = FolderAccess.promptDirectoryPermissionIfRequired(bookmarkKey: connection.uuid)
-   defer {
-   url?.stopAccessingSecurityScopedResource()
-   }
-   guard let localUrl = url, localUrl.startAccessingSecurityScopedResource() else { return .localPathExpired }
-   
-   guard localUrl.path == connection.localPath else { return .localPathExpired }
-   
-   guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else { return .localPathExpired }
-   
-   let subFolders = (try? FileManager.default.contentsOfDirectory(
-   at: localUrl.appendingPathComponent("sync"),
-   includingPropertiesForKeys: nil,
-   options: []).filter { $0.hasDirectoryPath } ) ?? []
-   if subFolders.count >= Constant.syncSubFolderCount { return .subfoldersExists }
-   return .success
-   }
-   
-   */
   @IBAction func folderButtonAction(_ sender: Any ) {
     guard let connection = selectedConnection else {
       let myAlert = NSAlert.init()
@@ -194,6 +170,11 @@ class HomeViewController: NSViewController {
     let myUrlString = localUrl.path + "/sync/Svija"
     let myUrl = URL(fileURLWithPath: myUrlString)
     NSWorkspace.shared.activateFileViewerSelecting([myUrl])
+  }
+  
+  @IBAction func answersButtonAction(_ sender: Any) {
+    guard let connection = selectedConnection, let url = connection.answersUrl else { return }
+    NSWorkspace.shared.open(url)
   }
   
   @IBAction func popupButtonSelectionChange(_ sender: Any) {
@@ -237,8 +218,8 @@ extension HomeViewController {
     currentState = state
     switch state {
     case .noActivity: // only when activity canceled, not at startup
-      [siteButton, adminButton, cacheButton, folderButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
-      preferenceButton.isEnabled = true
+      [siteButton, adminButton, cacheButton, folderButton, answersButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
+      answersButton.isEnabled = true
       view.window?.title = selectedConnection!.server
       uploadProgressIndex = 0
       Utility.shared.isProcessRunning = false
@@ -249,13 +230,13 @@ extension HomeViewController {
       popupButton.isEnabled = true
       statusImageView.stopAnimation()
     case .upload:
-      [popupButton, preferenceButton, downloadButton].forEach { $0.isEnabled = false }
+      [popupButton, downloadButton].forEach { $0.isEnabled = false }
       view.window?.title = selectedConnection!.server + " · " + Text.Home.windowUploadTitle
       logoImageView.isHidden = true
       statusImageView.isHidden = false
       uploadProgressNext(error: false)
     case .download:
-      [popupButton, preferenceButton, uploadButton].forEach { $0.isEnabled = false }
+      [popupButton, uploadButton].forEach { $0.isEnabled = false }
       view.window?.title = selectedConnection!.server + " · " + Text.Home.windowDownloadTitle
       logoImageView.isHidden = true
       statusImageView.isHidden = false
@@ -312,7 +293,7 @@ extension HomeViewController {
     }
     connectionDidChange()
     popupButton.isEnabled = true
-    [siteButton, adminButton, cacheButton, folderButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
+    [siteButton, adminButton, cacheButton, folderButton, answersButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
   }
   
   func stopSync(completion: (() -> ())? = nil) {

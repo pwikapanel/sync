@@ -102,7 +102,7 @@ internal enum L10n {
       internal static let download = L10n.tr("Localizable", "Home.Button.download")
       /// Pause
       internal static let pause = L10n.tr("Localizable", "Home.Button.pause")
-      /// Open preferences to get started
+      /// Click here to get started…
       internal static let popupPlaceholder = L10n.tr("Localizable", "Home.Button.popupPlaceholder")
       /// Upload
       internal static let upload = L10n.tr("Localizable", "Home.Button.upload")
@@ -134,7 +134,7 @@ internal enum L10n {
       internal static let siteButton = L10n.tr("Localizable", "Home.Tooltip.siteButton")
       /// Select a different website
       internal static let sitePopupWithList = L10n.tr("Localizable", "Home.Tooltip.sitePopupWithList")
-      /// Go to menu Svija Sync › Preferences to configure your website
+      /// Open Preferences and configure websites
       internal static let sitePopupWithoutList = L10n.tr("Localizable", "Home.Tooltip.sitePopupWithoutList")
       /// spacebar · update the website to match computer files
       internal static let uploadButton = L10n.tr("Localizable", "Home.Tooltip.uploadButton")

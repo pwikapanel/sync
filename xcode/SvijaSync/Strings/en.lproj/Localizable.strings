@@ -14,7 +14,7 @@
 "Home.Button.upload" = "Upload";
 "Home.Button.pause" = "Pause";
 "Home.Button.cancel" = "Cancel";
-"Home.Button.popupPlaceholder" = "Open preferences to get started";
+"Home.Button.popupPlaceholder" = "Click here to get started…";
 "Home.StatusLabel.unableToConnect" = "Unable to Connect";
 "Home.StatusLabel.uploadingPaused" = "Uploading Paused";
 "Home.StatusLabel.downloadingCancelled" = "Download Canceled";
@@ -22,7 +22,7 @@
 
 // HOME tooltips
 "Home.Tooltip.sitePopupWithList" = "Select a different website";
-"Home.Tooltip.sitePopupWithoutList" = "Go to menu Svija Sync › Preferences to configure your website";
+"Home.Tooltip.sitePopupWithoutList" = "Open Preferences and configure websites";
 "Home.Tooltip.preferenceButton" = "Find answers to your questions";
 "Home.Tooltip.downloadButton" = "Update computer files to match the website";
 "Home.Tooltip.uploadButton" = "spacebar · update the website to match computer files";

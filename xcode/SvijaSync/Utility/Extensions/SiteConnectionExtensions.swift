@@ -9,23 +9,24 @@ import Foundation
 import Rsync
 
 extension SiteConnection {
-
-    var lastOwner: String {
-        let last = try? String(contentsOfFile: localSyncPath + ".last", encoding: .utf8)
-            .trimmingCharacters(in: .whitespacesAndNewlines)
-        return last ?? ""
-    }
-
-    var shortLocalPath: String {
-        Array(localSyncPath.components(separatedBy: "/").dropLast(2).suffix(2)).joined(separator: "/")
-    }
-
-    var adminUrl: URL? { URL(string: "https://" + server + "/a") }
-    var cacheUrl: URL? { URL(string: "https://" + server + "/csync") }
-    var siteUrl:  URL? { URL(string: "https://" + server) }
-
-    func copy(from con: SiteConnection) -> SiteConnection {
-        return SiteConnection(uuid: uuid, server: con.server, username: con.username, password: con.password, localPath: con.localPath, timestamp: con.timestamp, isDefault: con.isDefault)
-    }
-
+  
+  var lastOwner: String {
+    let last = try? String(contentsOfFile: localSyncPath + ".last", encoding: .utf8)
+      .trimmingCharacters(in: .whitespacesAndNewlines)
+    return last ?? ""
+  }
+  
+  var shortLocalPath: String {
+    Array(localSyncPath.components(separatedBy: "/").dropLast(2).suffix(2)).joined(separator: "/")
+  }
+  
+  var adminUrl:   URL? { URL(string: "https://" + server + "/a") }
+  var cacheUrl:   URL? { URL(string: "https://" + server + "/csync") }
+  var siteUrl:    URL? { URL(string: "https://" + server) }
+  var answersUrl: URL? { URL(string: "https://" + server) }
+  
+  func copy(from con: SiteConnection) -> SiteConnection {
+    return SiteConnection(uuid: uuid, server: con.server, username: con.username, password: con.password, localPath: con.localPath, timestamp: con.timestamp, isDefault: con.isDefault)
+  }
+  
 }

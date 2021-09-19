@@ -20,11 +20,12 @@ class HomeViewController: NSViewController {
   @IBOutlet weak var downloadButton: NSButton!
   @IBOutlet weak var uploadButton: NSButton!
   @IBOutlet weak var popupButton: NSPopUpButton!
-  @IBOutlet weak var preferenceButton: NSButton!
+  
+  @IBOutlet weak var siteButton: NSButton!
   @IBOutlet weak var adminButton: NSButton!
   @IBOutlet weak var cacheButton: NSButton!
-  @IBOutlet weak var siteButton: NSButton!
   @IBOutlet weak var folderButton: NSButton!
+  @IBOutlet weak var preferenceButton: NSButton!
   
   @IBOutlet weak var statusLabel: NSTextField!
   @IBOutlet weak var statusImageView: ImageView!
@@ -57,7 +58,7 @@ class HomeViewController: NSViewController {
     statusImageView.images = Utility.shared.downloadProgressImages
     render(.noActivity)
     render(.refreshList)
-
+    
     preferenceButton.toolTip = Text.Home.Tooltip.preferenceButton
     adminButton.toolTip = Text.Home.Tooltip.adminButton
     cacheButton.toolTip = Text.Home.Tooltip.cacheButton
@@ -76,6 +77,11 @@ class HomeViewController: NSViewController {
     }
   }
   
+  @IBAction func preferenceButtonActionNew(_ sender: Any) {
+    guard let connection = selectedConnection, let url = connection.answersUrl else { return }
+    NSWorkspace.shared.open(url)
+  }
+
   @IBAction func adminButtonAction(_ sender: Any) {
     guard let connection = selectedConnection, let url = connection.adminUrl else { return }
     NSWorkspace.shared.open(url)
@@ -216,7 +222,7 @@ extension HomeViewController {
     statusImageView.isHidden = true
     logoImageView.isHidden = false
     statusLabel.stringValue = ""
-
+    
   }
   
   func showStatusLabel(_ message: String) {

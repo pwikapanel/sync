@@ -21,6 +21,9 @@ class HomeViewController: NSViewController {
   @IBOutlet weak var uploadButton: NSButton!
   @IBOutlet weak var popupButton: NSPopUpButton!
   
+// https://github.com/search?p=1&q=willPopUpNotification&type=Code
+// https://github.com/ericmock/Materials/blob/c233ef9fc8618872e81277c84bc83aefee146fb4/PolyWords/ViewControllers/ViewController.swift
+
   @IBOutlet weak var siteButton: NSButton!
   @IBOutlet weak var adminButton: NSButton!
   @IBOutlet weak var cacheButton: NSButton!
@@ -71,6 +74,7 @@ class HomeViewController: NSViewController {
   }
   
   @IBAction func preferenceButtonAction(_ sender: Any) {
+    //popupButton.cancelOperation(sender)
     resetStatus()
     let preferenceViewController =  PreferenceViewController.makeModule()
     presentAsSheet(preferenceViewController)

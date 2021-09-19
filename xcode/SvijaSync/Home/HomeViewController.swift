@@ -82,6 +82,8 @@ class HomeViewController: NSViewController {
   
   @IBAction func popupEmptyClick(_ sender: Any) {
     debugPrint("⚠️ working")
+//  popupButton.cancelOperation(self) // NSPopUpButton cancelOperation:]: unrecognized selector sent to instance 0x7fbcd18174c0
+//  popupButton.isEnabled = false     // cauesd works AFTER the user clicks away
   }
   
   @IBAction func preferenceButtonAction(_ sender: Any) {

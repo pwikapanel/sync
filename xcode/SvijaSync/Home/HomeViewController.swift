@@ -71,6 +71,17 @@ class HomeViewController: NSViewController {
     
     downloadButton.toolTip = Text.Home.Tooltip.downloadButton
     uploadButton.toolTip = Text.Home.Tooltip.uploadButton
+    
+    NotificationCenter.default.addObserver(self,
+      selector: #selector(popupEmptyClick),
+      name: NSPopUpButton.willPopUpNotification,
+      object: nil)
+    
+
+  }
+  
+  @IBAction func popupEmptyClick(_ sender: Any) {
+    debugPrint("⚠️ working")
   }
   
   @IBAction func preferenceButtonAction(_ sender: Any) {

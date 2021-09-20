@@ -148,12 +148,12 @@
                                     <popUpButton verticalHuggingPriority="750" id="HxC-lg-efN">
                                         <rect key="frame" x="24" y="8" width="247" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <popUpButtonCell key="cell" type="push" title="Click the gear icon to start " bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="eBf-YI-c3T" id="wR7-GI-3Zp">
+                                        <popUpButtonCell key="cell" type="push" title="Click the gear icon to start " bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" pullsDown="YES" selectedItem="eBf-YI-c3T" id="wR7-GI-3Zp">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu"/>
                                             <menu key="menu" id="axK-ed-1eT">
                                                 <items>
-                                                    <menuItem title="Click the gear icon to start " state="on" id="eBf-YI-c3T"/>
+                                                    <menuItem title="Click the gear icon to start " state="on" hidden="YES" id="eBf-YI-c3T"/>
                                                     <menuItem title="Item 2" id="pMn-uQ-Hs5"/>
                                                     <menuItem title="Item 3" id="HAy-dV-zIy"/>
                                                 </items>

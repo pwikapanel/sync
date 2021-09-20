@@ -134,7 +134,7 @@ internal enum L10n {
       internal static let siteButton = L10n.tr("Localizable", "Home.Tooltip.siteButton")
       /// Select a different website
       internal static let sitePopupWithList = L10n.tr("Localizable", "Home.Tooltip.sitePopupWithList")
-      /// Open Preferences and configure websites
+      /// Open Preferences and configure a website
       internal static let sitePopupWithoutList = L10n.tr("Localizable", "Home.Tooltip.sitePopupWithoutList")
       /// spacebar · update the website to match computer files
       internal static let uploadButton = L10n.tr("Localizable", "Home.Tooltip.uploadButton")

@@ -22,7 +22,7 @@
 
 // HOME tooltips
 "Home.Tooltip.sitePopupWithList" = "Select a different website";
-"Home.Tooltip.sitePopupWithoutList" = "Open Preferences and configure websites";
+"Home.Tooltip.sitePopupWithoutList" = "Open Preferences and configure a website";
 "Home.Tooltip.preferenceButton" = "Find answers to your questions";
 "Home.Tooltip.downloadButton" = "Update computer files to match the website";
 "Home.Tooltip.uploadButton" = "spacebar · update the website to match computer files";

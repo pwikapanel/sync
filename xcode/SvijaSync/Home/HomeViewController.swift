@@ -55,10 +55,11 @@ class HomeViewController: NSViewController {
     uploadButton.title = Text.Home.Button.upload
     uploadButton.alternateTitle = Text.Home.Button.pause
     statusHandler.target = self
-    statusLabel.isHidden = true
-    statusImageView.isHidden = true
     logoImageView.isHidden = false
     
+    statusLabel.isHidden = true
+    statusImageView.isHidden = true
+
     statusImageView.images = Utility.shared.downloadProgressImages
     render(.noActivity)
     render(.refreshList)
@@ -76,18 +77,21 @@ class HomeViewController: NSViewController {
       selector: #selector(popupEmptyClick),
       name: NSPopUpButton.willPopUpNotification,
       object: nil)
-    
-
   }
   
   @IBAction func popupEmptyClick(_ sender: Any) {
-    debugPrint("⚠️ working")
-//  popupButton.cancelOperation(self) // NSPopUpButton cancelOperation:]: unrecognized selector sent to instance 0x7fbcd18174c0
-//  popupButton.isEnabled = false     // cauesd works AFTER the user clicks away
+    if connections.isEmpty {
+      debugPrint("⚠️ user clicked pop up button with no sites configured")
+      resetStatus()
+      let preferenceViewController =  PreferenceViewController.makeModule()
+      presentAsSheet(preferenceViewController)
+      preferenceViewController.doneAction = { [weak self] in
+        self?.refreshConnections()
+      }
+    }
   }
   
   @IBAction func preferenceButtonAction(_ sender: Any) {
-    //popupButton.cancelOperation(sender)
     resetStatus()
     let preferenceViewController =  PreferenceViewController.makeModule()
     presentAsSheet(preferenceViewController)
@@ -272,6 +276,7 @@ extension HomeViewController {
       return
     }
     let index = popupButton.index(of: selectedItem)
+    debugPrint("selectedItem" + String(index))
     selectedConnection = connections[index]
     
     //—————————————————————————————————————————————————— added, to automatically set default
@@ -288,6 +293,7 @@ extension HomeViewController {
     
     //—————————————————————————————————————————————————— set window title to current url
     view.window?.title = selectedConnection!.server
+    refreshConnections()
   }
   
   func refreshConnections() {

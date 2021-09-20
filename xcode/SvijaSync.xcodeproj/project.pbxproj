@@ -94,7 +94,7 @@
 		AACAFEA326E10BD400511FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACAFEA426E10BD400511FF2 /* Svija_Sync_Downloadable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Svija_Sync_Downloadable.entitlements; sourceTree = "<group>"; };
 		AACAFED926E10C6100511FF2 /* Svija Sync copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Svija Sync copy-Info.plist"; path = "/Users/Main/Desktop/Svija-Sync/xcode/Svija Sync copy-Info.plist"; sourceTree = "<absolute>"; };
-		AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Direct.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACAFF0A26E10ED300511FF2 /* Svija Sync Direct Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Direct Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACAFF0B26E10ED400511FF2 /* Svija Sync copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Svija Sync copy2-Info.plist"; path = "/Users/Main/Desktop/Svija-Sync/xcode/Svija Sync copy2-Info.plist"; sourceTree = "<absolute>"; };
 		D60EFBAA25D4EED7003931BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D60EFBAD25D4EF36003931BB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		D6E641E425DA9FAB00262B13 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		D6EBE34525CE45E500498A04 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D6EBE34B25CE497000498A04 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		D6F2085425C94475005DAC78 /* Svija Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F2085425C94475005DAC78 /* Svija Sync Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F2085725C94475005DAC78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6F2085B25C9447A005DAC78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6F2085E25C9447A005DAC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -306,8 +306,8 @@
 		D6F2085525C94475005DAC78 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6F2085425C94475005DAC78 /* Svija Sync.app */,
-				AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */,
+				D6F2085425C94475005DAC78 /* Svija Sync Beta.app */,
+				AACAFF0A26E10ED300511FF2 /* Svija Sync Direct Beta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -332,9 +332,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AACAFEDA26E10ED300511FF2 /* Svija Sync Direct */ = {
+		AACAFEDA26E10ED300511FF2 /* Svija Sync Direct Beta */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AACAFF0726E10ED300511FF2 /* Build configuration list for PBXNativeTarget "Svija Sync Direct" */;
+			buildConfigurationList = AACAFF0726E10ED300511FF2 /* Build configuration list for PBXNativeTarget "Svija Sync Direct Beta" */;
 			buildPhases = (
 				AACAFEDD26E10ED300511FF2 /* Sources */,
 				AACAFEFE26E10ED300511FF2 /* Frameworks */,
@@ -345,17 +345,17 @@
 			);
 			dependencies = (
 			);
-			name = "Svija Sync Direct";
+			name = "Svija Sync Direct Beta";
 			packageProductDependencies = (
 				AACAFEDB26E10ED300511FF2 /* Rsync */,
 			);
 			productName = SvijaSync;
-			productReference = AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */;
+			productReference = AACAFF0A26E10ED300511FF2 /* Svija Sync Direct Beta.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D6F2085325C94475005DAC78 /* Svija Sync */ = {
+		D6F2085325C94475005DAC78 /* Svija Sync Beta */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6F2086425C9447A005DAC78 /* Build configuration list for PBXNativeTarget "Svija Sync" */;
+			buildConfigurationList = D6F2086425C9447A005DAC78 /* Build configuration list for PBXNativeTarget "Svija Sync Beta" */;
 			buildPhases = (
 				D6F2085025C94475005DAC78 /* Sources */,
 				D6F2085125C94475005DAC78 /* Frameworks */,
@@ -366,12 +366,12 @@
 			);
 			dependencies = (
 			);
-			name = "Svija Sync";
+			name = "Svija Sync Beta";
 			packageProductDependencies = (
 				4B52D2D62660E3AF00441348 /* Rsync */,
 			);
 			productName = SvijaSync;
-			productReference = D6F2085425C94475005DAC78 /* Svija Sync.app */;
+			productReference = D6F2085425C94475005DAC78 /* Svija Sync Beta.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -405,8 +405,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6F2085325C94475005DAC78 /* Svija Sync */,
-				AACAFEDA26E10ED300511FF2 /* Svija Sync Direct */,
+				D6F2085325C94475005DAC78 /* Svija Sync Beta */,
+				AACAFEDA26E10ED300511FF2 /* Svija Sync Direct Beta */,
 			);
 		};
 /* End PBXProject section */
@@ -807,7 +807,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AACAFF0726E10ED300511FF2 /* Build configuration list for PBXNativeTarget "Svija Sync Direct" */ = {
+		AACAFF0726E10ED300511FF2 /* Build configuration list for PBXNativeTarget "Svija Sync Direct Beta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AACAFF0826E10ED300511FF2 /* Debug */,
@@ -825,7 +825,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6F2086425C9447A005DAC78 /* Build configuration list for PBXNativeTarget "Svija Sync" */ = {
+		D6F2086425C9447A005DAC78 /* Build configuration list for PBXNativeTarget "Svija Sync Beta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6F2086525C9447A005DAC78 /* Debug */,

@@ -1,8 +1,12 @@
 [logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
 
-*Updated 9 September, 2021*
+*Updated 1 October, 2021*
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
+
+This is the new beta branch. It was created because something I did to the pulldown caused it to stop working.
+
+This commit is the last one that works correctly.
 
 # Svija Synch 1.0.3
 

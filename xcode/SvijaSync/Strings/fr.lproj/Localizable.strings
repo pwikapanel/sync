@@ -69,7 +69,7 @@
 "Alert.Message.siteLimit" = "Please delete a website or modify an existing website.";
 
 "Alert.Title.missingName" = "Configuration Incomplete";
-"Alert.Message.missingName" = "Please click the gear icon then enter your nickname.";
+"Alert.Message.missingName" = "Please open Preferences then enter your nickname.";
 
 "Alert.Title.duplicateSite" = "Website Already Exists";
 "Alert.Message.duplicateSite" = "The specified website already exists. Please select it then click Modify.";
@@ -87,7 +87,7 @@
 "Alert.Message.invalidCharacters" = "Please use only letters and numbers.";
 
 "Alert.Title.inaccessible" = "Project folder inaccessible";
-"Alert.Message.inaccessible" = "Please select the project folder or click the gear icon to reconfigure the website";
+"Alert.Message.inaccessible" = "Please select the project folder or open Preferences to reconfigure the website";
 
 
 // Preference

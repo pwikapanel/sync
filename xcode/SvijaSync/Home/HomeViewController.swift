@@ -68,8 +68,29 @@ class HomeViewController: NSViewController {
     
     downloadButton.toolTip = Text.Home.Tooltip.downloadButton
     uploadButton.toolTip = Text.Home.Tooltip.uploadButton
+
+    //———————————————————————————————————————————————————————————————————————————————— begin changes
+
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(popupEmptyClick),
+                                           name: NSPopUpButton.willPopUpNotification,
+                                           object: nil)
   }
   
+  @IBAction func popupEmptyClick(_ sender: Any) {
+    if connections.isEmpty {
+      debugPrint("⚠️ user clicked pop up button with no sites configured")
+      resetStatus()
+      let preferenceViewController =  PreferenceViewController.makeModule()
+      presentAsSheet(preferenceViewController)
+      preferenceViewController.doneAction = { [weak self] in
+        self?.refreshConnections()
+      }
+    }
+  }
+
+  //———————————————————————————————————————————————————————————————————————————————— end changes
+
   @IBAction func preferenceButtonAction(_ sender: Any) {
     resetStatus()
     let preferenceViewController =  PreferenceViewController.makeModule()

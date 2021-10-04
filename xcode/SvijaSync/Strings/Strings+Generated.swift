@@ -41,11 +41,11 @@ internal enum L10n {
       internal static let duplicateSite = L10n.tr("Localizable", "Alert.Message.duplicateSite")
       /// Please enter a nickname. You can change it at any time.
       internal static let enterName = L10n.tr("Localizable", "Alert.Message.enterName")
-      /// Please select the project folder or click the gear icon to reconfigure the website
+      /// Please select the project folder or open Preferences to reconfigure the website
       internal static let inaccessible = L10n.tr("Localizable", "Alert.Message.inaccessible")
       /// Please use only letters and numbers.
       internal static let invalidCharacters = L10n.tr("Localizable", "Alert.Message.invalidCharacters")
-      /// Please click the gear icon then enter your nickname.
+      /// Please open Preferences then enter your nickname.
       internal static let missingName = L10n.tr("Localizable", "Alert.Message.missingName")
       /// There is nothing to upload. Please download first or choose a different project folder.
       internal static let nothingToUpload = L10n.tr("Localizable", "Alert.Message.nothingToUpload")

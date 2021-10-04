@@ -17,6 +17,7 @@ class HomeViewController: NSViewController {
     case refreshList
   }
   
+  @IBOutlet weak var setupButton: NSButton!
   @IBOutlet weak var downloadButton: NSButton!
   @IBOutlet weak var uploadButton: NSButton!
   @IBOutlet weak var popupButton: NSPopUpButton!
@@ -75,6 +76,10 @@ class HomeViewController: NSViewController {
                                            selector: #selector(popupEmptyClick),
                                            name: NSPopUpButton.willPopUpNotification,
                                            object: nil)
+  }
+  
+  @IBAction func setupButtonAction(_ sender: Any) {
+    debugPrint("⚠️ user clicked big pink button")
   }
   
   @IBAction func popupEmptyClick(_ sender: Any) {

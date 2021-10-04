@@ -87,15 +87,14 @@
 
 /* Begin PBXFileReference section */
 		4BF35272263AA6A500BFD9B8 /* Rsync-Dependency */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Rsync-Dependency"; path = "../Rsync-Dependency"; sourceTree = "<group>"; };
+		AA414C76270B39A2003B8DED /* Svija Sync copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Svija Sync copy2-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AACAFE9A26E10BD300511FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AACAFE9C26E10BD300511FF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AACAFE9E26E10BD400511FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AACAFEA126E10BD400511FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AACAFEA326E10BD400511FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACAFEA426E10BD400511FF2 /* Svija_Sync_Downloadable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Svija_Sync_Downloadable.entitlements; sourceTree = "<group>"; };
-		AACAFED926E10C6100511FF2 /* Svija Sync copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Svija Sync copy-Info.plist"; path = "/Users/Main/Desktop/Svija-Sync/xcode/Svija Sync copy-Info.plist"; sourceTree = "<absolute>"; };
 		AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Direct.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AACAFF0B26E10ED400511FF2 /* Svija Sync copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Svija Sync copy2-Info.plist"; path = "/Users/Main/Desktop/Svija-Sync/xcode/Svija Sync copy2-Info.plist"; sourceTree = "<absolute>"; };
 		D60EFBAA25D4EED7003931BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D60EFBAD25D4EF36003931BB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D60EFBB125D4F042003931BB /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
@@ -164,6 +163,7 @@
 		AACAFE9926E10BD300511FF2 /* Svija Sync Downloadable */ = {
 			isa = PBXGroup;
 			children = (
+				AA414C76270B39A2003B8DED /* Svija Sync copy2-Info.plist */,
 				AACAFE9A26E10BD300511FF2 /* AppDelegate.swift */,
 				AACAFE9C26E10BD300511FF2 /* ViewController.swift */,
 				AACAFE9E26E10BD400511FF2 /* Assets.xcassets */,
@@ -298,8 +298,6 @@
 				AACAFE9926E10BD300511FF2 /* Svija Sync Downloadable */,
 				D6F2085525C94475005DAC78 /* Products */,
 				D66B288F25D694B500A2ACF8 /* Frameworks */,
-				AACAFED926E10C6100511FF2 /* Svija Sync copy-Info.plist */,
-				AACAFF0B26E10ED400511FF2 /* Svija Sync copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};

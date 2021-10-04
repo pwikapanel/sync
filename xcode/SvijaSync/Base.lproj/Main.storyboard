@@ -148,12 +148,12 @@
                                     <popUpButton verticalHuggingPriority="750" id="HxC-lg-efN">
                                         <rect key="frame" x="24" y="8" width="247" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <popUpButtonCell key="cell" type="push" title="Click the gear icon to start " bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="eBf-YI-c3T" id="wR7-GI-3Zp">
+                                        <popUpButtonCell key="cell" type="push" title="Click here to get started…" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="eBf-YI-c3T" id="wR7-GI-3Zp">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu"/>
                                             <menu key="menu" id="axK-ed-1eT">
                                                 <items>
-                                                    <menuItem title="Click the gear icon to start " state="on" id="eBf-YI-c3T"/>
+                                                    <menuItem title="Click here to get started…" state="on" id="eBf-YI-c3T"/>
                                                     <menuItem title="Item 2" id="pMn-uQ-Hs5"/>
                                                     <menuItem title="Item 3" id="HAy-dV-zIy"/>
                                                 </items>
@@ -211,6 +211,17 @@ IA
                                         <rect key="frame" x="20" y="41" width="610" height="5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     </box>
+                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-Ud-57b">
+                                        <rect key="frame" x="22" y="7" width="250" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="setup button" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fxO-fJ-bK9">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="setupButtonAction:" target="XfG-lQ-9wD" id="dx8-rO-fi8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </customView>
                             <customView autoresizesSubviews="NO" id="Edo-os-E3M" customClass="NewsView" customModule="Svija_Sync" customModuleProvider="target">
@@ -325,6 +336,7 @@ Click the gear icon to get started.</string>
                         <outlet property="folderButton" destination="7tY-Ib-KY4" id="43e-43-3Ld"/>
                         <outlet property="logoImageView" destination="Ta3-Zt-13b" id="GcW-SB-oIJ"/>
                         <outlet property="popupButton" destination="HxC-lg-efN" id="zG6-bM-ENx"/>
+                        <outlet property="setupButton" destination="tbh-Ud-57b" id="rTf-lw-Irf"/>
                         <outlet property="siteButton" destination="VW3-kK-1Dc" id="ewq-Br-Z5l"/>
                         <outlet property="statusImageView" destination="xn9-ik-5Xq" id="y2l-5y-wGV"/>
                         <outlet property="statusLabel" destination="sYY-rn-r74" id="BrR-qq-Gmv"/>
@@ -655,6 +667,7 @@ Gw
         <image name="main logo" width="136" height="27"/>
         <image name="settings off" width="45" height="58"/>
         <image name="settings on" width="45" height="58"/>
+        <image name="setup button" width="250" height="30"/>
         <image name="site off" width="45" height="58"/>
         <image name="site on" width="45" height="58"/>
     </resources>

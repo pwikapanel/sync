@@ -95,7 +95,7 @@
 "Preference.OpenPanel.message" = "Please choose a Project Folder";
 "Preference.OpenPanel.prompt" = "Choose";
 
-"Preference.Help.html" = "Visit <a href=\"https://tech.svija.love\">tech.svija.love</a> for help and information.";
+"Preference.Help.html" = "Svija is free — create an account at <a href=\"https://svija.love/sync\">svija.love</a>.";
 
 "Preference.Button.undo" = "Undo";
 "Preference.Button.modify" = "Modify";
@@ -130,4 +130,4 @@
 "Preference.Tooltip.url" = "The address of the website without http or /";
 "Preference.Tooltip.connectID" = "The connect ID from the email you received";
 "Preference.Tooltip.password" = "The password from the email you received";
-"Preference.Tooltip.visitLink" = "Visit docs.svija.love in your browser.";
+"Preference.Tooltip.visitLink" = "Visit svija.love in your browser.";

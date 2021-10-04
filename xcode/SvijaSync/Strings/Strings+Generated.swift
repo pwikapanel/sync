@@ -170,7 +170,7 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Button.update")
     }
     internal enum Help {
-      /// Visit <a href="https://tech.svija.love">tech.svija.love</a> for help and information.
+      /// Svija is free — create an account at <a href="https://svija.love/sync">svija.love</a>.
       internal static let html = L10n.tr("Localizable", "Preference.Help.html")
     }
     internal enum Label {
@@ -226,7 +226,7 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Tooltip.update")
       /// The address of the website without http or /
       internal static let url = L10n.tr("Localizable", "Preference.Tooltip.url")
-      /// Visit docs.svija.love in your browser.
+      /// Visit svija.love in your browser.
       internal static let visitLink = L10n.tr("Localizable", "Preference.Tooltip.visitLink")
     }
   }

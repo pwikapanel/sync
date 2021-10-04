@@ -70,14 +70,13 @@ class HomeViewController: NSViewController {
     downloadButton.toolTip = Text.Home.Tooltip.downloadButton
     uploadButton.toolTip = Text.Home.Tooltip.uploadButton
 
-    //———————————————————————————————————————————————————————————————————————————————— begin changes
 
-    NotificationCenter.default.addObserver(self,
-                                           selector: #selector(popupEmptyClick),
-                                           name: NSPopUpButton.willPopUpNotification,
-                                           object: nil)
+
   }
-  
+
+  //———————————————————————————————————————————————————————————————————————————————— begin changes
+
+  // setupButton.isHidden = !connections.isEmpty
   @IBAction func setupButtonAction(_ sender: Any) {
     // copy of preferenceButtonAction
     resetStatus()
@@ -85,18 +84,6 @@ class HomeViewController: NSViewController {
     presentAsSheet(preferenceViewController)
     preferenceViewController.doneAction = { [weak self] in
       self?.refreshConnections()
-    }
-  }
-  
-  @IBAction func popupEmptyClick(_ sender: Any) {
-    if connections.isEmpty {
-      debugPrint("⚠️ user clicked pop up button with no sites configured")
-      resetStatus()
-      let preferenceViewController =  PreferenceViewController.makeModule()
-      presentAsSheet(preferenceViewController)
-      preferenceViewController.doneAction = { [weak self] in
-        self?.refreshConnections()
-      }
     }
   }
 
@@ -205,8 +192,9 @@ class HomeViewController: NSViewController {
   }
   
   @IBAction func answersButtonAction(_ sender: Any) {
-    guard let connection = selectedConnection, let url = connection.answersUrl else { return }
-    NSWorkspace.shared.open(url)
+    let urlString = "https://tech.svija.love/fromsync"
+    if let answersURL = URL(string: urlString) { NSWorkspace.shared.open(answersURL) }
+    else { return }
   }
   
   @IBAction func popupButtonSelectionChange(_ sender: Any) {
@@ -250,8 +238,8 @@ extension HomeViewController {
     currentState = state
     switch state {
     case .noActivity: // only when activity canceled, not at startup
-      [siteButton, adminButton, cacheButton, folderButton, answersButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
-      answersButton.isEnabled = true
+      [siteButton, adminButton, cacheButton, folderButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
+      setupButton.isHidden = !connections.isEmpty
       view.window?.title = selectedConnection!.server
       uploadProgressIndex = 0
       Utility.shared.isProcessRunning = false
@@ -284,6 +272,7 @@ extension HomeViewController {
     guard let selectedItem = popupButton.selectedItem else { return }
     if connections.isEmpty {
       selectedConnection = nil
+      setupButton.isHidden = false
       return
     }
     let index = popupButton.index(of: selectedItem)
@@ -317,15 +306,18 @@ extension HomeViewController {
     if connections.isEmpty {
       popupButton.addItem(withTitle: Text.Home.Button.popupPlaceholder)
       popupButton.toolTip = Text.Home.Tooltip.sitePopupWithoutList
+      setupButton.isHidden = false
     } else {
       popupButton.toolTip = Text.Home.Tooltip.sitePopupWithList
+      setupButton.isHidden = true
     }
     connections.forEach {
       popupButton.addItem(withTitle: $0.server)
     }
     connectionDidChange()
     popupButton.isEnabled = true
-    [siteButton, adminButton, cacheButton, folderButton, answersButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
+    [siteButton, adminButton, cacheButton, folderButton, downloadButton, uploadButton].forEach { $0?.isEnabled = !connections.isEmpty }
+    setupButton.isHidden = !connections.isEmpty
   }
   
   func stopSync(completion: (() -> ())? = nil) {

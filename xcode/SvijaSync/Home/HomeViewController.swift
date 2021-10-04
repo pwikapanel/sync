@@ -79,7 +79,13 @@ class HomeViewController: NSViewController {
   }
   
   @IBAction func setupButtonAction(_ sender: Any) {
-    debugPrint("⚠️ user clicked big pink button")
+    // copy of preferenceButtonAction
+    resetStatus()
+    let preferenceViewController =  PreferenceViewController.makeModule()
+    presentAsSheet(preferenceViewController)
+    preferenceViewController.doneAction = { [weak self] in
+      self?.refreshConnections()
+    }
   }
   
   @IBAction func popupEmptyClick(_ sender: Any) {

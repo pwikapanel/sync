@@ -19,18 +19,18 @@ There will be two versions:
 
 ### Version Updates
 
-Following are the instructions for releasing a new version of Svija Tools.
+Following are the instructions for releasing a new version of Svija Sync.
 
 ---
 ### 1. Merge to Master
 
-Check out the **destination branch** and merge ([list of commits](https://github.com/svijalove/Svija-Tools/commits/dev)):
+Check out the **destination branch** and merge ([list of commits](https://github.com/svijalove/Svija-Tools/commits/beta)):
 ```
 git status
 ```
 ```
 git checkout master
-git merge dev --no-ff
+git merge beta --no-ff
 ```
 Push the new version:
 ```
@@ -61,14 +61,14 @@ On github, create a new release from the **master branch**.
 ---
 ### 5. Check Out the Dev Branch
 
-Commit any changes, then check out the dev branch:
+Commit any changes, then check out the beta branch:
 ```
 git status
-git commit -m "last commit before going back to dev" -a
+git commit -m "last commit before going back to beta" -a
 ```
-Commit any changes, then check out the dev branch:
+Commit any changes, then check out the beta branch:
 ```
-git checkout dev
+git checkout beta 
 git merge master --no-ff -m "starting new version"
 git push -u
 ```

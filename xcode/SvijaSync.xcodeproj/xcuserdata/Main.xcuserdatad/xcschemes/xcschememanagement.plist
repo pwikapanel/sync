@@ -7,7 +7,7 @@
 		<key>Svija Sync Beta.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Svija Sync Direct.xcscheme_^#shared#^_</key>
 		<dict>
@@ -22,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>AA92C6CB2716C456008BD343</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AACAFEDA26E10ED300511FF2</key>
 		<dict>
 			<key>primary</key>

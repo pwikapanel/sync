@@ -42,12 +42,19 @@ Copy info from/to:
 - [tech.svija.love/manual/changelog-sync](https://tech.svija.love/manual/changelog-sync)
 
 ---
-### 3. Create a Notarized Version
+### 3. Create a Notarized Version of Sync Direct
 
 Create an **notarized version** so that will be available in case of future compatibility problems.
 
+Zip it and store it in notarized.
+
 ---
-### 4. Create A New Github Release
+### 4. Create a new App Store version of Sync
+
+See the [dedicated document](https://github.com/svijalove/sync/tree/master/app-store).
+
+---
+### 5. Create A New Github Release
 
 On github, create a new release from the **master branch**.
 
@@ -56,7 +63,7 @@ On github, create a new release from the **master branch**.
 - use the changelog text for the description
 
 ---
-### 5. Check Out the Dev Branch
+### 6. Check Out the Dev Branch
 
 Commit any changes, then check out the beta branch:
 ```
@@ -70,7 +77,7 @@ git merge master --no-ff -m "starting new version"
 git push -u
 ```
 ---
-### 6. Increment the Version Number
+### 7. Increment the Version Number
 
 Places to update the version number:
 - both Xcode targets

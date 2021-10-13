@@ -41,17 +41,17 @@ internal enum L10n {
       internal static let duplicateSite = L10n.tr("Localizable", "Alert.Message.duplicateSite")
       /// Please enter a nickname. You can change it at any time.
       internal static let enterName = L10n.tr("Localizable", "Alert.Message.enterName")
-      /// Please select the project folder or click the gear icon to reconfigure the website
+      /// Please select the project folder or open Preferences to reconfigure the website
       internal static let inaccessible = L10n.tr("Localizable", "Alert.Message.inaccessible")
       /// Please use only letters and numbers.
       internal static let invalidCharacters = L10n.tr("Localizable", "Alert.Message.invalidCharacters")
-      /// Please click the gear icon then enter your nickname.
+      /// Please open Preferences then enter your nickname.
       internal static let missingName = L10n.tr("Localizable", "Alert.Message.missingName")
       /// There is nothing to upload. Please download first or choose a different project folder.
       internal static let nothingToUpload = L10n.tr("Localizable", "Alert.Message.nothingToUpload")
       /// Re-download to continue or contact support.
       internal static let projectFolderDamaged = L10n.tr("Localizable", "Alert.Message.projectFolderDamaged")
-      /// Click "Set Up" to modify this website and select a project folder.
+      /// Open Preferences to modify this website and select a project folder.
       internal static let projectFolderMissing = L10n.tr("Localizable", "Alert.Message.projectFolderMissing")
       /// Please select a project folder that is not named "sync".
       internal static let selectProjectFolderWithoutSync = L10n.tr("Localizable", "Alert.Message.selectProjectFolderWithoutSync")
@@ -102,7 +102,7 @@ internal enum L10n {
       internal static let download = L10n.tr("Localizable", "Home.Button.download")
       /// Pause
       internal static let pause = L10n.tr("Localizable", "Home.Button.pause")
-      /// Click gear to set up ↗
+      /// Click here to get started…
       internal static let popupPlaceholder = L10n.tr("Localizable", "Home.Button.popupPlaceholder")
       /// Upload
       internal static let upload = L10n.tr("Localizable", "Home.Button.upload")
@@ -128,13 +128,13 @@ internal enum L10n {
       internal static let folderButton = L10n.tr("Localizable", "Home.Tooltip.folderButton")
       /// News and product updates
       internal static let newsView = L10n.tr("Localizable", "Home.Tooltip.newsView")
-      /// Configure website profiles
+      /// Find answers to your questions
       internal static let preferenceButton = L10n.tr("Localizable", "Home.Tooltip.preferenceButton")
       /// S · visit the website
       internal static let siteButton = L10n.tr("Localizable", "Home.Tooltip.siteButton")
       /// Select a different website
       internal static let sitePopupWithList = L10n.tr("Localizable", "Home.Tooltip.sitePopupWithList")
-      /// Click on the gear icon to configure your website
+      /// Open Preferences and configure websites
       internal static let sitePopupWithoutList = L10n.tr("Localizable", "Home.Tooltip.sitePopupWithoutList")
       /// spacebar · update the website to match computer files
       internal static let uploadButton = L10n.tr("Localizable", "Home.Tooltip.uploadButton")
@@ -147,7 +147,7 @@ internal enum L10n {
     internal enum Placeholder {
       /// 
       internal static let message = L10n.tr("Localizable", "News.Placeholder.message")
-      /// <h1>Svija Sync 1.0.2</h1><p>To get started, click on <b>Set Up</b> and add your website credentials.<br>Connect to <b>Svija Admin</b> for modifications to be visible immediately.
+      /// <h1>Svija Sync</h1><p>Open menu <b>Svija Sync › Preferences</b> to get started. You must<br>connect to <b>Svija Admin</b> for your modifications to be visible.
       internal static let text = L10n.tr("Localizable", "News.Placeholder.text")
     }
   }
@@ -170,7 +170,7 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Button.update")
     }
     internal enum Help {
-      /// Visit <a href="https://tech.svija.love">tech.svija.love</a> for help and information.
+      /// Svija is free — create an account at <a href="https://svija.love/fromsync">svija.love</a>.
       internal static let html = L10n.tr("Localizable", "Preference.Help.html")
     }
     internal enum Label {
@@ -226,7 +226,7 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Tooltip.update")
       /// The address of the website without http or /
       internal static let url = L10n.tr("Localizable", "Preference.Tooltip.url")
-      /// Visit docs.svija.love in your browser.
+      /// Visit svija.love in your browser.
       internal static let visitLink = L10n.tr("Localizable", "Preference.Tooltip.visitLink")
     }
   }

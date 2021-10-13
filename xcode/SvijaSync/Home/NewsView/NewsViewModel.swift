@@ -33,7 +33,9 @@ class NewsViewModel {
     DispatchQueue(label: "News-data-queue").async { [weak self] in
       guard let self = self else { return }
       let time = Int(TimeInterval.epochNow)
-      let urlString = Constant.newsUrl + "/\(self.bundleID)-\(self.appVersion)/\(Text.News.language).txt?\(time)"
+//    let urlString = Constant.newsUrl + "/\(self.bundleID)-\(self.appVersion)/\(Text.News.language).txt?\(time)"
+      debugPrint(Constant.newsUrl + "/\(self.appVersion)/\(self.bundleID)-\(Text.News.language).txt?\(time)")
+      let urlString = Constant.newsUrl + "/\(self.appVersion)/\(self.bundleID)-\(Text.News.language).txt?\(time)"
       debugPrint("💥" + "\(self.bundleID)")
       let _url = URL(string: urlString)
       guard let url = _url,

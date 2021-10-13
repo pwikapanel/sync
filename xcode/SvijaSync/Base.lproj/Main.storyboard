@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
-        <plugIn identifier="com.apple.WebKit2IBPlugin" version="18122"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="19162"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,11 +13,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="SvijaSync" id="1Xt-HY-uBw">
+                            <menuItem title="Svija Sync" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="SvijaSync" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Svija Sync" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About SvijaSync" id="5kV-Vb-QxS">
+                                        <menuItem title="About Svija Sync" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -147,12 +148,12 @@
                                     <popUpButton verticalHuggingPriority="750" id="HxC-lg-efN">
                                         <rect key="frame" x="24" y="8" width="247" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <popUpButtonCell key="cell" type="push" title="Click the gear icon to start " bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="eBf-YI-c3T" id="wR7-GI-3Zp">
+                                        <popUpButtonCell key="cell" type="push" title="Click here to get started…" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="eBf-YI-c3T" id="wR7-GI-3Zp">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu"/>
                                             <menu key="menu" id="axK-ed-1eT">
                                                 <items>
-                                                    <menuItem title="Click the gear icon to start " state="on" id="eBf-YI-c3T"/>
+                                                    <menuItem title="Click here to get started…" state="on" id="eBf-YI-c3T"/>
                                                     <menuItem title="Item 2" id="pMn-uQ-Hs5"/>
                                                     <menuItem title="Item 3" id="HAy-dV-zIy"/>
                                                 </items>
@@ -210,6 +211,17 @@ IA
                                         <rect key="frame" x="20" y="41" width="610" height="5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     </box>
+                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-Ud-57b">
+                                        <rect key="frame" x="22" y="7" width="250" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="setup button" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fxO-fJ-bK9">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="setupButtonAction:" target="XfG-lQ-9wD" id="dx8-rO-fi8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </customView>
                             <customView autoresizesSubviews="NO" id="Edo-os-E3M" customClass="NewsView" customModule="Svija_Sync" customModuleProvider="target">
@@ -292,7 +304,7 @@ Click the gear icon to get started.</string>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="preferenceButtonAction:" target="XfG-lQ-9wD" id="dU1-B6-R7d"/>
+                                            <action selector="answersButtonAction:" target="XfG-lQ-9wD" id="YsP-iU-NSf"/>
                                         </connections>
                                     </button>
                                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Zx-C2-Xhe">
@@ -318,12 +330,13 @@ Click the gear icon to get started.</string>
                     </view>
                     <connections>
                         <outlet property="adminButton" destination="JUz-3z-bcn" id="k0z-fx-aad"/>
+                        <outlet property="answersButton" destination="k5v-mb-ueS" id="6Fb-g6-Pcu"/>
                         <outlet property="cacheButton" destination="1Zx-C2-Xhe" id="amR-tG-IEh"/>
                         <outlet property="downloadButton" destination="iBg-Ol-B9f" id="Frh-Hd-p9Z"/>
                         <outlet property="folderButton" destination="7tY-Ib-KY4" id="43e-43-3Ld"/>
                         <outlet property="logoImageView" destination="Ta3-Zt-13b" id="GcW-SB-oIJ"/>
                         <outlet property="popupButton" destination="HxC-lg-efN" id="zG6-bM-ENx"/>
-                        <outlet property="preferenceButton" destination="k5v-mb-ueS" id="7NO-7D-rdv"/>
+                        <outlet property="setupButton" destination="tbh-Ud-57b" id="rTf-lw-Irf"/>
                         <outlet property="siteButton" destination="VW3-kK-1Dc" id="ewq-Br-Z5l"/>
                         <outlet property="statusImageView" destination="xn9-ik-5Xq" id="y2l-5y-wGV"/>
                         <outlet property="statusLabel" destination="sYY-rn-r74" id="BrR-qq-Gmv"/>
@@ -654,6 +667,7 @@ Gw
         <image name="main logo" width="136" height="27"/>
         <image name="settings off" width="45" height="58"/>
         <image name="settings on" width="45" height="58"/>
+        <image name="setup button" width="250" height="30"/>
         <image name="site off" width="45" height="58"/>
         <image name="site on" width="45" height="58"/>
     </resources>

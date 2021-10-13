@@ -14,7 +14,7 @@
 "Home.Button.upload" = "Upload";
 "Home.Button.pause" = "Pause";
 "Home.Button.cancel" = "Cancel";
-"Home.Button.popupPlaceholder" = "Click gear to set up ↗";
+"Home.Button.popupPlaceholder" = "Click here to get started…";
 "Home.StatusLabel.unableToConnect" = "Unable to Connect";
 "Home.StatusLabel.uploadingPaused" = "Uploading Paused";
 "Home.StatusLabel.downloadingCancelled" = "Download Canceled";
@@ -22,8 +22,8 @@
 
 // HOME tooltips
 "Home.Tooltip.sitePopupWithList" = "Select a different website";
-"Home.Tooltip.sitePopupWithoutList" = "Click on the gear icon to configure your website";
-"Home.Tooltip.preferenceButton" = "Configure website profiles";
+"Home.Tooltip.sitePopupWithoutList" = "Open Preferences and configure websites";
+"Home.Tooltip.preferenceButton" = "Find answers to your questions";
 "Home.Tooltip.downloadButton" = "Update computer files to match the website";
 "Home.Tooltip.uploadButton" = "spacebar · update the website to match computer files";
 "Home.Tooltip.adminButton" = "A · connect to Svija Admin";
@@ -36,7 +36,7 @@
 // News
 
 "News.language" = "en";
-"News.Placeholder.text" = "<h1>Svija Sync 1.0.2</h1><p>To get started, click on <b>Set Up</b> and add your website credentials.<br>Connect to <b>Svija Admin</b> for modifications to be visible immediately.";
+"News.Placeholder.text" = "<h1>Svija Sync</h1><p>Open menu <b>Svija Sync › Preferences</b> to get started. You must<br>connect to <b>Svija Admin</b> for your modifications to be visible.";
 "News.Placeholder.message" = "";
 
 // Alert
@@ -51,7 +51,7 @@
 "Alert.Confirmation.Message.quitAppWhenDownload" = "Quitting now will leave incomplete files on your computer.\n\nDownload next time to finish synching.";
 
 "Alert.Title.projectFolderMissing" = "Project Folder is Missing";
-"Alert.Message.projectFolderMissing" = "Click \"Set Up\" to modify this website and select a project folder.";
+"Alert.Message.projectFolderMissing" = "Open Preferences to modify this website and select a project folder.";
 
 "Alert.Title.projectFolderDamaged" = "Project Folder is Damaged";
 "Alert.Message.projectFolderDamaged" = "Re-download to continue or contact support.";
@@ -69,7 +69,7 @@
 "Alert.Message.siteLimit" = "Please delete a website or modify an existing website.";
 
 "Alert.Title.missingName" = "Configuration Incomplete";
-"Alert.Message.missingName" = "Please click the gear icon then enter your nickname.";
+"Alert.Message.missingName" = "Please open Preferences then enter your nickname.";
 
 "Alert.Title.duplicateSite" = "Website Already Exists";
 "Alert.Message.duplicateSite" = "The specified website already exists. Please select it then click Modify.";
@@ -87,7 +87,7 @@
 "Alert.Message.invalidCharacters" = "Please use only letters and numbers.";
 
 "Alert.Title.inaccessible" = "Project folder inaccessible";
-"Alert.Message.inaccessible" = "Please select the project folder or click the gear icon to reconfigure the website";
+"Alert.Message.inaccessible" = "Please select the project folder or open Preferences to reconfigure the website";
 
 
 // Preference
@@ -95,7 +95,7 @@
 "Preference.OpenPanel.message" = "Please choose a Project Folder";
 "Preference.OpenPanel.prompt" = "Choose";
 
-"Preference.Help.html" = "Visit <a href=\"https://tech.svija.love\">tech.svija.love</a> for help and information.";
+"Preference.Help.html" = "Svija is free — create an account at <a href=\"https://svija.love/fromsync\">svija.love</a>.";
 
 "Preference.Button.undo" = "Undo";
 "Preference.Button.modify" = "Modify";
@@ -130,4 +130,4 @@
 "Preference.Tooltip.url" = "The address of the website without http or /";
 "Preference.Tooltip.connectID" = "The connect ID from the email you received";
 "Preference.Tooltip.password" = "The password from the email you received";
-"Preference.Tooltip.visitLink" = "Visit docs.svija.love in your browser.";
+"Preference.Tooltip.visitLink" = "Visit svija.love in your browser.";

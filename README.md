@@ -1,10 +1,14 @@
 [logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
 
-*Updated 9 September, 2021*
+*Updated 1 October, 2021*
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
-# Svija Synch 1.0.2
+This is the new beta branch. It was created because something I did to the pulldown caused it to stop working.
+
+This commit is the last one that works correctly.
+
+# Svija Synch 1.0.3
 
 There will be two versions:
 
@@ -15,18 +19,18 @@ There will be two versions:
 
 ### Version Updates
 
-Following are the instructions for releasing a new version of Svija Tools.
+Following are the instructions for releasing a new version of Svija Sync.
 
 ---
 ### 1. Merge to Master
 
-Check out the **destination branch** and merge ([list of commits](https://github.com/svijalove/Svija-Tools/commits/dev)):
+Check out the **destination branch** and merge ([list of commits](https://github.com/svijalove/Svija-Tools/commits/beta)):
 ```
 git status
 ```
 ```
 git checkout master
-git merge dev --no-ff
+git merge beta --no-ff
 ```
 Push the new version:
 ```
@@ -57,14 +61,14 @@ On github, create a new release from the **master branch**.
 ---
 ### 5. Check Out the Dev Branch
 
-Commit any changes, then check out the dev branch:
+Commit any changes, then check out the beta branch:
 ```
 git status
-git commit -m "last commit before going back to dev" -a
+git commit -m "last commit before going back to beta" -a
 ```
-Commit any changes, then check out the dev branch:
+Commit any changes, then check out the beta branch:
 ```
-git checkout dev
+git checkout beta 
 git merge master --no-ff -m "starting new version"
 git push -u
 ```
@@ -72,9 +76,17 @@ git push -u
 ### 6. Increment the Version Number
 
 Places to update the version number:
-```
-list to be announced
-```
+- both Xcode targets
+- this README.md
+- msg.svija.love
+
+---
+### 8. Update tutorial content at tech.svija.com
+
+Read through the [changelog](https://tech.svija.love/reference/changelogs/changelog-tools) and make a list of modfications for the new version.
+
+Update the [documentation pages](https://tech.svija.com) if necessary.
+
 ---
 ### 7. Post to Social Media
 
@@ -85,14 +97,3 @@ Find a nice picture or make an ad to accompany the update, then
 - [instagram/svijalove](https://instagram/svijalove) (make it 3x wide · has to be posted from phone)
 - [linkedin.com/company/svijalove](https://linkedin.com/company/svijalove) (add text before adding image)
 
----
-### 8. Update tutorial content at tech.svija.com
-
-Read through the [changelog](https://tech.svija.love/reference/changelogs/changelog-tools) and make a list of modfications for the new version.
-
-Update the [documentation pages](https://tech.svija.com) if necessary.
-
----
-### 9. Create a News Message
-
-Create a new news message at msg.svija.love for the new version.

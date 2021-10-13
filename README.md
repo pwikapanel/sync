@@ -49,12 +49,19 @@ Create an **notarized version** so that will be available in case of future comp
 Zip it and store it in notarized.
 
 ---
-### 4. Create a new App Store version of Sync
+### 4. Update msg.svija.love
+
+The app store reviewers will see the message — make sure it's nice!
+
+    vi -O msg.svija.love/1.0.4/*
+
+---
+### 5. Create a new App Store version of Sync
 
 See the [dedicated document](https://github.com/svijalove/sync/tree/master/app-store).
 
 ---
-### 5. Create A New Github Release
+### 6. Create A New Github Release
 
 On github, create a new release from the **master branch**.
 
@@ -63,7 +70,7 @@ On github, create a new release from the **master branch**.
 - use the changelog text for the description
 
 ---
-### 6. Check Out the Dev Branch
+### 7. Check Out the Beta Branch
 
 Commit any changes, then check out the beta branch:
 ```
@@ -77,7 +84,7 @@ git merge master --no-ff -m "starting new version"
 git push -u
 ```
 ---
-### 7. Increment the Version Number
+### 8. Increment the Version Number
 
 Places to update the version number:
 - both Xcode targets
@@ -85,14 +92,14 @@ Places to update the version number:
 - msg.svija.love
 
 ---
-### 8. Update tutorial content at tech.svija.com
+### 9. Update tutorial content at tech.svija.com
 
 Read through the [changelog](https://tech.svija.love/reference/changelogs/changelog-tools) and make a list of modfications for the new version.
 
 Update the [documentation pages](https://tech.svija.com) if necessary.
 
 ---
-### 7. Post to Social Media
+### 10. Post to Social Media
 
 Find a nice picture or make an ad to accompany the update, then
 

@@ -4,16 +4,13 @@
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
-This is the new beta branch. It was created because something I did to the pulldown caused it to stop working.
-
-This commit is the last one that works correctly.
-
 # Svija Synch 1.0.3
 
-There will be two versions:
+There will be three versions:
 
 - Svija Sync (App Store)
 - Svija Sync Direct (direct download)
+- Svija Sync Beta (for beta testing)
 
 ---
 
@@ -42,7 +39,7 @@ git push origin master
 Copy info from/to:
 
 - [github.com/svijalove/django-svija/commits/master](https://github.com/svijalove/Svija-Tools/commits/master)
-- [tech.svija.love/manual/changelog-tools](https://tech.svija.love/manual/changelog-tools)
+- [tech.svija.love/manual/changelog-sync](https://tech.svija.love/manual/changelog-sync)
 
 ---
 ### 3. Create a Notarized Version

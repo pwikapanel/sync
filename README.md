@@ -38,7 +38,7 @@ git push origin master
 
 Copy info from/to:
 
-- [github.com/svijalove/django-svija/commits/master](https://github.com/svijalove/Svija-Tools/commits/master)
+- [github.com/svijalove/sync/commits/beta](https://github.com/svijalove/sync/commits/beta)
 - [tech.svija.love/manual/changelog-sync](https://tech.svija.love/manual/changelog-sync)
 
 ---

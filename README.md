@@ -12,7 +12,7 @@ There are three versions:
 - **Svija Sync Direct** · direct download
 - **Svija Sync Direct Beta** · beta testing
 
-They are choosable in Xcode as **schemes** under the **Product menu**.
+They are determined in Xcode through choosing a **schemes** under the **Product menu**.
 
 ---
 ### Version Updates

@@ -69,7 +69,7 @@ On github, create a [new release][l1] from the **master branch**.
 [l1]: https://github.com/svijalove/sync/releases/new
 
 - use the current version number
-- use the month & year for the title
+- use the month & year for the title + v2
 - use the changelog text for the description
 
 ---

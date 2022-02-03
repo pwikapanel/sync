@@ -1,19 +1,20 @@
 [logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
 
-*Updated 1 October, 2021*
+*Updated 4 February, 2022*
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
 # Svija Synch 1.0.3
 
-There will be three versions:
+There are three versions:
 
-- Svija Sync (App Store)
-- Svija Sync Direct (direct download)
-- Svija Sync Beta (for beta testing)
+- **Svija Sync** · Mac App Store
+- **Svija Sync Direct** · direct download
+- **Svija Sync Direct Beta** · beta testing
+
+They are choosable in Xcode as **schemes** under the **Product menu**.
 
 ---
-
 ### Version Updates
 
 Following are the instructions for releasing a new version of Svija Sync.

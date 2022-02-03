@@ -64,7 +64,9 @@ See the [dedicated document](https://github.com/svijalove/sync/tree/master/app-s
 ---
 ### 6. Create A New Github Release
 
-On github, create a new release from the **master branch**.
+On github, create a [new release][l1] from the **master branch**.
+
+[l1]: https://github.com/svijalove/sync/releases/new
 
 - use the current version number
 - use the month & year for the title

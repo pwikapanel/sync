@@ -8,6 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		4B52D2D72660E3AF00441348 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4B52D2D62660E3AF00441348 /* Rsync */; };
+		AA92C6CF2716C456008BD343 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */; };
+		AA92C6D02716C456008BD343 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
+		AA92C6D12716C456008BD343 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E641E425DA9FAB00262B13 /* FileManagerExtensions.swift */; };
+		AA92C6D22716C456008BD343 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF3B6025CEBFFF00D24D9C /* PreferenceViewController.swift */; };
+		AA92C6D32716C456008BD343 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B060325CE83520021C8C9 /* Utility.swift */; };
+		AA92C6D42716C456008BD343 /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
+		AA92C6D52716C456008BD343 /* ConnectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF3B6F25CECF3400D24D9C /* ConnectionListView.swift */; };
+		AA92C6D62716C456008BD343 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0CDA25DA891000818063 /* NewsViewModel.swift */; };
+		AA92C6D72716C456008BD343 /* HomeSyncStatusHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63A4C7225DC093600C3B9BF /* HomeSyncStatusHandler.swift */; };
+		AA92C6D82716C456008BD343 /* FormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF3B6C25CECF2300D24D9C /* FormFieldView.swift */; };
+		AA92C6D92716C456008BD343 /* FolderAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3076225CE99D000806F0C /* FolderAccess.swift */; };
+		AA92C6DA2716C456008BD343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F2085725C94475005DAC78 /* AppDelegate.swift */; };
+		AA92C6DB2716C456008BD343 /* NSTextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A1C8025D40FF9009B8BB2 /* NSTextFieldExtension.swift */; };
+		AA92C6DC2716C456008BD343 /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A1C8325D41270009B8BB2 /* CodableExtension.swift */; };
+		AA92C6DD2716C456008BD343 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EBE34525CE45E500498A04 /* HomeViewController.swift */; };
+		AA92C6DE2716C456008BD343 /* CharacterSetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FB0B125F1F3450026473F /* CharacterSetExtensions.swift */; };
+		AA92C6DF2716C456008BD343 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FB0B425F1F3760026473F /* Validation.swift */; };
+		AA92C6E02716C456008BD343 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69C997A25CED7D900642A55 /* HomeViewModel.swift */; };
+		AA92C6E12716C456008BD343 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
+		AA92C6E22716C456008BD343 /* NSViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DC75A25D6453C00FE3DDB /* NSViewControllerExtensions.swift */; };
+		AA92C6E32716C456008BD343 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0CD725DA887500818063 /* NewsView.swift */; };
+		AA92C6E42716C456008BD343 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EBE34B25CE497000498A04 /* Storage.swift */; };
+		AA92C6E52716C456008BD343 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DC75725D644E600FE3DDB /* NSViewExtensions.swift */; };
+		AA92C6E62716C456008BD343 /* UploadStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AE0E14265A652D0038DFAE /* UploadStatus.swift */; };
+		AA92C6E72716C456008BD343 /* SiteConnectionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBC225D54965003931BB /* SiteConnectionOperation.swift */; };
+		AA92C6E82716C456008BD343 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A1C7D25D40E96009B8BB2 /* Constants.swift */; };
+		AA92C6E92716C456008BD343 /* PreferenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69C997725CED49300642A55 /* PreferenceViewModel.swift */; };
+		AA92C6EA2716C456008BD343 /* PreferenceHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E641DB25DA9C1C00262B13 /* PreferenceHelpView.swift */; };
+		AA92C6EB2716C456008BD343 /* HomeUploadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63FDA4425E1443F000929C0 /* HomeUploadHandler.swift */; };
+		AA92C6EC2716C456008BD343 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBBB25D4FA69003931BB /* TimeIntervalExtensions.swift */; };
+		AA92C6ED2716C456008BD343 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99625DEADDA00DBD5B0 /* DateExtensions.swift */; };
+		AA92C6EE2716C456008BD343 /* HomeDownloadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63FDA4725E1444E000929C0 /* HomeDownloadHandler.swift */; };
+		AA92C6F02716C456008BD343 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = AA92C6CC2716C456008BD343 /* Rsync */; };
+		AA92C6F12716C456008BD343 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63A4C6625DBB8E400C3B9BF /* WebKit.framework */; };
+		AA92C6F32716C456008BD343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
+		AA92C6F42716C456008BD343 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
+		AA92C6F52716C456008BD343 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
+		AA92C6F62716C456008BD343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
 		AACAFEDE26E10ED300511FF2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */; };
 		AACAFEDF26E10ED300511FF2 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
 		AACAFEE026E10ED300511FF2 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E641E425DA9FAB00262B13 /* FileManagerExtensions.swift */; };
@@ -88,6 +126,8 @@
 /* Begin PBXFileReference section */
 		4BF35272263AA6A500BFD9B8 /* Rsync-Dependency */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Rsync-Dependency"; path = "../Rsync-Dependency"; sourceTree = "<group>"; };
 		AA414C76270B39A2003B8DED /* Svija Sync copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Svija Sync copy2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AA92C6FB2716C456008BD343 /* Svija Sync Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA92C6FC2716C457008BD343 /* Svija Sync copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Svija Sync copy-Info.plist"; path = "/Users/Main/Desktop/sync/xcode/Svija Sync copy-Info.plist"; sourceTree = "<absolute>"; };
 		AACAFE9A26E10BD300511FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AACAFE9C26E10BD300511FF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AACAFE9E26E10BD400511FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +179,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AA92C6EF2716C456008BD343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA92C6F02716C456008BD343 /* Rsync in Frameworks */,
+				AA92C6F12716C456008BD343 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AACAFEFE26E10ED300511FF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +347,7 @@
 				AACAFE9926E10BD300511FF2 /* Svija Sync Downloadable */,
 				D6F2085525C94475005DAC78 /* Products */,
 				D66B288F25D694B500A2ACF8 /* Frameworks */,
+				AA92C6FC2716C457008BD343 /* Svija Sync copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -306,6 +356,7 @@
 			children = (
 				D6F2085425C94475005DAC78 /* Svija Sync.app */,
 				AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */,
+				AA92C6FB2716C456008BD343 /* Svija Sync Beta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -330,6 +381,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AA92C6CB2716C456008BD343 /* Svija Sync Beta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA92C6F82716C456008BD343 /* Build configuration list for PBXNativeTarget "Svija Sync Beta" */;
+			buildPhases = (
+				AA92C6CE2716C456008BD343 /* Sources */,
+				AA92C6EF2716C456008BD343 /* Frameworks */,
+				AA92C6F22716C456008BD343 /* Resources */,
+				AA92C6F72716C456008BD343 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Svija Sync Beta";
+			packageProductDependencies = (
+				AA92C6CC2716C456008BD343 /* Rsync */,
+			);
+			productName = SvijaSync;
+			productReference = AA92C6FB2716C456008BD343 /* Svija Sync Beta.app */;
+			productType = "com.apple.product-type.application";
+		};
 		AACAFEDA26E10ED300511FF2 /* Svija Sync Direct */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AACAFF0726E10ED300511FF2 /* Build configuration list for PBXNativeTarget "Svija Sync Direct" */;
@@ -405,11 +477,23 @@
 			targets = (
 				D6F2085325C94475005DAC78 /* Svija Sync */,
 				AACAFEDA26E10ED300511FF2 /* Svija Sync Direct */,
+				AA92C6CB2716C456008BD343 /* Svija Sync Beta */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AA92C6F22716C456008BD343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA92C6F32716C456008BD343 /* Assets.xcassets in Resources */,
+				AA92C6F42716C456008BD343 /* Credits.html in Resources */,
+				AA92C6F52716C456008BD343 /* Localizable.strings in Resources */,
+				AA92C6F62716C456008BD343 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AACAFF0126E10ED300511FF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,6 +519,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AA92C6F72716C456008BD343 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PROJECT_DIR}/swiftgen/bin/swiftgen\"\n";
+		};
 		AACAFF0626E10ED300511FF2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +573,45 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AA92C6CE2716C456008BD343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA92C6CF2716C456008BD343 /* ImageView.swift in Sources */,
+				AA92C6D02716C456008BD343 /* AsyncOperation.swift in Sources */,
+				AA92C6D12716C456008BD343 /* FileManagerExtensions.swift in Sources */,
+				AA92C6D22716C456008BD343 /* PreferenceViewController.swift in Sources */,
+				AA92C6D32716C456008BD343 /* Utility.swift in Sources */,
+				AA92C6D42716C456008BD343 /* SiteConnectionExtensions.swift in Sources */,
+				AA92C6D52716C456008BD343 /* ConnectionListView.swift in Sources */,
+				AA92C6D62716C456008BD343 /* NewsViewModel.swift in Sources */,
+				AA92C6D72716C456008BD343 /* HomeSyncStatusHandler.swift in Sources */,
+				AA92C6D82716C456008BD343 /* FormFieldView.swift in Sources */,
+				AA92C6D92716C456008BD343 /* FolderAccess.swift in Sources */,
+				AA92C6DA2716C456008BD343 /* AppDelegate.swift in Sources */,
+				AA92C6DB2716C456008BD343 /* NSTextFieldExtension.swift in Sources */,
+				AA92C6DC2716C456008BD343 /* CodableExtension.swift in Sources */,
+				AA92C6DD2716C456008BD343 /* HomeViewController.swift in Sources */,
+				AA92C6DE2716C456008BD343 /* CharacterSetExtensions.swift in Sources */,
+				AA92C6DF2716C456008BD343 /* Validation.swift in Sources */,
+				AA92C6E02716C456008BD343 /* HomeViewModel.swift in Sources */,
+				AA92C6E12716C456008BD343 /* Strings+Generated.swift in Sources */,
+				AA92C6E22716C456008BD343 /* NSViewControllerExtensions.swift in Sources */,
+				AA92C6E32716C456008BD343 /* NewsView.swift in Sources */,
+				AA92C6E42716C456008BD343 /* Storage.swift in Sources */,
+				AA92C6E52716C456008BD343 /* NSViewExtensions.swift in Sources */,
+				AA92C6E62716C456008BD343 /* UploadStatus.swift in Sources */,
+				AA92C6E72716C456008BD343 /* SiteConnectionOperation.swift in Sources */,
+				AA92C6E82716C456008BD343 /* Constants.swift in Sources */,
+				AA92C6E92716C456008BD343 /* PreferenceViewModel.swift in Sources */,
+				AA92C6EA2716C456008BD343 /* PreferenceHelpView.swift in Sources */,
+				AA92C6EB2716C456008BD343 /* HomeUploadHandler.swift in Sources */,
+				AA92C6EC2716C456008BD343 /* TimeIntervalExtensions.swift in Sources */,
+				AA92C6ED2716C456008BD343 /* DateExtensions.swift in Sources */,
+				AA92C6EE2716C456008BD343 /* HomeDownloadHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AACAFEDD26E10ED300511FF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -581,6 +721,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AA92C6F92716C456008BD343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SvijaSync/SvijaSync.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = Z66QVF9XBZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Svija Sync copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncbeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA92C6FA2716C456008BD343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SvijaSync/SvijaSync.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = Z66QVF9XBZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Svija Sync copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncbeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		AACAFF0826E10ED300511FF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -805,6 +997,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AA92C6F82716C456008BD343 /* Build configuration list for PBXNativeTarget "Svija Sync Beta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA92C6F92716C456008BD343 /* Debug */,
+				AA92C6FA2716C456008BD343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AACAFF0726E10ED300511FF2 /* Build configuration list for PBXNativeTarget "Svija Sync Direct" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -843,6 +1044,14 @@
 				version = 1.0.6;
 			};
 		};
+		AA92C6CD2716C456008BD343 /* XCRemoteSwiftPackageReference "Rsync-Utility" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/svijasvg/Rsync-Utility.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.6;
+			};
+		};
 		AACAFEDC26E10ED300511FF2 /* XCRemoteSwiftPackageReference "Rsync-Utility" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/svijasvg/Rsync-Utility.git";
@@ -857,6 +1066,11 @@
 		4B52D2D62660E3AF00441348 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4B52D2D52660E3AF00441348 /* XCRemoteSwiftPackageReference "Rsync-Utility" */;
+			productName = Rsync;
+		};
+		AA92C6CC2716C456008BD343 /* Rsync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA92C6CD2716C456008BD343 /* XCRemoteSwiftPackageReference "Rsync-Utility" */;
 			productName = Rsync;
 		};
 		AACAFEDB26E10ED300511FF2 /* Rsync */ = {

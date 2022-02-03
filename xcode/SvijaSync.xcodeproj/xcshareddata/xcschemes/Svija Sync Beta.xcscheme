@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AACAFEDA26E10ED300511FF2"
-               BuildableName = "Svija Sync Direct.app"
-               BlueprintName = "Svija Sync Direct"
+               BlueprintIdentifier = "AA92C6CB2716C456008BD343"
+               BuildableName = "Svija Sync copy.app"
+               BlueprintName = "Svija Sync Beta"
                ReferencedContainer = "container:SvijaSync.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AACAFEDA26E10ED300511FF2"
-            BuildableName = "Svija Sync Direct.app"
-            BlueprintName = "Svija Sync Direct"
+            BlueprintIdentifier = "AA92C6CB2716C456008BD343"
+            BuildableName = "Svija Sync copy.app"
+            BlueprintName = "Svija Sync Beta"
             ReferencedContainer = "container:SvijaSync.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AACAFEDA26E10ED300511FF2"
-            BuildableName = "Svija Sync Direct.app"
-            BlueprintName = "Svija Sync Direct"
+            BlueprintIdentifier = "AA92C6CB2716C456008BD343"
+            BuildableName = "Svija Sync copy.app"
+            BlueprintName = "Svija Sync Beta"
             ReferencedContainer = "container:SvijaSync.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

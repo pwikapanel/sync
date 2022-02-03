@@ -1,22 +1,20 @@
 [logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
 
-*Updated 1 October, 2021*
+*Updated 4 February, 2022*
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
-This is the new beta branch. It was created because something I did to the pulldown caused it to stop working.
-
-This commit is the last one that works correctly.
-
 # Svija Synch 1.0.3
 
-There will be two versions:
+There are three versions:
 
-- Svija Sync (App Store)
-- Svija Sync Direct (direct download)
+- **Svija Sync** · Mac App Store
+- **Svija Sync Direct** · direct download
+- **Svija Sync Direct Beta** · beta testing
+
+They are determined in Xcode through choosing a **schemes** under the **Product menu**.
 
 ---
-
 ### Version Updates
 
 Following are the instructions for releasing a new version of Svija Sync.
@@ -41,25 +39,41 @@ git push origin master
 
 Copy info from/to:
 
-- [github.com/svijalove/django-svija/commits/master](https://github.com/svijalove/Svija-Tools/commits/master)
-- [tech.svija.love/manual/changelog-tools](https://tech.svija.love/manual/changelog-tools)
+- [github.com/svijalove/sync/commits/beta](https://github.com/svijalove/sync/commits/beta)
+- [tech.svija.love/manual/changelog-sync](https://tech.svija.love/manual/changelog-sync)
 
 ---
-### 3. Create a Notarized Version
+### 3. Create a Notarized Version of Sync Direct
 
 Create an **notarized version** so that will be available in case of future compatibility problems.
 
----
-### 4. Create A New Github Release
+Zip it and store it in notarized.
 
-On github, create a new release from the **master branch**.
+---
+### 4. Update msg.svija.love
+
+The app store reviewers will see the message — make sure it's nice!
+
+    vi -O msg.svija.love/1.0.4/*
+
+---
+### 5. Create a new App Store version of Sync
+
+See the [dedicated document](https://github.com/svijalove/sync/tree/master/app-store).
+
+---
+### 6. Create A New Github Release
+
+On github, create a [new release][l1] from the **master branch**.
+
+[l1]: https://github.com/svijalove/sync/releases/new
 
 - use the current version number
-- use the month & year for the title
+- use the month & year for the title + v2
 - use the changelog text for the description
 
 ---
-### 5. Check Out the Dev Branch
+### 7. Check Out the Beta Branch
 
 Commit any changes, then check out the beta branch:
 ```
@@ -73,7 +87,7 @@ git merge master --no-ff -m "starting new version"
 git push -u
 ```
 ---
-### 6. Increment the Version Number
+### 8. Increment the Version Number
 
 Places to update the version number:
 - both Xcode targets
@@ -81,14 +95,14 @@ Places to update the version number:
 - msg.svija.love
 
 ---
-### 8. Update tutorial content at tech.svija.com
+### 9. Update tutorial content at tech.svija.com
 
 Read through the [changelog](https://tech.svija.love/reference/changelogs/changelog-tools) and make a list of modfications for the new version.
 
 Update the [documentation pages](https://tech.svija.com) if necessary.
 
 ---
-### 7. Post to Social Media
+### 10. Post to Social Media
 
 Find a nice picture or make an ad to accompany the update, then
 

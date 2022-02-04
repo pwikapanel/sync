@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Rsync",
-        "repositoryURL": "https://github.com/svijasvg/Rsync-Utility.git",
+        "repositoryURL": "https://github.com/svijalove/sync-rsync",
         "state": {
-          "branch": null,
-          "revision": "e1cfbe4577661a738525b4f006152c1d2d1a973a",
-          "version": "1.0.6"
+          "branch": "beta",
+          "revision": "c2b8543fe7dda6a6680b756ef332e1342cc83ac6",
+          "version": null
         }
       }
     ]

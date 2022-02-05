@@ -17,13 +17,12 @@ class NewsView: NSView {
   @IBOutlet weak var messageLabel: NSTextField!
   @IBOutlet weak var newsWebView: WKWebView!
   
-  override func awakeFromNib() {
+    override func awakeFromNib() {
     super.awakeFromNib()
     textLabel.isHidden = true
     messageLabel.isHidden = true
     
     newsWebView.loadHTMLString(html + Text.News.Placeholder.message + "</body></html>", baseURL: nil)
-    //newsWebView.loadHTMLString(html + "" + "</body></html>", baseURL: nil)
     newsWebView.setValue(false, forKey: "drawsBackground")
     toolTip = Text.Home.Tooltip.newsView
     
@@ -31,15 +30,14 @@ class NewsView: NSView {
   }
   
   func loadContent() {
-    viewModel.fetchContent { [weak self] data in
-      DispatchQueue.main.async {
-        self?.update(data)
-      }
-    }
-  }
+        viewModel.fetchContent { [weak self] data in
+            DispatchQueue.main.async {
+                self?.update(data)
+            }
+        }
+}
   
   private func update(_ data: NewsData) {
-    //newsWebView.loadHTMLString(data.text, baseURL: nil)
     newsWebView.loadHTMLString(html + data.text + "</body></html>", baseURL: nil)
   }
   

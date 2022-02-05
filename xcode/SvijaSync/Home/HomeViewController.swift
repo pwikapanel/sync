@@ -10,7 +10,9 @@ import Rsync
 
 class HomeViewController: NSViewController {
   
-  enum HomeViewState {
+//  static let instance=HomeViewController()
+//  private init(){}
+    enum HomeViewState {
     case noActivity
     case download
     case upload

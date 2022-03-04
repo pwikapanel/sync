@@ -15,6 +15,21 @@ There are three versions:
 They are determined in Xcode through choosing a **schemes** under the **Product menu**.
 
 ---
+
+<details><summary>Expand test codes</summary>
+
+```
+svija.dev
+svija210901
+r2vv5Qf6cS7D6hPy
+
+newuser.svija.dev
+newuser220303
+CqGlXJM1tUXIkOIn
+```
+</details>
+
+---
 ### Version Updates
 
 Following are the instructions for releasing a new version of Svija Sync.

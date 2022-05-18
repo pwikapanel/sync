@@ -11,7 +11,7 @@ Instructions for releasing a new version of Svija Sync.
 ---
 ### 1. Merge to Master
 
-Check out the **destination branch** and merge ([list of commits](https://github.com/svijalove/Svija-Tools/commits/beta)):
+Check out the **destination branch** and merge ([list of commits](https://github.com/svijalove/sync/commits/beta)):
 ```
 git status
 ```

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B52D2D72660E3AF00441348 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = 4B52D2D62660E3AF00441348 /* Rsync */; };
 		AA92C6CF2716C456008BD343 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */; };
 		AA92C6D02716C456008BD343 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
 		AA92C6D12716C456008BD343 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E641E425DA9FAB00262B13 /* FileManagerExtensions.swift */; };
@@ -201,7 +200,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B52D2D72660E3AF00441348 /* Rsync in Frameworks */,
 				D63A4C6725DBB8E400C3B9BF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +436,6 @@
 			);
 			name = "Svija Sync";
 			packageProductDependencies = (
-				4B52D2D62660E3AF00441348 /* Rsync */,
 			);
 			productName = SvijaSync;
 			productReference = D6F2085425C94475005DAC78 /* Svija Sync.app */;
@@ -469,7 +466,7 @@
 			);
 			mainGroup = D6F2084B25C94475005DAC78;
 			packageReferences = (
-				4B52D2D52660E3AF00441348 /* XCRemoteSwiftPackageReference "Rsync-Utility" */,
+				AA5C272627AD7F9300DD3187 /* XCRemoteSwiftPackageReference "sync-rsync" */,
 			);
 			productRefGroup = D6F2085525C94475005DAC78 /* Products */;
 			projectDirPath = "";
@@ -739,7 +736,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncbeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -765,7 +762,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncbeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -791,7 +788,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncdirect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -817,7 +814,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncdirect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -960,7 +957,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -986,7 +983,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1036,12 +1033,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4B52D2D52660E3AF00441348 /* XCRemoteSwiftPackageReference "Rsync-Utility" */ = {
+		AA5C272627AD7F9300DD3187 /* XCRemoteSwiftPackageReference "sync-rsync" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/svijasvg/Rsync-Utility.git";
+			repositoryURL = "https://github.com/svijalove/sync-rsync";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.6;
+				branch = beta;
+				kind = branch;
 			};
 		};
 		AA92C6CD2716C456008BD343 /* XCRemoteSwiftPackageReference "Rsync-Utility" */ = {
@@ -1063,11 +1060,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4B52D2D62660E3AF00441348 /* Rsync */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4B52D2D52660E3AF00441348 /* XCRemoteSwiftPackageReference "Rsync-Utility" */;
-			productName = Rsync;
-		};
 		AA92C6CC2716C456008BD343 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AA92C6CD2716C456008BD343 /* XCRemoteSwiftPackageReference "Rsync-Utility" */;

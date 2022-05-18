@@ -6,7 +6,7 @@
 
 ### Releasing a New Version
 
-Following are the instructions for releasing a new version of Svija Sync.
+Instructions for releasing a new version of Svija Sync.
 
 ---
 ### 1. Merge to Master

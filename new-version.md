@@ -34,9 +34,9 @@ Copy info from/to:
 ---
 ### 3. Create a Notarized Version of Sync Direct
 
-Create an **notarized version** so that will be available in case of future compatibility problems.
+In **Xcode**, create an **notarized version** so that will be available in case of future compatibility problems.
 
-Zip it and store it in notarized.
+Zip it and store it in **/notarized**.
 
 ---
 ### 4. Update msg.svija.love

@@ -94,8 +94,8 @@ git push -u
 ### 8. Increment the Version Number
 
 Places to update the version number:
-- both Xcode targets
-- this README.md
+- three **Xcode targets** (click top of hierarchy & general)
+- the parent README.md
 - msg.svija.love
 
 ---
@@ -114,4 +114,3 @@ Find a nice picture or make an ad to accompany the update, then
 - [twitter.com/svijalove](https://twitter.com/svijalove)
 - [instagram/svijalove](https://instagram/svijalove) (make it 3x wide · has to be posted from phone)
 - [linkedin.com/company/svijalove](https://linkedin.com/company/svijalove) (add text before adding image)
-

@@ -39,12 +39,9 @@ In **Xcode**, archive a **notarized version** so that will be available in case 
 - click on the highest level of the hierarchy in the **Project Navigator** at left
 - go to Product › Scheme › **Svija Sync Direct**
 - go to Product › Archive
+- click **Distribute App**
+- select **Developer ID** › **Upload** (select automatically manage signing)
 
----
-
-to change your Github credentials in Xcode, you need to create a new account, and get a new token fro Github
-
-click the **create a token on github** button in Xcdoe to get to Github documentation.
 
 ---
 

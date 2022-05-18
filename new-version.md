@@ -72,7 +72,9 @@ On github, create a [new release][l1] from the **master branch**.
 
 - use the current version number
 - use the month & year for the title + v2
-- use the changelog text for the description
+- use the [master commit list][mcl] for the description
+
+[mcl]: https://github.com/svijalove/sync/commits/master
 
 ---
 ### 7. Check Out the Beta Branch

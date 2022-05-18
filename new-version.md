@@ -34,7 +34,11 @@ Copy info from/to:
 ---
 ### 3. Create a Notarized Version of Sync Direct
 
-In **Xcode**, create an **notarized version** so that will be available in case of future compatibility problems.
+In **Xcode**, archive a **notarized version** so that will be available in case of future compatibility problems.
+
+- click on the highest level of the hierarchy in the **Project Navigator** at left
+- go to Product › Scheme › **Svija Sync Direct**
+
 
 Zip it and store it in **/notarized**.
 

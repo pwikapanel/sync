@@ -86,7 +86,7 @@ Places to update the version number:
 ---
 ### 9. Update tutorial content at tech.svija.com
 
-Read through the [changelog](https://tech.svija.love/reference/changelogs/changelog-tools) and make a list of modfications for the new version.
+Read through the [changelog](https://tech.svija.love/reference/changelogs/changelog-sync) and make a list of modfications for the new version.
 
 Update the [documentation pages](https://tech.svija.com) if necessary.
 

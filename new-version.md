@@ -42,10 +42,14 @@ In **Xcode**, archive a **notarized version** so that will be available in case 
 - click **Distribute App**
 - select **Developer ID** › **Upload** (select automatically manage signing)
 
-A response is usually sent within an hour or two.
+A response is usually sent within five minutes.
 
-1. Zip the final file and store it in **/notarized**
-2. move the unzipped version to the **dmg-creation** repository
+To access the notarized file:
+- go to **Window** › **Organizer**
+- select the correct version then click **Export Notarized App** in the lower right corner
+
+1. add the version number to the filename, and copy it to **/previous-versions**
+2. move the unzipped version to the **dmg-installation** repository and remove **Direct** from the filename
 
 ---
 ### 4. Update msg.svija.love

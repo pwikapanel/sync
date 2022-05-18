@@ -34,9 +34,22 @@ Copy info from/to:
 ---
 ### 3. Create a Notarized Version of Sync Direct
 
-Create an **notarized version** so that will be available in case of future compatibility problems.
+In **Xcode**, archive a **notarized version** so that will be available in case of future compatibility problems.
 
-Zip it and store it in notarized.
+- click on the highest level of the hierarchy in the **Project Navigator** at left
+- go to Product › Scheme › **Svija Sync Direct**
+- go to Product › Archive
+- click **Distribute App**
+- select **Developer ID** › **Upload** (select automatically manage signing)
+
+A response is usually sent within five minutes.
+
+To access the notarized file:
+- go to **Window** › **Organizer**
+- select the correct version then click **Export Notarized App** in the lower right corner
+
+1. add the version number to the filename, and copy it to **/previous-versions**
+2. move the unzipped version to the **dmg-installation** repository and remove **Direct** from the filename
 
 ---
 ### 4. Update msg.svija.love
@@ -58,8 +71,10 @@ On github, create a [new release][l1] from the **master branch**.
 [l1]: https://github.com/svijalove/sync/releases/new
 
 - use the current version number
-- use the month & year for the title + v2
-- use the changelog text for the description
+- use the month & year for the title (add v2 if necessary)
+- use the [master commit list][mcl] for the description
+
+[mcl]: https://github.com/svijalove/sync/commits/master
 
 ---
 ### 7. Check Out the Beta Branch

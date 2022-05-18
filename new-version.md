@@ -4,8 +4,6 @@
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
-# Svija Synch 1.0.4
-
 ### Releasing a New Version
 
 Following are the instructions for releasing a new version of Svija Sync.

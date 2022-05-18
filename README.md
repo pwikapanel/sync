@@ -16,7 +16,7 @@ They are determined in Xcode through choosing a **schemes** under the **Product 
 
 ---
 
-<details><summary>Expand test codes</summary>
+<details><summary>Test Codes (Expand ▸)</summary>
 
 ```
 svija.dev

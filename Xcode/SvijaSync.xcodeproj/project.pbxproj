@@ -39,7 +39,6 @@
 		AA92C6EC2716C456008BD343 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBBB25D4FA69003931BB /* TimeIntervalExtensions.swift */; };
 		AA92C6ED2716C456008BD343 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99625DEADDA00DBD5B0 /* DateExtensions.swift */; };
 		AA92C6EE2716C456008BD343 /* HomeDownloadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63FDA4725E1444E000929C0 /* HomeDownloadHandler.swift */; };
-		AA92C6F02716C456008BD343 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = AA92C6CC2716C456008BD343 /* Rsync */; };
 		AA92C6F12716C456008BD343 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63A4C6625DBB8E400C3B9BF /* WebKit.framework */; };
 		AA92C6F32716C456008BD343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
 		AA92C6F42716C456008BD343 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
@@ -83,6 +82,8 @@
 		AACAFF0326E10ED300511FF2 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
 		AACAFF0426E10ED300511FF2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		AACAFF0526E10ED300511FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
+		AAF4D36528E6D690004031BE /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = AAF4D36428E6D690004031BE /* Rsync */; };
+		AAF4D36A28E6D77E004031BE /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = AAF4D36928E6D77E004031BE /* Rsync */; };
 		D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		D60EFBB225D4F042003931BB /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
 		D60EFBB925D4F1CB003931BB /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
@@ -182,7 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA92C6F02716C456008BD343 /* Rsync in Frameworks */,
+				AAF4D36528E6D690004031BE /* Rsync in Frameworks */,
 				AA92C6F12716C456008BD343 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF4D36A28E6D77E004031BE /* Rsync in Frameworks */,
 				D63A4C6725DBB8E400C3B9BF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +396,7 @@
 			);
 			name = "Svija Sync Beta";
 			packageProductDependencies = (
-				AA92C6CC2716C456008BD343 /* Rsync */,
+				AAF4D36428E6D690004031BE /* Rsync */,
 			);
 			productName = SvijaSync;
 			productReference = AA92C6FB2716C456008BD343 /* Svija Sync Beta.app */;
@@ -436,6 +438,7 @@
 			);
 			name = "Svija Sync";
 			packageProductDependencies = (
+				AAF4D36928E6D77E004031BE /* Rsync */,
 			);
 			productName = SvijaSync;
 			productReference = D6F2085425C94475005DAC78 /* Svija Sync.app */;
@@ -1041,14 +1044,6 @@
 				kind = branch;
 			};
 		};
-		AA92C6CD2716C456008BD343 /* XCRemoteSwiftPackageReference "Rsync-Utility" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/svijasvg/Rsync-Utility.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.6;
-			};
-		};
 		AACAFEDC26E10ED300511FF2 /* XCRemoteSwiftPackageReference "Rsync-Utility" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/svijasvg/Rsync-Utility.git";
@@ -1060,14 +1055,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AA92C6CC2716C456008BD343 /* Rsync */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AA92C6CD2716C456008BD343 /* XCRemoteSwiftPackageReference "Rsync-Utility" */;
-			productName = Rsync;
-		};
 		AACAFEDB26E10ED300511FF2 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AACAFEDC26E10ED300511FF2 /* XCRemoteSwiftPackageReference "Rsync-Utility" */;
+			productName = Rsync;
+		};
+		AAF4D36428E6D690004031BE /* Rsync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA5C272627AD7F9300DD3187 /* XCRemoteSwiftPackageReference "sync-rsync" */;
+			productName = Rsync;
+		};
+		AAF4D36928E6D77E004031BE /* Rsync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA5C272627AD7F9300DD3187 /* XCRemoteSwiftPackageReference "sync-rsync" */;
 			productName = Rsync;
 		};
 /* End XCSwiftPackageProductDependency section */

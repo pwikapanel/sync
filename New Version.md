@@ -6,6 +6,8 @@
 
 ### Releasing a New Version
 
+**update the marketing version — see bug list for details.**
+
 Instructions for releasing a new version of Svija Sync.
 
 ---

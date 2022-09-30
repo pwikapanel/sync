@@ -27,4 +27,8 @@ but it is actually under tab Build Settings, section Versioning: Current Project
 
 I changed Current Project Version from 12 to 14, and it was successful
 
+---
 
+when I selected the build in App Store Connect, there was a "⚠️ Missing Compliance" warning.
+
+I will assume for now that the questions I answered just afterwards about using encryption were enough to fix the issue.

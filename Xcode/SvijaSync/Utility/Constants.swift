@@ -13,7 +13,7 @@ enum Key {
 }
 
 enum Constant {
-    static let newsUrl = "http://msg.svija.love"
+    static let newsUrl = "http://msg.svija.love/sync"
 
     static let uploadSyncTimeInterval: TimeInterval = 3.0
     static let downloadProgressTimeInterval: TimeInterval = 1.0

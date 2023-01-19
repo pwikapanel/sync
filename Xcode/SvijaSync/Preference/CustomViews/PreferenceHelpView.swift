@@ -50,10 +50,13 @@ private extension PreferenceHelpView {
         <head>
         <style type=\"text/css\">
             body{font-family: '-apple-system','HelveticaNeue'; font-size:13; cursor:default;}
-            a:link{cursor:pointer;text-decoration:none;color:#3273DC}a:visited{text-decoration:none;color:#3273DC}a:hover{text-decoration:none;color:#3273DC}a:active{text-decoration:none;color:#3273DC}
-            @media (prefers-color-scheme: dark) {
-            body{color: white;}
+            a:link, a:visited{ text-decoration:none; color:#3273DC; }
+            a:hover, a:active{ text-decoration:none; color:#FF00AA; }
+            * {
+              -webkit-touch-callout: none;
+              -webkit-user-select: none;
             }
+            @media (prefers-color-scheme: dark) { body{color: white;} }
         </style>
         </head>
         <body style="margin: 0;padding: 0">

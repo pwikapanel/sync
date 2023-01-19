@@ -65,7 +65,18 @@ private extension NewsView {
   
   var html: String {
     """
-        <html><head><style type="text/css">
+        <html><head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZNKVYTV01"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-SZNKVYTV01');
+        </script>
+        <style type="text/css">
         
         html, body  { margin: 0; height: 100%; overflow: hidden; cursor:default;}
         

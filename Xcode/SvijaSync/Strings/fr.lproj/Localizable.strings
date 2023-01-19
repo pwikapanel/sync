@@ -37,7 +37,7 @@
 // News
 
 "News.language" = "en";
-"News.Placeholder.text" = "<h1>Svija Sync</h1><p>Click on <b>Click Here to get started…</b> to add your website<br>credentials. Connect to <b>Svija Admin</b> to see your modifications.";
+"News.Placeholder.text" = "<h1>Svija Sync</h1><p>Click on <b>Click Here to get started…</b> to add your website<br>credentials. Connect to <b>Svija Cloud</b> to see your modifications.";
 "News.Placeholder.message" = "";
 
 // Alert
@@ -96,7 +96,7 @@
 "Preference.OpenPanel.message" = "Please choose a Project Folder";
 "Preference.OpenPanel.prompt" = "Choose";
 
-"Preference.Help.html" = "Svija is free — create an account at <a href=\"https://svija.love/fromsync\">svija.love</a>.";
+"Preference.Help.html" = "Svija is free — create an account at <a href=\"https://svija.love/fromsync\">svija.com</a>.";
 
 "Preference.Button.undo" = "Undo";
 "Preference.Button.modify" = "Modify";

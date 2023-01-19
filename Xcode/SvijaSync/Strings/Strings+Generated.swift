@@ -147,7 +147,7 @@ internal enum L10n {
     internal enum Placeholder {
       /// 
       internal static let message = L10n.tr("Localizable", "News.Placeholder.message")
-      /// <h1>Svija Sync</h1><p>Click on <b>Click Here to get started…</b> to add your website<br>credentials. Connect to <b>Svija Admin</b> to see your modifications.
+      /// <h1>Svija Sync</h1><p>Click on <b>Click Here to get started…</b> to add your website<br>credentials. Connect to <b>Svija Cloud</b> to see your modifications.
       internal static let text = L10n.tr("Localizable", "News.Placeholder.text")
     }
   }
@@ -170,7 +170,7 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Button.update")
     }
     internal enum Help {
-      /// Svija is free — create an account at <a href="https://svija.love/fromsync">svija.love</a>.
+      /// Svija is free — create an account at <a href="https://svija.love/fromsync">svija.com</a>.
       internal static let html = L10n.tr("Localizable", "Preference.Help.html")
     }
     internal enum Label {

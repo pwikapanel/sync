@@ -17,7 +17,7 @@ class NewsView: NSView {
   @IBOutlet weak var messageLabel: NSTextField!
   @IBOutlet weak var newsWebView: WKWebView!
   
-    override func awakeFromNib() {
+  override func awakeFromNib() {
     super.awakeFromNib()
     textLabel.isHidden = true
     messageLabel.isHidden = true
@@ -27,6 +27,7 @@ class NewsView: NSView {
     toolTip = Text.Home.Tooltip.newsView
     
     loadContent()
+    newsWebView.navigationDelegate = self // added 230119 ACS
   }
   
   func loadContent() {

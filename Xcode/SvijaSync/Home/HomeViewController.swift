@@ -112,7 +112,7 @@ class HomeViewController: NSViewController {
     
     switch code{
     case 2 : mesg = "Try visiting a website in your browser to check your connection."
-    case 3 : mesg = "To clear the cache manually, visit [your website]/c in your browser."
+    case 3 : mesg = "To clear the cache manually, visit Svija Cloud by clicking on the icon."
     default: mesg = "Visitors will now see the most recent version of your pages."
     }
     

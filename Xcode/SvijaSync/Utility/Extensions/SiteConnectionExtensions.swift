@@ -20,7 +20,7 @@ extension SiteConnection {
     Array(localSyncPath.components(separatedBy: "/").dropLast(2).suffix(2)).joined(separator: "/")
   }
   
-  var adminUrl:   URL? { URL(string: "https://" + server + "/a") }
+  var adminUrl:   URL? { URL(string: "https://" + server + "/cloud/svija/") }
   var cacheUrl:   URL? { URL(string: "https://" + server + "/csync") }
   var siteUrl:    URL? { URL(string: "https://" + server) }
   

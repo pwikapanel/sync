@@ -1,3 +1,4 @@
+
 /*
  Localizable.strings
  SvijaSync
@@ -23,11 +24,11 @@
 // HOME tooltips
 "Home.Tooltip.sitePopupWithList" = "Select a different website";
 "Home.Tooltip.sitePopupWithoutList" = "Open Preferences and configure websites";
-"Home.Tooltip.preferenceButton" = "Find answers to your questions";
+"Home.Tooltip.preferenceButton" = "H · Help and answers to your questions";
 "Home.Tooltip.downloadButton" = "Update computer files to match the website";
 "Home.Tooltip.uploadButton" = "spacebar · update the website to match computer files";
-"Home.Tooltip.adminButton" = "A · connect to Svija Admin";
-"Home.Tooltip.cacheButton" = "C · clear the website cache";
+"Home.Tooltip.adminButton" = "C · connect to Svija Cloud";
+"Home.Tooltip.cacheButton" = "A · clear the website cache";
 "Home.Tooltip.siteButton" = "S · visit the website";
 "Home.Tooltip.folderButton" = "F · open the project folder in the Finder";
 "Home.Tooltip.newsView" = "News and product updates";

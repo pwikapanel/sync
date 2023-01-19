@@ -118,9 +118,9 @@ internal enum L10n {
       internal static let uploadingPaused = L10n.tr("Localizable", "Home.StatusLabel.uploadingPaused")
     }
     internal enum Tooltip {
-      /// A · connect to Svija Admin
+      /// C · connect to Svija Cloud
       internal static let adminButton = L10n.tr("Localizable", "Home.Tooltip.adminButton")
-      /// C · clear the website cache
+      /// A · clear the website cache
       internal static let cacheButton = L10n.tr("Localizable", "Home.Tooltip.cacheButton")
       /// Update computer files to match the website
       internal static let downloadButton = L10n.tr("Localizable", "Home.Tooltip.downloadButton")
@@ -128,7 +128,7 @@ internal enum L10n {
       internal static let folderButton = L10n.tr("Localizable", "Home.Tooltip.folderButton")
       /// News and product updates
       internal static let newsView = L10n.tr("Localizable", "Home.Tooltip.newsView")
-      /// Find answers to your questions
+      /// H · Help and answers to your questions
       internal static let preferenceButton = L10n.tr("Localizable", "Home.Tooltip.preferenceButton")
       /// S · visit the website
       internal static let siteButton = L10n.tr("Localizable", "Home.Tooltip.siteButton")

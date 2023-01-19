@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
-        <plugIn identifier="com.apple.WebKit2IBPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -266,7 +266,7 @@ Click the gear icon to get started.</string>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="admin off" imagePosition="only" alignment="center" alternateImage="admin on" imageScaling="proportionallyUpOrDown" inset="2" id="ZtG-nB-ZBm">
                                             <behavior key="behavior" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
-                                            <string key="keyEquivalent">a</string>
+                                            <string key="keyEquivalent">c</string>
                                         </buttonCell>
                                         <connections>
                                             <action selector="adminButtonAction:" target="XfG-lQ-9wD" id="FBj-Nv-tnC"/>
@@ -302,6 +302,7 @@ Click the gear icon to get started.</string>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="settings off" imagePosition="only" alignment="center" alternateImage="settings on" imageScaling="proportionallyUpOrDown" inset="2" id="RjT-CB-Ywp">
                                             <behavior key="behavior" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent">h</string>
                                         </buttonCell>
                                         <connections>
                                             <action selector="answersButtonAction:" target="XfG-lQ-9wD" id="YsP-iU-NSf"/>
@@ -313,7 +314,7 @@ Click the gear icon to get started.</string>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cache off" imagePosition="only" alignment="center" alternateImage="cache on" imageScaling="proportionallyUpOrDown" inset="2" id="DIR-JH-xVr">
                                             <behavior key="behavior" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
-                                            <string key="keyEquivalent">c</string>
+                                            <string key="keyEquivalent">a</string>
                                         </buttonCell>
                                         <connections>
                                             <action selector="cacheButtonAction:" target="XfG-lQ-9wD" id="vpc-FK-ctu"/>

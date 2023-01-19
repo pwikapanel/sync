@@ -233,7 +233,7 @@ IA
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     </box>
                                     <wkWebView wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPx-ZJ-UJx">
-                                        <rect key="frame" x="274" y="5" width="370" height="55"/>
+                                        <rect key="frame" x="274" y="7" width="365" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO">
                                             <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -249,8 +249,8 @@ IA
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="17e-1U-D5S">
-                                        <rect key="frame" x="272" y="2" width="394" height="36"/>
+                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="386" id="17e-1U-D5S">
+                                        <rect key="frame" x="272" y="2" width="390" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" selectable="YES" id="gm9-8q-IOt">
                                             <font key="font" metaFont="smallSystem"/>

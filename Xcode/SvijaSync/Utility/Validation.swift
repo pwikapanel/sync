@@ -10,6 +10,7 @@ import Foundation
 enum ValidationRule {
     case name
     case url
+    case pass
 }
 
 extension String {
@@ -24,6 +25,12 @@ extension String {
                 .union(CharacterSet(charactersIn: ",'"))
         case .url:
             characters = CharacterSet.special.union(.pureAlphanumerics)
+        case .pass:
+            characters = CharacterSet.special
+                .union(.accentedCharacters)
+                .union(.pureAlphanumerics)
+                .union(.specialCharacters)
+                .union(CharacterSet(charactersIn: ",'"))
         }
         return rangeOfCharacter(from: characters.inverted) == nil
     }

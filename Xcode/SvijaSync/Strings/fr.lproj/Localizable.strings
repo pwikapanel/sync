@@ -85,7 +85,7 @@
 "Alert.Message.nothingToUpload" = "There is nothing to upload. Please download first or choose a different project folder.";
 
 "Alert.Title.invalidCharacters" = "Some characters are not allowed";
-"Alert.Message.invalidCharacters" = "Please use only letters and numbers.";
+"Alert.Message.invalidCharacters" = "Please use only letters, numbers and common symbols.";
 
 "Alert.Title.inaccessible" = "Project folder inaccessible";
 "Alert.Message.inaccessible" = "Please select the project folder or open Preferences to reconfigure the website";

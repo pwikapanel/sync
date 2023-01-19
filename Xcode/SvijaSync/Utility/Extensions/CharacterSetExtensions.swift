@@ -22,4 +22,7 @@ extension CharacterSet {
         CharacterSet(charactersIn: "àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸåÅæÆœŒçÇðÐøØß")
     }
 
+    static var specialCharacters: CharacterSet { // https://en.wikipedia.org/wiki/List_of_Special_Characters_for_Passwords + £€¥
+        CharacterSet(charactersIn: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~£€¥")
+    }
 }

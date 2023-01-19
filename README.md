@@ -13,3 +13,8 @@ There are three versions:
 - **Svija Sync Direct Beta** · beta testing
 
 They are determined in Xcode through choosing a **schemes** under the **Product menu**.
+
+Passwords have just been expanded to allow:
+- accented characters
+- `!"#$%&'()*+,-./:;<=>?@[\]^_\`{|}~£€¥`
+

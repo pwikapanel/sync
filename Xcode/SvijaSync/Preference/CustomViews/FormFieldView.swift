@@ -56,7 +56,7 @@ class FormFieldView: NSView {
               let connectId = connectIdField.text,
               connectId.isValidEntry(.url),
               let password = passwordField.text,
-              password.isValidEntry(.url) else {
+              password.isValidEntry(.pass) else {
             showAlert(message: Text.Alert.Title.invalidCharacters, info: Text.Alert.Message.invalidCharacters)
             return
         }

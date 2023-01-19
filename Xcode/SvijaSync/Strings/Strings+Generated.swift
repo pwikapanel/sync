@@ -43,7 +43,7 @@ internal enum L10n {
       internal static let enterName = L10n.tr("Localizable", "Alert.Message.enterName")
       /// Please select the project folder or open Preferences to reconfigure the website
       internal static let inaccessible = L10n.tr("Localizable", "Alert.Message.inaccessible")
-      /// Please use only letters and numbers.
+      /// Please use only letters, numbers and common symbols.
       internal static let invalidCharacters = L10n.tr("Localizable", "Alert.Message.invalidCharacters")
       /// Please open Preferences then enter your nickname.
       internal static let missingName = L10n.tr("Localizable", "Alert.Message.missingName")

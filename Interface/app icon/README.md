@@ -88,3 +88,7 @@ The slice tools are under the **crop tool**.
 Double-click a slice with the **Slice Select** tool to set the size manually — it's much faster.
 
 You can click on empty areas and change the slice time to "No Image" to avoid creating extra images
+
+Note that you have to use the Slice Select tool and choose PNG **in the save for web** dialog. You can just drag to select all (cmd-A doesn't work).
+
+Saving with slices will automatically create a folder called **images**.

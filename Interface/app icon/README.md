@@ -6,6 +6,12 @@
 
 ### Svija Synch App Icon
 
+The app is designed in Illustrator in black and white, without the extra space outside the roundrect.
+
+In Photoshop, the color, margin and drop shadow are added.
+
+This is because Photoshop permits batch saving PNG images with the Display P3 color profile attached, and Illustrator does not.
+
 The app icon must be a transparent PNG image, given in the following sizes:
 
 pixel size | margin | roundrect | Finder margin
@@ -18,11 +24,7 @@ pixel size | margin | roundrect | Finder margin
 512        |     50 |      412  |          32
 1024       |    100 |      824  |          64
 
-When an app is selected in the Finder, there is an extra margin, ouside the icon (Finder margin).
-
-For a 1024x1024 icon, the roundrect should have a 100px margin (be 824px square) centered.
-
-There should be a shadow, and it should be **different at different sizes** (otherwise the shadow on small icon sizes looks too small).
+Finder margin: when an app is selected in the Finder, there is an extra margin, ouside the icon.
 
 See the [messages icon][mi] for an example of a "correct" icon.
 
@@ -65,7 +67,9 @@ In order to preserve the correct colors, the file is colored in Photoshop, not I
 ---
 ### Drop Shadows
 
-The drop shadows should be applied in Photoshop, so they will be first exported at the correct size without shadows from Illustrator.
+Shadows are **different at different sizes** (otherwise the shadow on small icon sizes looks too small).
+
+The drop shadows are applied in Photoshop:
 
 roundrect |  transp | distance | size
 ---------:|:-------:|---------:|----:

@@ -29,6 +29,15 @@ See the [messages icon][mi] for an example of a "correct" icon.
 [mi]: https://github.com/svijalove/sync/blob/beta/Interface/app%20icon/messages%20icon.png
 
 ---
+### Finder Notes
+
+The Finder adds a margin beyond the icon when it's selected (see chart above).
+
+The Finder adds additional scaling steps in addition to the above pixel sizes:
+
+- 155px & 40px roundrects
+
+---
 ### Colors
 
 To keep the P3 color, Photoshop has to be configured (**cmd-shift-K** for color settings):
@@ -56,13 +65,24 @@ In order to have the correct colors, the file is colored in Photoshop, not Illus
 
 The drop shadows should be applied in Photoshop, so they will be first exported at the correct size without shadows from Illustrator.
 
-roundrect | color | distance | size
----------:|:-----:|---------:|----:
-1024 | #B0B0B0 | 10 | 25
-32   | #B0B0B0 |  1 |  3
-
+roundrect |  color  | distance | size
+---------:|:-------:|---------:|----:
+824       | #b0b0b0 |    10    | 25
+412       | #b0b0b0 |     5    | 13
+206       | #b0b0b0 |     3    |  7
+104       | #b0b0b0 |     2    |  5
+52        | #b0b0b0 |     1    |  4
+28        | #b0b0b0 |     1    |  3
+14        | #b0b0b0 |     1    |  1
 
 the sizes change slightly — the 32px icon has a 28px visible roundrect, not 26
 
 
 changing screen resolution does not affect the size of the selected images in the finder
+
+---
+### Photoshop Slices
+
+The slice tools are under the **crop tool**.
+
+Double-click a slice with the **Slice Select** tool to set the size manually — it's much faster.

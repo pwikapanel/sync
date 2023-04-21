@@ -18,6 +18,13 @@ pixel size | roundrect | factor | margin | finder margin
  512 | 415  |       |  50 | 32
 1024 | 824  | 80.47 | 100 | 64
 
+site | sync ID | sync pass | cloud ID | cloud pass | alt ID | alt pass
+----:|:-------:|:---------:|:--------:|:----------:|:------:|:----------
+next.svija.com | svijanext | next | D8uZNP79PVrhBjan | andy | eYtr)54Ytrn
+svija.dev | svijadev | D8uZNP79PVrhBoct | support | eYtr)54Ytrd
+tests.svija.love | tests | D8uZNP79PVrhBdec | support | eYtr)54Ytrt
+vibe.svija.love | vibe | D8uZNP79PVrhBdec | support | iYtr)54Ytrv | andy | ?
+
 The finder margin is the extra gray area when the icon is selected
 
 For a 1024x1024 icon, the roundrect should have a 100px margin (be 824px square) centered.

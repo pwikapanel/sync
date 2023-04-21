@@ -58,7 +58,7 @@ Note that the shadow, rather than being black at 40% transparency, is 40% black 
 Dark Gray:
 - `#333`
 
-In order to have the correct colors, the file is colored in Photoshop, not Illustrator.
+In order to preserve the correct colors, the file is colored in Photoshop, not Illustrator.
 
 ---
 ### Drop Shadows
@@ -68,11 +68,11 @@ The drop shadows should be applied in Photoshop, so they will be first exported 
 roundrect |  color  | distance | size
 ---------:|:-------:|---------:|----:
 824       | #b0b0b0 |    10    | 25
-412       | #b0b0b0 |     5    | 13
-206       | #b0b0b0 |     3    |  7
-104       | #b0b0b0 |     2    |  5
-52        | #b0b0b0 |     1    |  4
-28        | #b0b0b0 |     1    |  3
+412       | #b0b0b0 |     5    | 12
+206       | #b0b0b0 |     3    |  6
+104       | #b0b0b0 |     1    |  3
+52        | #b0b0b0 |     1    |  3
+28        | #b0b0b0 |     1    |  2
 14        | #b0b0b0 |     1    |  1
 
 the sizes change slightly — the 32px icon has a 28px visible roundrect, not 26
@@ -91,4 +91,4 @@ You can click on empty areas and change the slice time to "No Image" to avoid cr
 
 Note that you have to use the Slice Select tool and choose PNG **in the save for web** dialog. You can just drag to select all (cmd-A doesn't work).
 
-Saving with slices will automatically create a folder called **images**.
+Saving with slices will automatically create a folder called **images** (if you choose the **app icon** folder when saving).

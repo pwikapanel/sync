@@ -92,3 +92,11 @@ You can click on empty areas and change the slice time to "No Image" to avoid cr
 Note that you have to use the Slice Select tool and choose PNG **in the save for web** dialog. You can just drag to select all (cmd-A doesn't work).
 
 Saving with slices will automatically create a folder called **images** (if you choose the **app icon** folder when saving).
+### Installing the Icon
+
+Click on the folder icon in the top left corner of the Xcode window.
+
+Choose **Assets.xcassets** in the second-level SvijaSync folder.
+
+Double click on each icon to replace it — pay attention to the pixel size in the breadcrumb links above.
+

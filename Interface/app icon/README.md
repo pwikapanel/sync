@@ -6,13 +6,13 @@
 
 ### Svija Synch App Icon
 
-The app is designed in Illustrator in black and white, without the extra space outside the roundrect.
+The app is designed in Illustrator in **black and white**, without the transparent margin outside the roundrect.
 
-In Photoshop, the color, margin and drop shadow are added.
+In Photoshop the **color**, **margin** and **drop shadow** are added.
 
-This is because Photoshop permits batch saving PNG images with the Display P3 color profile attached, and Illustrator does not.
+This is because Photoshop permits batch saving PNG images with the **Display P3** color profile attached, and Illustrator does not.
 
-The app icon must be a transparent PNG image, given in the following sizes:
+The app icon is a transparent PNG image created at the following sizes:
 
 pixel size | margin | roundrect | Finder margin
 ----------:|-------:|----------:|-------------:
@@ -24,16 +24,14 @@ pixel size | margin | roundrect | Finder margin
 512        |     50 |      412  |          32
 1024       |    100 |      824  |          64
 
-Finder margin: when an app is selected in the Finder, there is an extra margin, ouside the icon.
+**Finder margin**: when an app is selected in the Finder, there is an extra gray margin, ouside the icon.
 
-See the [messages icon][mi] for an example of a "correct" icon.
+See the included [messages icon][mi] for an example of a "correct" icon.
 
 [mi]: https://github.com/svijalove/sync/blob/beta/Interface/app%20icon/messages%20icon.png
 
 ---
 ### Finder Notes
-
-The Finder adds a margin beyond the icon when it's selected (see chart above).
 
 The Finder adds additional scaling steps in addition to the above pixel sizes:
 
@@ -42,27 +40,23 @@ The Finder adds additional scaling steps in addition to the above pixel sizes:
 Changing screen resolution does not affect the size of the selected images in the finder.
 
 ---
-### Colors
-
-To keep the P3 color, Photoshop has to be configured (**cmd-shift-K** for color settings):
-
-- Working Spaces › RGB: Display P3
-- Color Management Policies › RGB: Convert to Working RGB
-- Profile Mismatches: Ask When Opening 
-
-Note that the shadow, rather than being black at 40% transparency, is 40% black at 100% transparency
-
----
 ### Official Colors
 
 "Tennis" green/yellow:
-- `#bbff00` as sRGB
-- `#ccff00` as Display P3
+- `#bbff00` in sRGB
+- `#ccff00` in Display P3
 
 Dark Gray:
 - `#333`
 
-In order to preserve the correct colors, the file is colored in Photoshop, not Illustrator.
+---
+### Colors
+
+To preserve the rich **Display P3** color, Photoshop has to be configured (**cmd-shift-K** for color settings):
+
+- Working Spaces › RGB: **Display P3**
+- Color Management Policies › RGB: **Convert to Working RGB**
+- Profile Mismatches: **Ask When Opening** 
 
 ---
 ### Drop Shadows
@@ -81,7 +75,7 @@ roundrect |  transp | distance | size
 28        |   30%   |     1    |  2
 14        |   30%   |     1    |  1
 
-Note: I had tried using gray drop shadows, but they must be **black and transparent**.
+Note: gray drop shadows do not work on the dark background of Launchpad —  they must be **black and transparent**.
 
 ---
 ### Photoshop Slices
@@ -92,14 +86,16 @@ Double-click a slice with the **Slice Select** tool to set the size manually —
 
 You can click on empty areas and change the slice time to "No Image" to avoid creating extra images
 
-Note that you have to use the Slice Select tool and choose PNG **in the save for web** dialog. You can just drag to select all (cmd-A doesn't work).
+Note that **in the save for web** dialog you have to use the Slice Select tool and choose PNG. You can just drag to select all (cmd-A doesn't work).
 
-Saving with slices will automatically create a folder called **images** (if you choose the **app icon** folder when saving).
+Saving with slices saves to a subfolder called **images** in the selected folder.
+
+---
 ### Installing the Icon
 
-Click on the folder icon in the top left corner of the Xcode window.
+Click on the **folder icon** in the top left corner of the Xcode window.
 
-Choose **Assets.xcassets** in the second-level SvijaSync folder.
+Choose **Assets.xcassets** in the second-level **SvijaSync** folder.
 
-Double click on each icon to replace it — pay attention to the pixel size in the breadcrumb links above.
+**Double click each icon** to replace it — pay attention to the pixel size in the breadcrumb links above.
 

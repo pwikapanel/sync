@@ -1,8 +1,8 @@
-[logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
-
 *Updated 30 September, 2022 · Toulouse*
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
+
+[logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
 
 ### Svija Synch 1.0.5
 

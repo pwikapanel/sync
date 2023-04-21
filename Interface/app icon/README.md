@@ -86,3 +86,5 @@ changing screen resolution does not affect the size of the selected images in th
 The slice tools are under the **crop tool**.
 
 Double-click a slice with the **Slice Select** tool to set the size manually — it's much faster.
+
+You can click on empty areas and change the slice time to "No Image" to avoid creating extra images

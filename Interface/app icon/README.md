@@ -37,6 +37,8 @@ The Finder adds additional scaling steps in addition to the above pixel sizes:
 
 - 155px & 40px roundrects
 
+Changing screen resolution does not affect the size of the selected images in the finder.
+
 ---
 ### Colors
 
@@ -65,20 +67,17 @@ In order to preserve the correct colors, the file is colored in Photoshop, not I
 
 The drop shadows should be applied in Photoshop, so they will be first exported at the correct size without shadows from Illustrator.
 
-roundrect |  color  | distance | size
+roundrect |  transp | distance | size
 ---------:|:-------:|---------:|----:
-824       | #b0b0b0 |    10    | 25
-412       | #b0b0b0 |     5    | 12
-206       | #b0b0b0 |     3    |  6
-104       | #b0b0b0 |     1    |  3
-52        | #b0b0b0 |     1    |  3
-28        | #b0b0b0 |     1    |  2
-14        | #b0b0b0 |     1    |  1
+824       |   30%   |    10    | 25
+412       |   30%   |     5    | 12
+206       |   30%   |     3    |  6
+104       |   30%   |     1    |  3
+52        |   30%   |     1    |  3
+28        |   30%   |     1    |  2
+14        |   30%   |     1    |  1
 
-the sizes change slightly — the 32px icon has a 28px visible roundrect, not 26
-
-
-changing screen resolution does not affect the size of the selected images in the finder
+Note: I had tried using gray drop shadows, but they must be **black and transparent**.
 
 ---
 ### Photoshop Slices

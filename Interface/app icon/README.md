@@ -8,24 +8,17 @@
 
 The app icon must be a transparent PNG image, given in the following sizes:
 
-pixel size | roundrect | factor | margin | finder margin
-----------:|----------:|-------:|-------:|-------------:
-16         |        ?  |        |        |  1
-32         |       28  |        |      3 |  2
-64         |       52  |        |      6 |  4
-128        |      104  |        |     12 |  8
-256        |      207  |        |     25 | 16
-512        |      415  |        |     50 | 32
-1024       |      824  |  80.47 |    100 | 64
+pixel size | margin | roundrect | Finder margin
+----------:|-------:|----------:|-------------:
+16         |      1 |       14  |           1
+32         |      2 |       28  |           2
+64         |      6 |       52  |           4
+128        |     12 |      104  |           8
+256        |     25 |      206  |          16
+512        |     50 |      412  |          32
+1024       |    100 |      824  |          64
 
-site | sync ID | sync pass | cloud ID | cloud pass | alt ID | alt pass
-----:|:-------:|:---------:|:--------:|:----------:|:------:|:----------
-next.svija.com | svijanext | next | D8uZNP79PVrhBjan | andy | eYtr)54Ytrn
-svija.dev | svijadev | D8uZNP79PVrhBoct | support | eYtr)54Ytrd
-tests.svija.love | tests | D8uZNP79PVrhBdec | support | eYtr)54Ytrt
-vibe.svija.love | vibe | D8uZNP79PVrhBdec | support | iYtr)54Ytrv | andy | ?
-
-The finder margin is the extra gray area when the icon is selected
+When an app is selected in the Finder, there is an extra margin, ouside the icon (Finder margin).
 
 For a 1024x1024 icon, the roundrect should have a 100px margin (be 824px square) centered.
 
@@ -36,9 +29,7 @@ See the [messages icon][mi] for an example of a "correct" icon.
 [mi]: https://github.com/svijalove/sync/blob/beta/Interface/app%20icon/messages%20icon.png
 
 ---
-### Drop Shadows
-
-The drop shadows should be applied in Photoshop, so they will be first exported at the correct size without shadows from Illustrator.
+### Colors
 
 To keep the P3 color, Photoshop has to be configured (**cmd-shift-K** for color settings):
 
@@ -63,8 +54,12 @@ In order to have the correct colors, the file is colored in Photoshop, not Illus
 ---
 ### Drop Shadows
 
-1024px: #B0B0B0 · 10px distance 25px size
-32px: #B0B0B0 · 1px distance 3px size
+The drop shadows should be applied in Photoshop, so they will be first exported at the correct size without shadows from Illustrator.
+
+roundrect | color | distance | size
+---------:|:-----:|---------:|----:
+1024 | #B0B0B0 | 10 | 25
+32   | #B0B0B0 |  1 |  3
 
 
 the sizes change slightly — the 32px icon has a 28px visible roundrect, not 26

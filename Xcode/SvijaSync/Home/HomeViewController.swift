@@ -78,6 +78,7 @@ class HomeViewController: NSViewController {
 
   //———————————————————————————————————————————————————————————————————————————————— begin changes
 
+  // used by invisible button placed over pulldown when it's empty
   // setupButton.isHidden = !connections.isEmpty
   @IBAction func setupButtonAction(_ sender: Any) {
     // copy of preferenceButtonAction
@@ -90,7 +91,8 @@ class HomeViewController: NSViewController {
   }
 
   //———————————————————————————————————————————————————————————————————————————————— end changes
-
+    
+  // used by preferences menu item
   @IBAction func preferenceButtonAction(_ sender: Any) {
     resetStatus()
     let preferenceViewController =  PreferenceViewController.makeModule()

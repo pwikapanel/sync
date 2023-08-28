@@ -7,6 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA38682F2A306F3200C134B8 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */; };
+		AA3868302A306F3200C134B8 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
+		AA3868312A306F3200C134B8 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E641E425DA9FAB00262B13 /* FileManagerExtensions.swift */; };
+		AA3868322A306F3200C134B8 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF3B6025CEBFFF00D24D9C /* PreferenceViewController.swift */; };
+		AA3868332A306F3200C134B8 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B060325CE83520021C8C9 /* Utility.swift */; };
+		AA3868342A306F3200C134B8 /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
+		AA3868352A306F3200C134B8 /* ConnectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF3B6F25CECF3400D24D9C /* ConnectionListView.swift */; };
+		AA3868362A306F3200C134B8 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0CDA25DA891000818063 /* NewsViewModel.swift */; };
+		AA3868372A306F3200C134B8 /* HomeSyncStatusHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63A4C7225DC093600C3B9BF /* HomeSyncStatusHandler.swift */; };
+		AA3868382A306F3200C134B8 /* FormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF3B6C25CECF2300D24D9C /* FormFieldView.swift */; };
+		AA3868392A306F3200C134B8 /* FolderAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3076225CE99D000806F0C /* FolderAccess.swift */; };
+		AA38683A2A306F3200C134B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F2085725C94475005DAC78 /* AppDelegate.swift */; };
+		AA38683B2A306F3200C134B8 /* NSTextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A1C8025D40FF9009B8BB2 /* NSTextFieldExtension.swift */; };
+		AA38683C2A306F3200C134B8 /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A1C8325D41270009B8BB2 /* CodableExtension.swift */; };
+		AA38683D2A306F3200C134B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EBE34525CE45E500498A04 /* HomeViewController.swift */; };
+		AA38683E2A306F3200C134B8 /* CharacterSetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FB0B125F1F3450026473F /* CharacterSetExtensions.swift */; };
+		AA38683F2A306F3200C134B8 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FB0B425F1F3760026473F /* Validation.swift */; };
+		AA3868402A306F3200C134B8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69C997A25CED7D900642A55 /* HomeViewModel.swift */; };
+		AA3868412A306F3200C134B8 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
+		AA3868422A306F3200C134B8 /* NSViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DC75A25D6453C00FE3DDB /* NSViewControllerExtensions.swift */; };
+		AA3868432A306F3200C134B8 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0CD725DA887500818063 /* NewsView.swift */; };
+		AA3868442A306F3200C134B8 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EBE34B25CE497000498A04 /* Storage.swift */; };
+		AA3868452A306F3200C134B8 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DC75725D644E600FE3DDB /* NSViewExtensions.swift */; };
+		AA3868462A306F3200C134B8 /* UploadStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AE0E14265A652D0038DFAE /* UploadStatus.swift */; };
+		AA3868472A306F3200C134B8 /* SiteConnectionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBC225D54965003931BB /* SiteConnectionOperation.swift */; };
+		AA3868482A306F3200C134B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A1C7D25D40E96009B8BB2 /* Constants.swift */; };
+		AA3868492A306F3200C134B8 /* PreferenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69C997725CED49300642A55 /* PreferenceViewModel.swift */; };
+		AA38684A2A306F3200C134B8 /* PreferenceHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E641DB25DA9C1C00262B13 /* PreferenceHelpView.swift */; };
+		AA38684B2A306F3200C134B8 /* HomeUploadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63FDA4425E1443F000929C0 /* HomeUploadHandler.swift */; };
+		AA38684C2A306F3200C134B8 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBBB25D4FA69003931BB /* TimeIntervalExtensions.swift */; };
+		AA38684D2A306F3200C134B8 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99625DEADDA00DBD5B0 /* DateExtensions.swift */; };
+		AA38684E2A306F3200C134B8 /* HomeDownloadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63FDA4725E1444E000929C0 /* HomeDownloadHandler.swift */; };
+		AA3868502A306F3200C134B8 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = AA38682C2A306F3200C134B8 /* Rsync */; };
+		AA3868512A306F3200C134B8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63A4C6625DBB8E400C3B9BF /* WebKit.framework */; };
+		AA3868532A306F3200C134B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
+		AA3868542A306F3200C134B8 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
+		AA3868552A306F3200C134B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
+		AA3868562A306F3200C134B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
 		AA92C6CF2716C456008BD343 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */; };
 		AA92C6D02716C456008BD343 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
 		AA92C6D12716C456008BD343 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E641E425DA9FAB00262B13 /* FileManagerExtensions.swift */; };
@@ -125,6 +163,13 @@
 
 /* Begin PBXFileReference section */
 		4BF35272263AA6A500BFD9B8 /* Rsync-Dependency */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Rsync-Dependency"; path = "../Rsync-Dependency"; sourceTree = "<group>"; };
+		AA38681E2A306ED100C134B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA3868202A306ED100C134B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA3868222A306ED100C134B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA3868252A306ED100C134B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA3868272A306ED100C134B8 /* Svija_Sync_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Svija_Sync_Demo.entitlements; sourceTree = "<group>"; };
+		AA38685B2A306F3200C134B8 /* Svija Sync Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA38685C2A306F3300C134B8 /* Svija Sync Beta copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Svija Sync Beta copy-Info.plist"; path = "/Users/Main/Documents/sync/Xcode/Svija Sync Beta copy-Info.plist"; sourceTree = "<absolute>"; };
 		AA414C76270B39A2003B8DED /* Svija Sync copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Svija Sync copy2-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AA92C6FB2716C456008BD343 /* Svija Sync Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA92C6FC2716C457008BD343 /* Svija Sync copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Svija Sync copy-Info.plist"; path = "/Users/Main/Documents/sync/Xcode/Svija Sync copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -179,6 +224,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AA38684F2A306F3200C134B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3868502A306F3200C134B8 /* Rsync in Frameworks */,
+				AA3868512A306F3200C134B8 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA92C6EF2716C456008BD343 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +263,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA38681D2A306ED100C134B8 /* Svija Sync Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AA38681E2A306ED100C134B8 /* AppDelegate.swift */,
+				AA3868202A306ED100C134B8 /* ViewController.swift */,
+				AA3868222A306ED100C134B8 /* Assets.xcassets */,
+				AA3868242A306ED100C134B8 /* Main.storyboard */,
+				AA3868272A306ED100C134B8 /* Svija_Sync_Demo.entitlements */,
+			);
+			path = "Svija Sync Demo";
+			sourceTree = "<group>";
+		};
 		AACAFE9926E10BD300511FF2 /* Svija Sync Downloadable */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,9 +411,11 @@
 			children = (
 				D6F2085625C94475005DAC78 /* SvijaSync */,
 				AACAFE9926E10BD300511FF2 /* Svija Sync Downloadable */,
+				AA38681D2A306ED100C134B8 /* Svija Sync Demo */,
 				D6F2085525C94475005DAC78 /* Products */,
 				D66B288F25D694B500A2ACF8 /* Frameworks */,
 				AA92C6FC2716C457008BD343 /* Svija Sync copy-Info.plist */,
+				AA38685C2A306F3300C134B8 /* Svija Sync Beta copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -357,6 +425,7 @@
 				D6F2085425C94475005DAC78 /* Svija Sync.app */,
 				AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */,
 				AA92C6FB2716C456008BD343 /* Svija Sync Beta.app */,
+				AA38685B2A306F3200C134B8 /* Svija Sync Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -381,6 +450,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AA38682B2A306F3200C134B8 /* Svija Sync Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3868582A306F3200C134B8 /* Build configuration list for PBXNativeTarget "Svija Sync Demo" */;
+			buildPhases = (
+				AA38682E2A306F3200C134B8 /* Sources */,
+				AA38684F2A306F3200C134B8 /* Frameworks */,
+				AA3868522A306F3200C134B8 /* Resources */,
+				AA3868572A306F3200C134B8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Svija Sync Demo";
+			packageProductDependencies = (
+				AA38682C2A306F3200C134B8 /* Rsync */,
+			);
+			productName = SvijaSync;
+			productReference = AA38685B2A306F3200C134B8 /* Svija Sync Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		AA92C6CB2716C456008BD343 /* Svija Sync Beta */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA92C6F82716C456008BD343 /* Build configuration list for PBXNativeTarget "Svija Sync Beta" */;
@@ -450,7 +540,7 @@
 		D6F2084C25C94475005DAC78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					D6F2085325C94475005DAC78 = {
@@ -478,11 +568,23 @@
 				D6F2085325C94475005DAC78 /* Svija Sync */,
 				AACAFEDA26E10ED300511FF2 /* Svija Sync Direct */,
 				AA92C6CB2716C456008BD343 /* Svija Sync Beta */,
+				AA38682B2A306F3200C134B8 /* Svija Sync Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AA3868522A306F3200C134B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3868532A306F3200C134B8 /* Assets.xcassets in Resources */,
+				AA3868542A306F3200C134B8 /* Credits.html in Resources */,
+				AA3868552A306F3200C134B8 /* Localizable.strings in Resources */,
+				AA3868562A306F3200C134B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA92C6F22716C456008BD343 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -519,6 +621,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AA3868572A306F3200C134B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PROJECT_DIR}/swiftgen/bin/swiftgen\"\n";
+		};
 		AA92C6F72716C456008BD343 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,6 +692,45 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AA38682E2A306F3200C134B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA38682F2A306F3200C134B8 /* ImageView.swift in Sources */,
+				AA3868302A306F3200C134B8 /* AsyncOperation.swift in Sources */,
+				AA3868312A306F3200C134B8 /* FileManagerExtensions.swift in Sources */,
+				AA3868322A306F3200C134B8 /* PreferenceViewController.swift in Sources */,
+				AA3868332A306F3200C134B8 /* Utility.swift in Sources */,
+				AA3868342A306F3200C134B8 /* SiteConnectionExtensions.swift in Sources */,
+				AA3868352A306F3200C134B8 /* ConnectionListView.swift in Sources */,
+				AA3868362A306F3200C134B8 /* NewsViewModel.swift in Sources */,
+				AA3868372A306F3200C134B8 /* HomeSyncStatusHandler.swift in Sources */,
+				AA3868382A306F3200C134B8 /* FormFieldView.swift in Sources */,
+				AA3868392A306F3200C134B8 /* FolderAccess.swift in Sources */,
+				AA38683A2A306F3200C134B8 /* AppDelegate.swift in Sources */,
+				AA38683B2A306F3200C134B8 /* NSTextFieldExtension.swift in Sources */,
+				AA38683C2A306F3200C134B8 /* CodableExtension.swift in Sources */,
+				AA38683D2A306F3200C134B8 /* HomeViewController.swift in Sources */,
+				AA38683E2A306F3200C134B8 /* CharacterSetExtensions.swift in Sources */,
+				AA38683F2A306F3200C134B8 /* Validation.swift in Sources */,
+				AA3868402A306F3200C134B8 /* HomeViewModel.swift in Sources */,
+				AA3868412A306F3200C134B8 /* Strings+Generated.swift in Sources */,
+				AA3868422A306F3200C134B8 /* NSViewControllerExtensions.swift in Sources */,
+				AA3868432A306F3200C134B8 /* NewsView.swift in Sources */,
+				AA3868442A306F3200C134B8 /* Storage.swift in Sources */,
+				AA3868452A306F3200C134B8 /* NSViewExtensions.swift in Sources */,
+				AA3868462A306F3200C134B8 /* UploadStatus.swift in Sources */,
+				AA3868472A306F3200C134B8 /* SiteConnectionOperation.swift in Sources */,
+				AA3868482A306F3200C134B8 /* Constants.swift in Sources */,
+				AA3868492A306F3200C134B8 /* PreferenceViewModel.swift in Sources */,
+				AA38684A2A306F3200C134B8 /* PreferenceHelpView.swift in Sources */,
+				AA38684B2A306F3200C134B8 /* HomeUploadHandler.swift in Sources */,
+				AA38684C2A306F3200C134B8 /* TimeIntervalExtensions.swift in Sources */,
+				AA38684D2A306F3200C134B8 /* DateExtensions.swift in Sources */,
+				AA38684E2A306F3200C134B8 /* HomeDownloadHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA92C6CE2716C456008BD343 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -693,6 +851,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		AA3868242A306ED100C134B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA3868252A306ED100C134B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		AACAFEA026E10BD400511FF2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -721,6 +887,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AA3868592A306F3200C134B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SvijaSync/SvijaSync.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 15;
+				DEVELOPMENT_TEAM = Z66QVF9XBZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Svija Sync Beta copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Svija Sync";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.6;
+				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA38685A2A306F3200C134B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SvijaSync/SvijaSync.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 15;
+				DEVELOPMENT_TEAM = Z66QVF9XBZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Svija Sync Beta copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Svija Sync";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.6;
+				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		AA92C6F92716C456008BD343 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -999,6 +1219,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AA3868582A306F3200C134B8 /* Build configuration list for PBXNativeTarget "Svija Sync Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3868592A306F3200C134B8 /* Debug */,
+				AA38685A2A306F3200C134B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA92C6F82716C456008BD343 /* Build configuration list for PBXNativeTarget "Svija Sync Beta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1038,6 +1267,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AA38682D2A306F3200C134B8 /* XCRemoteSwiftPackageReference "sync-rsync" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/svijalove/sync-rsync";
+			requirement = {
+				branch = beta;
+				kind = branch;
+			};
+		};
 		AA5C272627AD7F9300DD3187 /* XCRemoteSwiftPackageReference "sync-rsync" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/svijalove/sync-rsync";
@@ -1057,6 +1294,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AA38682C2A306F3200C134B8 /* Rsync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA38682D2A306F3200C134B8 /* XCRemoteSwiftPackageReference "sync-rsync" */;
+			productName = Rsync;
+		};
 		AACAFEDB26E10ED300511FF2 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AACAFEDC26E10ED300511FF2 /* XCRemoteSwiftPackageReference "Rsync-Utility" */;

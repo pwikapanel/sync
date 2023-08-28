@@ -141,89 +141,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="650" height="114"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView autoresizesSubviews="NO" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHL-Oi-mxd">
-                                <rect key="frame" x="0.0" y="0.0" width="650" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <subviews>
-                                    <popUpButton verticalHuggingPriority="750" id="HxC-lg-efN">
-                                        <rect key="frame" x="24" y="8" width="247" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <popUpButtonCell key="cell" type="push" title="Click here to get started…" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="eBf-YI-c3T" id="wR7-GI-3Zp">
-                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="menu"/>
-                                            <menu key="menu" id="axK-ed-1eT">
-                                                <items>
-                                                    <menuItem title="Click here to get started…" state="on" id="eBf-YI-c3T"/>
-                                                    <menuItem title="Item 2" id="pMn-uQ-Hs5"/>
-                                                    <menuItem title="Item 3" id="HAy-dV-zIy"/>
-                                                </items>
-                                            </menu>
-                                        </popUpButtonCell>
-                                        <connections>
-                                            <action selector="popupButtonSelectionChange:" target="XfG-lQ-9wD" id="47p-yo-Abd"/>
-                                        </connections>
-                                    </popUpButton>
-                                    <button verticalHuggingPriority="750" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="21" id="iBg-Ol-B9f">
-                                        <rect key="frame" x="275" y="5" width="104" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="Download" alternateTitle="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fgh-xH-86T">
-                                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="downloadButtonAction:" target="XfG-lQ-9wD" id="Ire-SD-3VL"/>
-                                        </connections>
-                                    </button>
-                                    <button verticalHuggingPriority="750" id="apZ-fp-42K">
-                                        <rect key="frame" x="380" y="5" width="104" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="push" title="Upload" alternateTitle="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ktc-bW-hHV">
-                                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                            <string key="keyEquivalent" base64-UTF8="YES">
-IA
-</string>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="uploadButtonAction:" target="XfG-lQ-9wD" id="NwL-uX-xp8"/>
-                                        </connections>
-                                    </button>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="sYY-rn-r74">
-                                        <rect key="frame" x="487" y="15" width="140" height="16"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="POj-zd-Yq7">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xn9-ik-5Xq" customClass="ImageView" customModule="Svija_Sync" customModuleProvider="target">
-                                        <rect key="frame" x="489" y="8" width="136" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="X9e-48-RLW"/>
-                                    </imageView>
-                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ta3-Zt-13b" userLabel="Logo Image View">
-                                        <rect key="frame" x="489" y="8" width="136" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="main logo" id="7wG-8U-jhT"/>
-                                    </imageView>
-                                    <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="bYx-J6-AtU">
-                                        <rect key="frame" x="20" y="41" width="610" height="5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    </box>
-                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-Ud-57b">
-                                        <rect key="frame" x="22" y="7" width="250" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="setup button" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fxO-fJ-bK9">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="setupButtonAction:" target="XfG-lQ-9wD" id="dx8-rO-fi8"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </customView>
                             <customView autoresizesSubviews="NO" id="Edo-os-E3M" customClass="NewsView" customModule="Svija_Sync" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="650" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -327,6 +244,89 @@ Click the gear icon to get started.</string>
                                     <outlet property="textLabel" destination="e09-Ua-bcl" id="Psx-XQ-Fkd"/>
                                 </connections>
                             </customView>
+                            <customView autoresizesSubviews="NO" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHL-Oi-mxd">
+                                <rect key="frame" x="0.0" y="0.0" width="650" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <popUpButton verticalHuggingPriority="750" id="HxC-lg-efN">
+                                        <rect key="frame" x="24" y="8" width="247" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <popUpButtonCell key="cell" type="push" title="Click here to get started…" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="eBf-YI-c3T" id="wR7-GI-3Zp">
+                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="menu"/>
+                                            <menu key="menu" id="axK-ed-1eT">
+                                                <items>
+                                                    <menuItem title="Click here to get started…" state="on" id="eBf-YI-c3T"/>
+                                                    <menuItem title="Item 2" id="pMn-uQ-Hs5"/>
+                                                    <menuItem title="Item 3" id="HAy-dV-zIy"/>
+                                                </items>
+                                            </menu>
+                                        </popUpButtonCell>
+                                        <connections>
+                                            <action selector="popupButtonSelectionChange:" target="XfG-lQ-9wD" id="47p-yo-Abd"/>
+                                        </connections>
+                                    </popUpButton>
+                                    <button verticalHuggingPriority="750" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="21" id="iBg-Ol-B9f">
+                                        <rect key="frame" x="275" y="5" width="104" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Download" alternateTitle="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fgh-xH-86T">
+                                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="downloadButtonAction:" target="XfG-lQ-9wD" id="Ire-SD-3VL"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" id="apZ-fp-42K">
+                                        <rect key="frame" x="380" y="5" width="104" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Upload" alternateTitle="Pause" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ktc-bW-hHV">
+                                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+IA
+</string>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="uploadButtonAction:" target="XfG-lQ-9wD" id="NwL-uX-xp8"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="sYY-rn-r74">
+                                        <rect key="frame" x="487" y="15" width="140" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="POj-zd-Yq7">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xn9-ik-5Xq" customClass="ImageView" customModule="Svija_Sync" customModuleProvider="target">
+                                        <rect key="frame" x="489" y="8" width="136" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="X9e-48-RLW"/>
+                                    </imageView>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ta3-Zt-13b" userLabel="Logo Image View">
+                                        <rect key="frame" x="489" y="8" width="136" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="main logo" id="7wG-8U-jhT"/>
+                                    </imageView>
+                                    <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="bYx-J6-AtU">
+                                        <rect key="frame" x="20" y="41" width="610" height="5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </box>
+                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-Ud-57b">
+                                        <rect key="frame" x="22" y="7" width="250" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="setup button" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fxO-fJ-bK9">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="setupButtonAction:" target="XfG-lQ-9wD" id="dx8-rO-fi8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </customView>
                         </subviews>
                     </view>
                     <connections>
@@ -356,6 +356,28 @@ Click the gear icon to get started.</string>
                         <rect key="frame" x="0.0" y="0.0" width="810" height="189"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="m5R-bP-mcO">
+                                <rect key="frame" x="8" y="161" width="74" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Nickname" id="MAs-ev-Hcx">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="4eI-FZ-7bY">
+                                <rect key="frame" x="89" y="158" width="232" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="your nickname" drawsBackground="YES" id="ytb-WL-C4i">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="33Q-vo-fZf">
+                                <rect key="frame" x="10" y="145" width="311" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </box>
                             <customView autoresizesSubviews="NO" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9U0-JO-Shp" customClass="FormFieldView" customModule="Svija_Sync" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="37" width="321" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -554,31 +576,32 @@ Click the gear icon to get started.</string>
                                     <outlet property="tableView" destination="IzM-WW-rix" id="tpy-z6-bwY"/>
                                 </connections>
                             </customView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="m5R-bP-mcO">
-                                <rect key="frame" x="8" y="161" width="74" height="16"/>
+                            <customView id="hMQ-rL-SQG" customClass="PreferenceHelpView" customModule="Svija_Sync" customModuleProvider="target">
+                                <rect key="frame" x="30" y="12" width="291" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Nickname" id="MAs-ev-Hcx">
-                                    <font key="font" usesAppearanceFont="YES"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="33Q-vo-fZf">
-                                <rect key="frame" x="10" y="145" width="311" height="5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            </box>
-                            <button autoresizesSubviews="NO" verticalHuggingPriority="750" id="g9h-MQ-qCZ">
-                                <rect key="frame" x="717" y="4" width="89" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XJX-dV-W7H">
+                                <subviews>
+                                    <wkWebView wantsLayer="YES" id="5ec-sV-g1J">
+                                        <rect key="frame" x="0.0" y="0.0" width="291" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="helpWebView" destination="5ec-sV-g1J" id="3O1-it-1IC"/>
+                                </connections>
+                            </customView>
+                            <button autoresizesSubviews="NO" verticalHuggingPriority="750" id="GHi-kU-ikZ">
+                                <rect key="frame" x="325" y="4" width="89" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HUL-P4-HIC">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="doneButtonAction:" target="tq7-ga-eHi" id="Kvl-6B-Jyc"/>
+                                    <action selector="removeButtonAction:" target="tq7-ga-eHi" id="qXi-bn-EUa"/>
                                 </connections>
                             </button>
                             <button autoresizesSubviews="NO" verticalHuggingPriority="750" id="mS6-l4-FuQ">
@@ -603,43 +626,20 @@ Gw
                                     <action selector="makeDefaultButtonAction:" target="tq7-ga-eHi" id="c7F-zr-zrH"/>
                                 </connections>
                             </button>
-                            <button autoresizesSubviews="NO" verticalHuggingPriority="750" id="GHi-kU-ikZ">
-                                <rect key="frame" x="325" y="4" width="89" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HUL-P4-HIC">
+                            <button autoresizesSubviews="NO" verticalHuggingPriority="750" id="g9h-MQ-qCZ">
+                                <rect key="frame" x="717" y="4" width="89" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XJX-dV-W7H">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="removeButtonAction:" target="tq7-ga-eHi" id="qXi-bn-EUa"/>
+                                    <action selector="doneButtonAction:" target="tq7-ga-eHi" id="Kvl-6B-Jyc"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" id="4eI-FZ-7bY">
-                                <rect key="frame" x="89" y="158" width="232" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="your nickname" drawsBackground="YES" id="ytb-WL-C4i">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <customView id="hMQ-rL-SQG" customClass="PreferenceHelpView" customModule="Svija_Sync" customModuleProvider="target">
-                                <rect key="frame" x="30" y="12" width="291" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <subviews>
-                                    <wkWebView wantsLayer="YES" id="5ec-sV-g1J">
-                                        <rect key="frame" x="0.0" y="0.0" width="291" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <wkWebViewConfiguration key="configuration">
-                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                            <wkPreferences key="preferences"/>
-                                        </wkWebViewConfiguration>
-                                    </wkWebView>
-                                </subviews>
-                                <connections>
-                                    <outlet property="helpWebView" destination="5ec-sV-g1J" id="3O1-it-1IC"/>
-                                </connections>
-                            </customView>
                         </subviews>
                     </view>
                     <connections>

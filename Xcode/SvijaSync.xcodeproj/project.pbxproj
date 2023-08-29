@@ -163,6 +163,7 @@
 
 /* Begin PBXFileReference section */
 		4BF35272263AA6A500BFD9B8 /* Rsync-Dependency */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Rsync-Dependency"; path = "../Rsync-Dependency"; sourceTree = "<group>"; };
+		AA1DFCEA2A9E413200ADC63B /* sync-rsync */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "sync-rsync"; path = "../../sync-rsync"; sourceTree = "<group>"; };
 		AA38681E2A306ED100C134B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA3868202A306ED100C134B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA3868222A306ED100C134B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -263,6 +264,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA1DFCE92A9E413200ADC63B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				AA1DFCEA2A9E413200ADC63B /* sync-rsync */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		AA38681D2A306ED100C134B8 /* Svija Sync Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +418,7 @@
 		D6F2084B25C94475005DAC78 = {
 			isa = PBXGroup;
 			children = (
+				AA1DFCE92A9E413200ADC63B /* Packages */,
 				D6F2085625C94475005DAC78 /* SvijaSync */,
 				AACAFE9926E10BD300511FF2 /* Svija Sync Downloadable */,
 				AA38681D2A306ED100C134B8 /* Svija Sync Demo */,

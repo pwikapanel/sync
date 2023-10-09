@@ -1,10 +1,11 @@
-*Updated 30 September, 2022 · Toulouse*
+
+*Updated 10 October, 2023 · Toulouse*
 
 ![Svija: SVG-based websites built in Adobe Illustrator][logo]
 
 [logo]: http://files.svija.love/github/readme-logo.png "Svija: SVG-based websites built in Adobe Illustrator"
 
-### Svija Synch 1.0.5
+### Svija Synch 1.0.7
 
 There are three versions:
 
@@ -13,6 +14,8 @@ There are three versions:
 - **Svija Sync Direct Beta** · beta testing
 
 They are determined in Xcode through choosing a **schemes** under the **Product menu**.
+
+----------------------------------------
 
 Passwords have just been expanded to allow:
 - accented characters

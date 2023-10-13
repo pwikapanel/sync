@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "sync-rsync",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/svijalove/sync-rsync",
+      "state" : {
+        "branch" : "beta",
+        "revision" : "4f52ab50a0ceaaf6210f64f3b0859a99e713c4b4"
+      }
+    }
+  ],
+  "version" : 2
+}

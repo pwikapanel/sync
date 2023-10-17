@@ -8,9 +8,5 @@
 	<true/>
 	<key>com.apple.security.network.client</key>
 	<true/>
-	<key>com.apple.security.temporary-exception.sbpl</key>
-	<array>
-		<string>(allow process-exec (literal &quot;/usr/libexec/rsync/rsync.samba&quot;))</string>
-	</array>
 </dict>
 </plist>

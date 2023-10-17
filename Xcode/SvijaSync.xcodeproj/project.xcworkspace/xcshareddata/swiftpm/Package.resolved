@@ -3,10 +3,10 @@
     {
       "identity" : "sync-rsync",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/svijalove/sync-rsync",
+      "location" : "https://github.com/svijalove/sync-rsync.git",
       "state" : {
-        "branch" : "beta",
-        "revision" : "4f52ab50a0ceaaf6210f64f3b0859a99e713c4b4"
+        "branch" : "sonoma",
+        "revision" : "1909e1e7ada077b29c8e522526429c25d38db3a4"
       }
     }
   ],

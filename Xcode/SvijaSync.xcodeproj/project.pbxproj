@@ -114,7 +114,6 @@
 		AACAFEFB26E10ED300511FF2 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBBB25D4FA69003931BB /* TimeIntervalExtensions.swift */; };
 		AACAFEFC26E10ED300511FF2 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99625DEADDA00DBD5B0 /* DateExtensions.swift */; };
 		AACAFEFD26E10ED300511FF2 /* HomeDownloadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63FDA4725E1444E000929C0 /* HomeDownloadHandler.swift */; };
-		AACAFEFF26E10ED300511FF2 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = AACAFEDB26E10ED300511FF2 /* Rsync */; };
 		AACAFF0026E10ED300511FF2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63A4C6625DBB8E400C3B9BF /* WebKit.framework */; };
 		AACAFF0226E10ED300511FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
 		AACAFF0326E10ED300511FF2 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
@@ -122,6 +121,7 @@
 		AACAFF0526E10ED300511FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
 		CE806B472ADEBCC700B4D983 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = CE806B462ADEBCC700B4D983 /* Rsync */; };
 		CE806B492ADEBCCC00B4D983 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = CE806B482ADEBCCC00B4D983 /* Rsync */; };
+		CEDB2CD12AE110AB004B3711 /* Rsync in Frameworks */ = {isa = PBXBuildFile; productRef = CEDB2CD02AE110AB004B3711 /* Rsync */; };
 		D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		D60EFBB225D4F042003931BB /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
 		D60EFBB925D4F1CB003931BB /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
@@ -247,7 +247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AACAFEFF26E10ED300511FF2 /* Rsync in Frameworks */,
+				CEDB2CD12AE110AB004B3711 /* Rsync in Frameworks */,
 				AACAFF0026E10ED300511FF2 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,7 +517,7 @@
 			);
 			name = "Svija Sync Direct";
 			packageProductDependencies = (
-				AACAFEDB26E10ED300511FF2 /* Rsync */,
+				CEDB2CD02AE110AB004B3711 /* Rsync */,
 			);
 			productName = SvijaSync;
 			productReference = AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */;
@@ -1285,14 +1285,6 @@
 				kind = branch;
 			};
 		};
-		AACAFEDC26E10ED300511FF2 /* XCRemoteSwiftPackageReference "Rsync-Utility" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/svijasvg/Rsync-Utility.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.6;
-			};
-		};
 		CE806B452ADEBCC100B4D983 /* XCRemoteSwiftPackageReference "sync-rsync" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/svijalove/sync-rsync.git";
@@ -1309,17 +1301,17 @@
 			package = AA38682D2A306F3200C134B8 /* XCRemoteSwiftPackageReference "sync-rsync" */;
 			productName = Rsync;
 		};
-		AACAFEDB26E10ED300511FF2 /* Rsync */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AACAFEDC26E10ED300511FF2 /* XCRemoteSwiftPackageReference "Rsync-Utility" */;
-			productName = Rsync;
-		};
 		CE806B462ADEBCC700B4D983 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CE806B452ADEBCC100B4D983 /* XCRemoteSwiftPackageReference "sync-rsync" */;
 			productName = Rsync;
 		};
 		CE806B482ADEBCCC00B4D983 /* Rsync */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE806B452ADEBCC100B4D983 /* XCRemoteSwiftPackageReference "sync-rsync" */;
+			productName = Rsync;
+		};
+		CEDB2CD02AE110AB004B3711 /* Rsync */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CE806B452ADEBCC100B4D983 /* XCRemoteSwiftPackageReference "sync-rsync" */;
 			productName = Rsync;

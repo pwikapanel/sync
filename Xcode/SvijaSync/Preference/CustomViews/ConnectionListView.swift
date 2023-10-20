@@ -6,7 +6,6 @@
 //
 
 import Cocoa
-import Rsync
 
 class ConnectionListView: NSView {
   

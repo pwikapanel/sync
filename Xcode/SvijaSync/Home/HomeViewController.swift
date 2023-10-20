@@ -6,7 +6,7 @@
 //
 
 import Cocoa
-import Rsync
+
 
 class HomeViewController: NSViewController {
   
@@ -72,7 +72,6 @@ class HomeViewController: NSViewController {
     downloadButton.toolTip = Text.Home.Tooltip.downloadButton
     uploadButton.toolTip = Text.Home.Tooltip.uploadButton
 	
-	debugPrint("App starting debug version: 1")
   }
 
   //———————————————————————————————————————————————————————————————————————————————— begin changes

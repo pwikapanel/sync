@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "sync-rsync",
+      "identity" : "swiftybeaver",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/svijalove/sync-rsync.git",
+      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
       "state" : {
-        "branch" : "sonoma",
-        "revision" : "c20a7acf1e36e85b8a38b072c17ad093f594bfb8"
+        "revision" : "1080914828ef1c9ca9cd2bad50667b3d847dabff",
+        "version" : "2.0.0"
       }
     }
   ],

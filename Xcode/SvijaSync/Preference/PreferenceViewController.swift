@@ -6,7 +6,6 @@
 //
 
 import Cocoa
-import Rsync
 import WebKit
 
 class PreferenceViewController: NSViewController {

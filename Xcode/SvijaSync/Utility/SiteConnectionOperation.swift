@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Rsync
 
 enum ConnectionSaveStatus {
     case duplicate

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Rsync
 
 protocol HomeViewModelInterface {
   var allConnections: [SiteConnection] { get }

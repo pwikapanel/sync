@@ -6,7 +6,6 @@
 //
 
 import Cocoa
-import Rsync
 
 //MARK: - DOWNLOAD
 extension HomeViewController {

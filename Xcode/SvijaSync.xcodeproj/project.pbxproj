@@ -159,6 +159,8 @@
 		CEDB2D292AE29468004B3711 /* rsync in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CEDB2D682AE29DCF004B3711 /* Svija Sync copy2-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D672AE29DCF004B3711 /* Svija Sync copy2-Info.plist */; };
 		CEDB2D692AE29F7B004B3711 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; };
+		CEDB2D6C2AE684F9004B3711 /* rsync in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CEDB2D6D2AE68C4B004B3711 /* rsync-debug in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D232AE2936D004B3711 /* rsync-debug */; };
 		D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		D60EFBB225D4F042003931BB /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
 		D60EFBB925D4F1CB003931BB /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
@@ -215,6 +217,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
+				CEDB2D6C2AE684F9004B3711 /* rsync in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +696,7 @@
 				AACAFF0426E10ED300511FF2 /* Localizable.strings in Resources */,
 				AACAFF0526E10ED300511FF2 /* Main.storyboard in Resources */,
 				CEDB2D032AE27042004B3711 /* upload.sh in Resources */,
+				CEDB2D6D2AE68C4B004B3711 /* rsync-debug in Resources */,
 				CEDB2D682AE29DCF004B3711 /* Svija Sync copy2-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

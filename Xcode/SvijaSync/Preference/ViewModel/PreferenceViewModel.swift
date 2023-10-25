@@ -107,6 +107,7 @@ extension PreferenceViewModel: PreferenceFormInterface {
         let status = siteOperations.add(site: connection)
         if status == .success {
             preferenceDidUpdate?(connection, .add)
+			makeDefault(site: connection)
         }
         return status
     }

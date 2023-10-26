@@ -59,7 +59,7 @@ extension HomeViewController {
     }
   }
   
-  private func pauseUpload() {
+ func pauseUpload() {
     uploadStatus = .terminate
     uploadOperationQueue?.cancelAllOperations()
     uploadOperationQueue = nil

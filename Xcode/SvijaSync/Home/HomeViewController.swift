@@ -93,6 +93,10 @@ class HomeViewController: NSViewController {
   // used by preferences menu item
   @IBAction func preferenceButtonAction(_ sender: Any) {
     resetStatus()
+	if uploadButton.state == .on {
+		pauseUpload()
+		uploadButton.state = .off
+	}
     let preferenceViewController =  PreferenceViewController.makeModule()
     presentAsSheet(preferenceViewController)
     preferenceViewController.doneAction = { [weak self] in

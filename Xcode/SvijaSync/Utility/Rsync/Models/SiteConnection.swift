@@ -45,7 +45,7 @@ public extension SiteConnection {
 
     var localSyncPath: String { localPath + "/sync/" }
 	
-	var localSyncIdentityPath: String { localSyncPath + "/SVIJA/System/" }
+	var localSyncIdentityPath: String { localSyncPath + "SVIJA/System/" }
 		
 	var localLastModifiedFilePath: String { localSyncIdentityPath + "Last Modified.txt" }
 

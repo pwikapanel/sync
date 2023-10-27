@@ -105,7 +105,6 @@
 "Preference.Button.modify" = "Modify";
 "Preference.Button.remove" = "Remove";
 "Preference.Button.add" = "Set Folder";
-"Preference.Button.makeDefault" = "Make Default";
 "Preference.Button.done" = "Done";
 "Preference.Button.update" = "Set Folder";
 
@@ -127,7 +126,6 @@
 "Preference.Tooltip.undo" = "Undo all changes";
 "Preference.Tooltip.remove" = "Delete the selected configuration";
 "Preference.Tooltip.modify" = "Modify the selected configuration or change the project folder";
-"Preference.Tooltip.makeDefault" = "Choose which website is selected at launch";
 "Preference.Tooltip.done" = "Esc · close this window and go back to the home screen";
 
 "Preference.Tooltip.nickname" = "Any name, to show who last worked on the website";

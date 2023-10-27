@@ -16,7 +16,6 @@ class PreferenceViewController: NSViewController {
     @IBOutlet weak var listView: ConnectionListView!
     @IBOutlet weak var removeButton: NSButton!
     @IBOutlet weak var modifyButton: NSButton!
-    @IBOutlet weak var makeDefaultButton: NSButton!
     @IBOutlet weak var doneButton: NSButton!
 
     private lazy var viewModel: PreferenceViewModelInterface = PreferenceViewModel()
@@ -28,9 +27,6 @@ class PreferenceViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         preferredContentSize = view.frame.size
-
-      // hide default button because no longer used
-      makeDefaultButton.isHidden = true
       
         nameField.stringValue = Utility.shared.nickName ?? ""
         nameField.placeholderString = Text.Preference.TextPlaceholder.nickname
@@ -43,14 +39,12 @@ class PreferenceViewController: NSViewController {
 
         removeButton.title = Text.Preference.Button.remove
         modifyButton.title = Text.Preference.Button.modify
-        makeDefaultButton.title = Text.Preference.Button.makeDefault
         doneButton.title = Text.Preference.Button.done
         removeButton.toolTip = Text.Preference.Tooltip.remove
         modifyButton.toolTip = Text.Preference.Tooltip.modify
-        makeDefaultButton.toolTip = Text.Preference.Tooltip.makeDefault
         doneButton.toolTip = Text.Preference.Tooltip.done
 
-        [removeButton, modifyButton, makeDefaultButton].forEach { $0?.isEnabled = false }
+        [removeButton, modifyButton].forEach { $0?.isEnabled = false }
 
         listView.listSelectionChanged = { [weak self] site in
             self?.selectedSite = site
@@ -69,7 +63,7 @@ class PreferenceViewController: NSViewController {
             case .remove:
                 self?.removeButton.title = Text.Preference.Button.undo
                 self?.removeButton.toolTip = Text.Preference.Tooltip.undo
-            case .add, .changeDefault: break
+            case .add: break
             case .undo:
                 self?.modifyButton.title =  Text.Preference.Button.modify
                 self?.removeButton.title =  Text.Preference.Button.remove
@@ -98,12 +92,6 @@ class PreferenceViewController: NSViewController {
         }
     }
 
-    @IBAction func makeDefaultButtonAction(_ sender: Any) {
-        if let connection = selectedSite {
-            viewModel.makeDefault(site: connection)
-        }
-    }
-
     @IBAction func doneButtonAction(_ sender: Any) {
         guard let name = nameField.text else {
             showAlert(message: Text.Alert.Title.enterName, info: Text.Alert.Message.enterName)
@@ -121,7 +109,6 @@ class PreferenceViewController: NSViewController {
 
     private func refreshButtons() {
         [removeButton, modifyButton].forEach { $0?.isEnabled = (self.selectedSite != nil) || $0?.title == Text.Preference.Button.undo }
-        makeDefaultButton.isEnabled = viewModel.activeConnections.count >= 2 && selectedSite != nil && !(selectedSite?.isDefault ?? false)
     }
 
 }

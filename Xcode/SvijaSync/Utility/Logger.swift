@@ -37,8 +37,8 @@ extension SiteConnection {
 		guard localUrl?.startAccessingSecurityScopedResource() ?? false else {
 			return
 		}
-		if FileManager.createDirectoryIfNeeded(fullPath: localLogPath) {
-			let logUrl = URL(fileURLWithPath: localLogPath + "Log.txt")
+		if FileManager.createDirectoryIfNeeded(fullPath: localSyncIdentityPath) {
+			let logUrl = URL(fileURLWithPath: localSyncIdentityPath + "Sync Log.txt")
 			Logger.addLog(on: logUrl)
 		}
 		localUrl?.stopAccessingSecurityScopedResource()

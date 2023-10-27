@@ -162,8 +162,6 @@ internal enum L10n {
       internal static let add = L10n.tr("Localizable", "Preference.Button.add")
       /// Done
       internal static let done = L10n.tr("Localizable", "Preference.Button.done")
-      /// Make Default
-      internal static let makeDefault = L10n.tr("Localizable", "Preference.Button.makeDefault")
       /// Modify
       internal static let modify = L10n.tr("Localizable", "Preference.Button.modify")
       /// Remove
@@ -214,8 +212,6 @@ internal enum L10n {
       internal static let connectID = L10n.tr("Localizable", "Preference.Tooltip.connectID")
       /// Esc · close this window and go back to the home screen
       internal static let done = L10n.tr("Localizable", "Preference.Tooltip.done")
-      /// Choose which website is selected at launch
-      internal static let makeDefault = L10n.tr("Localizable", "Preference.Tooltip.makeDefault")
       /// Modify the selected configuration or change the project folder
       internal static let modify = L10n.tr("Localizable", "Preference.Tooltip.modify")
       /// Any name, to show who last worked on the website

@@ -161,6 +161,10 @@
 		CEDB2D692AE29F7B004B3711 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; };
 		CEDB2D6C2AE684F9004B3711 /* rsync in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CEDB2D6D2AE68C4B004B3711 /* rsync-debug in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D232AE2936D004B3711 /* rsync-debug */; };
+		CEDB2D6F2AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
+		CEDB2D702AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
+		CEDB2D712AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
+		CEDB2D722AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
 		D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		D60EFBB225D4F042003931BB /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
 		D60EFBB925D4F1CB003931BB /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
@@ -240,6 +244,7 @@
 		CEDB2D1B2AE28FF1004B3711 /* rsync */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rsync; sourceTree = "<group>"; };
 		CEDB2D232AE2936D004B3711 /* rsync-debug */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "rsync-debug"; sourceTree = "<group>"; };
 		CEDB2D672AE29DCF004B3711 /* Svija Sync copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Svija Sync copy2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CEDB2D6E2AEA8654004B3711 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		D60EFBAA25D4EED7003931BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D60EFBAD25D4EF36003931BB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D60EFBB125D4F042003931BB /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
@@ -478,6 +483,7 @@
 				D6E3076225CE99D000806F0C /* FolderAccess.swift */,
 				D60EFBC225D54965003931BB /* SiteConnectionOperation.swift */,
 				D64FB0B425F1F3760026473F /* Validation.swift */,
+				CEDB2D6E2AEA8654004B3711 /* Logger.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -827,6 +833,7 @@
 				AA3868492A306F3200C134B8 /* PreferenceViewModel.swift in Sources */,
 				AA38684A2A306F3200C134B8 /* PreferenceHelpView.swift in Sources */,
 				AA38684B2A306F3200C134B8 /* HomeUploadHandler.swift in Sources */,
+				CEDB2D722AEA8654004B3711 /* Logger.swift in Sources */,
 				CEDB2CED2AE27042004B3711 /* RsyncManager.swift in Sources */,
 				AA38684C2A306F3200C134B8 /* TimeIntervalExtensions.swift in Sources */,
 				AA38684D2A306F3200C134B8 /* DateExtensions.swift in Sources */,
@@ -869,6 +876,7 @@
 				AA92C6E92716C456008BD343 /* PreferenceViewModel.swift in Sources */,
 				AA92C6EA2716C456008BD343 /* PreferenceHelpView.swift in Sources */,
 				AA92C6EB2716C456008BD343 /* HomeUploadHandler.swift in Sources */,
+				CEDB2D712AEA8654004B3711 /* Logger.swift in Sources */,
 				CEDB2CEC2AE27042004B3711 /* RsyncManager.swift in Sources */,
 				AA92C6EC2716C456008BD343 /* TimeIntervalExtensions.swift in Sources */,
 				AA92C6ED2716C456008BD343 /* DateExtensions.swift in Sources */,
@@ -911,6 +919,7 @@
 				AACAFEF826E10ED300511FF2 /* PreferenceViewModel.swift in Sources */,
 				AACAFEF926E10ED300511FF2 /* PreferenceHelpView.swift in Sources */,
 				AACAFEFA26E10ED300511FF2 /* HomeUploadHandler.swift in Sources */,
+				CEDB2D702AEA8654004B3711 /* Logger.swift in Sources */,
 				CEDB2CEB2AE27042004B3711 /* RsyncManager.swift in Sources */,
 				AACAFEFB26E10ED300511FF2 /* TimeIntervalExtensions.swift in Sources */,
 				AACAFEFC26E10ED300511FF2 /* DateExtensions.swift in Sources */,
@@ -953,6 +962,7 @@
 				D69C997825CED49300642A55 /* PreferenceViewModel.swift in Sources */,
 				D6E641DC25DA9C1C00262B13 /* PreferenceHelpView.swift in Sources */,
 				D63FDA4525E1443F000929C0 /* HomeUploadHandler.swift in Sources */,
+				CEDB2D6F2AEA8654004B3711 /* Logger.swift in Sources */,
 				CEDB2CEA2AE27042004B3711 /* RsyncManager.swift in Sources */,
 				D60EFBBC25D4FA69003931BB /* TimeIntervalExtensions.swift in Sources */,
 				D6A0F99725DEADDA00DBD5B0 /* DateExtensions.swift in Sources */,

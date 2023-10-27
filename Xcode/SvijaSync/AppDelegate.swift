@@ -8,8 +8,6 @@
 import Cocoa
 import SwiftyBeaver
 
-let log = SwiftyBeaver.self
-
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
   
@@ -23,13 +21,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   
   //https://stackoverflow.com/questions/45231879/how-to-delete-emoji-symbols-and-dictation-in-menu-bar
   func applicationWillFinishLaunching(_ notification: Notification) {
+	Logger.addConsoleLog()
     UserDefaults.standard.set(true, forKey: "NSDisabledDictationMenuItem")
     UserDefaults.standard.set(true, forKey: "NSDisabledCharacterPaletteMenuItem")
-	  let file = FileDestination()
-	  let console = ConsoleDestination()  // log to Xcode Console
-	  log.addDestination(file)
-	  log.addDestination(console)
-	  file.logFileMaxSize = 1024 * 1024 // 1 MB
   }
   
   func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {

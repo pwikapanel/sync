@@ -283,7 +283,10 @@ extension HomeViewController {
     }
     let index = popupButton.index(of: selectedItem)
     selectedConnection = connections[index]
-    
+	  
+	  // Add Logger
+	selectedConnection?.addLog()
+	  
     //—————————————————————————————————————————————————— added, to automatically set default
     
     var allConnections: [SiteConnection] {

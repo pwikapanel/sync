@@ -10,7 +10,7 @@ import Foundation
 extension SiteConnection {
   
   var lastOwner: String {
-    let last = try? String(contentsOfFile: localSyncPath + ".last", encoding: .utf8)
+    let last = try? String(contentsOfFile: localLastModifiedFilePath, encoding: .utf8)
       .trimmingCharacters(in: .whitespacesAndNewlines)
     return last ?? ""
   }

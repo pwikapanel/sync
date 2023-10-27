@@ -22,7 +22,7 @@ internal enum L10n {
       internal enum Message {
         ///  has modified the site.\nDo you want to continue?
         internal static let lastOwnerChanged = L10n.tr("Localizable", "Alert.Confirmation.Message.lastOwnerChanged")
-        /// Files on your computer will be replaced.\nDo you want to continue?
+        /// Your files will be deleted or replaced.\nDo you want to continue?
         internal static let localFileErase = L10n.tr("Localizable", "Alert.Confirmation.Message.localFileErase")
         /// Quitting now will leave incomplete files on your computer.\n\nDownload next time to finish synching.
         internal static let quitAppWhenDownload = L10n.tr("Localizable", "Alert.Confirmation.Message.quitAppWhenDownload")
@@ -57,6 +57,8 @@ internal enum L10n {
       internal static let selectProjectFolderWithoutSync = L10n.tr("Localizable", "Alert.Message.selectProjectFolderWithoutSync")
       /// Please delete a website or modify an existing website.
       internal static let siteLimit = L10n.tr("Localizable", "Alert.Message.siteLimit")
+      /// Your site has been updated to a new version of Svija — please download before continuing
+      internal static let siteUpdated = L10n.tr("Localizable", "Alert.Message.siteUpdated")
       /// Please quit the app and try again. Check your internet connection.
       internal static let unknown = L10n.tr("Localizable", "Alert.Message.unknown")
     }
@@ -85,6 +87,8 @@ internal enum L10n {
       internal static let selectProjectFolderWithoutSync = L10n.tr("Localizable", "Alert.Title.selectProjectFolderWithoutSync")
       /// Limit 50 Websites
       internal static let siteLimit = L10n.tr("Localizable", "Alert.Title.siteLimit")
+      /// Please Download Before Continuing
+      internal static let siteUpdated = L10n.tr("Localizable", "Alert.Title.siteUpdated")
       /// Unknown Error
       internal static let unknown = L10n.tr("Localizable", "Alert.Title.unknown")
     }

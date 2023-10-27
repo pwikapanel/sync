@@ -18,19 +18,24 @@ protocol HomeViewModelInterface {
 }
 
 enum UploadFolderCheck {
+	enum NameMismatch {
+		case updated
+		case created
+		case none
+	}
   case success
   case syncFolderNotFound
   case localPathExpired
   case subfoldersMissing
   case syncFolderEmpty
-  case serverNameMismatch
+  case serverNameMismatch(NameMismatch)
   case nickNameMissing
 }
 
 enum DownloadFolderCheck {
   case success
   case localPathExpired
-  case subfoldersExists
+  case filesExists
 }
 
 enum LastOwnerFetchCheck {
@@ -53,32 +58,32 @@ class HomeViewModel: HomeViewModelInterface  {
     return allConnections
   }
   
-  func fetchLastOwner(connection: SiteConnection, completion: @escaping (LastOwnerFetchCheck) -> ()) {
-    let localUrl = FolderAccess.promptDirectoryPermissionIfRequired(bookmarkKey: connection.uuid)
-    guard localUrl?.startAccessingSecurityScopedResource() ?? false else {
-      completion(.fail)
-      return
-    }
-    guard FileManager.default.fileExists(atPath: connection.localPath) else {
-      completion(.projectFolderMissing)
-      return
-    }
-    guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else {
-      completion(.fail)
-      return
-    }
-    
-    RsyncManager.shared.execute(.fetchLastOwner, connection: connection) {  result in
-      switch result {
-      case .success: completion(.success)
-      //case .failure: completion(.fail)
-      case .failure: completion(.success)
-        
-      }
-      localUrl?.stopAccessingSecurityScopedResource()
-    }
-    
-  }
+	func fetchLastOwner(connection: SiteConnection, completion: @escaping (LastOwnerFetchCheck) -> ()) {
+		let localUrl = FolderAccess.promptDirectoryPermissionIfRequired(bookmarkKey: connection.uuid)
+		guard localUrl?.startAccessingSecurityScopedResource() ?? false else {
+			completion(.fail)
+			return
+		}
+		guard FileManager.default.fileExists(atPath: connection.localPath) else {
+			completion(.projectFolderMissing)
+			return
+		}
+		guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else {
+			completion(.fail)
+			return
+		}
+		
+		RsyncManager.shared.execute(.fetchLastOwner, connection: connection) {  result in
+			switch result {
+			case .success: completion(.success)
+				//case .failure: completion(.fail)
+			case .failure: completion(.success)
+				
+			}
+			localUrl?.stopAccessingSecurityScopedResource()
+		}
+		
+	}
   
   func download(connection: SiteConnection, completion: @escaping (Bool) -> ()) {
     let localUrl = FolderAccess.promptDirectoryPermissionIfRequired(bookmarkKey: connection.uuid)
@@ -102,13 +107,12 @@ class HomeViewModel: HomeViewModelInterface  {
       completion(false)
       return
     }
-    let lastNamePath = connection.localSyncPath + ".last"
     do {
       guard let name = Utility.shared.nickName else {
         completion(false)
         return
       }
-      try name.write(toFile: lastNamePath, atomically: true, encoding: .utf8)
+      try name.write(toFile: connection.localLastModifiedFilePath, atomically: true, encoding: .utf8)
       RsyncManager.shared.execute(.upload, connection: connection) {  result in
         switch result {
         case let .success(status): completion(status)
@@ -133,11 +137,11 @@ class HomeViewModel: HomeViewModelInterface  {
     
     guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else { return .localPathExpired }
     
-    let subFolders = (try? FileManager.default.contentsOfDirectory(
+    let files = (try? FileManager.default.contentsOfDirectory(
                         at: localUrl.appendingPathComponent("sync"),
                         includingPropertiesForKeys: nil,
-                        options: []).filter { $0.hasDirectoryPath } ) ?? []
-    if subFolders.count >= Constant.syncSubFolderCount { return .subfoldersExists }
+                        options: []) ) ?? []
+    if files.count >= Constant.downloadMinFilesCount { return .filesExists }
     return .success
   }
   
@@ -162,7 +166,15 @@ class HomeViewModel: HomeViewModelInterface  {
     
     guard let name = Utility.shared.nickName else { return .nickNameMissing }
     
-    if !connection.lastOwner.isEmpty, connection.lastOwner != name { return .serverNameMismatch }
+	  if !connection.lastOwner.isEmpty, connection.lastOwner != name {
+		  if connection.lastOwner.localizedStandardContains("updated") {
+			  return .serverNameMismatch(.updated)
+		  } else if connection.lastOwner.localizedStandardContains("created") {
+			  return .serverNameMismatch(.created)
+		  } else {
+			  return .serverNameMismatch(.none)
+		  }
+	  }
     
     return .success
   }

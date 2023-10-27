@@ -44,5 +44,11 @@ public extension SiteConnection {
     var remoteSyncAddress: String { remoteAddress + "/sync/"}
 
     var localSyncPath: String { localPath + "/sync/" }
+	
+	var localSyncIdentityPath: String { localSyncPath + "/SVIJA/Identity/" }
+	
+	var localLogPath: String { localSyncIdentityPath + "Log/" }
+	
+	var localLastModifiedFilePath: String { localSyncIdentityPath + "Last Modified.txt" }
 
 }

@@ -57,7 +57,7 @@ internal enum L10n {
       internal static let selectProjectFolderWithoutSync = L10n.tr("Localizable", "Alert.Message.selectProjectFolderWithoutSync")
       /// Please delete a website or modify an existing website.
       internal static let siteLimit = L10n.tr("Localizable", "Alert.Message.siteLimit")
-      /// Your site has been updated to a new version of Svija — please download before continuing
+      /// Your site has been updated to a new version of Svija — please download before continuing.
       internal static let siteUpdated = L10n.tr("Localizable", "Alert.Message.siteUpdated")
       /// Please quit the app and try again. Check your internet connection.
       internal static let unknown = L10n.tr("Localizable", "Alert.Message.unknown")

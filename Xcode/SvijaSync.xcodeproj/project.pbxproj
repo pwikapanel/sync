@@ -116,6 +116,10 @@
 		AACAFF0226E10ED300511FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
 		AACAFF0326E10ED300511FF2 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
 		AACAFF0526E10ED300511FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
+		CEAEB9612AF69D7300AAC1F3 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEAEB9602AF69D7300AAC1F3 /* rsync */; };
+		CEAEB9622AF69D7300AAC1F3 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEAEB9602AF69D7300AAC1F3 /* rsync */; };
+		CEAEB9632AF69D7300AAC1F3 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEAEB9602AF69D7300AAC1F3 /* rsync */; };
+		CEAEB9642AF69D7300AAC1F3 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEAEB9602AF69D7300AAC1F3 /* rsync */; };
 		CEDB2CEA2AE27042004B3711 /* RsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */; };
 		CEDB2CEB2AE27042004B3711 /* RsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */; };
 		CEDB2CEC2AE27042004B3711 /* RsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */; };
@@ -149,14 +153,7 @@
 		CEDB2D0C2AE27042004B3711 /* download.sh in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2CE92AE27042004B3711 /* download.sh */; };
 		CEDB2D0D2AE27042004B3711 /* download.sh in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2CE92AE27042004B3711 /* download.sh */; };
 		CEDB2D122AE28258004B3711 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = CEDB2D112AE28258004B3711 /* SwiftyBeaver */; };
-		CEDB2D1C2AE28FF1004B3711 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; };
-		CEDB2D1E2AE28FF1004B3711 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; };
-		CEDB2D1F2AE28FF1004B3711 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; };
 		CEDB2D222AE29086004B3711 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = CEDB2D212AE29086004B3711 /* SwiftyBeaver */; };
-		CEDB2D292AE29468004B3711 /* rsync in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CEDB2D692AE29F7B004B3711 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; };
-		CEDB2D6C2AE684F9004B3711 /* rsync in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CEDB2D6D2AE68C4B004B3711 /* rsync-debug in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D232AE2936D004B3711 /* rsync-debug */; };
 		CEDB2D6F2AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
 		CEDB2D702AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
 		CEDB2D712AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
@@ -210,7 +207,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				CEDB2D292AE29468004B3711 /* rsync in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +216,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				CEDB2D6C2AE684F9004B3711 /* rsync in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +226,8 @@
 		AA38685B2A306F3200C134B8 /* Svija Sync Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA92C6FB2716C456008BD343 /* Svija Sync Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Direct.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAEB95E2AF69BF200AAC1F3 /* rsync-debug */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "rsync-debug"; sourceTree = "<group>"; };
+		CEAEB9602AF69D7300AAC1F3 /* rsync */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rsync; sourceTree = "<group>"; };
 		CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RsyncManager.swift; sourceTree = "<group>"; };
 		CEDB2CE02AE27042004B3711 /* SiteConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteConnection.swift; sourceTree = "<group>"; };
 		CEDB2CE32AE27042004B3711 /* BashExecuter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BashExecuter.swift; sourceTree = "<group>"; };
@@ -240,8 +237,6 @@
 		CEDB2CE82AE27042004B3711 /* version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = version.sh; sourceTree = "<group>"; };
 		CEDB2CE92AE27042004B3711 /* download.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = download.sh; sourceTree = "<group>"; };
 		CEDB2D132AE28A81004B3711 /* rsync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = rsync.entitlements; sourceTree = "<group>"; };
-		CEDB2D1B2AE28FF1004B3711 /* rsync */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rsync; sourceTree = "<group>"; };
-		CEDB2D232AE2936D004B3711 /* rsync-debug */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "rsync-debug"; sourceTree = "<group>"; };
 		CEDB2D6E2AEA8654004B3711 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		CEDB2D842AEBDAFB004B3711 /* Info-Direct.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Direct.plist"; sourceTree = "<group>"; };
 		CEDB2D852AEBDAFB004B3711 /* Info-Beta.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Beta.plist"; sourceTree = "<group>"; };
@@ -351,8 +346,8 @@
 		CEDB2CE12AE27042004B3711 /* Binaries */ = {
 			isa = PBXGroup;
 			children = (
-				CEDB2D1B2AE28FF1004B3711 /* rsync */,
-				CEDB2D232AE2936D004B3711 /* rsync-debug */,
+				CEAEB9602AF69D7300AAC1F3 /* rsync */,
+				CEAEB95E2AF69BF200AAC1F3 /* rsync-debug */,
 				CEDB2D132AE28A81004B3711 /* rsync.entitlements */,
 			);
 			path = Binaries;
@@ -675,8 +670,8 @@
 				CEDB2D0D2AE27042004B3711 /* download.sh in Resources */,
 				CEDB2D012AE27042004B3711 /* last-owner.sh in Resources */,
 				AA3868542A306F3200C134B8 /* Credits.html in Resources */,
+				CEAEB9642AF69D7300AAC1F3 /* rsync in Resources */,
 				CEDB2CFD2AE27042004B3711 /* check-connection.sh in Resources */,
-				CEDB2D1F2AE28FF1004B3711 /* rsync in Resources */,
 				AA3868562A306F3200C134B8 /* Main.storyboard in Resources */,
 				CEDB2D052AE27042004B3711 /* upload.sh in Resources */,
 			);
@@ -692,8 +687,8 @@
 				CEDB2D0C2AE27042004B3711 /* download.sh in Resources */,
 				CEDB2D002AE27042004B3711 /* last-owner.sh in Resources */,
 				AA92C6F42716C456008BD343 /* Credits.html in Resources */,
+				CEAEB9632AF69D7300AAC1F3 /* rsync in Resources */,
 				CEDB2CFC2AE27042004B3711 /* check-connection.sh in Resources */,
-				CEDB2D1E2AE28FF1004B3711 /* rsync in Resources */,
 				AA92C6F62716C456008BD343 /* Main.storyboard in Resources */,
 				CEDB2D042AE27042004B3711 /* upload.sh in Resources */,
 			);
@@ -703,7 +698,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDB2D692AE29F7B004B3711 /* rsync in Resources */,
+				CEAEB9622AF69D7300AAC1F3 /* rsync in Resources */,
 				CEDB2D7E2AEBD74D004B3711 /* Localizable.strings in Resources */,
 				CEDB2D072AE27042004B3711 /* version.sh in Resources */,
 				AACAFF0226E10ED300511FF2 /* Assets.xcassets in Resources */,
@@ -713,7 +708,6 @@
 				CEDB2CFB2AE27042004B3711 /* check-connection.sh in Resources */,
 				AACAFF0526E10ED300511FF2 /* Main.storyboard in Resources */,
 				CEDB2D032AE27042004B3711 /* upload.sh in Resources */,
-				CEDB2D6D2AE68C4B004B3711 /* rsync-debug in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,8 +721,8 @@
 				CEDB2D0A2AE27042004B3711 /* download.sh in Resources */,
 				CEDB2CFE2AE27042004B3711 /* last-owner.sh in Resources */,
 				D6B5EBE525E4B61900717561 /* Credits.html in Resources */,
+				CEAEB9612AF69D7300AAC1F3 /* rsync in Resources */,
 				CEDB2CFA2AE27042004B3711 /* check-connection.sh in Resources */,
-				CEDB2D1C2AE28FF1004B3711 /* rsync in Resources */,
 				D6F2085F25C9447A005DAC78 /* Main.storyboard in Resources */,
 				CEDB2D022AE27042004B3711 /* upload.sh in Resources */,
 			);

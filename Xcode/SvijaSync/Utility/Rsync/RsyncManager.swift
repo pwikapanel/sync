@@ -47,7 +47,8 @@ public class RsyncManager: RsyncManagerInterface {
 	private var rsyncArg: String {
 		if #available(macOS 14, *) {
 			guard let rsyncPath = Bundle.main.rsyncPath else {
-				debugPrint("⚠️ RsyncManager \(#line): Error: Embeded rsync binary not found")
+				debugPrint("❌[IMPORTANT] RsyncManager \(#line): Error: Embeded rsync binary not found")
+				debugPrint("❌[IMPORTANT] RsyncManager \(#line): Make sure to add rsync-debug executable to your current target.")
 				return "rsync"
 			}
 			return rsyncPath

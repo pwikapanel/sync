@@ -43,7 +43,6 @@
 		AA3868512A306F3200C134B8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63A4C6625DBB8E400C3B9BF /* WebKit.framework */; };
 		AA3868532A306F3200C134B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
 		AA3868542A306F3200C134B8 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
-		AA3868552A306F3200C134B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		AA3868562A306F3200C134B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
 		AA92C6CF2716C456008BD343 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */; };
 		AA92C6D02716C456008BD343 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
@@ -80,7 +79,6 @@
 		AA92C6F12716C456008BD343 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63A4C6625DBB8E400C3B9BF /* WebKit.framework */; };
 		AA92C6F32716C456008BD343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
 		AA92C6F42716C456008BD343 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
-		AA92C6F52716C456008BD343 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		AA92C6F62716C456008BD343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
 		AACAFEDE26E10ED300511FF2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */; };
 		AACAFEDF26E10ED300511FF2 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
@@ -117,8 +115,11 @@
 		AACAFF0026E10ED300511FF2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63A4C6625DBB8E400C3B9BF /* WebKit.framework */; };
 		AACAFF0226E10ED300511FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
 		AACAFF0326E10ED300511FF2 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
-		AACAFF0426E10ED300511FF2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		AACAFF0526E10ED300511FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
+		CEAEB9612AF69D7300AAC1F3 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEAEB9602AF69D7300AAC1F3 /* rsync */; };
+		CEAEB9622AF69D7300AAC1F3 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEAEB9602AF69D7300AAC1F3 /* rsync */; };
+		CEAEB9632AF69D7300AAC1F3 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEAEB9602AF69D7300AAC1F3 /* rsync */; };
+		CEAEB9642AF69D7300AAC1F3 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEAEB9602AF69D7300AAC1F3 /* rsync */; };
 		CEDB2CEA2AE27042004B3711 /* RsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */; };
 		CEDB2CEB2AE27042004B3711 /* RsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */; };
 		CEDB2CEC2AE27042004B3711 /* RsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */; };
@@ -152,16 +153,15 @@
 		CEDB2D0C2AE27042004B3711 /* download.sh in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2CE92AE27042004B3711 /* download.sh */; };
 		CEDB2D0D2AE27042004B3711 /* download.sh in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2CE92AE27042004B3711 /* download.sh */; };
 		CEDB2D122AE28258004B3711 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = CEDB2D112AE28258004B3711 /* SwiftyBeaver */; };
-		CEDB2D1C2AE28FF1004B3711 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; };
-		CEDB2D1E2AE28FF1004B3711 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; };
-		CEDB2D1F2AE28FF1004B3711 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; };
 		CEDB2D222AE29086004B3711 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = CEDB2D212AE29086004B3711 /* SwiftyBeaver */; };
-		CEDB2D292AE29468004B3711 /* rsync in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CEDB2D682AE29DCF004B3711 /* Svija Sync copy2-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D672AE29DCF004B3711 /* Svija Sync copy2-Info.plist */; };
-		CEDB2D692AE29F7B004B3711 /* rsync in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; };
-		CEDB2D6C2AE684F9004B3711 /* rsync in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEDB2D1B2AE28FF1004B3711 /* rsync */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CEDB2D6D2AE68C4B004B3711 /* rsync-debug in Resources */ = {isa = PBXBuildFile; fileRef = CEDB2D232AE2936D004B3711 /* rsync-debug */; };
-		D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
+		CEDB2D6F2AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
+		CEDB2D702AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
+		CEDB2D712AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
+		CEDB2D722AEA8654004B3711 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2D6E2AEA8654004B3711 /* Logger.swift */; };
+		CEDB2D7D2AEBD74D004B3711 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
+		CEDB2D7E2AEBD74D004B3711 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
+		CEDB2D7F2AEBD74E004B3711 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
+		CEDB2D802AEBD74E004B3711 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D60EFBAB25D4EED7003931BB /* Localizable.strings */; };
 		D60EFBB225D4F042003931BB /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB125D4F042003931BB /* Strings+Generated.swift */; };
 		D60EFBB925D4F1CB003931BB /* SiteConnectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBB825D4F1CB003931BB /* SiteConnectionExtensions.swift */; };
 		D60EFBBC25D4FA69003931BB /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EFBBB25D4FA69003931BB /* TimeIntervalExtensions.swift */; };
@@ -207,7 +207,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				CEDB2D292AE29468004B3711 /* rsync in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +216,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				CEDB2D6C2AE684F9004B3711 /* rsync in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +226,8 @@
 		AA38685B2A306F3200C134B8 /* Svija Sync Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA92C6FB2716C456008BD343 /* Svija Sync Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Direct.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAEB95E2AF69BF200AAC1F3 /* rsync-debug */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "rsync-debug"; sourceTree = "<group>"; };
+		CEAEB9602AF69D7300AAC1F3 /* rsync */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rsync; sourceTree = "<group>"; };
 		CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RsyncManager.swift; sourceTree = "<group>"; };
 		CEDB2CE02AE27042004B3711 /* SiteConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteConnection.swift; sourceTree = "<group>"; };
 		CEDB2CE32AE27042004B3711 /* BashExecuter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BashExecuter.swift; sourceTree = "<group>"; };
@@ -237,9 +237,11 @@
 		CEDB2CE82AE27042004B3711 /* version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = version.sh; sourceTree = "<group>"; };
 		CEDB2CE92AE27042004B3711 /* download.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = download.sh; sourceTree = "<group>"; };
 		CEDB2D132AE28A81004B3711 /* rsync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = rsync.entitlements; sourceTree = "<group>"; };
-		CEDB2D1B2AE28FF1004B3711 /* rsync */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rsync; sourceTree = "<group>"; };
-		CEDB2D232AE2936D004B3711 /* rsync-debug */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "rsync-debug"; sourceTree = "<group>"; };
-		CEDB2D672AE29DCF004B3711 /* Svija Sync copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Svija Sync copy2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CEDB2D6E2AEA8654004B3711 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CEDB2D842AEBDAFB004B3711 /* Info-Direct.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Direct.plist"; sourceTree = "<group>"; };
+		CEDB2D852AEBDAFB004B3711 /* Info-Beta.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Beta.plist"; sourceTree = "<group>"; };
+		CEDB2D862AEBDAFB004B3711 /* Info-Demo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Demo.plist"; sourceTree = "<group>"; };
+		CEDB2D872AEBDAFB004B3711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D60EFBAA25D4EED7003931BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D60EFBAD25D4EF36003931BB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D60EFBB125D4F042003931BB /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
@@ -279,7 +281,6 @@
 		D6F2085725C94475005DAC78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6F2085B25C9447A005DAC78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6F2085E25C9447A005DAC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D6F2086025C9447A005DAC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6F2086125C9447A005DAC78 /* SvijaSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SvijaSync.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -345,8 +346,8 @@
 		CEDB2CE12AE27042004B3711 /* Binaries */ = {
 			isa = PBXGroup;
 			children = (
-				CEDB2D1B2AE28FF1004B3711 /* rsync */,
-				CEDB2D232AE2936D004B3711 /* rsync-debug */,
+				CEAEB9602AF69D7300AAC1F3 /* rsync */,
+				CEAEB95E2AF69BF200AAC1F3 /* rsync-debug */,
 				CEDB2D132AE28A81004B3711 /* rsync.entitlements */,
 			);
 			path = Binaries;
@@ -362,6 +363,17 @@
 				CEDB2CE92AE27042004B3711 /* download.sh */,
 			);
 			path = Scripts;
+			sourceTree = "<group>";
+		};
+		CEDB2D832AEBDAFB004B3711 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				CEDB2D842AEBDAFB004B3711 /* Info-Direct.plist */,
+				CEDB2D852AEBDAFB004B3711 /* Info-Beta.plist */,
+				CEDB2D862AEBDAFB004B3711 /* Info-Demo.plist */,
+				CEDB2D872AEBDAFB004B3711 /* Info.plist */,
+			);
+			path = Plist;
 			sourceTree = "<group>";
 		};
 		D60EFBA125D4EE80003931BB /* Strings */ = {
@@ -478,6 +490,7 @@
 				D6E3076225CE99D000806F0C /* FolderAccess.swift */,
 				D60EFBC225D54965003931BB /* SiteConnectionOperation.swift */,
 				D64FB0B425F1F3760026473F /* Validation.swift */,
+				CEDB2D6E2AEA8654004B3711 /* Logger.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -509,13 +522,12 @@
 				D6DF3B6A25CECF0300D24D9C /* Home */,
 				D6DF3B6625CECEE100D24D9C /* Preference */,
 				D6EBE34E25CE497600498A04 /* Utility */,
-				D6F2085B25C9447A005DAC78 /* Assets.xcassets */,
-				D6F2085D25C9447A005DAC78 /* Main.storyboard */,
 				D60EFBA125D4EE80003931BB /* Strings */,
-				D6F2086025C9447A005DAC78 /* Info.plist */,
+				CEDB2D832AEBDAFB004B3711 /* Plist */,
+				D6F2085D25C9447A005DAC78 /* Main.storyboard */,
 				D6B5EBE425E4B61900717561 /* Credits.html */,
+				D6F2085B25C9447A005DAC78 /* Assets.xcassets */,
 				D6F2086125C9447A005DAC78 /* SvijaSync.entitlements */,
-				CEDB2D672AE29DCF004B3711 /* Svija Sync copy2-Info.plist */,
 			);
 			path = SvijaSync;
 			sourceTree = "<group>";
@@ -654,12 +666,12 @@
 			files = (
 				CEDB2D092AE27042004B3711 /* version.sh in Resources */,
 				AA3868532A306F3200C134B8 /* Assets.xcassets in Resources */,
+				CEDB2D802AEBD74E004B3711 /* Localizable.strings in Resources */,
 				CEDB2D0D2AE27042004B3711 /* download.sh in Resources */,
 				CEDB2D012AE27042004B3711 /* last-owner.sh in Resources */,
 				AA3868542A306F3200C134B8 /* Credits.html in Resources */,
+				CEAEB9642AF69D7300AAC1F3 /* rsync in Resources */,
 				CEDB2CFD2AE27042004B3711 /* check-connection.sh in Resources */,
-				CEDB2D1F2AE28FF1004B3711 /* rsync in Resources */,
-				AA3868552A306F3200C134B8 /* Localizable.strings in Resources */,
 				AA3868562A306F3200C134B8 /* Main.storyboard in Resources */,
 				CEDB2D052AE27042004B3711 /* upload.sh in Resources */,
 			);
@@ -671,12 +683,12 @@
 			files = (
 				CEDB2D082AE27042004B3711 /* version.sh in Resources */,
 				AA92C6F32716C456008BD343 /* Assets.xcassets in Resources */,
+				CEDB2D7F2AEBD74E004B3711 /* Localizable.strings in Resources */,
 				CEDB2D0C2AE27042004B3711 /* download.sh in Resources */,
 				CEDB2D002AE27042004B3711 /* last-owner.sh in Resources */,
 				AA92C6F42716C456008BD343 /* Credits.html in Resources */,
+				CEAEB9632AF69D7300AAC1F3 /* rsync in Resources */,
 				CEDB2CFC2AE27042004B3711 /* check-connection.sh in Resources */,
-				CEDB2D1E2AE28FF1004B3711 /* rsync in Resources */,
-				AA92C6F52716C456008BD343 /* Localizable.strings in Resources */,
 				AA92C6F62716C456008BD343 /* Main.storyboard in Resources */,
 				CEDB2D042AE27042004B3711 /* upload.sh in Resources */,
 			);
@@ -686,18 +698,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDB2D692AE29F7B004B3711 /* rsync in Resources */,
+				CEAEB9622AF69D7300AAC1F3 /* rsync in Resources */,
+				CEDB2D7E2AEBD74D004B3711 /* Localizable.strings in Resources */,
 				CEDB2D072AE27042004B3711 /* version.sh in Resources */,
 				AACAFF0226E10ED300511FF2 /* Assets.xcassets in Resources */,
 				CEDB2D0B2AE27042004B3711 /* download.sh in Resources */,
 				CEDB2CFF2AE27042004B3711 /* last-owner.sh in Resources */,
 				AACAFF0326E10ED300511FF2 /* Credits.html in Resources */,
 				CEDB2CFB2AE27042004B3711 /* check-connection.sh in Resources */,
-				AACAFF0426E10ED300511FF2 /* Localizable.strings in Resources */,
 				AACAFF0526E10ED300511FF2 /* Main.storyboard in Resources */,
 				CEDB2D032AE27042004B3711 /* upload.sh in Resources */,
-				CEDB2D6D2AE68C4B004B3711 /* rsync-debug in Resources */,
-				CEDB2D682AE29DCF004B3711 /* Svija Sync copy2-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,12 +717,12 @@
 			files = (
 				CEDB2D062AE27042004B3711 /* version.sh in Resources */,
 				D6F2085C25C9447A005DAC78 /* Assets.xcassets in Resources */,
+				CEDB2D7D2AEBD74D004B3711 /* Localizable.strings in Resources */,
 				CEDB2D0A2AE27042004B3711 /* download.sh in Resources */,
 				CEDB2CFE2AE27042004B3711 /* last-owner.sh in Resources */,
 				D6B5EBE525E4B61900717561 /* Credits.html in Resources */,
+				CEAEB9612AF69D7300AAC1F3 /* rsync in Resources */,
 				CEDB2CFA2AE27042004B3711 /* check-connection.sh in Resources */,
-				CEDB2D1C2AE28FF1004B3711 /* rsync in Resources */,
-				D60EFBA925D4EED7003931BB /* Localizable.strings in Resources */,
 				D6F2085F25C9447A005DAC78 /* Main.storyboard in Resources */,
 				CEDB2D022AE27042004B3711 /* upload.sh in Resources */,
 			);
@@ -827,6 +837,7 @@
 				AA3868492A306F3200C134B8 /* PreferenceViewModel.swift in Sources */,
 				AA38684A2A306F3200C134B8 /* PreferenceHelpView.swift in Sources */,
 				AA38684B2A306F3200C134B8 /* HomeUploadHandler.swift in Sources */,
+				CEDB2D722AEA8654004B3711 /* Logger.swift in Sources */,
 				CEDB2CED2AE27042004B3711 /* RsyncManager.swift in Sources */,
 				AA38684C2A306F3200C134B8 /* TimeIntervalExtensions.swift in Sources */,
 				AA38684D2A306F3200C134B8 /* DateExtensions.swift in Sources */,
@@ -869,6 +880,7 @@
 				AA92C6E92716C456008BD343 /* PreferenceViewModel.swift in Sources */,
 				AA92C6EA2716C456008BD343 /* PreferenceHelpView.swift in Sources */,
 				AA92C6EB2716C456008BD343 /* HomeUploadHandler.swift in Sources */,
+				CEDB2D712AEA8654004B3711 /* Logger.swift in Sources */,
 				CEDB2CEC2AE27042004B3711 /* RsyncManager.swift in Sources */,
 				AA92C6EC2716C456008BD343 /* TimeIntervalExtensions.swift in Sources */,
 				AA92C6ED2716C456008BD343 /* DateExtensions.swift in Sources */,
@@ -911,6 +923,7 @@
 				AACAFEF826E10ED300511FF2 /* PreferenceViewModel.swift in Sources */,
 				AACAFEF926E10ED300511FF2 /* PreferenceHelpView.swift in Sources */,
 				AACAFEFA26E10ED300511FF2 /* HomeUploadHandler.swift in Sources */,
+				CEDB2D702AEA8654004B3711 /* Logger.swift in Sources */,
 				CEDB2CEB2AE27042004B3711 /* RsyncManager.swift in Sources */,
 				AACAFEFB26E10ED300511FF2 /* TimeIntervalExtensions.swift in Sources */,
 				AACAFEFC26E10ED300511FF2 /* DateExtensions.swift in Sources */,
@@ -953,6 +966,7 @@
 				D69C997825CED49300642A55 /* PreferenceViewModel.swift in Sources */,
 				D6E641DC25DA9C1C00262B13 /* PreferenceHelpView.swift in Sources */,
 				D63FDA4525E1443F000929C0 /* HomeUploadHandler.swift in Sources */,
+				CEDB2D6F2AEA8654004B3711 /* Logger.swift in Sources */,
 				CEDB2CEA2AE27042004B3711 /* RsyncManager.swift in Sources */,
 				D60EFBBC25D4FA69003931BB /* TimeIntervalExtensions.swift in Sources */,
 				D6A0F99725DEADDA00DBD5B0 /* DateExtensions.swift in Sources */,
@@ -995,7 +1009,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z66QVF9XBZ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Svija Sync Beta copy-Info.plist";
+				INFOPLIST_FILE = "SvijaSync/Plist/Info-Demo.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Svija Sync";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1022,7 +1036,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z66QVF9XBZ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Svija Sync Beta copy-Info.plist";
+				INFOPLIST_FILE = "SvijaSync/Plist/Info-Demo.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Svija Sync";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1049,7 +1063,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z66QVF9XBZ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Svija Sync copy-Info.plist";
+				INFOPLIST_FILE = "SvijaSync/Plist/Info-Beta.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1075,7 +1089,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z66QVF9XBZ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Svija Sync copy-Info.plist";
+				INFOPLIST_FILE = "SvijaSync/Plist/Info-Beta.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1101,7 +1115,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z66QVF9XBZ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Svija Sync copy2-Info.plist";
+				INFOPLIST_FILE = "SvijaSync/Plist/Info-Direct.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1127,7 +1141,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z66QVF9XBZ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Svija Sync copy2-Info.plist";
+				INFOPLIST_FILE = "SvijaSync/Plist/Info-Direct.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1272,7 +1286,7 @@
 				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = Z66QVF9XBZ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = SvijaSync/Info.plist;
+				INFOPLIST_FILE = SvijaSync/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1300,7 +1314,7 @@
 				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = Z66QVF9XBZ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = SvijaSync/Info.plist;
+				INFOPLIST_FILE = SvijaSync/Plist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

@@ -11,7 +11,6 @@ enum PreferenceUpdate {
     case add
     case modify
     case remove
-    case changeDefault
     case undo
 }
 
@@ -29,24 +28,18 @@ protocol PreferenceListInterface {
 protocol PreferenceViewModelInterface: PreferenceFormInterface, PreferenceListInterface {
 
     var lastConnection: SiteConnection? { get set }
-    func makeDefault(site: SiteConnection)
     func remove(site: SiteConnection)
     func saveName(_ name: String)
     var preferenceDidUpdate: ((SiteConnection, PreferenceUpdate) -> ())? { get set }
     func undo()
 }
 
-class PreferenceViewModel: PreferenceViewModelInterface {
+final class PreferenceViewModel: PreferenceViewModelInterface {
 
     var lastConnection: SiteConnection?
     var preferenceDidUpdate: ((SiteConnection, PreferenceUpdate) -> ())?
 
     private let siteOperations = SiteConnectionOperation()
-
-    func makeDefault(site: SiteConnection) {
-        siteOperations.makeDefault(site: site)
-        preferenceDidUpdate?(site, .changeDefault)
-    }
 
     func remove(site: SiteConnection) {
         siteOperations.remove(site: site)
@@ -81,7 +74,6 @@ class PreferenceViewModel: PreferenceViewModelInterface {
 
 }
 
-
 extension PreferenceViewModel: PreferenceFormInterface {
 
     var numberOfConnections: Int {
@@ -106,7 +98,9 @@ extension PreferenceViewModel: PreferenceFormInterface {
         }
         let status = siteOperations.add(site: connection)
         if status == .success {
+			siteOperations.makeDefault(site: connection)
             preferenceDidUpdate?(connection, .add)
+			
         }
         return status
     }

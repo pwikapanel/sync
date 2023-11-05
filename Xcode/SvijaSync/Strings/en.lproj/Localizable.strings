@@ -47,8 +47,11 @@
 "Alert.Confirmation.Title.areYouSure" = "Are you sure?";
 
 "Alert.Confirmation.Message.lastOwnerChanged" = " has modified the site.\nDo you want to continue?";
-"Alert.Confirmation.Message.localFileErase" = "Files on your computer will be replaced.\nDo you want to continue?";
+"Alert.Confirmation.Message.localFileErase" = "Your files will be deleted or replaced.\nDo you want to continue?";
 "Alert.Confirmation.Message.quitAppWhenDownload" = "Quitting now will leave incomplete files on your computer.\n\nDownload next time to finish synching.";
+
+"Alert.Title.siteUpdated" = "Please Download Before Continuing";
+"Alert.Message.siteUpdated" = "Your site has been updated to a new version of Svija — please download before continuing";
 
 "Alert.Title.projectFolderMissing" = "Project Folder is Missing";
 "Alert.Message.projectFolderMissing" = "Open Preferences to modify this website and select a project folder.";
@@ -101,7 +104,6 @@
 "Preference.Button.modify" = "Modify";
 "Preference.Button.remove" = "Remove";
 "Preference.Button.add" = "Set Folder";
-"Preference.Button.makeDefault" = "Make Default";
 "Preference.Button.done" = "Done";
 "Preference.Button.update" = "Set Folder";
 
@@ -123,7 +125,6 @@
 "Preference.Tooltip.undo" = "Undo all changes";
 "Preference.Tooltip.remove" = "Delete the selected configuration";
 "Preference.Tooltip.modify" = "Modify the selected configuration or change the project folder";
-"Preference.Tooltip.makeDefault" = "Choose which website is selected at launch";
 "Preference.Tooltip.done" = "Esc · close this window and go back to the home screen";
 
 "Preference.Tooltip.nickname" = "Any name, to show who last worked on the website";

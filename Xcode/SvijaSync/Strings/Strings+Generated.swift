@@ -22,7 +22,7 @@ internal enum L10n {
       internal enum Message {
         ///  has modified the site.\nDo you want to continue?
         internal static let lastOwnerChanged = L10n.tr("Localizable", "Alert.Confirmation.Message.lastOwnerChanged")
-        /// Files on your computer will be replaced.\nDo you want to continue?
+        /// Your files will be deleted or replaced.\nDo you want to continue?
         internal static let localFileErase = L10n.tr("Localizable", "Alert.Confirmation.Message.localFileErase")
         /// Quitting now will leave incomplete files on your computer.\n\nDownload next time to finish synching.
         internal static let quitAppWhenDownload = L10n.tr("Localizable", "Alert.Confirmation.Message.quitAppWhenDownload")
@@ -57,6 +57,8 @@ internal enum L10n {
       internal static let selectProjectFolderWithoutSync = L10n.tr("Localizable", "Alert.Message.selectProjectFolderWithoutSync")
       /// Please delete a website or modify an existing website.
       internal static let siteLimit = L10n.tr("Localizable", "Alert.Message.siteLimit")
+      /// Your site has been updated to a new version of Svija — please download before continuing
+      internal static let siteUpdated = L10n.tr("Localizable", "Alert.Message.siteUpdated")
       /// Please quit the app and try again. Check your internet connection.
       internal static let unknown = L10n.tr("Localizable", "Alert.Message.unknown")
     }
@@ -85,6 +87,8 @@ internal enum L10n {
       internal static let selectProjectFolderWithoutSync = L10n.tr("Localizable", "Alert.Title.selectProjectFolderWithoutSync")
       /// Limit 50 Websites
       internal static let siteLimit = L10n.tr("Localizable", "Alert.Title.siteLimit")
+      /// Please Download Before Continuing
+      internal static let siteUpdated = L10n.tr("Localizable", "Alert.Title.siteUpdated")
       /// Unknown Error
       internal static let unknown = L10n.tr("Localizable", "Alert.Title.unknown")
     }
@@ -158,8 +162,6 @@ internal enum L10n {
       internal static let add = L10n.tr("Localizable", "Preference.Button.add")
       /// Done
       internal static let done = L10n.tr("Localizable", "Preference.Button.done")
-      /// Make Default
-      internal static let makeDefault = L10n.tr("Localizable", "Preference.Button.makeDefault")
       /// Modify
       internal static let modify = L10n.tr("Localizable", "Preference.Button.modify")
       /// Remove
@@ -210,8 +212,6 @@ internal enum L10n {
       internal static let connectID = L10n.tr("Localizable", "Preference.Tooltip.connectID")
       /// Esc · close this window and go back to the home screen
       internal static let done = L10n.tr("Localizable", "Preference.Tooltip.done")
-      /// Choose which website is selected at launch
-      internal static let makeDefault = L10n.tr("Localizable", "Preference.Tooltip.makeDefault")
       /// Modify the selected configuration or change the project folder
       internal static let modify = L10n.tr("Localizable", "Preference.Tooltip.modify")
       /// Any name, to show who last worked on the website

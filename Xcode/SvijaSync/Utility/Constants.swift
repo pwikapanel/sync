@@ -19,4 +19,5 @@ enum Constant {
     static let downloadProgressTimeInterval: TimeInterval = 1.0
     static let maxConnections = 50
     static let syncSubFolderCount = 6
+	static let downloadMinFilesCount = 5
 }

@@ -615,17 +615,6 @@ IA
                                     <action selector="modifyButtonAction:" target="tq7-ga-eHi" id="N9B-N6-kfD"/>
                                 </connections>
                             </button>
-                            <button autoresizesSubviews="NO" verticalHuggingPriority="750" id="tXr-5y-rGu">
-                                <rect key="frame" x="499" y="4" width="121" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Make Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kYC-d4-Dng">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="makeDefaultButtonAction:" target="tq7-ga-eHi" id="c7F-zr-zrH"/>
-                                </connections>
-                            </button>
                             <button autoresizesSubviews="NO" verticalHuggingPriority="750" id="g9h-MQ-qCZ">
                                 <rect key="frame" x="717" y="4" width="89" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -646,7 +635,6 @@ Gw
                         <outlet property="doneButton" destination="g9h-MQ-qCZ" id="FNl-tr-2Hl"/>
                         <outlet property="formView" destination="9U0-JO-Shp" id="8dF-rN-GRP"/>
                         <outlet property="listView" destination="HmB-dk-xHC" id="jqr-pj-XRW"/>
-                        <outlet property="makeDefaultButton" destination="tXr-5y-rGu" id="G4g-w3-2MV"/>
                         <outlet property="modifyButton" destination="mS6-l4-FuQ" id="t7r-mW-eq5"/>
                         <outlet property="nameField" destination="4eI-FZ-7bY" id="zuJ-xK-opO"/>
                         <outlet property="nameFieldLabel" destination="m5R-bP-mcO" id="Vfh-T5-aCs"/>

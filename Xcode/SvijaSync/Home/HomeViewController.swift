@@ -93,6 +93,10 @@ class HomeViewController: NSViewController {
   // used by preferences menu item
   @IBAction func preferenceButtonAction(_ sender: Any) {
     resetStatus()
+	if uploadButton.state == .on {
+		pauseUpload()
+		uploadButton.state = .off
+	}
     let preferenceViewController =  PreferenceViewController.makeModule()
     presentAsSheet(preferenceViewController)
     preferenceViewController.doneAction = { [weak self] in
@@ -279,7 +283,10 @@ extension HomeViewController {
     }
     let index = popupButton.index(of: selectedItem)
     selectedConnection = connections[index]
-    
+	  
+	  // Add Logger
+	selectedConnection?.addLog()
+	  
     //—————————————————————————————————————————————————— added, to automatically set default
     
     var allConnections: [SiteConnection] {

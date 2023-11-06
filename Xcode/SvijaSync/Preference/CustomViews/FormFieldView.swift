@@ -16,27 +16,27 @@ class FormFieldView: NSView {
     @IBOutlet weak var urlField: NSTextField!
     @IBOutlet weak var connectIdField: NSTextField!
     @IBOutlet weak var passwordField: NSTextField!
-    @IBOutlet weak var addButton: NSButton!
+    @IBOutlet weak var addButton: CustomButton!
 
     var viewModel: PreferenceFormInterface!
     private var connection: SiteConnection?
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        checkFields()
-        [urlField, connectIdField, passwordField].forEach { $0?.delegate = self }
-        urlField.placeholderString = Text.Preference.TextPlaceholder.url
-        connectIdField.placeholderString = Text.Preference.TextPlaceholder.connectId
-
-        urlFieldLabel.stringValue = Text.Preference.Label.url
-        connectIdFieldLabel.placeholderString = Text.Preference.Label.connectId
-        passwordFieldLabel.placeholderString = Text.Preference.Label.password
-        addButton.title = Text.Preference.Button.add
-        addButton.toolTip = Text.Preference.Tooltip.add
-        urlField.toolTip = Text.Preference.Tooltip.url
-        connectIdField.toolTip = Text.Preference.Tooltip.connectID
-        passwordField.toolTip = Text.Preference.Tooltip.password
-    }
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		checkFields()
+		[urlField, connectIdField, passwordField].forEach { $0?.delegate = self }
+		urlField.placeholderString = Text.Preference.TextPlaceholder.url
+		connectIdField.placeholderString = Text.Preference.TextPlaceholder.connectId
+		
+		urlFieldLabel.stringValue = Text.Preference.Label.url
+		connectIdFieldLabel.placeholderString = Text.Preference.Label.connectId
+		passwordFieldLabel.placeholderString = Text.Preference.Label.password
+		addButton.title = Text.Preference.Button.add
+		addButton.toolTip = Text.Preference.Tooltip.add
+		urlField.toolTip = Text.Preference.Tooltip.url
+		connectIdField.toolTip = Text.Preference.Tooltip.connectID
+		passwordField.toolTip = Text.Preference.Tooltip.password
+	}
 
     func configure(_ connection: SiteConnection) {
         self.connection = connection
@@ -146,5 +146,27 @@ extension FormFieldView: NSTextFieldDelegate {
     func controlTextDidChange(_ obj: Notification) {
         checkFields()
     }
+	
+	
+	override func keyDown(with event: NSEvent) {
+		if window?.firstResponder == addButton {
+			if event.keyCode == 36 { // ENTER / RETURN
+				addButton.performClick(addButton)
+			} else if event.keyCode == 48 { //TAB
+				// DO NOTHING
+			}
+		} else {
+			super.keyDown(with: event)
+		}
+	}
+	
+	func control(_ control: NSControl, textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
+		debugPrint(commandSelector)
+		if passwordField == control && commandSelector == #selector(NSResponder.insertTab(_:)) {
+			window?.makeFirstResponder(addButton)
+			return true
+		}
+		return false
+	}
 
 }

@@ -427,7 +427,7 @@ IA
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <button verticalHuggingPriority="750" id="rgx-tq-eKF">
+                                    <button verticalHuggingPriority="750" id="rgx-tq-eKF" customClass="CustomButton" customModule="Svija_Sync" customModuleProvider="target">
                                         <rect key="frame" x="223" y="10" width="104" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" title="Update" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ndj-xR-6p0">

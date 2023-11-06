@@ -41,7 +41,7 @@ class HomeSyncStatusHandler: NSObject {
 			case .updated:
 				target?.showAlert(message: Text.Alert.Title.siteUpdated, info: Text.Alert.Message.siteUpdated)
 			case .created:
-				break
+				completion(true)
 			case .none:
 				target?.showAlert(message: Text.Alert.Confirmation.Title.areYouSure, info: "\(con.lastOwner)\(Text.Alert.Confirmation.Message.lastOwnerChanged)", okButton: Text.Alert.continue, cancelButton: Text.Alert.cancel) { action in
 					completion(action == .ok)

@@ -36,7 +36,8 @@ public class RsyncManager: RsyncManagerInterface {
 	}
 
     public func execute(_ operation: OperationType, connection: SiteConnection, callback: @escaping BashCallBack) {
-        execute(operation.script, args: connection.basicArgs, dirPath: connection.localPath, callback: callback)
+		let extraArgs = operation == .fetchLastOwner ? [connection.lastModifiedTextRelativePath] : []
+        execute(operation.script, args: extraArgs + connection.basicArgs, dirPath: connection.localPath, callback: callback)
     }
 
     private func execute(_ script: Script, args: [String], dirPath: String, callback: @escaping BashCallBack) {
@@ -64,7 +65,7 @@ let successCheck = "success"
 fileprivate extension SiteConnection {
 
     // Remote connection, password, success check word
-    var basicArgs: [String] { [remoteSyncAddress, password, successCheck] }
+    var basicArgs: [String] { [remoteSyncAddress,  password, successCheck] }
 
 }
 

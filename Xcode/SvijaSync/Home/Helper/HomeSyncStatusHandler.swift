@@ -39,7 +39,15 @@ class HomeSyncStatusHandler: NSObject {
 		case let .serverNameMismatch(reason):
 			switch reason {
 			case .updated:
-				target?.showAlert(message: Text.Alert.Title.siteUpdated, info: Text.Alert.Message.siteUpdated)
+				target?.showAlert(
+					message: Text.Alert.Title.siteUpdated,
+					info: Text.Alert.Message.siteUpdated,
+					okButton: Text.Alert.cancel,
+					cancelButton: Text.Alert.continue,
+					defaultAction: .ok,
+					callback: { action in
+						completion(action == .cancel) // here cancel and ok button positions are switched
+					})
 			case .created:
 				completion(true)
 			case .none:

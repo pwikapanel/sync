@@ -124,6 +124,7 @@
 		CEBBEC962AF91D1300CA4686 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBEC942AF91D1300CA4686 /* CustomButton.swift */; };
 		CEBBEC972AF91D1300CA4686 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBEC942AF91D1300CA4686 /* CustomButton.swift */; };
 		CEBBEC982AF91D1300CA4686 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBEC942AF91D1300CA4686 /* CustomButton.swift */; };
+		CEBBEC992AFA45E700CA4686 /* rsync-debug in Resources */ = {isa = PBXBuildFile; fileRef = CEAEB95E2AF69BF200AAC1F3 /* rsync-debug */; };
 		CEDB2CEA2AE27042004B3711 /* RsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */; };
 		CEDB2CEB2AE27042004B3711 /* RsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */; };
 		CEDB2CEC2AE27042004B3711 /* RsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB2CDE2AE27042004B3711 /* RsyncManager.swift */; };
@@ -712,6 +713,7 @@
 				CEDB2CFF2AE27042004B3711 /* last-owner.sh in Resources */,
 				AACAFF0326E10ED300511FF2 /* Credits.html in Resources */,
 				CEDB2CFB2AE27042004B3711 /* check-connection.sh in Resources */,
+				CEBBEC992AFA45E700CA4686 /* rsync-debug in Resources */,
 				AACAFF0526E10ED300511FF2 /* Main.storyboard in Resources */,
 				CEDB2D032AE27042004B3711 /* upload.sh in Resources */,
 			);

@@ -27,7 +27,8 @@ extension HomeViewController {
     startBackgroundActivityActivity()
     viewModel.fetchLastOwner(connection: connection) { [weak self] status in
       guard let self = self, self.checkAndProcessLastOwnerStatus(status)  else { return }
-      self.statusHandler.handleUploadCheck(self.viewModel.uploadCheck(connection) , connection) { [weak self] status in
+	  let check = self.viewModel.uploadCheck(connection)
+      self.statusHandler.handleUploadCheck( check, connection) { [weak self] status in
         guard let self = self else { return }
         guard status else {
           self.render(.noActivity)

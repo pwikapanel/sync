@@ -87,7 +87,7 @@ internal enum L10n {
       internal static let selectProjectFolderWithoutSync = L10n.tr("Localizable", "Alert.Title.selectProjectFolderWithoutSync")
       /// Limit 50 Websites
       internal static let siteLimit = L10n.tr("Localizable", "Alert.Title.siteLimit")
-      /// Please Download Before Continuing
+      /// Please Download
       internal static let siteUpdated = L10n.tr("Localizable", "Alert.Title.siteUpdated")
       /// Unknown Error
       internal static let unknown = L10n.tr("Localizable", "Alert.Title.unknown")

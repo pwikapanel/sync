@@ -15,10 +15,11 @@ extension NSViewController {
         style: NSAlert.Style = .warning,
         okButton: String = Text.Alert.ok,
         cancelButton: String = "",
+		defaultAction: AlertAction? = nil,
         callback: ((AlertAction) -> ())? = nil
     ) {
 
-        view.showAlert(message: message, info: info, style: style, okButton: okButton, cancelButton: cancelButton, callback: callback)
+        view.showAlert(message: message, info: info, style: style, okButton: okButton, cancelButton: cancelButton, defaultAction: defaultAction, callback: callback)
     }
 
 }

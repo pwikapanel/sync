@@ -5,10 +5,11 @@
 #
 #  Created by Rajesh Ramachandrakurup on 6/2/21.
 
-rsync_path="$1"
-remote_connection="$2"
-password="$3"
-success="$4"
+last_modified_relative_path="$1"
+rsync_path="$2"
+remote_connection="$3"
+password="$4"
+success="$5"
 
 exclusions=(
     --exclude ".DS_Store"
@@ -19,5 +20,5 @@ exclusions=(
 )
 
 export RSYNC_PASSWORD=$password
-"$rsync_path" -azq --delete "${exclusions[@]}" "$remote_connection/.last" "sync/.last" && echo "$success"
+"$rsync_path" -azq --delete "${exclusions[@]}" "$remote_connection/$last_modified_relative_path" "sync/$last_modified_relative_path" && echo "$success"
 RSYNC_PASSWORD=

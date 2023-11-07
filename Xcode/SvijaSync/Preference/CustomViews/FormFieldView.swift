@@ -20,6 +20,8 @@ class FormFieldView: NSView {
 
     var viewModel: PreferenceFormInterface!
     private var connection: SiteConnection?
+	
+	var folderDidSelected: (() -> Void)?
 
 	override func awakeFromNib() {
 		super.awakeFromNib()
@@ -83,7 +85,7 @@ class FormFieldView: NSView {
                 isDefault: connection.isDefault
             )
             modify(con)
-
+			folderDidSelected?()
         } else {
             con = SiteConnection(
                 uuid: uuid,
@@ -96,6 +98,7 @@ class FormFieldView: NSView {
             )
             if viewModel.numberOfConnections < Constant.maxConnections {
                 add(con)
+				folderDidSelected?()
             } else {
                 showAlert(message: Text.Alert.Title.siteLimit, info: Text.Alert.Message.siteLimit)
             }
@@ -161,7 +164,6 @@ extension FormFieldView: NSTextFieldDelegate {
 	}
 	
 	func control(_ control: NSControl, textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
-		debugPrint(commandSelector)
 		if passwordField == control && commandSelector == #selector(NSResponder.insertTab(_:)) {
 			window?.makeFirstResponder(addButton)
 			return true

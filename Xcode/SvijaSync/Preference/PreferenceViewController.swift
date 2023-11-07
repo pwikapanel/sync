@@ -16,7 +16,7 @@ class PreferenceViewController: NSViewController {
     @IBOutlet weak var listView: ConnectionListView!
     @IBOutlet weak var removeButton: NSButton!
     @IBOutlet weak var modifyButton: NSButton!
-    @IBOutlet weak var doneButton: NSButton!
+    @IBOutlet weak var doneButton: CustomButton!
 
     private lazy var viewModel: PreferenceViewModelInterface = PreferenceViewModel()
 
@@ -52,6 +52,11 @@ class PreferenceViewController: NSViewController {
             self?.modifyButton.title =  Text.Preference.Button.modify
             self?.removeButton.title =  Text.Preference.Button.remove
         }
+		
+		formView.folderDidSelected = { [weak self] in
+			guard let self else { return }
+			self.view.window?.makeFirstResponder(self.doneButton)
+		}
 
         viewModel.preferenceDidUpdate = { [weak self] connection, status in
             self?.listView.preferenceUpdated()
@@ -110,6 +115,14 @@ class PreferenceViewController: NSViewController {
     private func refreshButtons() {
         [removeButton, modifyButton].forEach { $0?.isEnabled = (self.selectedSite != nil) || $0?.title == Text.Preference.Button.undo }
     }
+	
+	override func keyDown(with event: NSEvent) {
+		if view.window?.firstResponder == doneButton, event.keyCode == 36 {  // ENTER / RETURN
+			doneButton.performClick(doneButton)
+		} else {
+			super.keyDown(with: event)
+		}
+	}
 
 }
 

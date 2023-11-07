@@ -615,7 +615,7 @@ IA
                                     <action selector="modifyButtonAction:" target="tq7-ga-eHi" id="N9B-N6-kfD"/>
                                 </connections>
                             </button>
-                            <button autoresizesSubviews="NO" verticalHuggingPriority="750" id="g9h-MQ-qCZ">
+                            <button autoresizesSubviews="NO" verticalHuggingPriority="750" id="g9h-MQ-qCZ" customClass="CustomButton" customModule="Svija_Sync" customModuleProvider="target">
                                 <rect key="frame" x="717" y="4" width="89" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XJX-dV-W7H">

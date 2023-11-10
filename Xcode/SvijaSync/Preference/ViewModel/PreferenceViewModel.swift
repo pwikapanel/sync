@@ -108,6 +108,7 @@ extension PreferenceViewModel: PreferenceFormInterface {
     func modify(_ connection: SiteConnection) -> ConnectionSaveStatus {
         let output = siteOperations.modify(site: connection)
         if output.status == .success {
+			siteOperations.makeDefault(site: output.site)
             preferenceDidUpdate?(output.site, .modify)
         }
         lastConnection = output.site

@@ -156,7 +156,7 @@ extension FormFieldView: NSTextFieldDelegate {
 			if event.keyCode == 36 { // ENTER / RETURN
 				addButton.performClick(addButton)
 			} else if event.keyCode == 48 { //TAB
-				// DO NOTHING
+				window?.makeFirstResponder(urlField)
 			}
 		} else {
 			super.keyDown(with: event)

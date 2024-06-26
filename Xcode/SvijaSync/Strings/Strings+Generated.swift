@@ -226,7 +226,7 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Tooltip.update")
       /// The address of the website without http or /
       internal static let url = L10n.tr("Localizable", "Preference.Tooltip.url")
-      /// Visit svija.comin your browser.
+      /// Visit svija.com in your browser.
       internal static let visitLink = L10n.tr("Localizable", "Preference.Tooltip.visitLink")
     }
   }

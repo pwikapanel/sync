@@ -80,6 +80,8 @@
 		AA92C6F32716C456008BD343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085B25C9447A005DAC78 /* Assets.xcassets */; };
 		AA92C6F42716C456008BD343 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = D6B5EBE425E4B61900717561 /* Credits.html */; };
 		AA92C6F62716C456008BD343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F2085D25C9447A005DAC78 /* Main.storyboard */; };
+		AAB75CF42C2C64C20023D975 /* rsync-debug in Resources */ = {isa = PBXBuildFile; fileRef = CEAEB95E2AF69BF200AAC1F3 /* rsync-debug */; };
+		AAB75CF62C2C64FC0023D975 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = AAB75CF52C2C64FC0023D975 /* SwiftyBeaver */; };
 		AACAFEDE26E10ED300511FF2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0F99225DDFDF800DBD5B0 /* ImageView.swift */; };
 		AACAFEDF26E10ED300511FF2 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65FBD2A265D181300CC0610 /* AsyncOperation.swift */; };
 		AACAFEE026E10ED300511FF2 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E641E425DA9FAB00262B13 /* FileManagerExtensions.swift */; };
@@ -304,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA92C6F12716C456008BD343 /* WebKit.framework in Frameworks */,
+				AAB75CF62C2C64FC0023D975 /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +580,7 @@
 			);
 			name = "Svija Sync Beta";
 			packageProductDependencies = (
+				AAB75CF52C2C64FC0023D975 /* SwiftyBeaver */,
 			);
 			productName = SvijaSync;
 			productReference = AA92C6FB2716C456008BD343 /* Svija Sync Beta.app */;
@@ -695,6 +699,7 @@
 				AA92C6F42716C456008BD343 /* Credits.html in Resources */,
 				CEAEB9632AF69D7300AAC1F3 /* rsync in Resources */,
 				CEDB2CFC2AE27042004B3711 /* check-connection.sh in Resources */,
+				AAB75CF42C2C64C20023D975 /* rsync-debug in Resources */,
 				AA92C6F62716C456008BD343 /* Main.storyboard in Resources */,
 				CEDB2D042AE27042004B3711 /* upload.sh in Resources */,
 			);
@@ -1079,7 +1084,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncbeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1105,7 +1110,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncbeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1412,6 +1417,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AA38682D2A306F3200C134B8 /* XCRemoteSwiftPackageReference "sync-rsync" */;
 			productName = Rsync;
+		};
+		AAB75CF52C2C64FC0023D975 /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEDB2D102AE28151004B3711 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
 		};
 		CEDB2D112AE28258004B3711 /* SwiftyBeaver */ = {
 			isa = XCSwiftPackageProductDependency;

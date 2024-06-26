@@ -1,0 +1,135 @@
+
+/*
+ Localizable.strings
+ SvijaSync
+ 
+ Created by Rajesh Ramachandrakurup on 11/2/21.
+ 
+ */
+
+// Home
+
+"Home.WindowUploadTitle" = "uploading…";
+"Home.WindowDownloadTitle" = "downloading…";
+"Home.Button.download" = "Download";
+"Home.Button.upload" = "Upload";
+"Home.Button.pause" = "Pause";
+"Home.Button.cancel" = "Cancel";
+"Home.Button.popupPlaceholder" = "Click here to get started…";
+"Home.StatusLabel.unableToConnect" = "Unable to Connect";
+"Home.StatusLabel.uploadingPaused" = "Uploading Paused";
+"Home.StatusLabel.downloadingCancelled" = "Download Canceled";
+"Home.StatusLabel.downloadingComplete" = "Download Complete";
+
+// HOME tooltips
+"Home.Tooltip.sitePopupWithList" = "Select a different website";
+"Home.Tooltip.sitePopupWithoutList" = "Open Preferences and configure websites";
+"Home.Tooltip.preferenceButton" = "H · Help and answers to your questions";
+"Home.Tooltip.downloadButton" = "Update computer files to match the website";
+"Home.Tooltip.uploadButton" = "spacebar · update the website to match computer files";
+"Home.Tooltip.adminButton" = "C · connect to Svija Cloud";
+"Home.Tooltip.cacheButton" = "A · clear the website cache";
+"Home.Tooltip.siteButton" = "S · visit the website";
+"Home.Tooltip.folderButton" = "F · open the project folder in the Finder";
+"Home.Tooltip.newsView" = "News and product updates";
+
+
+// News
+
+"News.language" = "en";
+"News.Placeholder.text" = "<h1>Svija Sync</h1><p>Click on <b>Click Here to get started…</b> to add your website<br>credentials. Connect to <b>Svija Cloud</b> to see your modifications.";
+"News.Placeholder.message" = "";
+
+// Alert
+
+"Alert.Continue" = "Continue";
+"Alert.Cancel" = "Cancel";
+"Alert.Ok" = "Ok";
+"Alert.Confirmation.Title.areYouSure" = "Are you sure?";
+
+"Alert.Confirmation.Message.lastOwnerChanged" = " has modified the site.\nDo you want to continue?";
+"Alert.Confirmation.Message.localFileErase" = "Your files will be deleted or replaced.\nDo you want to continue?";
+"Alert.Confirmation.Message.quitAppWhenDownload" = "Quitting now will leave incomplete files on your computer.\n\nDownload next time to finish synching.";
+
+"Alert.Title.siteUpdated" = "Please Download Before Continuing";
+"Alert.Message.siteUpdated" = "Your site has been updated to a new version of Svija — please download before continuing";
+
+"Alert.Title.projectFolderMissing" = "Project Folder is Missing";
+"Alert.Message.projectFolderMissing" = "Open Preferences to modify this website and select a project folder.";
+
+"Alert.Title.projectFolderDamaged" = "Project Folder is Damaged";
+"Alert.Message.projectFolderDamaged" = "Re-download to continue or contact support.";
+
+"Alert.Title.downloadCanceled" = "Downloading Canceled";
+"Alert.Message.downloadCanceled" = "Downloaded website is incomplete. Download next time to finish synching.";
+
+"Alert.Title.selectProjectFolderWithoutSync" = "Select a Different Folder";
+"Alert.Message.selectProjectFolderWithoutSync" = "Please select a project folder that is not named \"sync\".";
+
+"Alert.Title.enterName" = "Enter Your Name";
+"Alert.Message.enterName" = "Please enter a nickname. You can change it at any time.";
+
+"Alert.Title.siteLimit" = "Limit 50 Websites";
+"Alert.Message.siteLimit" = "Please delete a website or modify an existing website.";
+
+"Alert.Title.missingName" = "Configuration Incomplete";
+"Alert.Message.missingName" = "Please open Preferences then enter your nickname.";
+
+"Alert.Title.duplicateSite" = "Website Already Exists";
+"Alert.Message.duplicateSite" = "The specified website already exists. Please select it then click Modify.";
+
+"Alert.Title.unknown" = "Unknown Error";
+"Alert.Message.unknown" = "Please quit the app and try again. Check your internet connection.";
+
+"Alert.Title.downloadInterrupted" = "Download Interrupted";
+"Alert.Message.downloadInterrupted" = "Download interrupted – files on your computer may be incomplete.";
+
+"Alert.Title.nothingToUpload" = "Nothing to Upload";
+"Alert.Message.nothingToUpload" = "There is nothing to upload. Please download first or choose a different project folder.";
+
+"Alert.Title.invalidCharacters" = "Some characters are not allowed";
+"Alert.Message.invalidCharacters" = "Please use only letters, numbers and common symbols.";
+
+"Alert.Title.inaccessible" = "Project folder inaccessible";
+"Alert.Message.inaccessible" = "Please select the project folder or open Preferences to reconfigure the website";
+
+
+// Preference
+
+"Preference.OpenPanel.message" = "Please choose a Project Folder";
+"Preference.OpenPanel.prompt" = "Choose";
+
+"Preference.Help.html" = "Svija is free — create an account at <a href=\"https://svija.love/fromsync\">svija.com</a>.";
+
+"Preference.Button.undo" = "Undo";
+"Preference.Button.modify" = "Modify";
+"Preference.Button.remove" = "Remove";
+"Preference.Button.add" = "Set Folder";
+"Preference.Button.done" = "Done";
+"Preference.Button.update" = "Set Folder";
+
+"Preference.Label.nickname" = "Nickname";
+"Preference.Label.url" = "URL";
+"Preference.Label.connectId" = "Connect ID";
+"Preference.Label.password" = "Password";
+
+"Preference.TextPlaceholder.nickname" = "your nickname";
+"Preference.TextPlaceholder.url" = "website address";
+"Preference.TextPlaceholder.connectId" = "connect ID";
+
+"Preference.ListHeader.url" = "URL";
+"Preference.ListHeader.localFolder" = "Project Folder";
+
+// Preference tooltips
+"Preference.Tooltip.add" = "Select a project folder and save this configuration";
+"Preference.Tooltip.update" = "Update this configuration and select a project folder";
+"Preference.Tooltip.undo" = "Undo all changes";
+"Preference.Tooltip.remove" = "Delete the selected configuration";
+"Preference.Tooltip.modify" = "Modify the selected configuration or change the project folder";
+"Preference.Tooltip.done" = "Esc · close this window and go back to the home screen";
+
+"Preference.Tooltip.nickname" = "Any name, to show who last worked on the website";
+"Preference.Tooltip.url" = "The address of the website without http or /";
+"Preference.Tooltip.connectID" = "The connect ID from the email you received";
+"Preference.Tooltip.password" = "The password from the email you received";
+"Preference.Tooltip.visitLink" = "Visit svija.love in your browser.";

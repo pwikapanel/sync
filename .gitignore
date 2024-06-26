@@ -5,3 +5,6 @@ untracked/*
 "Icon\r"
 .swp
 .README.md.swp
+Xcode/SvijaSync.xcodeproj/xcuserdata/*
+*.xcuserstate
+Xcode/SvijaSync.xcodeproj/project.xcworkspace/xcuserdata/user.xcuserdatad/*

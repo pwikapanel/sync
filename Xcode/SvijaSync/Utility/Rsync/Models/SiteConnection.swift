@@ -41,9 +41,9 @@ public extension SiteConnection {
 
     var remoteAddress: String { "\(username)@\(server)::\(username)" }
 
-    var remoteSyncAddress: String { remoteAddress + "/sync/"}
+    var remoteSyncAddress: String { remoteAddress + "/SYNC/"}
 
-    var localSyncPath: String { localPath + "/sync/" }
+    var localSyncPath: String { localPath + "/SYNC/" }
 	
 	var localSyncSystemRelativePath: String { "SVIJA/System" }
 	

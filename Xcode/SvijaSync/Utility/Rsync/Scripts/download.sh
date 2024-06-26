@@ -18,5 +18,5 @@ exclusions=(
 )
 
 export RSYNC_PASSWORD=$password
-"$rsync_path" -azq --delete "${exclusions[@]}" "$remote_connection" "sync/" && echo "$success"
+"$rsync_path" -azq --delete "${exclusions[@]}" "$remote_connection" "SYNC/" && echo "$success"
 RSYNC_PASSWORD=

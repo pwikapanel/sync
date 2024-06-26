@@ -20,7 +20,7 @@ extension FileManager {
     }
 
     static func createSyncDirectoryIfNeeded(at path: String) -> Bool {
-        createDirectoryIfNeeded(fullPath: path + "/sync")
+        createDirectoryIfNeeded(fullPath: path + "/SYNC")
     }
 
 }

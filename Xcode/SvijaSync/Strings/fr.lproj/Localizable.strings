@@ -64,7 +64,7 @@
 "Alert.Message.downloadCanceled" = "Downloaded website is incomplete. Download next time to finish synching.";
 
 "Alert.Title.selectProjectFolderWithoutSync" = "Select a Different Folder";
-"Alert.Message.selectProjectFolderWithoutSync" = "Please select a project folder that is not named \"sync\".";
+"Alert.Message.selectProjectFolderWithoutSync" = "Please select a project folder that is not named \"SYNC\".";
 
 "Alert.Title.enterName" = "Enter Your Name";
 "Alert.Message.enterName" = "Please enter a nickname. You can change it at any time.";
@@ -99,7 +99,7 @@
 "Preference.OpenPanel.message" = "Please choose a Project Folder";
 "Preference.OpenPanel.prompt" = "Choose";
 
-"Preference.Help.html" = "Svija is free — create an account at <a href=\"https://svija.love/fromsync\">svija.com</a>.";
+"Preference.Help.html" = "Svija is free — create an account at <a href=\"https://svija.com/fromsync\">svija.com</a>.";
 
 "Preference.Button.undo" = "Undo";
 "Preference.Button.modify" = "Modify";
@@ -132,4 +132,4 @@
 "Preference.Tooltip.url" = "The address of the website without http or /";
 "Preference.Tooltip.connectID" = "The connect ID from the email you received";
 "Preference.Tooltip.password" = "The password from the email you received";
-"Preference.Tooltip.visitLink" = "Visit svija.love in your browser.";
+"Preference.Tooltip.visitLink" = "Visit svija.com in your browser.";

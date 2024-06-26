@@ -138,7 +138,7 @@ class HomeViewModel: HomeViewModelInterface  {
     guard FileManager.createSyncDirectoryIfNeeded(at: connection.localPath) else { return .localPathExpired }
     
     let files = (try? FileManager.default.contentsOfDirectory(
-                        at: localUrl.appendingPathComponent("sync"),
+                        at: localUrl.appendingPathComponent("SYNC"),
                         includingPropertiesForKeys: nil,
                         options: []) ) ?? []
     if files.count >= Constant.downloadMinFilesCount { return .filesExists }
@@ -156,7 +156,7 @@ class HomeViewModel: HomeViewModelInterface  {
     guard FileManager.default.fileExists(atPath: connection.localSyncPath) else { return .syncFolderNotFound }
     
     let subFolders = (try? FileManager.default.contentsOfDirectory(
-                        at: localUrl.appendingPathComponent("sync/Svija"),
+                        at: localUrl.appendingPathComponent("SYNC/SVIJA"),
                         includingPropertiesForKeys: nil,
                         options: []).filter { $0.hasDirectoryPath } ) ?? []
     

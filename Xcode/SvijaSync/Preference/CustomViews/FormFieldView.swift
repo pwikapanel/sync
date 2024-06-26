@@ -68,7 +68,7 @@ class FormFieldView: NSView {
             return
         }
 
-        guard localUrl.lastPathComponent != "sync" else {
+        guard localUrl.lastPathComponent != "SYNC" else {
             showAlert(message: Text.Alert.Title.selectProjectFolderWithoutSync, info: Text.Alert.Message.selectProjectFolderWithoutSync)
             return
         }

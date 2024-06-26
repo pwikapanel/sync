@@ -192,7 +192,7 @@ class HomeViewController: NSViewController {
     let configuration: NSWorkspace.OpenConfiguration = NSWorkspace.OpenConfiguration()
     
     configuration.promptsUserIfNeeded = true
-    let myUrlString = localUrl.path + "/sync/Svija"
+    let myUrlString = localUrl.path + "/SYNC/SVIJA"
     let myUrl = URL(fileURLWithPath: myUrlString)
     NSWorkspace.shared.activateFileViewerSelecting([myUrl])
   }

@@ -20,7 +20,7 @@ exclusions=(
 
 # added 220205 by Andrew
 
-#   no_images=sync/Svija/SVG\ Files/
+#   no_images=SYNC/SVIJA/SVG\ Files/
 #   jpg=.jpg
 #   png=.png
 #   
@@ -29,11 +29,11 @@ exclusions=(
 
 shopt -s extglob
 
-svg_folder=sync/Svija/SVG\ Files/
+svg_folder=SYNC/SVIJA/SVG\ Files/
 rm -rf "$svg_folder"*.!(svg)
 
 # end added 220205
 
 export RSYNC_PASSWORD=$password
-"$rsync_path" -azq --delete "${exclusions[@]}" "sync/" $remote_connection && echo "$success"
+"$rsync_path" -azq --delete "${exclusions[@]}" "SYNC/" $remote_connection && echo "$success"
 RSYNC_PASSWORD=

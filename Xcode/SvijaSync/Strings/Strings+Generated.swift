@@ -53,7 +53,7 @@ internal enum L10n {
       internal static let projectFolderDamaged = L10n.tr("Localizable", "Alert.Message.projectFolderDamaged")
       /// Open Preferences to modify this website and select a project folder.
       internal static let projectFolderMissing = L10n.tr("Localizable", "Alert.Message.projectFolderMissing")
-      /// Please select a project folder that is not named "sync".
+      /// Please select a project folder that is not named "SYNC".
       internal static let selectProjectFolderWithoutSync = L10n.tr("Localizable", "Alert.Message.selectProjectFolderWithoutSync")
       /// Please delete a website or modify an existing website.
       internal static let siteLimit = L10n.tr("Localizable", "Alert.Message.siteLimit")
@@ -172,7 +172,7 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Button.update")
     }
     internal enum Help {
-      /// Svija is free — create an account at <a href="https://svija.love/fromsync">svija.com</a>.
+      /// Svija is free — create an account at <a href="https://svija.com/fromsync">svija.com</a>.
       internal static let html = L10n.tr("Localizable", "Preference.Help.html")
     }
     internal enum Label {
@@ -226,7 +226,7 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Tooltip.update")
       /// The address of the website without http or /
       internal static let url = L10n.tr("Localizable", "Preference.Tooltip.url")
-      /// Visit svija.love in your browser.
+      /// Visit svija.comin your browser.
       internal static let visitLink = L10n.tr("Localizable", "Preference.Tooltip.visitLink")
     }
   }

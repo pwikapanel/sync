@@ -28,9 +28,9 @@ exclusions=(
 #   rm -rf "$no_images"*"$png"
 
 shopt -s extglob
-
 svg_folder=SYNC/SVIJA/SVG\ Files/
-rm -rf "$svg_folder"*.!(svg)
+#rm -rf "$svg_folder"*.!(svg) # deletes my.file.svg
+rm -rf "$svg_folder"!(*.svg) 
 
 # end added 220205
 

@@ -45,7 +45,7 @@ public extension SiteConnection {
 
     var localSyncPath: String { localPath + "/SYNC/" }
 	
-	var localSyncSystemRelativePath: String { "SVIJA/System" }
+	var localSyncSystemRelativePath: String { "CONFIG/System" }
 	
 	var localSyncIdentityPath: String { localSyncPath + "\(localSyncSystemRelativePath)/" }
 		

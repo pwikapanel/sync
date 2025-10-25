@@ -1,6 +1,6 @@
 //
 //  Constants.swift
-//  SvijaSync
+//  PwikaSync
 //
 //  Created by Rajesh Ramachandrakurup on 10/2/21.
 //
@@ -13,7 +13,7 @@ enum Key {
 }
 
 enum Constant {
-    static let newsUrl = "http://msg.svija.com/sync"
+    static let newsUrl = "http://msg.pwika.com/sync"
 
     static let uploadSyncTimeInterval: TimeInterval = 3.0
     static let downloadProgressTimeInterval: TimeInterval = 1.0

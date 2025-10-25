@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA92C6CB2716C456008BD343"
-               BuildableName = "Svija Sync Beta.app"
-               BlueprintName = "Svija Sync Beta"
+               BuildableName = "Pwika Sync Beta.app"
+               BlueprintName = "Pwika Sync Beta"
                ReferencedContainer = "container:SvijaSync.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA92C6CB2716C456008BD343"
-            BuildableName = "Svija Sync Beta.app"
-            BlueprintName = "Svija Sync Beta"
+            BuildableName = "Pwika Sync Beta.app"
+            BlueprintName = "Pwika Sync Beta"
             ReferencedContainer = "container:SvijaSync.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA92C6CB2716C456008BD343"
-            BuildableName = "Svija Sync Beta.app"
-            BlueprintName = "Svija Sync Beta"
+            BuildableName = "Pwika Sync Beta.app"
+            BlueprintName = "Pwika Sync Beta"
             ReferencedContainer = "container:SvijaSync.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -60,8 +60,8 @@ internal enum L10n {
       internal static let selectProjectFolderWithoutSync = L10n.tr("Localizable", "Alert.Message.selectProjectFolderWithoutSync", fallback: "Please select a project folder that is not named \"SYNC\".")
       /// Please delete a website or modify an existing website.
       internal static let siteLimit = L10n.tr("Localizable", "Alert.Message.siteLimit", fallback: "Please delete a website or modify an existing website.")
-      /// Your site has been updated to a new version of Svija — please download before continuing
-      internal static let siteUpdated = L10n.tr("Localizable", "Alert.Message.siteUpdated", fallback: "Your site has been updated to a new version of Svija — please download before continuing")
+      /// Your site has been updated to a new version of Pwika — please download before continuing
+      internal static let siteUpdated = L10n.tr("Localizable", "Alert.Message.siteUpdated", fallback: "Your site has been updated to a new version of Pwika — please download before continuing")
       /// Please quit the app and try again. Check your internet connection.
       internal static let unknown = L10n.tr("Localizable", "Alert.Message.unknown", fallback: "Please quit the app and try again. Check your internet connection.")
     }
@@ -100,7 +100,7 @@ internal enum L10n {
     /// downloading…
     internal static let windowDownloadTitle = L10n.tr("Localizable", "Home.WindowDownloadTitle", fallback: "downloading…")
     /// Localizable.strings
-    ///  SvijaSync
+    ///  PwikaSync
     ///  
     ///  Created by Rajesh Ramachandrakurup on 11/2/21.
     internal static let windowUploadTitle = L10n.tr("Localizable", "Home.WindowUploadTitle", fallback: "uploading…")
@@ -127,8 +127,8 @@ internal enum L10n {
       internal static let uploadingPaused = L10n.tr("Localizable", "Home.StatusLabel.uploadingPaused", fallback: "Uploading Paused")
     }
     internal enum Tooltip {
-      /// C · connect to Svija Cloud
-      internal static let adminButton = L10n.tr("Localizable", "Home.Tooltip.adminButton", fallback: "C · connect to Svija Cloud")
+      /// C · connect to Pwika Cloud
+      internal static let adminButton = L10n.tr("Localizable", "Home.Tooltip.adminButton", fallback: "C · connect to Pwika Cloud")
       /// A · clear the website cache
       internal static let cacheButton = L10n.tr("Localizable", "Home.Tooltip.cacheButton", fallback: "A · clear the website cache")
       /// Update computer files to match the website
@@ -155,8 +155,8 @@ internal enum L10n {
     internal enum Placeholder {
       /// 
       internal static let message = L10n.tr("Localizable", "News.Placeholder.message", fallback: "")
-      /// <h1>Svija Sync</h1><p>Click on <b>Click Here to get started…</b> to add your website<br>credentials. Connect to <b>Svija Cloud</b> to see your modifications.
-      internal static let text = L10n.tr("Localizable", "News.Placeholder.text", fallback: "<h1>Svija Sync</h1><p>Click on <b>Click Here to get started…</b> to add your website<br>credentials. Connect to <b>Svija Cloud</b> to see your modifications.")
+      /// <h1>Pwika Sync</h1><p>Click on <b>Click Here to get started…</b> to add your website<br>credentials. Connect to <b>Pwika Cloud</b> to see your modifications.
+      internal static let text = L10n.tr("Localizable", "News.Placeholder.text", fallback: "<h1>Pwika Sync</h1><p>Click on <b>Click Here to get started…</b> to add your website<br>credentials. Connect to <b>Pwika Cloud</b> to see your modifications.")
     }
   }
   internal enum Preference {
@@ -175,8 +175,8 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Button.update", fallback: "Set Folder")
     }
     internal enum Help {
-      /// Svija is free — create an account at <a href="https://svija.com/fromsync">svija.com</a>.
-      internal static let html = L10n.tr("Localizable", "Preference.Help.html", fallback: "Svija is free — create an account at <a href=\"https://svija.com/fromsync\">svija.com</a>.")
+      /// Pwika is free — create an account at <a href="https://pwika.com/fromsync">pwika.com</a>.
+      internal static let html = L10n.tr("Localizable", "Preference.Help.html", fallback: "Pwika is free — create an account at <a href=\"https://pwika.com/fromsync\">pwika.com</a>.")
     }
     internal enum Label {
       /// Connect ID
@@ -229,8 +229,8 @@ internal enum L10n {
       internal static let update = L10n.tr("Localizable", "Preference.Tooltip.update", fallback: "Update this configuration and select a project folder")
       /// The address of the website without http or /
       internal static let url = L10n.tr("Localizable", "Preference.Tooltip.url", fallback: "The address of the website without http or /")
-      /// Visit svija.com in your browser.
-      internal static let visitLink = L10n.tr("Localizable", "Preference.Tooltip.visitLink", fallback: "Visit svija.com in your browser.")
+      /// Visit pwika.com in your browser.
+      internal static let visitLink = L10n.tr("Localizable", "Preference.Tooltip.visitLink", fallback: "Visit pwika.com in your browser.")
     }
   }
 }

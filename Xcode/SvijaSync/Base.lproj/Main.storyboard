@@ -157,7 +157,7 @@
                                             <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="NO" javaScriptEnabled="NO"/>
                                         </wkWebViewConfiguration>
                                     </wkWebView>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="e09-Ua-bcl">
+                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="e09-Ua-bcl">
                                         <rect key="frame" x="272" y="43" width="394" height="16"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Svija Sync" id="h1F-TZ-PFf">
@@ -166,7 +166,7 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="386" id="17e-1U-D5S">
+                                    <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="386" id="17e-1U-D5S">
                                         <rect key="frame" x="272" y="2" width="390" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" selectable="YES" id="gm9-8q-IOt">
@@ -291,7 +291,7 @@ IA
                                             <action selector="uploadButtonAction:" target="XfG-lQ-9wD" id="NwL-uX-xp8"/>
                                         </connections>
                                     </button>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="sYY-rn-r74">
+                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="sYY-rn-r74">
                                         <rect key="frame" x="487" y="15" width="140" height="16"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="POj-zd-Yq7">
@@ -356,7 +356,7 @@ IA
                         <rect key="frame" x="0.0" y="0.0" width="810" height="189"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="m5R-bP-mcO">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="m5R-bP-mcO">
                                 <rect key="frame" x="8" y="161" width="74" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Nickname" id="MAs-ev-Hcx">
@@ -365,7 +365,7 @@ IA
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" id="4eI-FZ-7bY">
+                            <textField focusRingType="none" verticalHuggingPriority="750" id="4eI-FZ-7bY">
                                 <rect key="frame" x="89" y="158" width="232" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="your nickname" drawsBackground="YES" id="ytb-WL-C4i">
@@ -382,7 +382,7 @@ IA
                                 <rect key="frame" x="0.0" y="37" width="321" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="BK7-QN-EkR">
+                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="BK7-QN-EkR">
                                         <rect key="frame" x="8" y="83" width="74" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="URL" id="2Td-4g-Z4U">
@@ -391,7 +391,7 @@ IA
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField verticalHuggingPriority="750" id="jZP-OH-nde">
+                                    <textField focusRingType="none" verticalHuggingPriority="750" id="jZP-OH-nde">
                                         <rect key="frame" x="89" y="79" width="232" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="website address" drawsBackground="YES" id="BtD-mw-1Za">
@@ -400,7 +400,7 @@ IA
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="dsZ-O7-oWn">
+                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="dsZ-O7-oWn">
                                         <rect key="frame" x="8" y="52" width="74" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Connect ID" id="QQW-Bp-foH">
@@ -409,7 +409,7 @@ IA
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField verticalHuggingPriority="750" id="McB-T4-srP">
+                                    <textField focusRingType="none" verticalHuggingPriority="750" id="McB-T4-srP">
                                         <rect key="frame" x="89" y="48" width="232" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="connect ID" drawsBackground="YES" id="7ZG-Bi-Xtb">
@@ -418,7 +418,7 @@ IA
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="OfW-KW-hnC">
+                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="OfW-KW-hnC">
                                         <rect key="frame" x="8" y="21" width="74" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Password" id="s1z-ff-jtX">
@@ -442,7 +442,7 @@ IA
                                         <rect key="frame" x="10" y="4" width="311" height="5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     </box>
-                                    <secureTextField verticalHuggingPriority="750" id="5Xv-cT-j5M">
+                                    <secureTextField focusRingType="none" verticalHuggingPriority="750" id="5Xv-cT-j5M">
                                         <rect key="frame" x="89" y="17" width="130" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="••••••••" drawsBackground="YES" usesSingleLineMode="YES" id="p0V-7d-buu">
@@ -500,7 +500,7 @@ IA
                                                                     <rect key="frame" x="4" y="0.0" width="182" height="28"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
-                                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="EbK-VF-9Wk">
+                                                                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="EbK-VF-9Wk">
                                                                             <rect key="frame" x="0.0" y="8" width="220" height="17"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="PpV-6G-XOn">
@@ -532,7 +532,7 @@ IA
                                                                     <rect key="frame" x="194" y="0.0" width="302" height="28"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
-                                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="bD3-Pb-b82">
+                                                                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="bD3-Pb-b82">
                                                                             <rect key="frame" x="0.0" y="8" width="235" height="17"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Table View Cell" id="LEM-f0-zkV">
@@ -577,7 +577,7 @@ IA
                                 </connections>
                             </customView>
                             <customView id="hMQ-rL-SQG" customClass="PreferenceHelpView" customModule="Pwika_Sync_Beta" customModuleProvider="target">
-                                <rect key="frame" x="30" y="12" width="291" height="18"/>
+                                <rect key="frame" x="20" y="12" width="291" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <wkWebView wantsLayer="YES" id="5ec-sV-g1J">

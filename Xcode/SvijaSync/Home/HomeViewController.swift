@@ -192,7 +192,7 @@ class HomeViewController: NSViewController {
     let configuration: NSWorkspace.OpenConfiguration = NSWorkspace.OpenConfiguration()
     
     configuration.promptsUserIfNeeded = true
-    let myUrlString = localUrl.path + "/SYNC/CONFIG"
+    let myUrlString = localUrl.path + "/SYNC/SYSTEM"
     let myUrl = URL(fileURLWithPath: myUrlString)
     NSWorkspace.shared.activateFileViewerSelecting([myUrl])
   }

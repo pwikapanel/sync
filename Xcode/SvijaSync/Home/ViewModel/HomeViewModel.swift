@@ -156,7 +156,7 @@ class HomeViewModel: HomeViewModelInterface  {
     guard FileManager.default.fileExists(atPath: connection.localSyncPath) else { return .syncFolderNotFound }
     
     let subFolders = (try? FileManager.default.contentsOfDirectory(
-                        at: localUrl.appendingPathComponent("SYNC/CONFIG"),
+                        at: localUrl.appendingPathComponent("SYNC/SYSTEM"),
                         includingPropertiesForKeys: nil,
                         options: []).filter { $0.hasDirectoryPath } ) ?? []
     

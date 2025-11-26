@@ -231,7 +231,7 @@
 		4BF35272263AA6A500BFD9B8 /* Rsync-Dependency */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Rsync-Dependency"; path = "../Rsync-Dependency"; sourceTree = "<group>"; };
 		AA38685B2A306F3200C134B8 /* Svija Sync Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA92C6FB2716C456008BD343 /* Pwika Sync Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pwika Sync Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Svija Sync Direct.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACAFF0A26E10ED300511FF2 /* Pwika Sync Direct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pwika Sync Direct.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAEB95E2AF69BF200AAC1F3 /* rsync-debug */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "rsync-debug"; sourceTree = "<group>"; };
 		CEAEB9602AF69D7300AAC1F3 /* rsync */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rsync; sourceTree = "<group>"; };
 		CEBBEC942AF91D1300CA4686 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -517,7 +517,7 @@
 			isa = PBXGroup;
 			children = (
 				D6F2085425C94475005DAC78 /* Svija Sync.app */,
-				AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */,
+				AACAFF0A26E10ED300511FF2 /* Pwika Sync Direct.app */,
 				AA92C6FB2716C456008BD343 /* Pwika Sync Beta.app */,
 				AA38685B2A306F3200C134B8 /* Svija Sync Demo.app */,
 			);
@@ -586,9 +586,9 @@
 			productReference = AA92C6FB2716C456008BD343 /* Pwika Sync Beta.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AACAFEDA26E10ED300511FF2 /* Svija Sync Direct */ = {
+		AACAFEDA26E10ED300511FF2 /* Pwika Sync Direct */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AACAFF0726E10ED300511FF2 /* Build configuration list for PBXNativeTarget "Svija Sync Direct" */;
+			buildConfigurationList = AACAFF0726E10ED300511FF2 /* Build configuration list for PBXNativeTarget "Pwika Sync Direct" */;
 			buildPhases = (
 				AACAFEDD26E10ED300511FF2 /* Sources */,
 				AACAFEFE26E10ED300511FF2 /* Frameworks */,
@@ -600,12 +600,12 @@
 			);
 			dependencies = (
 			);
-			name = "Svija Sync Direct";
+			name = "Pwika Sync Direct";
 			packageProductDependencies = (
 				CEDB2D212AE29086004B3711 /* SwiftyBeaver */,
 			);
 			productName = SvijaSync;
-			productReference = AACAFF0A26E10ED300511FF2 /* Svija Sync Direct.app */;
+			productReference = AACAFF0A26E10ED300511FF2 /* Pwika Sync Direct.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D6F2085325C94475005DAC78 /* Svija Sync */ = {
@@ -662,7 +662,7 @@
 			projectRoot = "";
 			targets = (
 				D6F2085325C94475005DAC78 /* Svija Sync */,
-				AACAFEDA26E10ED300511FF2 /* Svija Sync Direct */,
+				AACAFEDA26E10ED300511FF2 /* Pwika Sync Direct */,
 				AA92C6CB2716C456008BD343 /* Pwika Sync Beta */,
 				AA38682B2A306F3200C134B8 /* Svija Sync Demo */,
 			);
@@ -1073,6 +1073,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SvijaSync/SvijaSync.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1099,6 +1100,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SvijaSync/SvijaSync.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1136,7 +1138,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncdirect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1162,7 +1164,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = love.svija.svijasyncdirect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1364,7 +1366,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AACAFF0726E10ED300511FF2 /* Build configuration list for PBXNativeTarget "Svija Sync Direct" */ = {
+		AACAFF0726E10ED300511FF2 /* Build configuration list for PBXNativeTarget "Pwika Sync Direct" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AACAFF0826E10ED300511FF2 /* Debug */,

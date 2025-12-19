@@ -1,0 +1,226 @@
+2025-10-25 16:45:28 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x711e14600; archive(resolved)="<IDEArchive: 0x71292e530>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0x706cf8f40; teamID='Z66QVF9XBZ', teamName='Svija', teamType='Company', username='tech@svija.com', isFreeProvisioningTeam='0'>">
+	Chain (13, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x711e14600; archive = "<IDEArchive: 0x71292e530>", distributionMethod="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x706cf8f40; teamID='Z66QVF9XBZ', teamName='Svija', teamType='Company', username='tech@svija.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0x711e14900; archive = "<IDEArchive: 0x71292e530>", distributionMethod="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x706cf8f40; teamID='Z66QVF9XBZ', teamName='Svija', teamType='Company', username='tech@svija.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x6ff88f480; archive = "<IDEArchive: 0x71292e530>", distributionMethod="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x706cf8f40; teamID='Z66QVF9XBZ', teamName='Svija', teamType='Company', username='tech@svija.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x6ff88ea80; archive = "<IDEArchive: 0x71292e530>", distributionMethod="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x706cf8f40; teamID='Z66QVF9XBZ', teamName='Svija', teamType='Company', username='tech@svija.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x6ff88f200; archive = "<IDEArchive: 0x71292e530>", distributionMethod="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x706cf8f40; teamID='Z66QVF9XBZ', teamName='Svija', teamType='Company', username='tech@svija.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x6ff88e800; archive = "<IDEArchive: 0x71292e530>", distributionMethod="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x706cf8f40; teamID='Z66QVF9XBZ', teamName='Svija', teamType='Company', username='tech@svija.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7010bca00; archive = "<IDEArchive: 0x71292e530>", distributionMethod="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x706cf8f40; teamID='Z66QVF9XBZ', teamName='Svija', teamType='Company', username='tech@svija.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7010bc780; archive = "<IDEArchive: 0x71292e530>", distributionMethod="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x706cf8f40; teamID='Z66QVF9XBZ', teamName='Svija', teamType='Company', username='tech@svija.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7010be580; archive = "<IDEArchive: 0x71292e530>", distributionMethod="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team="(null)">
+	<IDEDistributionContext: 0x7010bc000; archive = "<IDEArchive: 0x71292e530>", distributionMethod="<IDEDistributionMethodDevelopmentSignedMac: 0x70f2cb550>", team="(null)">
+	<IDEDistributionContext: 0x700d12d00; archive = "<IDEArchive: 0x71292e530>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0x6ff961900; archive = "<IDEArchive: 0x71292e530>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0x6ff962580; archive = "<IDEArchive: 0x71292e530>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x711e14600>
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionCreateDestRootStep
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionCopyItemStep
+2025-10-25 16:45:28 +0000  Running /usr/bin/ditto '-V' '/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app' '/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app'
+2025-10-25 16:45:28 +0000  >>> Copying /Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app 
+2025-10-25 16:45:28 +0000  copying file ./Contents/_CodeSignature/CodeResources ... 
+2025-10-25 16:45:28 +0000  9086 bytes for ./Contents/_CodeSignature/CodeResources
+2025-10-25 16:45:28 +0000  copying file ./Contents/MacOS/Pwika Sync Beta ... 
+2025-10-25 16:45:28 +0000  971600 bytes for ./Contents/MacOS/Pwika Sync Beta
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/en.lproj/Localizable.strings ... 
+2025-10-25 16:45:28 +0000  12260 bytes for ./Contents/Resources/en.lproj/Localizable.strings
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/rsync-debug ... 
+2025-10-25 16:45:28 +0000  8706498 bytes for ./Contents/Resources/rsync-debug
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/check-connection.sh ... 
+443 bytes for ./Contents/Resources/check-connection.sh
+copying file ./Contents/Resources/rsync ... 
+2025-10-25 16:45:28 +0000  8757968 bytes for ./Contents/Resources/rsync
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/AppIcon.icns ... 
+2025-10-25 16:45:28 +0000  26359 bytes for ./Contents/Resources/AppIcon.icns
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/MainMenu.nib/keyedobjects-110000.nib ... 
+2025-10-25 16:45:28 +0000  5812 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/MainMenu.nib/keyedobjects-110000.nib
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/MainMenu.nib/keyedobjects.nib ... 
+2025-10-25 16:45:28 +0000  5812 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/MainMenu.nib/keyedobjects.nib
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib/keyedobjects-110000.nib ... 
+2025-10-25 16:45:28 +0000  18191 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib/keyedobjects-110000.nib
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib/keyedobjects.nib ... 
+2025-10-25 16:45:28 +0000  18191 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib/keyedobjects.nib
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib/keyedobjects-110000.nib ... 
+2025-10-25 16:45:28 +0000  2936 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib/keyedobjects-110000.nib
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib/keyedobjects.nib ... 
+2025-10-25 16:45:28 +0000  2936 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib/keyedobjects.nib
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/PreferenceViewController.nib/keyedobjects-110000.nib ... 
+2025-10-25 16:45:28 +0000  1553 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/PreferenceViewController.nib/keyedobjects-110000.nib
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/PreferenceViewController.nib/keyedobjects.nib ... 
+2025-10-25 16:45:28 +0000  1553 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/PreferenceViewController.nib/keyedobjects.nib
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/Info.plist ... 
+2025-10-25 16:45:28 +0000  548 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/Info.plist
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/tq7-ga-eHi-view-YfV-v3-GSE.nib/keyedobjects-110000.nib ... 
+2025-10-25 16:45:28 +0000  33954 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/tq7-ga-eHi-view-YfV-v3-GSE.nib/keyedobjects-110000.nib
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/tq7-ga-eHi-view-YfV-v3-GSE.nib/keyedobjects.nib ... 
+2025-10-25 16:45:28 +0000  33994 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/tq7-ga-eHi-view-YfV-v3-GSE.nib/keyedobjects.nib
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/last-owner.sh ... 
+2025-10-25 16:45:28 +0000  539 bytes for ./Contents/Resources/last-owner.sh
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Assets.car ... 
+2025-10-25 16:45:28 +0000  1289016 bytes for ./Contents/Resources/Assets.car
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/upload.sh ... 
+2025-10-25 16:45:28 +0000  760 bytes for ./Contents/Resources/upload.sh
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/version.sh ... 
+2025-10-25 16:45:28 +0000  182 bytes for ./Contents/Resources/version.sh
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/download.sh ... 
+2025-10-25 16:45:28 +0000  423 bytes for ./Contents/Resources/download.sh
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/fr.lproj/Localizable.strings ... 
+2025-10-25 16:45:28 +0000  12298 bytes for ./Contents/Resources/fr.lproj/Localizable.strings
+2025-10-25 16:45:28 +0000  copying file ./Contents/Resources/Credits.html ... 
+2025-10-25 16:45:28 +0000  662 bytes for ./Contents/Resources/Credits.html
+2025-10-25 16:45:28 +0000  copying file ./Contents/Info.plist ... 
+2025-10-25 16:45:28 +0000  1829 bytes for ./Contents/Info.plist
+2025-10-25 16:45:28 +0000  copying file ./Contents/PkgInfo ... 
+2025-10-25 16:45:28 +0000  8 bytes for ./Contents/PkgInfo
+2025-10-25 16:45:28 +0000  /usr/bin/ditto exited with 0
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionEmbedProfileStep
+2025-10-25 16:45:28 +0000  Skipping profile for item: <IDEDistributionItem: 0x70044f7e0; bundleID='(null)', path='<DVTFilePath:0x700a76520:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044edc0; isSigned='1', isAdHocSigned='1', signingCertificate='(null)', entitlements='{
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.inherit" = 1;
+}', teamID='(null)', identifier='rsync-555549448bc57c6a81c73d7baf2b7e5cc970b505', executablePath='<DVTFilePath:0x700a76520:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>', hardenedRuntime='1'>'>
+2025-10-25 16:45:28 +0000  Skipping profile for item: <IDEDistributionItem: 0x70044fe40; bundleID='(null)', path='<DVTFilePath:0x700a76940:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044c9c0; isSigned='1', isAdHocSigned='1', signingCertificate='(null)', entitlements='(null)', teamID='(null)', identifier='rsync', executablePath='<DVTFilePath:0x700a76940:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>', hardenedRuntime='0'>'>
+2025-10-25 16:45:28 +0000  Skipping profile for item: <IDEDistributionItem: 0x70044c0c0; bundleID='love.svija.svijasyncbeta', path='<DVTFilePath:0x7117a6900:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044c180; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7013d12c0; name='Apple Development: Andrew Swift (3LDYPQ6Z4Z)', hash='E546A6653BDE45565A3FEE58A645E17BC19A1499', serialNumber='310A6A0987762404CBE2AA1386B8352F', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2025-10-15 14:43:33 +0000''>', entitlements='{
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.files.user-selected.read-write" = 1;
+    "com.apple.security.network.client" = 1;
+}', teamID='Z66QVF9XBZ', identifier='love.svija.svijasyncbeta', executablePath='<DVTFilePath:0x7117a6f80:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/MacOS/Pwika Sync Beta'>', hardenedRuntime='1'>'>
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionInfoPlistStep
+2025-10-25 16:45:28 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2025-10-25 16:45:28 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2025-10-25 16:45:28 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionSymbolsStep
+2025-10-25 16:45:28 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionAppThinningStep
+2025-10-25 16:45:28 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionArchThinningStep
+2025-10-25 16:45:28 +0000  Archs to thin for item /Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync are []
+2025-10-25 16:45:28 +0000  Archs to thin for item /Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug are []
+2025-10-25 16:45:28 +0000  Archs to thin for item /Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app are []
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionODRStep
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionStripXattrsStep
+2025-10-25 16:45:28 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2025-10-25 16:45:28 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2025-10-25 16:45:28 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionCodesignStep
+2025-10-25 16:45:28 +0000  Entitlements for <IDEDistributionItem: 0x70044f7e0; bundleID='(null)', path='<DVTFilePath:0x700a76520:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044edc0; isSigned='1', isAdHocSigned='1', signingCertificate='(null)', entitlements='{
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.inherit" = 1;
+}', teamID='(null)', identifier='rsync-555549448bc57c6a81c73d7baf2b7e5cc970b505', executablePath='<DVTFilePath:0x700a76520:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>', hardenedRuntime='1'>'>: {
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.inherit" = 1;
+}
+2025-10-25 16:45:28 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2025-10-25 16:45:28 +0000  Entitlements for <IDEDistributionItem: 0x70044f7e0; bundleID='(null)', path='<DVTFilePath:0x700a76520:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044edc0; isSigned='1', isAdHocSigned='1', signingCertificate='(null)', entitlements='{
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.inherit" = 1;
+}', teamID='(null)', identifier='rsync-555549448bc57c6a81c73d7baf2b7e5cc970b505', executablePath='<DVTFilePath:0x700a76520:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>', hardenedRuntime='1'>'> are: {
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.inherit" = 1;
+}
+2025-10-25 16:45:28 +0000  Writing entitlements for <IDEDistributionItem: 0x70044f7e0; bundleID='(null)', path='<DVTFilePath:0x700a76520:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044edc0; isSigned='1', isAdHocSigned='1', signingCertificate='(null)', entitlements='{
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.inherit" = 1;
+}', teamID='(null)', identifier='rsync-555549448bc57c6a81c73d7baf2b7e5cc970b505', executablePath='<DVTFilePath:0x700a76520:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>', hardenedRuntime='1'>'> to: /var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/entitlements~~~6PXsNQ
+2025-10-25 16:45:28 +0000  invoking codesign: <NSConcreteTask: 0x713245ae0; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    E546A6653BDE45565A3FEE58A645E17BC19A1499,
+    "--entitlements",
+    "/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/entitlements~~~6PXsNQ",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync"
+)'>
+2025-10-25 16:45:28 +0000  codesign output: /var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync: replacing existing signature
+/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync: signed Mach-O universal (x86_64 arm64) [rsync-555549448bc57c6a81c73d7baf2b7e5cc970b505]
+2025-10-25 16:45:28 +0000  Entitlements for <IDEDistributionItem: 0x70044fe40; bundleID='(null)', path='<DVTFilePath:0x700a76940:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044c9c0; isSigned='1', isAdHocSigned='1', signingCertificate='(null)', entitlements='(null)', teamID='(null)', identifier='rsync', executablePath='<DVTFilePath:0x700a76940:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>', hardenedRuntime='0'>'>: {
+}
+2025-10-25 16:45:28 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2025-10-25 16:45:28 +0000  Entitlements for <IDEDistributionItem: 0x70044fe40; bundleID='(null)', path='<DVTFilePath:0x700a76940:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044c9c0; isSigned='1', isAdHocSigned='1', signingCertificate='(null)', entitlements='(null)', teamID='(null)', identifier='rsync', executablePath='<DVTFilePath:0x700a76940:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>', hardenedRuntime='0'>'> are: {
+}
+2025-10-25 16:45:28 +0000  Writing entitlements for <IDEDistributionItem: 0x70044fe40; bundleID='(null)', path='<DVTFilePath:0x700a76940:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044c9c0; isSigned='1', isAdHocSigned='1', signingCertificate='(null)', entitlements='(null)', teamID='(null)', identifier='rsync', executablePath='<DVTFilePath:0x700a76940:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>', hardenedRuntime='0'>'> to: /var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/entitlements~~~8NJ1PD
+2025-10-25 16:45:28 +0000  invoking codesign: <NSConcreteTask: 0x713245ae0; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    E546A6653BDE45565A3FEE58A645E17BC19A1499,
+    "--entitlements",
+    "/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/entitlements~~~8NJ1PD",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug"
+)'>
+2025-10-25 16:45:28 +0000  codesign output: /var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug: replacing existing signature
+/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug: signed Mach-O universal (x86_64 arm64) [rsync-debug]
+2025-10-25 16:45:28 +0000  Entitlements for <IDEDistributionItem: 0x70044c0c0; bundleID='love.svija.svijasyncbeta', path='<DVTFilePath:0x7117a6900:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044c180; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7013d12c0; name='Apple Development: Andrew Swift (3LDYPQ6Z4Z)', hash='E546A6653BDE45565A3FEE58A645E17BC19A1499', serialNumber='310A6A0987762404CBE2AA1386B8352F', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2025-10-15 14:43:33 +0000''>', entitlements='{
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.files.user-selected.read-write" = 1;
+    "com.apple.security.network.client" = 1;
+}', teamID='Z66QVF9XBZ', identifier='love.svija.svijasyncbeta', executablePath='<DVTFilePath:0x7117a6f80:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/MacOS/Pwika Sync Beta'>', hardenedRuntime='1'>'>: {
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.files.user-selected.read-write" = 1;
+    "com.apple.security.network.client" = 1;
+}
+2025-10-25 16:45:28 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2025-10-25 16:45:28 +0000  Entitlements for <IDEDistributionItem: 0x70044c0c0; bundleID='love.svija.svijasyncbeta', path='<DVTFilePath:0x7117a6900:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044c180; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7013d09c0; name='Apple Development: Andrew Swift (3LDYPQ6Z4Z)', hash='E546A6653BDE45565A3FEE58A645E17BC19A1499', serialNumber='310A6A0987762404CBE2AA1386B8352F', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2025-10-15 14:43:33 +0000''>', entitlements='{
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.files.user-selected.read-write" = 1;
+    "com.apple.security.network.client" = 1;
+}', teamID='Z66QVF9XBZ', identifier='love.svija.svijasyncbeta', executablePath='<DVTFilePath:0x7117a6f80:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/MacOS/Pwika Sync Beta'>', hardenedRuntime='1'>'> are: {
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.files.user-selected.read-write" = 1;
+    "com.apple.security.network.client" = 1;
+}
+2025-10-25 16:45:28 +0000  Writing entitlements for <IDEDistributionItem: 0x70044c0c0; bundleID='love.svija.svijasyncbeta', path='<DVTFilePath:0x7117a6900:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x70044c180; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7013d09c0; name='Apple Development: Andrew Swift (3LDYPQ6Z4Z)', hash='E546A6653BDE45565A3FEE58A645E17BC19A1499', serialNumber='310A6A0987762404CBE2AA1386B8352F', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2025-10-15 14:43:33 +0000''>', entitlements='{
+    "com.apple.security.app-sandbox" = 1;
+    "com.apple.security.files.user-selected.read-write" = 1;
+    "com.apple.security.network.client" = 1;
+}', teamID='Z66QVF9XBZ', identifier='love.svija.svijasyncbeta', executablePath='<DVTFilePath:0x7117a6f80:'/Users/Main/Library/Developer/Xcode/Archives/2025-10-25/Svija Sync Beta 25-10-2025, 18.44.xcarchive/Products/Applications/Pwika Sync Beta.app/Contents/MacOS/Pwika Sync Beta'>', hardenedRuntime='1'>'> to: /var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/entitlements~~~qgaNhI
+2025-10-25 16:45:28 +0000  invoking codesign: <NSConcreteTask: 0x713245ae0; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    E546A6653BDE45565A3FEE58A645E17BC19A1499,
+    "--entitlements",
+    "/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/entitlements~~~qgaNhI",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app"
+)'>
+2025-10-25 16:45:28 +0000  codesign output: /var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app: replacing existing signature
+/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app: signed app bundle with Mach-O universal (x86_64 arm64) [love.svija.svijasyncbeta]
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionZipODRItemStep
+2025-10-25 16:45:28 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2025-10-25 16:45:28 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2025-10-25 16:45:28 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionSkipPackagingStep
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2025-10-25 16:45:28 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2025-10-25 16:45:28 +0000  IDEDistributionItem init <DVTFilePath:0x70044e280:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>
+2025-10-25 16:45:28 +0000  [OPTIONAL] Didn't find info dictionary for <DVTFilePath:0x70044e280:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>: Error Domain=DVTFoundationNSBundleAdditionsErrorDomain Code=1 "Couldn't load Info dictionary for <DVTFilePath:0x70044e280:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>" UserInfo={NSLocalizedDescription=Couldn't load Info dictionary for <DVTFilePath:0x70044e280:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>}
+2025-10-25 16:45:28 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x70044e280:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync-debug'>
+2025-10-25 16:45:28 +0000  IDEDistributionItem init <DVTFilePath:0x70044c120:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>
+2025-10-25 16:45:28 +0000  [OPTIONAL] Didn't find info dictionary for <DVTFilePath:0x70044c120:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>: Error Domain=DVTFoundationNSBundleAdditionsErrorDomain Code=1 "Couldn't load Info dictionary for <DVTFilePath:0x70044c120:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>" UserInfo={NSLocalizedDescription=Couldn't load Info dictionary for <DVTFilePath:0x70044c120:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>}
+2025-10-25 16:45:28 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x70044c120:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/Resources/rsync'>
+2025-10-25 16:45:28 +0000  IDEDistributionItem init <DVTFilePath:0x711bf3300:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app'>
+2025-10-25 16:45:28 +0000  [OPTIONAL] Didn't find embedded provisioning profile for <DVTFilePath:0x711bf3300:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app'>: Error Domain=NSCocoaErrorDomain Code=4 "No file at <DVTFilePath:0x7129389a0:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/embedded.provisionprofile'>" UserInfo={NSLocalizedDescription=No file at <DVTFilePath:0x7129389a0:'/var/folders/nw/bcq6t8ln2nx87lsgg3x98d6h0000gp/T/XcodeDistPipeline.~~~OWvuNf/Root/Applications/Pwika Sync Beta.app/Contents/embedded.provisionprofile'>}
+2025-10-25 16:45:28 +0000  Processing step: IDEDistributionCreateManifestStep
+2025-10-25 16:45:28 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so
